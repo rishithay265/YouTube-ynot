@@ -1,0 +1,486 @@
+{
+ "id": "BlackHole",
+ "slug": "black-hole",
+ "topic": "What if you fell into a black hole?",
+ "title": [
+  "WHAT IF YOU",
+  "FELL INTO A BLACK HOLE?"
+ ],
+ "script": [
+  {
+   "beat": "1 cold open",
+   "text": "You're falling toward a black hole. Don't panic. Here's exactly what happens."
+  },
+  {
+   "beat": "2 the premise (title card)",
+   "text": "What if you fell into a black hole?"
+  },
+  {
+   "beat": "3 first sign: light bends",
+   "text": "First, the stars bend. Light curves around the hole, and the sky stretches into rings."
+  },
+  {
+   "beat": "3 the point of no return",
+   "text": "Then you cross the event horizon. No wall. No bump. You just can't come back. Even light can't escape from here."
+  },
+  {
+   "beat": "3 your friend watches",
+   "text": "Your best friend watches from far away. You slow down. You turn red. You fade. They never see you cross."
+  },
+  {
+   "beat": "4 the cost: tidal forces",
+   "text": "Inside, it gets worse. Gravity pulls your feet far harder than your head. You stretch like spaghetti."
+  },
+  {
+   "beat": "4 the number",
+   "text": "Around a small black hole, that difference is over twenty million times Earth's gravity. That's real."
+  },
+  {
+   "beat": "4 the twist: size matters",
+   "text": "But fall into a giant one, like the monster at the centre of our galaxy, and you'd feel almost nothing."
+  },
+  {
+   "beat": "5 the clock",
+   "text": "From the edge, you'd have at most sixty-six seconds. Then the centre, where our physics breaks down."
+  },
+  {
+   "beat": "7 the question",
+   "text": "Nobody knows what happens next. Want to find out?"
+  }
+ ],
+ "science": [
+  {
+   "claim": "Light bends around a black hole (gravitational lensing), so background stars are smeared into arcs and rings.",
+   "working": "General relativity: mass curves spacetime and light follows the curved paths. Observed routinely as gravitational lensing; the Event Horizon Telescope images of M87* and Sgr A* show the lensed ring of light.",
+   "source": "Event Horizon Telescope Collaboration (2019, 2022); Einstein (1915)"
+  },
+  {
+   "claim": "At the event horizon the escape speed equals the speed of light, so nothing, not even light, can leave.",
+   "working": "Definition of the Schwarzschild radius r_s = 2GM/c^2: escape speed sqrt(2GM/r) = c at r = r_s. Nothing local marks the crossing for a freely falling observer: no wall, no bump.",
+   "source": "Schwarzschild (1916); standard GR textbooks (e.g. Hartle, Gravity)"
+  },
+  {
+   "claim": "A distant friend sees you slow down, redden and fade, and never sees you cross.",
+   "working": "Gravitational time dilation and redshift diverge at the horizon for a far observer: signals from an infalling object are stretched to infinite wavelength and delay, so the object appears to freeze and fade just outside r_s.",
+   "source": "standard GR result for the Schwarzschild metric; e.g. Hamilton & Lisle (2008), The river model of black holes"
+  },
+  {
+   "claim": "Around a small black hole, the tidal difference across your body at the horizon is over twenty million times Earth's gravity.",
+   "working": "Tidal acceleration across length L at radius r: a = 2GM L / r^3. For M = 10 solar masses, r = r_s = 2GM/c^2 = 29.5 km, L = 2 m: a = 2.06e8 m/s^2 = 2.1e7 g (21 million g). Run: G = 6.674e-11, c = 2.998e8, Msun = 1.989e30 kg. Per the script: 'a small black hole' = about ten solar masses; 'over twenty million' holds (21 million).",
+   "source": "Newtonian tidal approximation, accurate in order of magnitude at the horizon of a Schwarzschild hole; cross-check: Astronomy magazine, 'Why are small black holes more dangerous than big ones?' (Feb 2023)"
+  },
+  {
+   "claim": "Falling into a supermassive black hole like Sagittarius A*, you would feel almost nothing at the horizon.",
+   "working": "Sgr A* mass 4.297 million solar masses (GRAVITY Collaboration). r_s = 1.27e10 m (12.7 million km). Tidal acceleration across 2 m at the horizon = 2GM L / r^3 = 1.1e-3 m/s^2 = about 0.0001 g, far less than the pull you feel on Earth. (Tidal force at the horizon scales as 1/M^2.)",
+   "source": "GRAVITY Collaboration (2021, 2023), Sgr A* mass 4.297 million Msun; own calculation"
+  },
+  {
+   "claim": "From the horizon to the centre takes at most about sixty-six seconds for Sgr A*.",
+   "working": "Maximum proper time from the horizon to the singularity for radial infall is tau = pi G M / c^3. For M = 4.297e6 Msun: pi x 4.925e-6 s x 4.297e6 = 66.5 s. Falling in from rest at the horizon gives the maximum; other paths give less, hence 'at most'.",
+   "source": "Schwarzschild geodesics (cycloid solution); Lewis & Kwan (2007), 'No way back: maximizing survival time below the Schwarzschild event horizon', arXiv:0705.1029"
+  },
+  {
+   "claim": "At the centre our physics breaks down: nobody knows what happens.",
+   "working": "GR predicts a curvature singularity; a quantum theory of gravity would be needed to describe it and does not yet exist.",
+   "source": "standard statement of the open problem; e.g. Hawking & Ellis (1973), The Large Scale Structure of Space-Time"
+  }
+ ],
+ "gaps": {
+  "word": 0.14,
+  "comma": 0.3,
+  "sentence": 0.55,
+  "question": 0.75,
+  "pairs": {
+   "hole|What": 0.9,
+   "real|But": 0.8,
+   "cross|Inside": 0.75
+  }
+ },
+ "tail": 1.6,
+ "cast": [
+  "pipHood",
+  "mo"
+ ],
+ "accent": "BLACK HOLE",
+ "shots": [
+  {
+   "id": "S1",
+   "size": "wide",
+   "set": "space",
+   "key": 20,
+   "note": "the black hole glows at the bottom; Pip floats small, feet first, falling toward it"
+  },
+  {
+   "id": "S2",
+   "size": "extreme close-up",
+   "set": "space",
+   "key": 14,
+   "note": "Pip's face in the helmet, worried, orange light from below"
+  },
+  {
+   "id": "S3",
+   "size": "medium, push in",
+   "set": "space",
+   "key": 22,
+   "note": "Pip palms out, calming himself; the hole's glow behind"
+  },
+  {
+   "id": "S4",
+   "size": "medium, low angle",
+   "set": "space",
+   "key": 18,
+   "note": "Pip points straight at us, smug: 'here's what happens'"
+  },
+  {
+   "id": "S5",
+   "size": "title, wide",
+   "set": "space",
+   "key": 50,
+   "note": "the premise over the black hole; Pip tiny, falling"
+  },
+  {
+   "id": "S6",
+   "size": "wide",
+   "set": "space",
+   "key": 34,
+   "note": "the star field starts to bend into arcs; Pip small below, looking up"
+  },
+  {
+   "id": "S7",
+   "size": "diagram",
+   "set": "blueprint",
+   "key": 44,
+   "note": "parallel light rays curve round a black hole"
+  },
+  {
+   "id": "S8",
+   "size": "wide",
+   "set": "space",
+   "key": 36,
+   "note": "the sky stretched into rings round the hole; Pip a silhouette below"
+  },
+  {
+   "id": "S9",
+   "size": "wide, top",
+   "set": "space",
+   "key": 44,
+   "note": "Pip drifts across the dashed event horizon ring; a flash as he crosses"
+  },
+  {
+   "id": "S10",
+   "size": "medium",
+   "set": "space",
+   "key": 18,
+   "note": "Pip's arm pushes through the horizon: no wall"
+  },
+  {
+   "id": "S11",
+   "size": "medium, low angle",
+   "set": "space",
+   "key": 16,
+   "note": "Pip hops on nothing: no bump"
+  },
+  {
+   "id": "S12",
+   "size": "medium",
+   "set": "space",
+   "key": 22,
+   "note": "Pip looks back at the sky, a shrinking bright circle"
+  },
+  {
+   "id": "S13",
+   "size": "diagram",
+   "set": "blueprint",
+   "key": 48,
+   "note": "light leaves the hole and curves back in: it can't escape"
+  },
+  {
+   "id": "S14",
+   "size": "over the shoulder",
+   "set": "station",
+   "key": 30,
+   "note": "Mo at a station window, far from the hole; a tiny Pip near it"
+  },
+  {
+   "id": "S15",
+   "size": "wide",
+   "set": "space",
+   "key": 24,
+   "note": "Pip near the horizon, ghost trail slowing; a time readout"
+  },
+  {
+   "id": "S16",
+   "size": "medium",
+   "set": "space",
+   "key": 22,
+   "note": "Pip shifts to red"
+  },
+  {
+   "id": "S17",
+   "size": "close-up",
+   "set": "space",
+   "key": 24,
+   "note": "Pip fades to a dim red smear"
+  },
+  {
+   "id": "S18",
+   "size": "close-up",
+   "set": "station",
+   "key": 26,
+   "note": "Mo's worried face; a faint red dot in the glass"
+  },
+  {
+   "id": "S19",
+   "size": "wide, low angle",
+   "set": "space",
+   "key": 30,
+   "note": "Pip falls through a red tunnel of streaks, dark"
+  },
+  {
+   "id": "S20",
+   "size": "diagram",
+   "set": "space",
+   "key": 70,
+   "note": "gravity arrows: a big one at his feet, a small one at his head"
+  },
+  {
+   "id": "S21",
+   "size": "wide",
+   "set": "space",
+   "key": 20,
+   "note": "Pip stretches tall and thin"
+  },
+  {
+   "id": "S22",
+   "size": "insert, top-down",
+   "set": "table",
+   "key": 14,
+   "note": "a plate of spaghetti, one strand has Pip's head"
+  },
+  {
+   "id": "S23",
+   "size": "diagram",
+   "set": "blueprint",
+   "key": 30,
+   "note": "a small black hole: 10 suns, 59 km across"
+  },
+  {
+   "id": "S24",
+   "size": "diagram",
+   "set": "blueprint",
+   "key": 70,
+   "note": "21,000,000 g counting up against a 1 g bar"
+  },
+  {
+   "id": "S25",
+   "size": "close-up",
+   "set": "space",
+   "key": 12,
+   "note": "Pip stunned, focus rings"
+  },
+  {
+   "id": "S26",
+   "size": "wide",
+   "set": "space",
+   "key": 30,
+   "note": "a giant black hole fills the frame; Pip tiny and calm"
+  },
+  {
+   "id": "S27",
+   "size": "diagram",
+   "set": "galaxy",
+   "key": 44,
+   "note": "a spiral galaxy; its bright core is Sagittarius A*"
+  },
+  {
+   "id": "S28",
+   "size": "medium",
+   "set": "space",
+   "key": 30,
+   "note": "Pip relaxed, eyes shut, at the horizon of the giant hole"
+  },
+  {
+   "id": "S29",
+   "size": "medium",
+   "set": "space",
+   "key": 50,
+   "note": "a countdown from 66 seconds above Pip"
+  },
+  {
+   "id": "S30",
+   "size": "wide",
+   "set": "void",
+   "key": 50,
+   "note": "the grid funnels to a point; physics glitches"
+  },
+  {
+   "id": "S31",
+   "size": "wide",
+   "set": "void",
+   "key": 44,
+   "note": "Pip a speck falling into the dark; a question mark of dust"
+  },
+  {
+   "id": "S32",
+   "size": "close-up",
+   "set": "space",
+   "key": 24,
+   "note": "Pip turns to us and smirks, the hole in his helmet"
+  }
+ ],
+ "edit": [
+  {
+   "shot": "S1",
+   "at": "f:0"
+  },
+  {
+   "shot": "S2",
+   "at": "black"
+  },
+  {
+   "shot": "S3",
+   "at": "Don't"
+  },
+  {
+   "shot": "S4",
+   "at": "Here's"
+  },
+  {
+   "shot": "S5",
+   "at": "if"
+  },
+  {
+   "shot": "S6",
+   "at": "First"
+  },
+  {
+   "shot": "S7",
+   "at": "Light"
+  },
+  {
+   "shot": "S8",
+   "at": "sky"
+  },
+  {
+   "shot": "S9",
+   "at": "Then"
+  },
+  {
+   "shot": "S10",
+   "at": "No"
+  },
+  {
+   "shot": "S11",
+   "at": "No"
+  },
+  {
+   "shot": "S12",
+   "at": "You"
+  },
+  {
+   "shot": "S13",
+   "at": "Even"
+  },
+  {
+   "shot": "S14",
+   "at": "Your"
+  },
+  {
+   "shot": "S15",
+   "at": "slow"
+  },
+  {
+   "shot": "S16",
+   "at": "turn"
+  },
+  {
+   "shot": "S17",
+   "at": "fade"
+  },
+  {
+   "shot": "S18",
+   "at": "They"
+  },
+  {
+   "shot": "S19",
+   "at": "Inside"
+  },
+  {
+   "shot": "S20",
+   "at": "Gravity"
+  },
+  {
+   "shot": "S21",
+   "at": "stretch"
+  },
+  {
+   "shot": "S22",
+   "at": "spaghetti"
+  },
+  {
+   "shot": "S23",
+   "at": "Around"
+  },
+  {
+   "shot": "S24",
+   "at": "difference"
+  },
+  {
+   "shot": "S25",
+   "at": "That's"
+  },
+  {
+   "shot": "S26",
+   "at": "But"
+  },
+  {
+   "shot": "S27",
+   "at": "like"
+  },
+  {
+   "shot": "S28",
+   "at": "and"
+  },
+  {
+   "shot": "S29",
+   "at": "From"
+  },
+  {
+   "shot": "S30",
+   "at": "Then"
+  },
+  {
+   "shot": "S31",
+   "at": "Nobody"
+  },
+  {
+   "shot": "S32",
+   "at": "Want"
+  }
+ ],
+ "fx": [
+  {
+   "at": "S5+4",
+   "kind": "flash",
+   "color": "#FFF3DC"
+  },
+  {
+   "at": "S9+46",
+   "kind": "flash",
+   "color": "#FFB15A",
+   "o": 0.5
+  },
+  {
+   "at": "S30+56",
+   "kind": "flash",
+   "color": "#FFFFFF",
+   "o": 0.7
+  },
+  {
+   "at": "S30+56",
+   "kind": "shake",
+   "len": 12,
+   "amp": 12
+  }
+ ]
+}

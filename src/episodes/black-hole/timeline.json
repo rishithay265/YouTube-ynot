@@ -1,0 +1,582 @@
+{
+ "slug": "black-hole",
+ "title": "WHAT IF YOU FELL INTO A BLACK HOLE?",
+ "fps": 30,
+ "total": 1709,
+ "segments": [
+  {
+   "shot": "S1",
+   "a": 0,
+   "b": 26,
+   "t0": 0,
+   "t1": 26,
+   "line": "You're falling toward"
+  },
+  {
+   "shot": "S2",
+   "a": 26,
+   "b": 56,
+   "t0": 0,
+   "t1": 30,
+   "line": "a black hole."
+  },
+  {
+   "shot": "S3",
+   "a": 56,
+   "b": 83,
+   "t0": 0,
+   "t1": 27,
+   "line": "Don't panic."
+  },
+  {
+   "shot": "S4",
+   "a": 83,
+   "b": 140,
+   "t0": 0,
+   "t1": 57,
+   "line": "Here's exactly what happens. What"
+  },
+  {
+   "shot": "S5",
+   "a": 140,
+   "b": 203,
+   "t0": 0,
+   "t1": 63,
+   "line": "if you fell into a black hole?"
+  },
+  {
+   "shot": "S6",
+   "a": 203,
+   "b": 260,
+   "t0": 0,
+   "t1": 57,
+   "line": "First, the stars bend."
+  },
+  {
+   "shot": "S7",
+   "a": 260,
+   "b": 309,
+   "t0": 0,
+   "t1": 49,
+   "line": "Light curves around the hole, and"
+  },
+  {
+   "shot": "S8",
+   "a": 309,
+   "b": 367,
+   "t0": 0,
+   "t1": 58,
+   "line": "the sky stretches into rings."
+  },
+  {
+   "shot": "S9",
+   "a": 367,
+   "b": 423,
+   "t0": 0,
+   "t1": 56,
+   "line": "Then you cross the event horizon."
+  },
+  {
+   "shot": "S10",
+   "a": 423,
+   "b": 448,
+   "t0": 0,
+   "t1": 25,
+   "line": "No wall."
+  },
+  {
+   "shot": "S11",
+   "a": 448,
+   "b": 478,
+   "t0": 0,
+   "t1": 30,
+   "line": "No bump."
+  },
+  {
+   "shot": "S12",
+   "a": 478,
+   "b": 527,
+   "t0": 0,
+   "t1": 49,
+   "line": "You just can't come back."
+  },
+  {
+   "shot": "S13",
+   "a": 527,
+   "b": 583,
+   "t0": 0,
+   "t1": 56,
+   "line": "Even light can't escape from here."
+  },
+  {
+   "shot": "S14",
+   "a": 583,
+   "b": 650,
+   "t0": 0,
+   "t1": 67,
+   "line": "Your best friend watches from far away. You"
+  },
+  {
+   "shot": "S15",
+   "a": 650,
+   "b": 678,
+   "t0": 0,
+   "t1": 28,
+   "line": "slow down. You"
+  },
+  {
+   "shot": "S16",
+   "a": 678,
+   "b": 711,
+   "t0": 0,
+   "t1": 33,
+   "line": "turn red. You"
+  },
+  {
+   "shot": "S17",
+   "a": 711,
+   "b": 737,
+   "t0": 0,
+   "t1": 26,
+   "line": "fade."
+  },
+  {
+   "shot": "S18",
+   "a": 737,
+   "b": 795,
+   "t0": 0,
+   "t1": 58,
+   "line": "They never see you cross."
+  },
+  {
+   "shot": "S19",
+   "a": 795,
+   "b": 850,
+   "t0": 0,
+   "t1": 55,
+   "line": "Inside, it gets worse."
+  },
+  {
+   "shot": "S20",
+   "a": 850,
+   "b": 939,
+   "t0": 0,
+   "t1": 89,
+   "line": "Gravity pulls your feet far harder than your head. You"
+  },
+  {
+   "shot": "S21",
+   "a": 939,
+   "b": 962,
+   "t0": 0,
+   "t1": 23,
+   "line": "stretch like"
+  },
+  {
+   "shot": "S22",
+   "a": 962,
+   "b": 993,
+   "t0": 0,
+   "t1": 31,
+   "line": "spaghetti."
+  },
+  {
+   "shot": "S23",
+   "a": 993,
+   "b": 1054,
+   "t0": 0,
+   "t1": 61,
+   "line": "Around a small black hole, that"
+  },
+  {
+   "shot": "S24",
+   "a": 1054,
+   "b": 1156,
+   "t0": 0,
+   "t1": 102,
+   "line": "difference is over twenty million times Earth's gravity."
+  },
+  {
+   "shot": "S25",
+   "a": 1156,
+   "b": 1199,
+   "t0": 0,
+   "t1": 43,
+   "line": "That's real."
+  },
+  {
+   "shot": "S26",
+   "a": 1199,
+   "b": 1251,
+   "t0": 0,
+   "t1": 52,
+   "line": "But fall into a giant one,"
+  },
+  {
+   "shot": "S27",
+   "a": 1251,
+   "b": 1323,
+   "t0": 0,
+   "t1": 72,
+   "line": "like the monster at the centre of our galaxy,"
+  },
+  {
+   "shot": "S28",
+   "a": 1323,
+   "b": 1383,
+   "t0": 0,
+   "t1": 60,
+   "line": "and you'd feel almost nothing."
+  },
+  {
+   "shot": "S29",
+   "a": 1383,
+   "b": 1489,
+   "t0": 0,
+   "t1": 106,
+   "line": "From the edge, you'd have at most sixty- six seconds."
+  },
+  {
+   "shot": "S30",
+   "a": 1489,
+   "b": 1575,
+   "t0": 0,
+   "t1": 86,
+   "line": "Then the centre, where our physics breaks down."
+  },
+  {
+   "shot": "S31",
+   "a": 1575,
+   "b": 1636,
+   "t0": 0,
+   "t1": 61,
+   "line": "Nobody knows what happens next."
+  },
+  {
+   "shot": "S32",
+   "a": 1636,
+   "b": 1709,
+   "t0": 0,
+   "t1": 73,
+   "line": "Want to find out?"
+  }
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "wide",
+   "key": 20,
+   "len": 26,
+   "first": 0,
+   "line": "You're falling toward",
+   "note": "the black hole glows at the bottom; Pip floats small, feet first, falling toward it"
+  },
+  {
+   "id": "S2",
+   "size": "extreme close-up",
+   "key": 14,
+   "len": 30,
+   "first": 26,
+   "line": "a black hole.",
+   "note": "Pip's face in the helmet, worried, orange light from below"
+  },
+  {
+   "id": "S3",
+   "size": "medium, push in",
+   "key": 22,
+   "len": 27,
+   "first": 56,
+   "line": "Don't panic.",
+   "note": "Pip palms out, calming himself; the hole's glow behind"
+  },
+  {
+   "id": "S4",
+   "size": "medium, low angle",
+   "key": 18,
+   "len": 57,
+   "first": 83,
+   "line": "Here's exactly what happens. What",
+   "note": "Pip points straight at us, smug: 'here's what happens'"
+  },
+  {
+   "id": "S5",
+   "size": "title, wide",
+   "key": 50,
+   "len": 63,
+   "first": 140,
+   "line": "if you fell into a black hole?",
+   "note": "the premise over the black hole; Pip tiny, falling"
+  },
+  {
+   "id": "S6",
+   "size": "wide",
+   "key": 34,
+   "len": 57,
+   "first": 203,
+   "line": "First, the stars bend.",
+   "note": "the star field starts to bend into arcs; Pip small below, looking up"
+  },
+  {
+   "id": "S7",
+   "size": "diagram",
+   "key": 44,
+   "len": 49,
+   "first": 260,
+   "line": "Light curves around the hole, and",
+   "note": "parallel light rays curve round a black hole"
+  },
+  {
+   "id": "S8",
+   "size": "wide",
+   "key": 36,
+   "len": 58,
+   "first": 309,
+   "line": "the sky stretches into rings.",
+   "note": "the sky stretched into rings round the hole; Pip a silhouette below"
+  },
+  {
+   "id": "S9",
+   "size": "wide, top",
+   "key": 44,
+   "len": 56,
+   "first": 367,
+   "line": "Then you cross the event horizon.",
+   "note": "Pip drifts across the dashed event horizon ring; a flash as he crosses"
+  },
+  {
+   "id": "S10",
+   "size": "medium",
+   "key": 18,
+   "len": 25,
+   "first": 423,
+   "line": "No wall.",
+   "note": "Pip's arm pushes through the horizon: no wall"
+  },
+  {
+   "id": "S11",
+   "size": "medium, low angle",
+   "key": 16,
+   "len": 30,
+   "first": 448,
+   "line": "No bump.",
+   "note": "Pip hops on nothing: no bump"
+  },
+  {
+   "id": "S12",
+   "size": "medium",
+   "key": 22,
+   "len": 49,
+   "first": 478,
+   "line": "You just can't come back.",
+   "note": "Pip looks back at the sky, a shrinking bright circle"
+  },
+  {
+   "id": "S13",
+   "size": "diagram",
+   "key": 48,
+   "len": 56,
+   "first": 527,
+   "line": "Even light can't escape from here.",
+   "note": "light leaves the hole and curves back in: it can't escape"
+  },
+  {
+   "id": "S14",
+   "size": "over the shoulder",
+   "key": 30,
+   "len": 67,
+   "first": 583,
+   "line": "Your best friend watches from far away. You",
+   "note": "Mo at a station window, far from the hole; a tiny Pip near it"
+  },
+  {
+   "id": "S15",
+   "size": "wide",
+   "key": 24,
+   "len": 28,
+   "first": 650,
+   "line": "slow down. You",
+   "note": "Pip near the horizon, ghost trail slowing; a time readout"
+  },
+  {
+   "id": "S16",
+   "size": "medium",
+   "key": 22,
+   "len": 33,
+   "first": 678,
+   "line": "turn red. You",
+   "note": "Pip shifts to red"
+  },
+  {
+   "id": "S17",
+   "size": "close-up",
+   "key": 24,
+   "len": 26,
+   "first": 711,
+   "line": "fade.",
+   "note": "Pip fades to a dim red smear"
+  },
+  {
+   "id": "S18",
+   "size": "close-up",
+   "key": 26,
+   "len": 58,
+   "first": 737,
+   "line": "They never see you cross.",
+   "note": "Mo's worried face; a faint red dot in the glass"
+  },
+  {
+   "id": "S19",
+   "size": "wide, low angle",
+   "key": 30,
+   "len": 55,
+   "first": 795,
+   "line": "Inside, it gets worse.",
+   "note": "Pip falls through a red tunnel of streaks, dark"
+  },
+  {
+   "id": "S20",
+   "size": "diagram",
+   "key": 70,
+   "len": 89,
+   "first": 850,
+   "line": "Gravity pulls your feet far harder than your head. You",
+   "note": "gravity arrows: a big one at his feet, a small one at his head"
+  },
+  {
+   "id": "S21",
+   "size": "wide",
+   "key": 20,
+   "len": 23,
+   "first": 939,
+   "line": "stretch like",
+   "note": "Pip stretches tall and thin"
+  },
+  {
+   "id": "S22",
+   "size": "insert, top-down",
+   "key": 14,
+   "len": 31,
+   "first": 962,
+   "line": "spaghetti.",
+   "note": "a plate of spaghetti, one strand has Pip's head"
+  },
+  {
+   "id": "S23",
+   "size": "diagram",
+   "key": 30,
+   "len": 61,
+   "first": 993,
+   "line": "Around a small black hole, that",
+   "note": "a small black hole: 10 suns, 59 km across"
+  },
+  {
+   "id": "S24",
+   "size": "diagram",
+   "key": 70,
+   "len": 102,
+   "first": 1054,
+   "line": "difference is over twenty million times Earth's gravity.",
+   "note": "21,000,000 g counting up against a 1 g bar"
+  },
+  {
+   "id": "S25",
+   "size": "close-up",
+   "key": 12,
+   "len": 43,
+   "first": 1156,
+   "line": "That's real.",
+   "note": "Pip stunned, focus rings"
+  },
+  {
+   "id": "S26",
+   "size": "wide",
+   "key": 30,
+   "len": 52,
+   "first": 1199,
+   "line": "But fall into a giant one,",
+   "note": "a giant black hole fills the frame; Pip tiny and calm"
+  },
+  {
+   "id": "S27",
+   "size": "diagram",
+   "key": 44,
+   "len": 72,
+   "first": 1251,
+   "line": "like the monster at the centre of our galaxy,",
+   "note": "a spiral galaxy; its bright core is Sagittarius A*"
+  },
+  {
+   "id": "S28",
+   "size": "medium",
+   "key": 30,
+   "len": 60,
+   "first": 1323,
+   "line": "and you'd feel almost nothing.",
+   "note": "Pip relaxed, eyes shut, at the horizon of the giant hole"
+  },
+  {
+   "id": "S29",
+   "size": "medium",
+   "key": 50,
+   "len": 106,
+   "first": 1383,
+   "line": "From the edge, you'd have at most sixty- six seconds.",
+   "note": "a countdown from 66 seconds above Pip"
+  },
+  {
+   "id": "S30",
+   "size": "wide",
+   "key": 50,
+   "len": 86,
+   "first": 1489,
+   "line": "Then the centre, where our physics breaks down.",
+   "note": "the grid funnels to a point; physics glitches"
+  },
+  {
+   "id": "S31",
+   "size": "wide",
+   "key": 44,
+   "len": 61,
+   "first": 1575,
+   "line": "Nobody knows what happens next.",
+   "note": "Pip a speck falling into the dark; a question mark of dust"
+  },
+  {
+   "id": "S32",
+   "size": "close-up",
+   "key": 24,
+   "len": 73,
+   "first": 1636,
+   "line": "Want to find out?",
+   "note": "Pip turns to us and smirks, the hole in his helmet"
+  }
+ ],
+ "fx": [
+  {
+   "kind": "flash",
+   "color": "#FFF3DC",
+   "f": 144
+  },
+  {
+   "kind": "flash",
+   "color": "#FFB15A",
+   "o": 0.5,
+   "f": 413
+  },
+  {
+   "kind": "flash",
+   "color": "#FFFFFF",
+   "o": 0.7,
+   "f": 1545
+  },
+  {
+   "kind": "shake",
+   "len": 12,
+   "amp": 12,
+   "f": 1545
+  }
+ ],
+ "audio": {
+  "voice": "black-hole/voice.wav"
+ }
+}

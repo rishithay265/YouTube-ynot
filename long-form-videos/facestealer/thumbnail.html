@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    @font-face { font-family: Evidence; src: url('assets/fonts/Arial-Black.ttf'); font-weight: 900; }
+    @font-face { font-family: Body; src: url('assets/fonts/Arial-Bold.ttf'); font-weight: 700; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 2048px; height: 1152px; overflow: hidden; background: #05070b; }
+    .thumb { position: relative; width: 2048px; height: 1152px; background: url('assets/sources/thumbnail-bg.png') center / cover no-repeat; }
+    .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(3,5,9,.98) 0%, rgba(3,5,9,.88) 32%, rgba(3,5,9,.12) 61%, rgba(3,5,9,.02) 100%); }
+    .eyebrow { position: absolute; left: 92px; top: 80px; padding: 16px 25px; background: #ff3153; color: white; border-radius: 10px; font: 900 29px/1 Body, Arial; letter-spacing: 3px; box-shadow: 0 13px 40px rgba(255,49,83,.3); }
+    .headline { position: absolute; left: 82px; top: 240px; width: 850px; color: white; font: 900 138px/.86 Evidence, Arial Black, sans-serif; letter-spacing: -7px; text-shadow: 0 14px 34px rgba(0,0,0,.8); }
+    .headline .cyan { color: #59e7ff; }
+    .money { position: absolute; left: 90px; bottom: 92px; display: flex; align-items: center; gap: 21px; color: white; font: 900 71px/1 Evidence, Arial Black; }
+    .money span { padding: 17px 26px; border-radius: 13px; background: rgba(8,13,20,.92); border: 3px solid #59e7ff; box-shadow: 0 0 45px rgba(89,231,255,.18); }
+    .money small { color: #ff3153; font: 900 29px/1.05 Body, Arial; letter-spacing: 1px; width: 210px; }
+    .callout { position: absolute; right: 75px; top: 66px; color: white; font: 900 28px/1 Body, Arial; letter-spacing: 3px; padding: 13px 20px; background: rgba(5,7,11,.76); border: 2px solid #ff3153; border-radius: 11px; }
+    .arrow { position: absolute; right: 430px; bottom: 220px; width: 160px; height: 36px; background: #ff3153; transform: rotate(-6deg); box-shadow: 0 0 26px rgba(255,49,83,.5); }
+    .arrow:after { content: ''; position: absolute; right: -43px; top: -25px; border-left: 58px solid #ff3153; border-top: 43px solid transparent; border-bottom: 43px solid transparent; }
+  </style>
+</head>
+<body>
+  <div class="thumb">
+    <div class="shade"></div>
+    <div class="eyebrow">REAL FBI CASE</div>
+    <div class="headline">THAT FACE<br><span class="cyan">WAS STOLEN</span></div>
+    <div class="money"><span>$400M</span><small>TAKEN IN<br>18 MONTHS</small></div>
+    <div class="callout">FAKE VIDEO CALL</div>
+    <div class="arrow"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,550 @@
+{
+ "id": "Pause",
+ "slug": "pause",
+ "topic": "What if you could pause everyone but you?",
+ "title": [
+  "WHAT IF YOU COULD",
+  "PAUSE EVERYONE BUT YOU?"
+ ],
+ "script": [
+  {
+   "beat": "1 cold open, demo 1 (small and selfish)",
+   "text": "Pause. The teacher freezes mid-word. You finish the quiz."
+  },
+  {
+   "beat": "1 cold open, demo 2 (useful)",
+   "text": "Pause. A fist stops an inch from your face. You stroll away."
+  },
+  {
+   "beat": "1 cold open, demo 3 (a little uncanny)",
+   "text": "Pause. Your best friend, frozen mid-laugh. Okay, that's creepy."
+  },
+  {
+   "beat": "2 the premise (title card)",
+   "text": "What if you could pause everyone but you?"
+  },
+  {
+   "beat": "4 the turn: the cost, one real fact",
+   "text": "One catch: being isolated is linked to a twenty-nine percent higher risk of early death. That's real."
+  },
+  {
+   "beat": "5-7 folded into a threat",
+   "text": "Pause enough, and you're the only one left."
+  }
+ ],
+ "science": [
+  {
+   "claim": "Social isolation is linked to a 29% higher risk of early death.",
+   "working": "Pooled average across 70 studies (1980-2014), over 3.4 million participants: social isolation 29%, loneliness 26%, living alone 32% increased likelihood of mortality. An association from observational studies, so the script says 'linked to', not 'causes'.",
+   "source": "Holt-Lunstad, Smith, Baker, Harris & Stephenson (2015), Loneliness and Social Isolation as Risk Factors for Mortality: A Meta-Analytic Review, Perspectives on Psychological Science"
+  }
+ ],
+ "cast": [
+  "pipHood",
+  "mo",
+  "mom",
+  "suit"
+ ],
+ "accent": "EVERYONE",
+ "shots": [
+  {
+   "id": "S1",
+   "size": "wide",
+   "set": "classroom",
+   "key": 14,
+   "note": "Pip at his desk, palm up; the teacher at the board mid-word; the world is about to stop"
+  },
+  {
+   "id": "S2",
+   "size": "medium, push in",
+   "set": "classroom (board)",
+   "key": 30,
+   "note": "the teacher frozen mid-word, chalk raised, chalk dust hanging in the air; Pip's dark shoulder soft in front"
+  },
+  {
+   "id": "S3",
+   "size": "macro insert, top-down",
+   "set": "classroom (desk top)",
+   "key": 24,
+   "note": "the quiz fills itself in under a fast pencil; A+ lands"
+  },
+  {
+   "id": "S4",
+   "size": "wide",
+   "set": "stairwell",
+   "key": 16,
+   "note": "a man in a suit lunges at Pip on the landing, fist out; the world stops"
+  },
+  {
+   "id": "S5",
+   "size": "extreme close-up",
+   "set": "stairwell",
+   "key": 40,
+   "note": "a huge frozen fist an inch from Pip's face; he looks at it, then smirks"
+  },
+  {
+   "id": "S6",
+   "size": "wide, camera follows",
+   "set": "stairwell",
+   "key": 16,
+   "note": "Pip strolls away down the stairs, hands behind his head, the suit frozen mid-lunge"
+  },
+  {
+   "id": "S7",
+   "size": "medium",
+   "set": "kitchen",
+   "key": 14,
+   "note": "Mo at the island, head thrown back mid-laugh, frozen; Pip beside him"
+  },
+  {
+   "id": "S8",
+   "size": "medium, low angle",
+   "set": "kitchen",
+   "key": 40,
+   "note": "Pip waves a hand in front of Mo's open eyes; he doesn't blink; a frozen tear hangs in the air"
+  },
+  {
+   "id": "S9",
+   "size": "close-up",
+   "set": "kitchen",
+   "key": 30,
+   "note": "Pip, uneasy; Mo soft behind him, still, staring through him"
+  },
+  {
+   "id": "S10",
+   "size": "title, wide",
+   "set": "rooftop",
+   "key": 52,
+   "note": "the premise over the city at dusk; Pip alone on the roof"
+  },
+  {
+   "id": "S11",
+   "size": "medium, low angle",
+   "set": "rooftop",
+   "key": 18,
+   "note": "Pip turns his head: nothing moves, no one is there"
+  },
+  {
+   "id": "S12",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 30,
+   "note": "a crowd of person icons fades to grey until one orange figure is left alone"
+  },
+  {
+   "id": "S13",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 50,
+   "note": "RISK OF EARLY DEATH +29% counting up; 70 STUDIES, 3.4 MILLION PEOPLE"
+  },
+  {
+   "id": "S14",
+   "size": "extreme close-up",
+   "set": "rooftop",
+   "key": 14,
+   "note": "Pip, worried; the light starts to turn red"
+  },
+  {
+   "id": "S15",
+   "size": "wide, low angle",
+   "set": "rooftop",
+   "key": 50,
+   "note": "the city goes dark in a sweep toward him; he is the only one left"
+  }
+ ],
+ "edit": [
+  {
+   "shot": "S1",
+   "at": "f:0",
+   "look": "pause"
+  },
+  {
+   "shot": "S2",
+   "at": "teacher"
+  },
+  {
+   "shot": "S3",
+   "at": "finish"
+  },
+  {
+   "shot": "S4",
+   "at": "Pause",
+   "look": "pause"
+  },
+  {
+   "shot": "S5",
+   "at": "fist"
+  },
+  {
+   "shot": "S6",
+   "at": "stroll"
+  },
+  {
+   "shot": "S7",
+   "at": "Pause",
+   "look": "pause"
+  },
+  {
+   "shot": "S8",
+   "at": "best"
+  },
+  {
+   "shot": "S9",
+   "at": "Okay"
+  },
+  {
+   "shot": "S10",
+   "at": "What"
+  },
+  {
+   "shot": "S11",
+   "at": "One"
+  },
+  {
+   "shot": "S12",
+   "at": "being"
+  },
+  {
+   "shot": "S13",
+   "at": "twenty"
+  },
+  {
+   "shot": "S14",
+   "at": "That's"
+  },
+  {
+   "shot": "S15",
+   "at": "Pause"
+  }
+ ],
+ "fx": [
+  {
+   "at": "S1+16",
+   "kind": "flash",
+   "color": "#DDF2FF",
+   "o": 0.45
+  },
+  {
+   "at": "S4+19",
+   "kind": "flash",
+   "color": "#DDF2FF",
+   "o": 0.45
+  },
+  {
+   "at": "S7+19",
+   "kind": "flash",
+   "color": "#DDF2FF",
+   "o": 0.45
+  },
+  {
+   "at": "S10",
+   "kind": "flash",
+   "color": "#FFF3DC"
+  },
+  {
+   "at": "S15+54",
+   "kind": "flash",
+   "color": "#FF3344",
+   "o": 0.6
+  },
+  {
+   "at": "S15+54",
+   "kind": "shake",
+   "len": 10,
+   "amp": 10
+  }
+ ],
+ "sound": {
+  "clips": {
+   "pause_freeze": [
+    "a sci-fi time stop effect, a quick rising whoosh that snaps into a soft glassy chime and then sudden stillness, short",
+    1.2
+   ],
+   "chalk_scrape": [
+    "chalk tapping and scratching on a blackboard, short",
+    0.6
+   ],
+   "pencil_scribble": [
+    "a pencil scribbling fast on paper, close up",
+    0.9
+   ],
+   "fist_whoosh": [
+    "a fast punch whoosh through the air, short",
+    0.5
+   ],
+   "friend_laugh": [
+    "a young man laughing out loud, cheerful, short",
+    1.0
+   ],
+   "class_murmur": [
+    "a quiet classroom murmur, kids whispering, chairs shuffling",
+    2.0
+   ],
+   "room_tone": [
+    "quiet indoor room tone in the evening, faint distant city hum, no voices",
+    12.5
+   ],
+   "roof_wind": [
+    "a gentle evening breeze on a city rooftop, distant traffic",
+    7.0
+   ],
+   "music": [
+    "playful quirky cartoon background music, pizzicato strings, glockenspiel and soft bass, light and curious, 110 bpm, no vocals",
+    17.0
+   ],
+   "sparkle": [
+    "a short bright magical sparkle twinkle, cartoon",
+    0.8
+   ],
+   "pop": [
+    "a cartoon speech bubble pop, short and bright",
+    0.5
+   ],
+   "ding": [
+    "a correct answer ding, bright bell chime",
+    0.8
+   ],
+   "step": [
+    "a single sneaker footstep on a wooden stair, close",
+    0.5
+   ],
+   "fall_whoosh": [
+    "a small object falling fast through the air, short soft whoosh",
+    0.6
+   ],
+   "gulp": [
+    "a nervous cartoon gulp, short",
+    0.5
+   ],
+   "title_boom": [
+    "a cinematic whoosh rising into a deep boom impact",
+    1.6
+   ],
+   "drone_hit": [
+    "a dark ominous low drone hit, deep cinematic horror sting",
+    2.6
+   ],
+   "counter_tick": [
+    "a fast mechanical counter ticking up rapidly, digits rolling over, getting faster",
+    1.6
+   ],
+   "power_down": [
+    "a whole city losing power, a deep electrical power-down whine dropping in pitch into silence",
+    2.5
+   ],
+   "bulb_pop": [
+    "a small light bulb popping out, a tiny glass tink and fizz",
+    0.5
+   ]
+  },
+  "events": [
+   [
+    "S1",
+    "class_murmur",
+    0.14,
+    "onset",
+    "S1+16"
+   ],
+   [
+    "S1+1",
+    "chalk_scrape",
+    0.1
+   ],
+   [
+    "S1+17",
+    "pause_freeze",
+    0.6,
+    "peak"
+   ],
+   [
+    "S2+4",
+    "sparkle",
+    0.18
+   ],
+   [
+    "S3+2",
+    "pencil_scribble",
+    0.3
+   ],
+   [
+    "S3+21",
+    "ding",
+    0.35
+   ],
+   [
+    "S3+23",
+    "sparkle",
+    0.3
+   ],
+   [
+    "S4",
+    "room_tone",
+    0.1,
+    "onset",
+    "S4+19"
+   ],
+   [
+    "S4+19",
+    "pause_freeze",
+    0.6,
+    "peak"
+   ],
+   [
+    "S5+48",
+    "gulp",
+    0.3
+   ],
+   [
+    "S6+3",
+    "step",
+    0.2
+   ],
+   [
+    "S6+10",
+    "step",
+    0.2
+   ],
+   [
+    "S6+17",
+    "step",
+    0.2
+   ],
+   [
+    "S6+23",
+    "step",
+    0.2
+   ],
+   [
+    "S7",
+    "room_tone",
+    0.1,
+    "onset",
+    "S7+19"
+   ],
+   [
+    "S7",
+    "friend_laugh",
+    0.12,
+    "onset",
+    "S7+19"
+   ],
+   [
+    "S7+19",
+    "pause_freeze",
+    0.6,
+    "peak"
+   ],
+   [
+    "S8+8",
+    "fall_whoosh",
+    0.1,
+    "peak"
+   ],
+   [
+    "S8+20",
+    "fall_whoosh",
+    0.1,
+    "peak"
+   ],
+   [
+    "S8+34",
+    "fall_whoosh",
+    0.1,
+    "peak"
+   ],
+   [
+    "S8+10",
+    "roof_wind",
+    0.1,
+    "onset",
+    "S10"
+   ],
+   [
+    "S9+43",
+    "gulp",
+    0.2
+   ],
+   [
+    "S10",
+    "title_boom",
+    0.75,
+    "peak"
+   ],
+   [
+    "S10",
+    "roof_wind",
+    0.18,
+    "onset",
+    "S15+54"
+   ],
+   [
+    "S12+30",
+    "ding",
+    0.25
+   ],
+   [
+    "S13+14",
+    "counter_tick",
+    0.16,
+    "onset",
+    "S13+44"
+   ],
+   [
+    "S13+58",
+    "ding",
+    0.22
+   ],
+   [
+    "S15+54",
+    "drone_hit",
+    0.3
+   ],
+   [
+    "S15+60",
+    "power_down",
+    0.45
+   ]
+  ],
+  "repeats": [
+   {
+    "at": "S12+6",
+    "clip": "pop",
+    "n": 10,
+    "every": 2,
+    "gain": [
+     0.05,
+     0.12
+    ],
+    "pitch": [
+     0.6,
+     0.9
+    ],
+    "note": "the crowd fades out one by one (S12: go = (t - 6 - 1.6i) / 14)"
+   },
+   {
+    "at": "S15+68",
+    "clip": "bulb_pop",
+    "n": 8,
+    "every": 2,
+    "gain": [
+     0.14,
+     0.26
+    ],
+    "pitch": [
+     0.85,
+     1.18
+    ],
+    "note": "the string lights die (lightsOut from t 62)"
+   }
+  ],
+  "music": {
+   "clip": "music",
+   "until": "S10-2"
+  },
+  "levels": {
+   "sfx_lu": -1.0,
+   "music_lu": -10.0
+  }
+ }
+}

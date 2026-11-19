@@ -1,0 +1,313 @@
+{
+ "slug": "pause",
+ "title": "WHAT IF YOU COULD PAUSE EVERYONE BUT YOU?",
+ "fps": 30,
+ "total": 690,
+ "segments": [
+  {
+   "shot": "S1",
+   "a": 0,
+   "b": 28,
+   "t0": 0,
+   "t1": 28,
+   "line": "Pause. The",
+   "look": "pause"
+  },
+  {
+   "shot": "S2",
+   "a": 28,
+   "b": 83,
+   "t0": 0,
+   "t1": 55,
+   "line": "teacher freezes mid- word. You"
+  },
+  {
+   "shot": "S3",
+   "a": 83,
+   "b": 113,
+   "t0": 0,
+   "t1": 30,
+   "line": "finish the quiz."
+  },
+  {
+   "shot": "S4",
+   "a": 113,
+   "b": 143,
+   "t0": 0,
+   "t1": 30,
+   "line": "Pause. A",
+   "look": "pause"
+  },
+  {
+   "shot": "S5",
+   "a": 143,
+   "b": 208,
+   "t0": 0,
+   "t1": 65,
+   "line": "fist stops an inch from your face. You"
+  },
+  {
+   "shot": "S6",
+   "a": 208,
+   "b": 235,
+   "t0": 0,
+   "t1": 27,
+   "line": "stroll away."
+  },
+  {
+   "shot": "S7",
+   "a": 235,
+   "b": 264,
+   "t0": 0,
+   "t1": 29,
+   "line": "Pause. Your",
+   "look": "pause"
+  },
+  {
+   "shot": "S8",
+   "a": 264,
+   "b": 324,
+   "t0": 0,
+   "t1": 60,
+   "line": "best friend, frozen mid- laugh."
+  },
+  {
+   "shot": "S9",
+   "a": 324,
+   "b": 373,
+   "t0": 0,
+   "t1": 49,
+   "line": "Okay, that's creepy."
+  },
+  {
+   "shot": "S10",
+   "a": 373,
+   "b": 437,
+   "t0": 0,
+   "t1": 64,
+   "line": "What if you could pause everyone but you?"
+  },
+  {
+   "shot": "S11",
+   "a": 437,
+   "b": 464,
+   "t0": 0,
+   "t1": 27,
+   "line": "One catch:"
+  },
+  {
+   "shot": "S12",
+   "a": 464,
+   "b": 509,
+   "t0": 0,
+   "t1": 45,
+   "line": "being isolated is linked to"
+  },
+  {
+   "shot": "S13",
+   "a": 509,
+   "b": 578,
+   "t0": 0,
+   "t1": 69,
+   "line": "a twenty- nine percent higher risk of early death."
+  },
+  {
+   "shot": "S14",
+   "a": 578,
+   "b": 602,
+   "t0": 0,
+   "t1": 24,
+   "line": "That's real."
+  },
+  {
+   "shot": "S15",
+   "a": 602,
+   "b": 690,
+   "t0": 0,
+   "t1": 88,
+   "line": "Pause enough, and you're the only one left."
+  }
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "wide",
+   "key": 14,
+   "len": 28,
+   "first": 0,
+   "line": "Pause. The",
+   "note": "Pip at his desk, palm up; the teacher at the board mid-word; the world is about to stop"
+  },
+  {
+   "id": "S2",
+   "size": "medium, push in",
+   "key": 30,
+   "len": 55,
+   "first": 28,
+   "line": "teacher freezes mid- word. You",
+   "note": "the teacher frozen mid-word, chalk raised, chalk dust hanging in the air; Pip's dark shoulder soft in front"
+  },
+  {
+   "id": "S3",
+   "size": "macro insert, top-down",
+   "key": 24,
+   "len": 30,
+   "first": 83,
+   "line": "finish the quiz.",
+   "note": "the quiz fills itself in under a fast pencil; A+ lands"
+  },
+  {
+   "id": "S4",
+   "size": "wide",
+   "key": 16,
+   "len": 30,
+   "first": 113,
+   "line": "Pause. A",
+   "note": "a man in a suit lunges at Pip on the landing, fist out; the world stops"
+  },
+  {
+   "id": "S5",
+   "size": "extreme close-up",
+   "key": 40,
+   "len": 65,
+   "first": 143,
+   "line": "fist stops an inch from your face. You",
+   "note": "a huge frozen fist an inch from Pip's face; he looks at it, then smirks"
+  },
+  {
+   "id": "S6",
+   "size": "wide, camera follows",
+   "key": 16,
+   "len": 27,
+   "first": 208,
+   "line": "stroll away.",
+   "note": "Pip strolls away down the stairs, hands behind his head, the suit frozen mid-lunge"
+  },
+  {
+   "id": "S7",
+   "size": "medium",
+   "key": 14,
+   "len": 29,
+   "first": 235,
+   "line": "Pause. Your",
+   "note": "Mo at the island, head thrown back mid-laugh, frozen; Pip beside him"
+  },
+  {
+   "id": "S8",
+   "size": "medium, low angle",
+   "key": 40,
+   "len": 60,
+   "first": 264,
+   "line": "best friend, frozen mid- laugh.",
+   "note": "Pip waves a hand in front of Mo's open eyes; he doesn't blink; a frozen tear hangs in the air"
+  },
+  {
+   "id": "S9",
+   "size": "close-up",
+   "key": 30,
+   "len": 49,
+   "first": 324,
+   "line": "Okay, that's creepy.",
+   "note": "Pip, uneasy; Mo soft behind him, still, staring through him"
+  },
+  {
+   "id": "S10",
+   "size": "title, wide",
+   "key": 52,
+   "len": 64,
+   "first": 373,
+   "line": "What if you could pause everyone but you?",
+   "note": "the premise over the city at dusk; Pip alone on the roof"
+  },
+  {
+   "id": "S11",
+   "size": "medium, low angle",
+   "key": 18,
+   "len": 27,
+   "first": 437,
+   "line": "One catch:",
+   "note": "Pip turns his head: nothing moves, no one is there"
+  },
+  {
+   "id": "S12",
+   "size": "schematic",
+   "key": 30,
+   "len": 45,
+   "first": 464,
+   "line": "being isolated is linked to",
+   "note": "a crowd of person icons fades to grey until one orange figure is left alone"
+  },
+  {
+   "id": "S13",
+   "size": "schematic",
+   "key": 50,
+   "len": 69,
+   "first": 509,
+   "line": "a twenty- nine percent higher risk of early death.",
+   "note": "RISK OF EARLY DEATH +29% counting up; 70 STUDIES, 3.4 MILLION PEOPLE"
+  },
+  {
+   "id": "S14",
+   "size": "extreme close-up",
+   "key": 14,
+   "len": 24,
+   "first": 578,
+   "line": "That's real.",
+   "note": "Pip, worried; the light starts to turn red"
+  },
+  {
+   "id": "S15",
+   "size": "wide, low angle",
+   "key": 50,
+   "len": 88,
+   "first": 602,
+   "line": "Pause enough, and you're the only one left.",
+   "note": "the city goes dark in a sweep toward him; he is the only one left"
+  }
+ ],
+ "fx": [
+  {
+   "kind": "flash",
+   "color": "#DDF2FF",
+   "o": 0.45,
+   "f": 16
+  },
+  {
+   "kind": "flash",
+   "color": "#DDF2FF",
+   "o": 0.45,
+   "f": 132
+  },
+  {
+   "kind": "flash",
+   "color": "#DDF2FF",
+   "o": 0.45,
+   "f": 254
+  },
+  {
+   "kind": "flash",
+   "color": "#FFF3DC",
+   "f": 373
+  },
+  {
+   "kind": "flash",
+   "color": "#FF3344",
+   "o": 0.6,
+   "f": 656
+  },
+  {
+   "kind": "shake",
+   "len": 10,
+   "amp": 10,
+   "f": 656
+  }
+ ],
+ "audio": {
+  "voiceVol": 0.8,
+  "sfxVol": 0.3452,
+  "musicVol": 0.1143,
+  "voice": "pause/voice.wav",
+  "sfx": "pause/sfx.wav",
+  "music": "pause/music.wav"
+ }
+}

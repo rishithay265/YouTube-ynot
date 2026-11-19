@@ -1,0 +1,1422 @@
+{
+ "slug": "facestealer",
+ "title": "THE FAKE VIDEO CALL THAT STOLE $400 MILLION",
+ "fps": 30,
+ "total": 9184,
+ "segments": [
+  {
+   "shot": "S1",
+   "a": 0,
+   "b": 94,
+   "t0": 0,
+   "t1": 94,
+   "line": "You get a message from a friend. Quick call? You"
+  },
+  {
+   "shot": "S2",
+   "a": 94,
+   "b": 134,
+   "t0": 0,
+   "t1": 40,
+   "line": "click the link. And"
+  },
+  {
+   "shot": "S3",
+   "a": 134,
+   "b": 193,
+   "t0": 0,
+   "t1": 59,
+   "line": "there they are, waiting in the lobby."
+  },
+  {
+   "shot": "S4",
+   "a": 193,
+   "b": 246,
+   "t0": 0,
+   "t1": 53,
+   "line": "Same face. Same room."
+  },
+  {
+   "shot": "S5",
+   "a": 246,
+   "b": 338,
+   "t0": 0,
+   "t1": 92,
+   "line": "Then a message pops up. We can't hear you."
+  },
+  {
+   "shot": "S6",
+   "a": 338,
+   "b": 414,
+   "t0": 0,
+   "t1": 76,
+   "line": "Click here to fix it. You click."
+  },
+  {
+   "shot": "S7",
+   "a": 414,
+   "b": 474,
+   "t0": 0,
+   "t1": 60,
+   "line": "Because your friend was never there. That was"
+  },
+  {
+   "shot": "S8",
+   "a": 474,
+   "b": 512,
+   "t0": 0,
+   "t1": 38,
+   "line": "a recording. And"
+  },
+  {
+   "shot": "S9",
+   "a": 512,
+   "b": 573,
+   "t0": 0,
+   "t1": 61,
+   "line": "the FBI says this trick has stolen more than"
+  },
+  {
+   "shot": "S10",
+   "a": 573,
+   "b": 624,
+   "t0": 0,
+   "t1": 51,
+   "line": "four hundred million dollars."
+  },
+  {
+   "shot": "S11",
+   "a": 624,
+   "b": 670,
+   "t0": 0,
+   "t1": 46,
+   "line": "It's called FaceStealer."
+  },
+  {
+   "shot": "S12",
+   "a": 670,
+   "b": 793,
+   "t0": 0,
+   "t1": 123,
+   "line": "On November twelfth, the FBI and the Justice Department went public."
+  },
+  {
+   "shot": "S13",
+   "a": 793,
+   "b": 897,
+   "t0": 0,
+   "t1": 104,
+   "line": "They say North Korean state hackers have run this scheme for the last"
+  },
+  {
+   "shot": "S14",
+   "a": 897,
+   "b": 945,
+   "t0": 0,
+   "t1": 48,
+   "line": "eighteen months. And"
+  },
+  {
+   "shot": "S15",
+   "a": 945,
+   "b": 991,
+   "t0": 0,
+   "t1": 46,
+   "line": "it starts with a webcam."
+  },
+  {
+   "shot": "S16",
+   "a": 991,
+   "b": 1113,
+   "t0": 0,
+   "t1": 122,
+   "line": "Meet Victim A. The hackers already own their computer. They've"
+  },
+  {
+   "shot": "S17",
+   "a": 1113,
+   "b": 1206,
+   "t0": 0,
+   "t1": 93,
+   "line": "scanned it for crypto wallets and seed phrases. They've"
+  },
+  {
+   "shot": "S18",
+   "a": 1206,
+   "b": 1384,
+   "t0": 0,
+   "t1": 178,
+   "line": "locked them out of their Telegram account. And while Victim A waited for a video chat to start, the hackers"
+  },
+  {
+   "shot": "S19",
+   "a": 1384,
+   "b": 1443,
+   "t0": 0,
+   "t1": 59,
+   "line": "secretly recorded their webcam."
+  },
+  {
+   "shot": "S20",
+   "a": 1443,
+   "b": 1520,
+   "t0": 0,
+   "t1": 77,
+   "line": "Now the hackers become Victim A. They"
+  },
+  {
+   "shot": "S21",
+   "a": 1520,
+   "b": 1614,
+   "t0": 0,
+   "t1": 94,
+   "line": "message every contact, from the real account. Let's"
+  },
+  {
+   "shot": "S22",
+   "a": 1614,
+   "b": 1764,
+   "t0": 0,
+   "t1": 150,
+   "line": "catch up. Let's discuss collaboration. Let's talk about investment opportunities. And"
+  },
+  {
+   "shot": "S23",
+   "a": 1764,
+   "b": 1952,
+   "t0": 0,
+   "t1": 188,
+   "line": "because they can read the chat history, the messages to high- value targets are tailored to past conversations."
+  },
+  {
+   "shot": "S24",
+   "a": 1952,
+   "b": 2122,
+   "t0": 0,
+   "t1": 170,
+   "line": "Say yes, and a calendar invite arrives. Without a meeting link. The link only comes"
+  },
+  {
+   "shot": "S25",
+   "a": 2122,
+   "b": 2271,
+   "t0": 0,
+   "t1": 149,
+   "line": "shortly before the call, so the hackers expose their servers as little as possible. And"
+  },
+  {
+   "shot": "S26",
+   "a": 2271,
+   "b": 2436,
+   "t0": 0,
+   "t1": 165,
+   "line": "it isn't Zoom, or Teams. It's a look- alike address, registered by the hackers, that opens"
+  },
+  {
+   "shot": "S27",
+   "a": 2436,
+   "b": 2592,
+   "t0": 0,
+   "t1": 156,
+   "line": "a copycat meeting room, designed to be indistinguishable from the real thing. You click. You"
+  },
+  {
+   "shot": "S28",
+   "a": 2592,
+   "b": 2677,
+   "t0": 0,
+   "t1": 85,
+   "line": "wait in the lobby. You're admitted. And the hackers"
+  },
+  {
+   "shot": "S29",
+   "a": 2677,
+   "b": 2779,
+   "t0": 0,
+   "t1": 102,
+   "line": "press play on Victim A's stored webcam video. Often with"
+  },
+  {
+   "shot": "S30",
+   "a": 2779,
+   "b": 2869,
+   "t0": 0,
+   "t1": 90,
+   "line": "extra videos, so the room looks full of people you know."
+  },
+  {
+   "shot": "S31",
+   "a": 2869,
+   "b": 3037,
+   "t0": 0,
+   "t1": 168,
+   "line": "After a short delay, a message from your friend. They say there's an audio problem, and nobody can hear you. The"
+  },
+  {
+   "shot": "S32",
+   "a": 3037,
+   "b": 3174,
+   "t0": 0,
+   "t1": 137,
+   "line": "fake participants add pressure. It seems like only you are broken. So your friend"
+  },
+  {
+   "shot": "S33",
+   "a": 3174,
+   "b": 3365,
+   "t0": 0,
+   "t1": 191,
+   "line": "guides you through the fix. Click an update. Run a script. Or copy and paste code into your terminal."
+  },
+  {
+   "shot": "S34",
+   "a": 3365,
+   "b": 3451,
+   "t0": 0,
+   "t1": 86,
+   "line": "That's the infection. The malware installs a"
+  },
+  {
+   "shot": "S35",
+   "a": 3451,
+   "b": 3596,
+   "t0": 0,
+   "t1": 145,
+   "line": "cookie harvester, keyloggers, screen capturers, and a backdoor. And"
+  },
+  {
+   "shot": "S36",
+   "a": 3596,
+   "b": 3718,
+   "t0": 0,
+   "t1": 122,
+   "line": "the moment you clicked that first link, they'd already started recording your webcam."
+  },
+  {
+   "shot": "S37",
+   "a": 3718,
+   "b": 3945,
+   "t0": 0,
+   "t1": 227,
+   "line": "You've become the next Victim A. With every victim, and every stolen contact list, the FBI says the pool of targets grows"
+  },
+  {
+   "shot": "S38",
+   "a": 3945,
+   "b": 4016,
+   "t0": 0,
+   "t1": 71,
+   "line": "exponentially. And the hackers are"
+  },
+  {
+   "shot": "S39",
+   "a": 4016,
+   "b": 4251,
+   "t0": 0,
+   "t1": 235,
+   "line": "patient. In several cases, the theft came months, even more than a year, after the first compromise. They copied seed phrases,"
+  },
+  {
+   "shot": "S40",
+   "a": 4251,
+   "b": 4355,
+   "t0": 0,
+   "t1": 104,
+   "line": "watched the wallet balances, and waited for the money to grow."
+  },
+  {
+   "shot": "S41",
+   "a": 4355,
+   "b": 4494,
+   "t0": 0,
+   "t1": 139,
+   "line": "Here's what the FBI seized. The cloud servers behind the scheme. And more than"
+  },
+  {
+   "shot": "S42",
+   "a": 4494,
+   "b": 4580,
+   "t0": 0,
+   "t1": 86,
+   "line": "nine hundred webcam videos of real victims."
+  },
+  {
+   "shot": "S43",
+   "a": 4580,
+   "b": 4637,
+   "t0": 0,
+   "t1": 57,
+   "line": "So where's the A I? The"
+  },
+  {
+   "shot": "S44",
+   "a": 4637,
+   "b": 4762,
+   "t0": 0,
+   "t1": 125,
+   "line": "FBI says the hackers have started using what it calls super intelligence to make"
+  },
+  {
+   "shot": "S45",
+   "a": 4762,
+   "b": 4927,
+   "t0": 0,
+   "t1": 165,
+   "line": "deepfake videos of famous names in crypto, built from public photos and videos. The"
+  },
+  {
+   "shot": "S46",
+   "a": 4927,
+   "b": 5041,
+   "t0": 0,
+   "t1": 114,
+   "line": "quality only needs to be good enough to pass as a webcam. But here's"
+  },
+  {
+   "shot": "S47",
+   "a": 5041,
+   "b": 5224,
+   "t0": 0,
+   "t1": 183,
+   "line": "the twist. The FBI says the scheme still overwhelmingly relies on genuine, stolen video. They"
+  },
+  {
+   "shot": "S48",
+   "a": 5224,
+   "b": 5317,
+   "t0": 0,
+   "t1": 93,
+   "line": "didn't need a deepfake. Your face was enough. It gets"
+  },
+  {
+   "shot": "S49",
+   "a": 5317,
+   "b": 5414,
+   "t0": 0,
+   "t1": 97,
+   "line": "worse. Earlier this year, hackers used the same trick on"
+  },
+  {
+   "shot": "S50",
+   "a": 5414,
+   "b": 5515,
+   "t0": 0,
+   "t1": 101,
+   "line": "a maintainer of a major open- source JavaScript library. A"
+  },
+  {
+   "shot": "S51",
+   "a": 5515,
+   "b": 5654,
+   "t0": 0,
+   "t1": 139,
+   "line": "fake Teams call, with several participants, including someone he recognised. He"
+  },
+  {
+   "shot": "S52",
+   "a": 5654,
+   "b": 5753,
+   "t0": 0,
+   "t1": 99,
+   "line": "followed the fix. Then the hackers used his access to create"
+  },
+  {
+   "shot": "S53",
+   "a": 5753,
+   "b": 5908,
+   "t0": 0,
+   "t1": 155,
+   "line": "malicious dependencies, which would have downloaded alongside the real library. A library with"
+  },
+  {
+   "shot": "S54",
+   "a": 5908,
+   "b": 5977,
+   "t0": 0,
+   "t1": 69,
+   "line": "tens of millions of downloads a week."
+  },
+  {
+   "shot": "S55",
+   "a": 5977,
+   "b": 6064,
+   "t0": 0,
+   "t1": 87,
+   "line": "Only quick detection stopped it. The FBI"
+  },
+  {
+   "shot": "S56",
+   "a": 6064,
+   "b": 6175,
+   "t0": 0,
+   "t1": 111,
+   "line": "attributes all of this to North Korean state- sponsored hackers, known"
+  },
+  {
+   "shot": "S57",
+   "a": 6175,
+   "b": 6339,
+   "t0": 0,
+   "t1": 164,
+   "line": "as Sapphire Sleet, BlueNoroff, A P T thirty- eight, and Stardust Chollima. The"
+  },
+  {
+   "shot": "S58",
+   "a": 6339,
+   "b": 6445,
+   "t0": 0,
+   "t1": 106,
+   "line": "Justice Department says North Korea's government uses crypto theft to"
+  },
+  {
+   "shot": "S59",
+   "a": 6445,
+   "b": 6511,
+   "t0": 0,
+   "t1": 66,
+   "line": "bankroll its weapons programme. The"
+  },
+  {
+   "shot": "S60",
+   "a": 6511,
+   "b": 6651,
+   "t0": 0,
+   "t1": 140,
+   "line": "same day, the Justice Department described a separate case. On or about"
+  },
+  {
+   "shot": "S61",
+   "a": 6651,
+   "b": 6769,
+   "t0": 0,
+   "t1": 118,
+   "line": "October twenty- ninth, it says North Korean military hackers, called"
+  },
+  {
+   "shot": "S62",
+   "a": 6769,
+   "b": 6842,
+   "t0": 0,
+   "t1": 73,
+   "line": "TraderTraitor by the FBI, stole more than"
+  },
+  {
+   "shot": "S63",
+   "a": 6842,
+   "b": 6936,
+   "t0": 0,
+   "t1": 94,
+   "line": "six billion dollars from the exchange Binance. It's"
+  },
+  {
+   "shot": "S64",
+   "a": 6936,
+   "b": 7087,
+   "t0": 0,
+   "t1": 151,
+   "line": "a different attack, and the Justice Department calls it separate from FaceStealer. Authorities have"
+  },
+  {
+   "shot": "S65",
+   "a": 7087,
+   "b": 7187,
+   "t0": 0,
+   "t1": 100,
+   "line": "frozen more than two point seven billion dollars, and got"
+  },
+  {
+   "shot": "S66",
+   "a": 7187,
+   "b": 7314,
+   "t0": 0,
+   "t1": 127,
+   "line": "court approval to seize or restrain over one point two billion. So how do"
+  },
+  {
+   "shot": "S67",
+   "a": 7314,
+   "b": 7376,
+   "t0": 0,
+   "t1": 62,
+   "line": "you avoid becoming the next victim?"
+  },
+  {
+   "shot": "S68",
+   "a": 7376,
+   "b": 7521,
+   "t0": 0,
+   "t1": 145,
+   "line": "One. Join with the official app and an invite code, not a link."
+  },
+  {
+   "shot": "S69",
+   "a": 7521,
+   "b": 7663,
+   "t0": 0,
+   "t1": 142,
+   "line": "Two. Keep your webcam off until you can see and hear the person who invited you."
+  },
+  {
+   "shot": "S70",
+   "a": 7663,
+   "b": 7797,
+   "t0": 0,
+   "t1": 134,
+   "line": "Three. Never run a script, or paste code, to fix a meeting."
+  },
+  {
+   "shot": "S71",
+   "a": 7797,
+   "b": 7927,
+   "t0": 0,
+   "t1": 130,
+   "line": "Four. Confirm the call on a different channel from the one they used. And"
+  },
+  {
+   "shot": "S72",
+   "a": 7927,
+   "b": 8097,
+   "t0": 0,
+   "t1": 170,
+   "line": "five. Turn on multi- factor authentication for Telegram, Slack and WhatsApp, and"
+  },
+  {
+   "shot": "S73",
+   "a": 8097,
+   "b": 8272,
+   "t0": 0,
+   "t1": 175,
+   "line": "keep large crypto balances on a separate hardware ledger, with no recovery phrases on your devices."
+  },
+  {
+   "shot": "S74",
+   "a": 8272,
+   "b": 8402,
+   "t0": 0,
+   "t1": 130,
+   "line": "If you think you've been hit, move your funds to a new wallet, on a clean device."
+  },
+  {
+   "shot": "S75",
+   "a": 8402,
+   "b": 8500,
+   "t0": 0,
+   "t1": 98,
+   "line": "Warn your contacts, because they're the next targets. And"
+  },
+  {
+   "shot": "S76",
+   "a": 8500,
+   "b": 8640,
+   "t0": 0,
+   "t1": 140,
+   "line": "report it at I C three dot gov, with the keyword FaceStealer. Here's what"
+  },
+  {
+   "shot": "S77",
+   "a": 8640,
+   "b": 8760,
+   "t0": 0,
+   "t1": 120,
+   "line": "to remember. A familiar face on a screen is no longer proof."
+  },
+  {
+   "shot": "S78",
+   "a": 8760,
+   "b": 8929,
+   "t0": 0,
+   "t1": 169,
+   "line": "Before you click join, ask yourself: is this person really here? If this helped,"
+  },
+  {
+   "shot": "S79",
+   "a": 8929,
+   "b": 9051,
+   "t0": 0,
+   "t1": 122,
+   "line": "subscribe, and send it to someone in crypto or open source."
+  },
+  {
+   "shot": "S80",
+   "a": 9051,
+   "b": 9184,
+   "t0": 0,
+   "t1": 133,
+   "line": "Because the next call might not be a friend."
+  }
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "screen",
+   "key": 70,
+   "len": 94,
+   "first": 0,
+   "line": "You get a message from a friend. Quick call? You",
+   "note": "a friend messages: quick call? with a link"
+  },
+  {
+   "id": "S2",
+   "size": "screen",
+   "key": 30,
+   "len": 40,
+   "first": 94,
+   "line": "click the link. And",
+   "note": "close on the link, cursor clicks"
+  },
+  {
+   "id": "S3",
+   "size": "screen",
+   "key": 30,
+   "len": 59,
+   "first": 134,
+   "line": "there they are, waiting in the lobby.",
+   "note": "the lobby: the friend waits, same face"
+  },
+  {
+   "id": "S4",
+   "size": "screen",
+   "key": 30,
+   "len": 53,
+   "first": 193,
+   "line": "Same face. Same room.",
+   "note": "push in on the familiar face"
+  },
+  {
+   "id": "S5",
+   "size": "screen",
+   "key": 30,
+   "len": 92,
+   "first": 246,
+   "line": "Then a message pops up. We can't hear you.",
+   "note": "a red toast: We cant hear you"
+  },
+  {
+   "id": "S6",
+   "size": "screen",
+   "key": 60,
+   "len": 76,
+   "first": 338,
+   "line": "Click here to fix it. You click.",
+   "note": "cursor hits Fix audio, window glitches red"
+  },
+  {
+   "id": "S7",
+   "size": "screen",
+   "key": 45,
+   "len": 60,
+   "first": 414,
+   "line": "Because your friend was never there. That was",
+   "note": "the friend is a looping recording"
+  },
+  {
+   "id": "S8",
+   "size": "screen",
+   "key": 30,
+   "len": 38,
+   "first": 474,
+   "line": "a recording. And",
+   "note": "film strip of stolen footage"
+  },
+  {
+   "id": "S9",
+   "size": "screen",
+   "key": 50,
+   "len": 61,
+   "first": 512,
+   "line": "the FBI says this trick has stolen more than",
+   "note": "the FBI FLASH, page 1"
+  },
+  {
+   "id": "S10",
+   "size": "screen",
+   "key": 60,
+   "len": 51,
+   "first": 573,
+   "line": "four hundred million dollars.",
+   "note": "$400M+ counter"
+  },
+  {
+   "id": "S11",
+   "size": "screen",
+   "key": 40,
+   "len": 46,
+   "first": 624,
+   "line": "It's called FaceStealer.",
+   "note": "title card FACESTEALER"
+  },
+  {
+   "id": "S12",
+   "size": "screen",
+   "key": 50,
+   "len": 123,
+   "first": 670,
+   "line": "On November twelfth, the FBI and the Justice Department went public.",
+   "note": "DOJ release, date and headline"
+  },
+  {
+   "id": "S13",
+   "size": "screen",
+   "key": 50,
+   "len": 104,
+   "first": 793,
+   "line": "They say North Korean state hackers have run this scheme for the last",
+   "note": "subtitle: FaceStealer"
+  },
+  {
+   "id": "S14",
+   "size": "screen",
+   "key": 60,
+   "len": 48,
+   "first": 897,
+   "line": "eighteen months. And",
+   "note": "18 months ticking"
+  },
+  {
+   "id": "S15",
+   "size": "screen",
+   "key": 50,
+   "len": 46,
+   "first": 945,
+   "line": "it starts with a webcam.",
+   "note": "webcam lens lights red"
+  },
+  {
+   "id": "S16",
+   "size": "screen",
+   "key": 40,
+   "len": 122,
+   "first": 991,
+   "line": "Meet Victim A. The hackers already own their computer. They've",
+   "note": "Victim A at a laptop, stage 1"
+  },
+  {
+   "id": "S17",
+   "size": "screen",
+   "key": 60,
+   "len": 93,
+   "first": 1113,
+   "line": "scanned it for crypto wallets and seed phrases. They've",
+   "note": "scan for wallets and seed phrases"
+  },
+  {
+   "id": "S18",
+   "size": "screen",
+   "key": 40,
+   "len": 178,
+   "first": 1206,
+   "line": "locked them out of their Telegram account. And while Victim A waited for a video chat to start, the hackers",
+   "note": "locked out of telegram-style chat"
+  },
+  {
+   "id": "S19",
+   "size": "screen",
+   "key": 40,
+   "len": 59,
+   "first": 1384,
+   "line": "secretly recorded their webcam.",
+   "note": "recorded while waiting"
+  },
+  {
+   "id": "S20",
+   "size": "screen",
+   "key": 50,
+   "len": 77,
+   "first": 1443,
+   "line": "Now the hackers become Victim A. They",
+   "note": "hacker masks as Victim A"
+  },
+  {
+   "id": "S21",
+   "size": "screen",
+   "key": 60,
+   "len": 94,
+   "first": 1520,
+   "line": "message every contact, from the real account. Let's",
+   "note": "messages to every contact"
+  },
+  {
+   "id": "S22",
+   "size": "screen",
+   "key": 80,
+   "len": 150,
+   "first": 1614,
+   "line": "catch up. Let's discuss collaboration. Let's talk about investment opportunities. And",
+   "note": "the three pretexts"
+  },
+  {
+   "id": "S23",
+   "size": "screen",
+   "key": 70,
+   "len": 188,
+   "first": 1764,
+   "line": "because they can read the chat history, the messages to high- value targets are tailored to past conversations.",
+   "note": "chat history to a tailored message"
+  },
+  {
+   "id": "S24",
+   "size": "screen",
+   "key": 50,
+   "len": 170,
+   "first": 1952,
+   "line": "Say yes, and a calendar invite arrives. Without a meeting link. The link only comes",
+   "note": "calendar invite with no link"
+  },
+  {
+   "id": "S25",
+   "size": "screen",
+   "key": 60,
+   "len": 149,
+   "first": 2122,
+   "line": "shortly before the call, so the hackers expose their servers as little as possible. And",
+   "note": "link arrives just before the call"
+  },
+  {
+   "id": "S26",
+   "size": "screen",
+   "key": 70,
+   "len": 165,
+   "first": 2271,
+   "line": "it isn't Zoom, or Teams. It's a look- alike address, registered by the hackers, that opens",
+   "note": "the FBI lists typo-squatted domains"
+  },
+  {
+   "id": "S27",
+   "size": "screen",
+   "key": 60,
+   "len": 156,
+   "first": 2436,
+   "line": "a copycat meeting room, designed to be indistinguishable from the real thing. You click. You",
+   "note": "two identical meeting rooms"
+  },
+  {
+   "id": "S28",
+   "size": "screen",
+   "key": 60,
+   "len": 85,
+   "first": 2592,
+   "line": "wait in the lobby. You're admitted. And the hackers",
+   "note": "lobby then admitted"
+  },
+  {
+   "id": "S29",
+   "size": "screen",
+   "key": 40,
+   "len": 102,
+   "first": 2677,
+   "line": "press play on Victim A's stored webcam video. Often with",
+   "note": "press play on stored video"
+  },
+  {
+   "id": "S30",
+   "size": "screen",
+   "key": 70,
+   "len": 90,
+   "first": 2779,
+   "line": "extra videos, so the room looks full of people you know.",
+   "note": "room fills with recordings"
+  },
+  {
+   "id": "S31",
+   "size": "screen",
+   "key": 50,
+   "len": 168,
+   "first": 2869,
+   "line": "After a short delay, a message from your friend. They say there's an audio problem, and nobody can hear you. The",
+   "note": "message from the friend"
+  },
+  {
+   "id": "S32",
+   "size": "screen",
+   "key": 60,
+   "len": 137,
+   "first": 3037,
+   "line": "fake participants add pressure. It seems like only you are broken. So your friend",
+   "note": "fake participants add pressure"
+  },
+  {
+   "id": "S33",
+   "size": "screen",
+   "key": 80,
+   "len": 191,
+   "first": 3174,
+   "line": "guides you through the fix. Click an update. Run a script. Or copy and paste code into your terminal.",
+   "note": "three fix steps"
+  },
+  {
+   "id": "S34",
+   "size": "screen",
+   "key": 70,
+   "len": 86,
+   "first": 3365,
+   "line": "That's the infection. The malware installs a",
+   "note": "terminal infection, command blurred"
+  },
+  {
+   "id": "S35",
+   "size": "screen",
+   "key": 90,
+   "len": 145,
+   "first": 3451,
+   "line": "cookie harvester, keyloggers, screen capturers, and a backdoor. And",
+   "note": "four malware tools"
+  },
+  {
+   "id": "S36",
+   "size": "screen",
+   "key": 40,
+   "len": 122,
+   "first": 3596,
+   "line": "the moment you clicked that first link, they'd already started recording your webcam.",
+   "note": "recording began at first click"
+  },
+  {
+   "id": "S37",
+   "size": "screen",
+   "key": 90,
+   "len": 227,
+   "first": 3718,
+   "line": "You've become the next Victim A. With every victim, and every stolen contact list, the FBI says the pool of targets grows",
+   "note": "victim becomes next lure"
+  },
+  {
+   "id": "S38",
+   "size": "screen",
+   "key": 90,
+   "len": 71,
+   "first": 3945,
+   "line": "exponentially. And the hackers are",
+   "note": "targets grow exponentially"
+  },
+  {
+   "id": "S39",
+   "size": "screen",
+   "key": 80,
+   "len": 235,
+   "first": 4016,
+   "line": "patient. In several cases, the theft came months, even more than a year, after the first compromise. They copied seed phrases,",
+   "note": "months pass"
+  },
+  {
+   "id": "S40",
+   "size": "screen",
+   "key": 80,
+   "len": 104,
+   "first": 4251,
+   "line": "watched the wallet balances, and waited for the money to grow.",
+   "note": "balance grows, eye watches"
+  },
+  {
+   "id": "S41",
+   "size": "screen",
+   "key": 60,
+   "len": 139,
+   "first": 4355,
+   "line": "Here's what the FBI seized. The cloud servers behind the scheme. And more than",
+   "note": "servers seized"
+  },
+  {
+   "id": "S42",
+   "size": "screen",
+   "key": 60,
+   "len": 86,
+   "first": 4494,
+   "line": "nine hundred webcam videos of real victims.",
+   "note": "900+ blurred victim videos"
+  },
+  {
+   "id": "S43",
+   "size": "screen",
+   "key": 40,
+   "len": 57,
+   "first": 4580,
+   "line": "So where's the A I? The",
+   "note": "where is the AI?"
+  },
+  {
+   "id": "S44",
+   "size": "screen",
+   "key": 60,
+   "len": 125,
+   "first": 4637,
+   "line": "FBI says the hackers have started using what it calls super intelligence to make",
+   "note": "FBI: super intelligence"
+  },
+  {
+   "id": "S45",
+   "size": "screen",
+   "key": 70,
+   "len": 165,
+   "first": 4762,
+   "line": "deepfake videos of famous names in crypto, built from public photos and videos. The",
+   "note": "public photo to deepfake"
+  },
+  {
+   "id": "S46",
+   "size": "screen",
+   "key": 60,
+   "len": 114,
+   "first": 4927,
+   "line": "quality only needs to be good enough to pass as a webcam. But here's",
+   "note": "quality bar is low"
+  },
+  {
+   "id": "S47",
+   "size": "screen",
+   "key": 60,
+   "len": 183,
+   "first": 5041,
+   "line": "the twist. The FBI says the scheme still overwhelmingly relies on genuine, stolen video. They",
+   "note": "FBI: still overwhelmingly genuine video"
+  },
+  {
+   "id": "S48",
+   "size": "screen",
+   "key": 40,
+   "len": 93,
+   "first": 5224,
+   "line": "didn't need a deepfake. Your face was enough. It gets",
+   "note": "your face was enough"
+  },
+  {
+   "id": "S49",
+   "size": "screen",
+   "key": 40,
+   "len": 97,
+   "first": 5317,
+   "line": "worse. Earlier this year, hackers used the same trick on",
+   "note": "open-source library"
+  },
+  {
+   "id": "S50",
+   "size": "screen",
+   "key": 60,
+   "len": 101,
+   "first": 5414,
+   "line": "a maintainer of a major open- source JavaScript library. A",
+   "note": "one maintainer, one account"
+  },
+  {
+   "id": "S51",
+   "size": "screen",
+   "key": 60,
+   "len": 139,
+   "first": 5515,
+   "line": "fake Teams call, with several participants, including someone he recognised. He",
+   "note": "fake Teams call, several participants"
+  },
+  {
+   "id": "S52",
+   "size": "screen",
+   "key": 60,
+   "len": 99,
+   "first": 5654,
+   "line": "followed the fix. Then the hackers used his access to create",
+   "note": "he followed the fix"
+  },
+  {
+   "id": "S53",
+   "size": "screen",
+   "key": 70,
+   "len": 155,
+   "first": 5753,
+   "line": "malicious dependencies, which would have downloaded alongside the real library. A library with",
+   "note": "dependency tree turns red"
+  },
+  {
+   "id": "S54",
+   "size": "screen",
+   "key": 40,
+   "len": 69,
+   "first": 5908,
+   "line": "tens of millions of downloads a week.",
+   "note": "tens of millions per week"
+  },
+  {
+   "id": "S55",
+   "size": "screen",
+   "key": 30,
+   "len": 87,
+   "first": 5977,
+   "line": "Only quick detection stopped it. The FBI",
+   "note": "quick detection"
+  },
+  {
+   "id": "S56",
+   "size": "screen",
+   "key": 60,
+   "len": 111,
+   "first": 6064,
+   "line": "attributes all of this to North Korean state- sponsored hackers, known",
+   "note": "North Korean state hackers, named groups"
+  },
+  {
+   "id": "S57",
+   "size": "screen",
+   "key": 70,
+   "len": 164,
+   "first": 6175,
+   "line": "as Sapphire Sleet, BlueNoroff, A P T thirty- eight, and Stardust Chollima. The",
+   "note": "the group names the FBI lists"
+  },
+  {
+   "id": "S58",
+   "size": "screen",
+   "key": 50,
+   "len": 106,
+   "first": 6339,
+   "line": "Justice Department says North Korea's government uses crypto theft to",
+   "note": "DOJ quote about regime funding"
+  },
+  {
+   "id": "S59",
+   "size": "screen",
+   "key": 40,
+   "len": 66,
+   "first": 6445,
+   "line": "bankroll its weapons programme. The",
+   "note": "crypto theft bankrolls the regime"
+  },
+  {
+   "id": "S60",
+   "size": "screen",
+   "key": 50,
+   "len": 140,
+   "first": 6511,
+   "line": "same day, the Justice Department described a separate case. On or about",
+   "note": "DOJ Binance paragraph"
+  },
+  {
+   "id": "S61",
+   "size": "screen",
+   "key": 60,
+   "len": 118,
+   "first": 6651,
+   "line": "October twenty- ninth, it says North Korean military hackers, called",
+   "note": "the Binance date"
+  },
+  {
+   "id": "S62",
+   "size": "screen",
+   "key": 40,
+   "len": 73,
+   "first": 6769,
+   "line": "TraderTraitor by the FBI, stole more than",
+   "note": "TraderTraitor"
+  },
+  {
+   "id": "S63",
+   "size": "screen",
+   "key": 60,
+   "len": 94,
+   "first": 6842,
+   "line": "six billion dollars from the exchange Binance. It's",
+   "note": "$6B+ from Binance"
+  },
+  {
+   "id": "S64",
+   "size": "screen",
+   "key": 60,
+   "len": 151,
+   "first": 6936,
+   "line": "a different attack, and the Justice Department calls it separate from FaceStealer. Authorities have",
+   "note": "two different cases"
+  },
+  {
+   "id": "S65",
+   "size": "screen",
+   "key": 60,
+   "len": 100,
+   "first": 7087,
+   "line": "frozen more than two point seven billion dollars, and got",
+   "note": "2.7B frozen"
+  },
+  {
+   "id": "S66",
+   "size": "screen",
+   "key": 60,
+   "len": 127,
+   "first": 7187,
+   "line": "court approval to seize or restrain over one point two billion. So how do",
+   "note": "1.2B seized or restrained"
+  },
+  {
+   "id": "S67",
+   "size": "screen",
+   "key": 40,
+   "len": 62,
+   "first": 7314,
+   "line": "you avoid becoming the next victim?",
+   "note": "defence intro"
+  },
+  {
+   "id": "S68",
+   "size": "screen",
+   "key": 60,
+   "len": 145,
+   "first": 7376,
+   "line": "One. Join with the official app and an invite code, not a link.",
+   "note": "rec 1"
+  },
+  {
+   "id": "S69",
+   "size": "screen",
+   "key": 60,
+   "len": 142,
+   "first": 7521,
+   "line": "Two. Keep your webcam off until you can see and hear the person who invited you.",
+   "note": "rec 2"
+  },
+  {
+   "id": "S70",
+   "size": "screen",
+   "key": 60,
+   "len": 134,
+   "first": 7663,
+   "line": "Three. Never run a script, or paste code, to fix a meeting.",
+   "note": "rec 3"
+  },
+  {
+   "id": "S71",
+   "size": "screen",
+   "key": 60,
+   "len": 130,
+   "first": 7797,
+   "line": "Four. Confirm the call on a different channel from the one they used. And",
+   "note": "rec 4"
+  },
+  {
+   "id": "S72",
+   "size": "screen",
+   "key": 60,
+   "len": 170,
+   "first": 7927,
+   "line": "five. Turn on multi- factor authentication for Telegram, Slack and WhatsApp, and",
+   "note": "rec 5"
+  },
+  {
+   "id": "S73",
+   "size": "screen",
+   "key": 60,
+   "len": 175,
+   "first": 8097,
+   "line": "keep large crypto balances on a separate hardware ledger, with no recovery phrases on your devices.",
+   "note": "rec 5b"
+  },
+  {
+   "id": "S74",
+   "size": "screen",
+   "key": 60,
+   "len": 130,
+   "first": 8272,
+   "line": "If you think you've been hit, move your funds to a new wallet, on a clean device.",
+   "note": "compromised"
+  },
+  {
+   "id": "S75",
+   "size": "screen",
+   "key": 40,
+   "len": 98,
+   "first": 8402,
+   "line": "Warn your contacts, because they're the next targets. And",
+   "note": "warn contacts"
+  },
+  {
+   "id": "S76",
+   "size": "screen",
+   "key": 60,
+   "len": 140,
+   "first": 8500,
+   "line": "report it at I C three dot gov, with the keyword FaceStealer. Here's what",
+   "note": "report at ic3.gov"
+  },
+  {
+   "id": "S77",
+   "size": "screen",
+   "key": 60,
+   "len": 120,
+   "first": 8640,
+   "line": "to remember. A familiar face on a screen is no longer proof.",
+   "note": "the lesson"
+  },
+  {
+   "id": "S78",
+   "size": "screen",
+   "key": 60,
+   "len": 169,
+   "first": 8760,
+   "line": "Before you click join, ask yourself: is this person really here? If this helped,",
+   "note": "is this person really here?"
+  },
+  {
+   "id": "S79",
+   "size": "screen",
+   "key": 40,
+   "len": 122,
+   "first": 8929,
+   "line": "subscribe, and send it to someone in crypto or open source.",
+   "note": "subscribe and share"
+  },
+  {
+   "id": "S80",
+   "size": "screen",
+   "key": 40,
+   "len": 133,
+   "first": 9051,
+   "line": "Because the next call might not be a friend.",
+   "note": "the next call might not be a friend"
+  }
+ ],
+ "fx": [
+  {
+   "kind": "flash",
+   "color": "#FF2D4D",
+   "o": 0.55,
+   "f": 656
+  },
+  {
+   "kind": "shake",
+   "len": 10,
+   "amp": 14,
+   "f": 656
+  },
+  {
+   "kind": "flash",
+   "color": "#FF2D4D",
+   "o": 0.4,
+   "f": 382
+  },
+  {
+   "kind": "shake",
+   "len": 10,
+   "amp": 10,
+   "f": 382
+  },
+  {
+   "kind": "flash",
+   "color": "#FFFFFF",
+   "o": 0.35,
+   "f": 5264
+  },
+  {
+   "kind": "flash",
+   "color": "#FF2D4D",
+   "o": 0.3,
+   "f": 3945
+  },
+  {
+   "kind": "shake",
+   "len": 8,
+   "amp": 8,
+   "f": 3399
+  }
+ ],
+ "audio": {
+  "voiceVol": 0.8,
+  "sfxVol": 0.3452,
+  "musicVol": 0.0838,
+  "voice": "facestealer/voice.wav",
+  "sfx": "facestealer/sfx.wav",
+  "music": "facestealer/music.wav"
+ }
+}

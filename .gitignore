@@ -1,0 +1,11 @@
+node_modules/
+out/
+.env
+.env.*
+!.env.example
+.venv/
+.DS_Store
+**/.DS_Store
+**/.cache/
+*.log
+pentest/
