@@ -479,9 +479,18 @@ const K: Record<string, React.FC<SP>> = {
     return (
       <g>
         {stage(t, 'STAGE 5', '“Your friend” walks you through the fix')}
-        <g opacity={1 - clamp((t - at[0] + 10) / 10) * 0.6}>
-          <Tile id="st0" x={1380} y={110} w={420} h={250} face={1} t={t} talk={t < at[0]} mood="smile" label="Victim A" />
-        </g>
+        {(() => {
+          const k = easeInOut(clamp((t - at[0] + 14) / 14));
+          return (
+            <g opacity={1 - k * 0.55}>
+              <Tile id="st0" x={460 + k * 920} y={150 - k * 40} w={1000 - k * 580} h={600 - k * 350} face={1} t={t} talk={t < at[0]} mood="smile" label="Victim A" />
+              <g opacity={1 - k}>
+                <rect x={560} y={780} width={800} height={70} rx={35} fill="#1B2748" stroke={C.yel} strokeWidth={3} />
+                <T x={960} y={826} size={32} weight={600}>“don't worry, I'll walk you through it”</T>
+              </g>
+            </g>
+          );
+        })()}
         {S.map(([n, s], i) => {
           const p = backOut(clamp((t - at[i] + 4) / 12));
           return (
@@ -520,12 +529,16 @@ const K: Record<string, React.FC<SP>> = {
         {stage(t, 'THE INFECTION', 'What the FBI says gets installed')}
         {I.map(([a, b, ic], i) => {
           const p = backOut(clamp((t - at[i] + 4) / 12));
+          const on = clamp((t - at[i] + 4) / 6);
           return (
-            <g key={i} opacity={clamp((t - at[i] + 4) / 6)} transform={`translate(${210 + i * 400} ${290 + (1 - p) * 60})`}>
+            <g key={i}>
+            <rect x={210 + i * 400} y={290} width={360} height={430} rx={30} fill="none" stroke={C.line} strokeWidth={3} strokeDasharray="14 10" opacity={clamp(t / 8) * (1 - on)} />
+            <g opacity={on} transform={`translate(${210 + i * 400} ${290 + (1 - p) * 60})`}>
               <rect width={360} height={430} rx={30} fill="#16224A" stroke={C.red} strokeWidth={4} />
               <T x={180} y={200} size={140}>{ic}</T>
               <T x={180} y={320} size={38} weight={800} color={C.red}>{a}</T>
               <T x={180} y={368} size={38} weight={800} color={C.red}>{b}</T>
+            </g>
             </g>
           );
         })}
@@ -648,7 +661,7 @@ const K: Record<string, React.FC<SP>> = {
           return <rect key={i} x={110 + (i % cols) * 58} y={120 + Math.floor(i / cols) * 40} width={50} height={34} rx={5} fill={['#3A6BFF', '#E5486B', '#2FBF8A', '#8E5BFF', '#F28A2E', '#26A9E0'][Math.floor(rnd(5, i) * 6)]} opacity={on ? 0.3 + rnd(6, i) * 0.35 : 0.05} />;
         })}
         <rect x={600} y={110} width={720} height={220} rx={30} fill="#04060C" opacity={0.88} stroke={C.red} strokeWidth={5} />
-        <Num t={t} to={900} at={Math.max(0, N - 30)} dur={34} suffix="+" x={960} y={250} size={160} color={C.red} />
+        <Num t={t} to={900} at={0} dur={Math.max(24, N)} suffix="+" x={960} y={250} size={160} color={C.red} />
         <T x={960} y={306} size={32} color={C.wht} weight={600}>stolen webcam videos seized</T>
         <Evidence id={d.id} t={t} src={p.src} iw={p.iw} ih={p.ih} rects={p.rects} quote="Pursuant to a federal warrant, the FBI seized over 900 webcam videos of FaceStealer victims." emph="seized over 900 webcam videos" source="DOJ PRESS RELEASE 26-1356 · 12 NOV 2026" at={10} colX={p.colX} y0={350} ctx={1} qsize={46} />
       </g>
