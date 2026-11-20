@@ -1,0 +1,29 @@
+{
+ "voice": {
+  "provider": "elevenlabs",
+  "voice": "Ryan - American Documentary Narrator",
+  "voice_id": "GQQpeRnV5mCWTgxKhGo5",
+  "model": "eleven_v4"
+ },
+ "sections": [
+  "This is your friend, on a video call. Except they're not really there. It's a recording. And the FBI says North Korean hackers have used this trick to steal more than four hundred million dollars in crypto. Here's the twist. It's usually not an AI deepfake. It's real webcam video, secretly recorded from a previous victim. The FBI calls it FaceStealer.",
+  "It starts with someone who's already been hacked. Call them Victim A. The hackers have scanned their computer for crypto wallets, taken over their Telegram account, and while Victim A waited for a video chat to start, secretly recorded their webcam. Now the hackers become Victim A. They message Victim A's contacts from the real account. Let's catch up. Let's discuss collaboration. They can even read the chat history, so messages to high-value targets are tailored to past conversations.",
+  "Say yes, and a calendar invite arrives, with no meeting link. The link only comes shortly before the call. It looks like Zoom or Teams, but it's a look-alike address the hackers registered, leading to a copycat meeting room. You wait in the lobby. You're admitted. And the hackers press play on Victim A's recorded webcam video, often with extra videos, so the room seems full of people you know.",
+  "After a short delay, your friend sends a message. There's an audio problem. Nobody can hear you. The other participants add pressure. So your friend walks you through the fix. Click an update. Run a script. Or paste code into your terminal. That's the infection. The malware installs a cookie harvester, keyloggers, screen capturers, and a backdoor. And from the moment you clicked that first link, they were recording your webcam too. Now you're the next Victim A. With every victim, the FBI says, the pool of targets grows exponentially.",
+  "The hackers are patient. In several cases, the theft came months, even more than a year later, as they waited for wallet balances to grow. Under a federal warrant, the FBI seized more than nine hundred of these webcam videos. So where does AI fit in? The FBI says the hackers have begun using what it calls super intelligence to deepfake well-known people in crypto. But the scheme still overwhelmingly relies on genuine, stolen video. No deepfake needed. A real face was enough.",
+  "It gets worse. Earlier this year, the hackers used the same trick on the maintainer of a major open-source JavaScript library. A fake Teams call, with several participants, including someone he recognized. He followed the fix. The hackers then used his access to create malicious dependencies, for a library downloaded tens of millions of times a week. The FBI says that without quick detection, it could easily have hit victims on a very large scale. The FBI attributes FaceStealer to North Korean state-sponsored hackers, known publicly as Sapphire Sleet, BlueNoroff, and A.P.T. 38, among other names.",
+  "So how do you protect yourself? Here's what the FBI advises. Join with the official app and an invite code, not a link. Keep your webcam off until you can see and hear the person who invited you. Never run a script or paste code to fix a meeting. Confirm the call through a different channel. And secure your chat apps with multi-factor authentication. If you think you've been hit, move your crypto to a new wallet on a clean device, warn your contacts, and report it at I.C.3 dot gov, with the keyword FaceStealer.",
+  "A familiar face on a screen is no longer proof. Before you join, ask yourself: is this person really here? Subscribe for more scam breakdowns, and send this to someone who needs it. Because the next call might not be a friend."
+ ],
+ "picks": [
+  "s1_a",
+  "s2_b",
+  "s3_a",
+  "s4_b",
+  "s5_a",
+  "s6_b",
+  "s7_b",
+  "s8_a"
+ ],
+ "pick_note": "Two takes per section; the take with the lower pocketsphinx word-error-rate against the script was kept (research/facestealer/v2/wer.py)."
+}
