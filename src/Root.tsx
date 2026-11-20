@@ -4,7 +4,7 @@ import './engine/fonts';
 import { STUDIO } from './studio.config';
 import { EPISODES } from './episodes';
 import { CastSheet } from './CastSheet';
-import { FaceStealerThumb } from './episodes/facestealer/thumb';
+import { FaceStealerThumb, FaceStealerThumbUserFixed } from './episodes/facestealer/thumb';
 
 // Every episode gets two compositions: <Id> (the film) and <Id>Board (one frame per shot, at its key frame, for the
 // storyboard). Cast renders the cast sheet.
@@ -21,6 +21,7 @@ export const Root: React.FC = () => {
         </React.Fragment>
       ))}
       <Composition id="FaceStealerThumb" component={FaceStealerThumb} durationInFrames={1} width={1920} height={1080} {...common} />
+      <Composition id="FaceStealerThumbUserFixed" component={FaceStealerThumbUserFixed} durationInFrames={1} width={1672} height={941} {...common} />
       <Composition id="Cast" component={CastSheet} durationInFrames={1} width={STUDIO.width} height={STUDIO.height} {...common} />
     </>
   );

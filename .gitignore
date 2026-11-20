@@ -9,3 +9,7 @@ out/
 **/.cache/
 *.log
 pentest/
+
+# FaceStealer v2 intermediate audio (rebuilt by research/facestealer/v2/plan_v2.py + sound_v2.py)
+research/facestealer/v2/stems/
+__pycache__/

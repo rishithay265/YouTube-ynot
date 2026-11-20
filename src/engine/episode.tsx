@@ -1,4 +1,4 @@
-import { Captions, CapWord } from './captions';
+import { Captions, CapWord, CapStyle } from './captions';
 import React from 'react';
 import { AbsoluteFill, Audio, staticFile, useCurrentFrame } from 'remotion';
 import { clamp, lerp } from './anim';
@@ -18,7 +18,7 @@ export type Seg = {
   look?: string; // a named power look (rewind, freeze...) the episode defines: grade + overlay while it runs
   line?: string; // the words spoken over it (for the storyboard)
 };
-export type ShotInfo = { id: string; size: string; key: number; len: number; first: number; line?: string; note?: string };
+export type ShotInfo = { id: string; size: string; key: number; len: number; first: number; line?: string; note?: string; x?: number }; // x: dissolve frames into this shot (overrides the episode's xfade; 0 = hard cut)
 export type Fx = { f: number; kind: 'flash' | 'shake'; color?: string; o?: number; len?: number; amp?: number };
 export type Timeline = {
   slug: string;
@@ -109,9 +109,14 @@ export const ShotFrame: React.FC<{ children: React.ReactNode; w?: number; h?: nu
   </svg>
 );
 
-export type EpisodeProps = { timeline: Timeline; shots: ShotMap; looks?: Record<string, LookDef>; grain?: boolean; vignette?: boolean; bg?: string; portrait?: boolean; captions?: CapWord[]; capY?: number };
+export type EpisodeProps = {
+  timeline: Timeline; shots: ShotMap; looks?: Record<string, LookDef>; grain?: boolean; vignette?: boolean; bg?: string; portrait?: boolean;
+  captions?: CapWord[]; capY?: number; capStyle?: Partial<CapStyle>;
+  /** Opt-in dissolve, in frames, from the previous shot into each new one (0 or unset = hard cuts, as before). */
+  xfade?: number;
+};
 
-export const Episode: React.FC<EpisodeProps> = ({ timeline: tl, shots, looks = {}, grain = true, vignette = true, bg = '#0E0C1E', portrait = false, captions, capY }) => {
+export const Episode: React.FC<EpisodeProps> = ({ timeline: tl, shots, looks = {}, grain = true, vignette = true, bg = '#0E0C1E', portrait = false, captions, capY, capStyle, xfade = 0 }) => {
   const W = portrait ? 1080 : 1920;
   const H = portrait ? 1920 : 1080;
   const f = useCurrentFrame();
@@ -129,13 +134,29 @@ export const Episode: React.FC<EpisodeProps> = ({ timeline: tl, shots, looks = {
       <AbsoluteFill style={{ transform: `translate(${x + jitter}px, ${y}px) scale(${x || y ? 1.02 : 1})`, filter: def?.grade && lv > 0 ? def.grade(lv) : undefined }}>
         <ShotFrame w={W} h={H}>{Shot ? <Shot t={clockAt(seg, f)} len={info?.len ?? seg.b - seg.a} f={f} /> : null}</ShotFrame>
       </AbsoluteFill>
+      {(() => {
+        // Dissolve: for the first frames of a segment, the previous shot (its clock running on) fades out on top.
+        const xf = info?.x ?? xfade;
+        const si = tl.segments.indexOf(seg);
+        if (!xf || si <= 0 || f - seg.a >= xf) return null;
+        const prev = tl.segments[si - 1];
+        const PrevShot = shots[prev.shot];
+        const pinfo = tl.shots.find((s) => s.id === prev.shot);
+        if (!PrevShot || prev.b !== seg.a) return null;
+        const k = (f - seg.a + 1) / (xf + 1);
+        return (
+          <AbsoluteFill style={{ opacity: 1 - k * k * (3 - 2 * k), transform: `translate(${x}px, ${y}px)` }}>
+            <ShotFrame w={W} h={H}><PrevShot t={clockAt(prev, f)} len={pinfo?.len ?? prev.b - prev.a} f={f} /></ShotFrame>
+          </AbsoluteFill>
+        );
+      })()}
       <Grade f={f} grain={grain} vignette={vignette} w={W} h={H} />
       {def?.Overlay && run ? (
         <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ position: 'absolute', inset: 0, opacity: lv }}>
           <def.Overlay f={f} lv={lv} p={clamp((f - run.a) / (run.b - run.a))} n={run.n} />
         </svg>
       ) : null}
-      {captions ? <Captions words={captions} y={capY ?? (portrait ? 0.7 : 0.82)} size={portrait ? 104 : 84} /> : null}
+      {captions ? <Captions words={captions} y={capY ?? (portrait ? 0.7 : 0.82)} size={portrait ? 104 : 84} style={capStyle} /> : null}
       {flash ? <AbsoluteFill style={{ backgroundColor: flash.color, opacity: flash.o }} /> : null}
       {A.voice ? <Audio src={staticFile(A.voice)} volume={A.voiceVol ?? 1} /> : null}
       {A.sfx ? <Audio src={staticFile(A.sfx)} volume={A.sfxVol ?? 1} /> : null}

@@ -48,9 +48,11 @@ export const Chip: React.FC<{ x: number; y: number; text: string; color?: string
 };
 
 /** Simple original stick-figure face: no real person is depicted anywhere in this film. */
-export const Avatar: React.FC<{ x: number; y: number; s?: number; skin?: string; hair?: string; shirt?: string; style?: number; t?: number; talk?: boolean; mask?: boolean; worry?: number }> = ({ x, y, s = 1, skin = '#F2C6A0', hair = '#2E2018', shirt = '#3A6BFF', style = 0, t = 0, talk = false, mask = false, worry = 0 }) => {
+export type Mood = 'neutral' | 'smile' | 'worry' | 'shock' | 'bored';
+export const Avatar: React.FC<{ x: number; y: number; s?: number; skin?: string; hair?: string; shirt?: string; style?: number; t?: number; talk?: boolean; mask?: boolean; worry?: number; mood?: Mood; look?: number }> = ({ x, y, s = 1, skin = '#F2C6A0', hair = '#2E2018', shirt = '#3A6BFF', style = 0, t = 0, talk = false, mask = false, worry = 0, mood = 'neutral', look = 0 }) => {
   const blink = (t + style * 23) % 96 > 92 ? 0.12 : 1;
   const mouth = talk ? 3 + Math.abs(Math.sin(t * 0.55)) * 9 : 2 + worry * 3;
+  const ex = look * 6; // eyes glance sideways (-1 left .. 1 right)
   return (
     <g transform={`translate(${x} ${y}) scale(${s})`}>
       <path d="M-120 170 Q-120 70 0 66 Q120 70 120 170 Z" fill={shirt} />
@@ -60,9 +62,32 @@ export const Avatar: React.FC<{ x: number; y: number; s?: number; skin?: string;
       {style === 0 ? <path d="M-64 -12 Q-70 -76 0 -70 Q70 -76 64 -12 Q40 -46 0 -44 Q-40 -46 -64 -12 Z" fill={hair} /> : null}
       {style === 2 ? <path d="M-62 -20 Q-60 -66 0 -64 Q60 -66 62 -20 Q50 -34 0 -32 Q-50 -34 -62 -20 Z" fill={hair} /> : null}
       {style === 3 ? <g><path d="M-66 10 Q-80 -80 0 -78 Q80 -80 66 10 Q60 -40 0 -44 Q-60 -40 -66 10 Z" fill={hair} /><path d="M-66 10 L-70 70 L-50 60 Z M66 10 L70 70 L50 60 Z" fill={hair} /></g> : null}
-      <ellipse cx={-22} cy={2} rx={7} ry={8 * blink} fill="#1B1426" />
-      <ellipse cx={22} cy={2} rx={7} ry={8 * blink} fill="#1B1426" />
-      <path d={`M-16 ${26} Q0 ${26 + mouth} 16 ${26}`} stroke="#1B1426" strokeWidth={4} fill={talk ? '#3a1020' : 'none'} strokeLinecap="round" />
+      {mood === 'shock' ? (
+        <g>
+          <circle cx={-22 + ex} cy={2} r={9 * Math.max(0.3, blink)} fill="#fff" stroke="#1B1426" strokeWidth={3} />
+          <circle cx={22 + ex} cy={2} r={9 * Math.max(0.3, blink)} fill="#fff" stroke="#1B1426" strokeWidth={3} />
+          <circle cx={-22 + ex} cy={2} r={4} fill="#1B1426" /><circle cx={22 + ex} cy={2} r={4} fill="#1B1426" />
+        </g>
+      ) : (
+        <g>
+          <ellipse cx={-22 + ex} cy={2} rx={7} ry={(mood === 'bored' ? 4 : 8) * blink} fill="#1B1426" />
+          <ellipse cx={22 + ex} cy={2} rx={7} ry={(mood === 'bored' ? 4 : 8) * blink} fill="#1B1426" />
+        </g>
+      )}
+      {mood === 'worry' ? <path d="M-34 -22 L-12 -14 M34 -22 L12 -14" stroke="#1B1426" strokeWidth={4} strokeLinecap="round" /> : null}
+      {mood === 'shock' ? <path d="M-34 -24 Q-22 -32 -10 -24 M34 -24 Q22 -32 10 -24" stroke="#1B1426" strokeWidth={4} fill="none" strokeLinecap="round" /> : null}
+      {mood === 'bored' ? <path d="M-32 -12 L-12 -12 M32 -12 L12 -12" stroke="#1B1426" strokeWidth={4} strokeLinecap="round" /> : null}
+      {talk ? (
+        <path d={`M-16 ${26} Q0 ${26 + mouth + (mood === 'smile' ? 4 : 0)} 16 ${26}`} stroke="#1B1426" strokeWidth={4} fill="#3a1020" strokeLinecap="round" />
+      ) : mood === 'smile' ? (
+        <path d="M-20 22 Q0 40 20 22" stroke="#1B1426" strokeWidth={4} fill="none" strokeLinecap="round" />
+      ) : mood === 'worry' ? (
+        <path d="M-16 32 Q-8 24 0 30 Q8 36 16 28" stroke="#1B1426" strokeWidth={4} fill="none" strokeLinecap="round" />
+      ) : mood === 'shock' ? (
+        <ellipse cx={0} cy={32} rx={10} ry={13} fill="#3a1020" stroke="#1B1426" strokeWidth={3} />
+      ) : (
+        <path d={`M-16 ${26} Q0 ${26 + mouth} 16 ${26}`} stroke="#1B1426" strokeWidth={4} fill="none" strokeLinecap="round" />
+      )}
       {mask ? <g><rect x={-70} y={-30} width={140} height={64} rx={30} fill="#0A0A14" stroke={C.red} strokeWidth={3} /><path d="M-40 4 L-10 4 M10 4 L40 4" stroke={C.red} strokeWidth={4} /></g> : null}
     </g>
   );
@@ -77,7 +102,7 @@ export const FACES = [
   { name: 'Wei', skin: '#EBC59B', hair: '#101018', shirt: '#26A9E0', style: 1 },
 ];
 
-export const Tile: React.FC<{ x: number; y: number; w?: number; h?: number; face?: number; t: number; rec?: boolean; label?: string; glitch?: number; talk?: boolean; dim?: boolean; id: string; border?: string; mask?: boolean; room?: string; empty?: boolean; mic?: boolean }> = ({ x, y, w = 520, h = 330, face = 0, t, rec, label, glitch = 0, talk, dim, id, border, mask, room = '#26365F', empty, mic }) => {
+export const Tile: React.FC<{ x: number; y: number; w?: number; h?: number; face?: number; t: number; rec?: boolean; label?: string; glitch?: number; talk?: boolean; dim?: boolean; id: string; border?: string; mask?: boolean; room?: string; empty?: boolean; mic?: boolean; mood?: Mood; look?: number }> = ({ x, y, w = 520, h = 330, face = 0, t, rec, label, glitch = 0, talk, dim, id, border, mask, room = '#26365F', empty, mic, mood, look }) => {
   const f = FACES[face % FACES.length];
   const sc = h / 330;
   const jx = glitch > 0 ? (rnd(9, Math.floor(t / 2)) - 0.5) * 26 * glitch : 0;
@@ -96,10 +121,10 @@ export const Tile: React.FC<{ x: number; y: number; w?: number; h?: number; face
           <T x={w / 2} y={h / 2 + 14} size={44} color={C.dim} mono weight={400}>joining...</T>
         ) : (
           <g transform={`translate(${jx} 0)`}>
-            <Avatar x={w / 2} y={h * 0.5} s={sc * 1.18} skin={f.skin} hair={f.hair} shirt={f.shirt} style={f.style} t={t} talk={talk} mask={mask} />
+            <Avatar x={w / 2} y={h * 0.5} s={sc * 1.18} skin={f.skin} hair={f.hair} shirt={f.shirt} style={f.style} t={t} talk={talk} mask={mask} mood={mood} look={look} />
             {glitch > 0 ? (
               <g opacity={0.5 * glitch}>
-                <Avatar x={w / 2 + 14} y={h * 0.5} s={sc * 1.18} skin="#35E1FF" hair="#35E1FF" shirt="#35E1FF" style={f.style} t={t} />
+                <Avatar x={w / 2 + 14} y={h * 0.5} s={sc * 1.18} skin="#35E1FF" hair="#35E1FF" shirt="#35E1FF" style={f.style} t={t} mood={mood} />
               </g>
             ) : null}
           </g>
@@ -302,6 +327,101 @@ export const Corner: React.FC<{ x: number; y: number; w: number; h: number; colo
     <g stroke={color} strokeWidth={6} fill="none" strokeLinecap="round">
       <path d={`M${x} ${y + L} V${y} H${x + L}`} /><path d={`M${x + w - L} ${y} H${x + w} V${y + L}`} />
       <path d={`M${x} ${y + h - L} V${y + h} H${x + L}`} /><path d={`M${x + w - L} ${y + h} H${x + w} V${y + h - L}`} />
+    </g>
+  );
+};
+
+
+/** Greedy word wrap by an average glyph width (no DOM measuring inside SVG). */
+export const wrap = (text: string, size: number, maxW: number, k = 0.5) => {
+  const words = text.split(' ');
+  const lines: string[][] = [[]];
+  let len = 0;
+  for (const w of words) {
+    const add = (lines[lines.length - 1].length ? 1 : 0) + w.length;
+    if (len + add > maxW / (size * k) && lines[lines.length - 1].length) { lines.push([w]); len = w.length; }
+    else { lines[lines.length - 1].push(w); len += add; }
+  }
+  return lines;
+};
+
+export type Rect = { x: number; y: number; w: number; h: number };
+
+/**
+ * Readable evidence: a strip of the real page (cropped to the quoted lines, enlarged) with the exact words highlighted
+ * as they are spoken, and the same sentence set large underneath, verbatim, with its key phrase in yellow.
+ * `rects` are the quote's word boxes on the page image (found by OCR), so the highlight sits on the actual text.
+ */
+export const Evidence: React.FC<{
+  id: string; t: number; src: string; iw: number; ih: number; rects: Rect[]; quote: string; emph?: string; source: string; tag?: string;
+  at?: number; dur?: number; colX?: [number, number]; ctx?: number; qsize?: number; y0?: number; children?: React.ReactNode;
+}> = ({ id, t, src, iw, ih, rects, quote, emph, source, tag, at = 8, dur = 26, colX, ctx = 1, qsize = 58, y0, children }) => {
+  // Crop on line boundaries: the quoted lines plus `ctx` whole lines of context above and below.
+  const ys = rects.map((r) => r.y).sort((a, b) => a - b);
+  const textH = Math.min(...rects.map((r) => r.h));
+  const pitch = ys.length > 1 ? ys[1] - ys[0] : textH * 1.55;
+  const x0 = colX ? colX[0] : Math.max(0, Math.min(...rects.map((r) => r.x)) - 30);
+  const x1 = colX ? colX[1] : Math.min(iw, Math.max(...rects.map((r) => r.x + r.w)) + 30);
+  const top = Math.max(0, ys[0] - pitch * ctx - (pitch - textH) / 2);
+  const bot = Math.min(ih, ys[ys.length - 1] + textH + pitch * ctx + (pitch - textH) / 2);
+  const cw = x1 - x0, ch = bot - top;
+  const PW = 1560;
+  const sc = Math.min(PW / cw, 330 / ch);
+  const pw = cw * sc, ph = ch * sc;
+  const nq = quote ? wrap(quote, qsize, 1600, 0.47).length : 0;
+  const blockH = 70 + ph + (nq ? 60 + nq * qsize * 1.22 : 0);
+  const Y0 = y0 ?? Math.max(110, 500 - blockH / 2 - 10);
+  const px = 960 - pw / 2, py = Y0 + 70;
+  const ap = easeOut(clamp(t / 10));
+  // highlight sweeps line by line, total `dur` frames from `at`
+  const total = rects.reduce((a, r) => a + r.w, 0);
+  let acc = 0;
+  const qLines = quote ? wrap(quote, qsize, 1600, 0.47) : [];
+  const emphWords = new Set<number>();
+  if (emph) {
+    const qw = quote.split(' ');
+    const ew = emph.split(' ');
+    for (let i = 0; i + ew.length <= qw.length; i++) {
+      if (ew.every((w, j) => qw[i + j].replace(/[^\w$']/g, '').toLowerCase() === w.replace(/[^\w$']/g, '').toLowerCase())) { ew.forEach((_, j) => emphWords.add(i + j)); break; }
+    }
+  }
+  const qy = py + ph + 60 + qsize * 0.9;
+  let wi = 0;
+  return (
+    <g>
+      <defs><clipPath id={`evc-${id}`}><rect x={px} y={py} width={pw} height={ph} rx={14} /></clipPath></defs>
+      {tag ? <Chip x={px} y={Y0 + 20} text={tag} color={C.yel} size={24} op={ap} /> : null}
+      <T x={px + pw} y={Y0 + 22} size={24} anchor="end" mono weight={400} color={C.dim} op={ap}>{source}</T>
+      <g opacity={ap} transform={`translate(0 ${(1 - ap) * 16})`}>
+        <rect x={px - 8} y={py - 8} width={pw + 16} height={ph + 16} rx={18} fill="#000" opacity={0.35} />
+        <g clipPath={`url(#evc-${id})`}>
+          <rect x={px} y={py} width={pw} height={ph} fill="#fff" />
+          <g transform={`translate(${px} ${py}) scale(${sc}) translate(${-x0} ${-top})`}>
+            <image href={staticFile(src)} x={0} y={0} width={iw} height={ih} />
+            {rects.map((r, i) => {
+              const a0 = acc / total; acc += r.w; const a1 = acc / total;
+              const p = clamp((clamp((t - at) / dur) - a0) / Math.max(1e-6, a1 - a0));
+              if (p <= 0) return null;
+              return <rect key={i} x={r.x - 4} y={r.y - 5} width={(r.w + 8) * p} height={r.h + 10} fill="#FFE14A" opacity={0.5} style={{ mixBlendMode: 'multiply' }} />;
+            })}
+          </g>
+        </g>
+        <rect x={px} y={py} width={pw} height={ph} rx={14} fill="none" stroke={C.line} strokeWidth={3} />
+      </g>
+      {qLines.map((ln, li) => {
+        const p = easeOut(clamp((t - at - 6 - li * 5) / 12));
+        return (
+          <text key={li} x={960} y={qy + li * qsize * 1.22} fontSize={qsize} fontFamily={FONT.title} fontWeight={700} textAnchor="middle" opacity={p} transform={`translate(0 ${(1 - p) * 14})`}>
+            {ln.map((w, k) => {
+              const idx = wi++;
+              const on = emphWords.has(idx);
+              const hp = clamp((t - at - 10) / 10);
+              return <tspan key={k} fill={on ? (hp > 0 ? C.yel : C.wht) : C.wht}>{(li === 0 && k === 0 ? '“' : '') + w + (li === qLines.length - 1 && k === ln.length - 1 ? '”' : '') + ' '}</tspan>;
+            })}
+          </text>
+        );
+      })}
+      {children}
     </g>
   );
 };
