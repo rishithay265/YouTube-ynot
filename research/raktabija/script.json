@@ -1,0 +1,505 @@
+{
+ "slug": "raktabija",
+ "id": "Raktabija",
+ "title": "मैं रक्तबीज नहीं था",
+ "title_en": "I Was Not Raktabija",
+ "pause_mark": "~",
+ "note": "Lines are the approved script (doc \"मैं रक्तबीज नहीं था\"), with the approved cuts: lower-third disclaimer, Scene 2 compressed (no clan numbers, Matrikas named only), target 13–14 min. \"~\" marks a held pause inside a line.",
+ "sections": [
+  {
+   "id": "s1",
+   "title": "जन्म / Birth",
+   "anchor": "DM 8.41–8.43",
+   "lines": [
+    {
+     "hi": "पहले अँधेरा था।",
+     "en": "First, there was darkness."
+    },
+    {
+     "hi": "फिर… ज़मीन ने मुझे ऊपर धकेला।",
+     "en": "Then… the earth pushed me up."
+    },
+    {
+     "hi": "हाथ में गदा। होंठों पर गर्जना। सीने में वही आग।",
+     "en": "A mace in my hand. A roar on my lips. The same fire in my chest."
+    },
+    {
+     "hi": "मुझे सब याद था — शुंभ का आदेश, कूच करती सेनाएँ, ऐन्द्री का वज्र।",
+     "en": "I remembered everything — Shumbha's command, the marching armies, Aindri's thunderbolt."
+    },
+    {
+     "hi": "मैं जानता था कि मैं कौन हूँ।",
+     "en": "I knew who I was."
+    },
+    {
+     "hi": "मैं रक्तबीज हूँ।",
+     "en": "I am Raktabija."
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "झूठा यक़ीन / False certainty",
+   "anchor": "DM 8.2–8.43",
+   "lines": [
+    {
+     "hi": "मुझे याद है — चंड और मुंड गिर चुके थे, और शुंभ ने हर कुल को युद्ध में उतार दिया था।",
+     "en": "I remember — Chanda and Munda had fallen, and Shumbha sent every clan into battle."
+    },
+    {
+     "hi": "देवी ने धनुष की डोरी खींची, और धरती से आकाश तक उसकी टंकार भर गई।",
+     "en": "The Devi drew her bowstring, and its twang filled earth and sky."
+    },
+    {
+     "hi": "सिंह गरजा। घंटा बजा।",
+     "en": "The lion roared. The bell rang."
+    },
+    {
+     "hi": "और काली की गर्जना ने सारी आवाज़ें निगल लीं।",
+     "en": "And Kali's roar swallowed every other sound."
+    },
+    {
+     "hi": "फिर वे आईं।",
+     "en": "Then they came."
+    },
+    {
+     "hi": "ब्रह्माणी। माहेश्वरी। कौमारी। वैष्णवी।",
+     "en": "Brahmani. Maheshvari. Kaumari. Vaishnavi."
+    },
+    {
+     "hi": "वाराही। नारसिंही। ऐन्द्री।",
+     "en": "Varahi. Narasimhi. Aindri."
+    },
+    {
+     "hi": "और देवी की अपनी शक्ति — शिवदूती।",
+     "en": "And the Devi's own power — Shivaduti."
+    },
+    {
+     "hi": "हमारी सेनाएँ उन पर टूट पड़ीं — और बिखर गईं।",
+     "en": "Our armies fell on them — and broke."
+    },
+    {
+     "hi": "तब मैं आगे बढ़ा।~रक्तबीज आगे बढ़ा।",
+     "en": "That's when I stepped forward. Raktabija stepped forward."
+    },
+    {
+     "hi": "क्योंकि मेरे पास वह था, जो किसी के पास नहीं — मेरा ख़ून जहाँ गिरता है, वहाँ से मैं फिर उठता हूँ।",
+     "en": "Because I had what no one else had — wherever my blood falls, I rise again."
+    },
+    {
+     "hi": "ऐन्द्री का वज्र मेरे माथे पर पड़ा। ख़ून बहा… और मैं उठा। यहीं, इसी मिट्टी से।",
+     "en": "Aindri's thunderbolt struck my brow. Blood flowed… and I rose. Here, from this very earth."
+    },
+    {
+     "hi": "मारो मुझे। जितना मारोगी, मैं उतना ही ज़्यादा होता जाऊँगा।",
+     "en": "Strike me. The more you strike, the more of me there will be."
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "पहचान / Recognition",
+   "anchor": "DM 8.43–8.46",
+   "lines": [
+    {
+     "hi": "तभी मैंने उसे देखा।",
+     "en": "That's when I saw him."
+    },
+    {
+     "hi": "मेरे बग़ल में — मेरा चेहरा। मेरी गदा। मेरी ही हँसी, जो अभी-अभी मेरे होंठों से निकली थी।",
+     "en": "Beside me — my face. My mace. My own laugh, the one that had just left my lips."
+    },
+    {
+     "hi": "उसने भी मुझे देखा। और उसकी आँखों में वही सवाल था —",
+     "en": "He saw me too. And in his eyes was the same question —"
+    },
+    {
+     "hi": "“तुम कौन हो?”",
+     "en": "\"Who are you?\""
+    },
+    {
+     "hi": "फिर एक और। फिर दस। फिर मैंने गिनना छोड़ दिया।",
+     "en": "Then another. Then ten. Then I stopped counting."
+    },
+    {
+     "hi": "और तब — भीड़ के बीच, सबसे आगे — मैंने उसे देखा। रक्तबीज। माथे पर वज्र का घाव, जिससे अब भी ख़ून बह रहा था।",
+     "en": "And then — through the crowd, at the very front — I saw him. Raktabija. The thunderbolt's wound on his brow, still bleeding."
+    },
+    {
+     "hi": "मैंने अपना माथा छुआ।~कोई घाव नहीं था।",
+     "en": "I touched my brow. There was no wound."
+    },
+    {
+     "hi": "वह घाव मेरा था। मुझे उसका दर्द याद था। पर वह मेरे शरीर पर नहीं था।",
+     "en": "That wound was mine. I remembered its pain. But it was not on my body."
+    },
+    {
+     "hi": "क्योंकि मैं उसका शरीर नहीं था।~मैं उसका ख़ून था।",
+     "en": "Because I was not his body. I was his blood."
+    },
+    {
+     "hi": "उसकी यादें, उसका ग़ुस्सा, उसका अहंकार — सब मुझमें था। पर मैं पल भर पहले पैदा हुआ था।",
+     "en": "His memories, his anger, his pride — all of it was in me. But I had been born a moment ago."
+    },
+    {
+     "hi": "मैं रक्तबीज नहीं था।",
+     "en": "I was not Raktabija."
+    },
+    {
+     "hi": "मैं रक्तबीज की एक बूँद था।",
+     "en": "I was one drop of Raktabija."
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "बढ़ती सेना / The multiplying army",
+   "anchor": "DM 8.45–8.49, ~8.52",
+   "lines": [
+    {
+     "hi": "फिर वैष्णवी का चक्र आया।",
+     "en": "Then came Vaishnavi's discus."
+    },
+    {
+     "hi": "उसका घाव गहरा था। और जो ख़ून बहा, उससे… हम हज़ारों में उठे।",
+     "en": "Its wound was deep. And from the blood that flowed… we rose in thousands."
+    },
+    {
+     "hi": "ऐन्द्री की गदा। कौमारी की शक्ति। वाराही का खड्ग। माहेश्वरी का त्रिशूल।",
+     "en": "Aindri's mace. Kaumari's spear. Varahi's sword. Maheshvari's trident."
+    },
+    {
+     "hi": "हर वार के साथ ज़मीन से और रक्तबीज उठते गए… जब तक सारा संसार हमसे भर नहीं गया।",
+     "en": "With every blow, more Raktabijas rose from the earth… until the whole world was full of us."
+    },
+    {
+     "hi": "हर जन्म को मैं महसूस करता था — रगों में एक धीमी गूँज की तरह। जैसे कोई मेरा नाम बार-बार पुकार रहा हो…",
+     "en": "I felt every birth — a low hum in my veins. As if someone were calling my name, again and again…"
+    },
+    {
+     "hi": "…और हर बार वह नाम थोड़ा कम मेरा होता जाता।",
+     "en": "…and each time, the name became a little less mine."
+    },
+    {
+     "hi": "हज़ार चेहरे। एक जैसे। एक ही याद, एक ही ग़ुस्सा, एक ही “मैं”।",
+     "en": "A thousand faces. Identical. One memory, one rage, one \"I\"."
+    },
+    {
+     "hi": "तो फिर मैं कौन?",
+     "en": "So who am I?"
+    },
+    {
+     "hi": "बस एक चीज़ मुझे बाक़ियों से अलग करती थी — मेरी छाती पर उस मिट्टी का निशान, जिसे धकेलकर मैं उठा था।",
+     "en": "Only one thing set me apart — the mark on my chest of the earth I had pushed through to rise."
+    },
+    {
+     "hi": "जैसे धरती ने मुझे छू लिया हो… ताकि कोई तो पहचाने।",
+     "en": "As if the earth had touched me… so that someone, at least, would know me."
+    },
+    {
+     "hi": "ऊपर, देवताओं के चेहरे उतर गए थे। मैंने उनका डर देखा।",
+     "en": "Above, the gods' faces had fallen. I saw their fear."
+    },
+    {
+     "hi": "उस पल, हमें लगा हम जीत गए।",
+     "en": "In that moment, we thought we had won."
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "गिरने के लिए जन्मा / Born to fall",
+   "anchor": "DM 8.45; ch. 5",
+   "lines": [
+    {
+     "hi": "हम सब एक साथ दौड़े — वही गर्जना, वही गदा, वही क़दम।",
+     "en": "We all ran together — the same roar, the same mace, the same stride."
+    },
+    {
+     "hi": "और मेरे बग़ल में वही था — पहला, जिसे मैंने देखा था। जिसकी आँखों में मेरा सवाल था।",
+     "en": "And beside me was the same one — the first one I had seen. The one with my question in his eyes."
+    },
+    {
+     "hi": "कौमारी की शक्ति चमकी… और वह रुक गया।",
+     "en": "Kaumari's spear flashed… and he stopped."
+    },
+    {
+     "hi": "वह गिरा — और मिट्टी में मिलता गया, जैसे कभी था ही नहीं।",
+     "en": "He fell — and kept turning into dust, as if he had never been."
+    },
+    {
+     "hi": "मैंने उसे थामा। उसका भार… मेरे ही जितना था।",
+     "en": "I held him. His weight… was exactly mine."
+    },
+    {
+     "hi": "उसने कुछ कहना चाहा। शायद वही — “मैं रक्तबीज हूँ।” पर शब्द पूरे नहीं हुए।",
+     "en": "He tried to say something. Perhaps the same thing — \"I am Raktabija.\" But the words never finished."
+    },
+    {
+     "hi": "और तब मुझे समझ आया कि हम यहाँ क्यों थे।",
+     "en": "And then I understood why we were here."
+    },
+    {
+     "hi": "हम योद्धा नहीं थे। हम दीवार थे।",
+     "en": "We were not warriors. We were a wall."
+    },
+    {
+     "hi": "हर बूँद एक ढाल। और हर ढाल इसलिए कि टूटे — ताकि वह, जो सबसे आगे खड़ा है, खड़ा रह सके।",
+     "en": "Every drop a shield. And every shield made to break — so that he, standing at the front, could stay standing."
+    },
+    {
+     "hi": "मैं इसलिए पैदा हुआ था कि गिर सकूँ।~ताकि कोई और उठ सके।",
+     "en": "I was born so that I could fall. So that another could rise."
+    },
+    {
+     "hi": "और सबसे अजीब बात? यह जानकर भी… मेरे हाथ ने गदा नहीं छोड़ी।",
+     "en": "And the strangest part? Even knowing this… my hand did not let go of the mace."
+    },
+    {
+     "hi": "क्योंकि मैं उसी अहंकार से बना था। उसी से, जिसने इंद्र का स्वर्ग छीना था, देवताओं के यज्ञ-भाग छीने थे।",
+     "en": "Because I was made of that same pride. The pride that had seized Indra's heaven, and seized the gods' share of the sacrifice."
+    },
+    {
+     "hi": "मैं निर्दोष नहीं था।~मैं बस नया था।",
+     "en": "I was not innocent. I was only new."
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "आदेश / The command",
+   "anchor": "DM ~8.52–8.56",
+   "lines": [
+    {
+     "hi": "फिर सब कुछ धीमा हो गया।",
+     "en": "Then everything slowed."
+    },
+    {
+     "hi": "देवताओं को उदास देखकर चंडिका ने काली से कुछ कहा। मैं बहुत दूर था। पर वह आवाज़ हवा से नहीं, ख़ून से होकर आई — जैसे मेरे भीतर गूँजी हो।",
+     "en": "Seeing the gods in despair, Chandika said something to Kali. I was far away. But the voice came not through the air — it came through the blood, as if it rang inside me."
+    },
+    {
+     "hi": "“चामुंडे… अपना मुख फैलाओ। मेरे शस्त्र से जो ख़ून गिरे, उसे — और उससे जन्मे असुरों को — अपने मुख में ले लो।",
+     "en": "\"Chamunda… open wide your mouth. Take in the blood my weapon spills — and the asuras born of it."
+    },
+    {
+     "hi": "रणभूमि में घूमो, और उन्हें निगल जाओ। तब यह असुर, रक्तहीन होकर, नष्ट होगा…",
+     "en": "Roam the battlefield, and devour them. Then this asura, drained of blood, will perish…"
+    },
+    {
+     "hi": "…और नए नहीं जन्मेंगे।”",
+     "en": "…and no more will be born.\""
+    },
+    {
+     "hi": "“नए नहीं जन्मेंगे।” उस एक वाक्य में मेरे जैसे हज़ारों का अंत लिखा था।",
+     "en": "\"No more will be born.\" In that one sentence was written the end of thousands like me."
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "काली का आगमन / Kali arrives",
+   "anchor": "DM ch. 7; ~8.57–8.59",
+   "lines": [
+    {
+     "hi": "वह आई।",
+     "en": "She came."
+    },
+    {
+     "hi": "पहले उसकी परछाईं आई — इतनी बड़ी कि सूरज की आख़िरी किरण भी उसमें खो गई।",
+     "en": "First her shadow came — so vast that even the sun's last ray was lost in it."
+    },
+    {
+     "hi": "चंड और मुंड को जिसने गिराया था, वही।~चामुंडा।",
+     "en": "The one who had felled Chanda and Munda. Chamunda."
+    },
+    {
+     "hi": "देवी ने अपनी शक्ति से रक्तबीज पर वार किया। ख़ून बहा — पर इस बार वह ज़मीन तक नहीं पहुँचा।",
+     "en": "The Devi struck Raktabija with her dart. Blood flowed — but this time, it never reached the ground."
+    },
+    {
+     "hi": "काली के मुख ने उसे बीच में ही ले लिया।",
+     "en": "Kali's mouth took it in mid-air."
+    },
+    {
+     "hi": "और मेरी रगों की वह गूँज —",
+     "en": "And that hum in my veins —"
+    },
+    {
+     "hi": "— थम गई।",
+     "en": "— stopped."
+    },
+    {
+     "hi": "पहली बार, ज़मीन चुप थी।",
+     "en": "For the first time, the earth was silent."
+    },
+    {
+     "hi": "कोई नया जन्म नहीं। कोई नया “मैं” नहीं।",
+     "en": "No new birth. No new \"I\"."
+    },
+    {
+     "hi": "जो उसके मुख में जन्म लेते, उन्हें वह वहीं निगल लेती।",
+     "en": "Those who were born inside her mouth, she swallowed there and then."
+    },
+    {
+     "hi": "फिर वह रणभूमि में घूमने लगी — हम सबके बीच।",
+     "en": "Then she began to roam the battlefield — among all of us."
+    },
+    {
+     "hi": "और हम — हज़ारों रक्तबीज — एक-एक करके उस अँधेरे में समाते गए।",
+     "en": "And we — thousands of Raktabijas — one by one, went into that darkness."
+    },
+    {
+     "hi": "मुझे डर लगना चाहिए था। लगा भी।",
+     "en": "I should have been afraid. I was."
+    },
+    {
+     "hi": "पर डर के नीचे कुछ और भी था, जो मैंने पहली बार महसूस किया…",
+     "en": "But under the fear was something else, something I felt for the first time…"
+    },
+    {
+     "hi": "…राहत।",
+     "en": "…relief."
+    },
+    {
+     "hi": "रक्तबीज ने आख़िरी बार गदा उठाई, और चंडिका पर वार किया।",
+     "en": "Raktabija raised his mace one last time, and struck Chandika."
+    },
+    {
+     "hi": "उन्हें ज़रा-सा भी दर्द नहीं हुआ।",
+     "en": "It caused her no pain at all."
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "स्रोत का अंत / The source falls",
+   "anchor": "DM ~8.60–8.61",
+   "lines": [
+    {
+     "hi": "शक्ति, वज्र, बाण, खड्ग, भाले — देवी के शस्त्र उस पर बरसते रहे… और चामुंडा हर बूँद पीती रही।",
+     "en": "Dart, thunderbolt, arrows, swords, spears — the Devi's weapons rained on him… and Chamunda drank every drop."
+    },
+    {
+     "hi": "और फिर, रक्तहीन होकर, रक्तबीज धरती पर गिर पड़ा।",
+     "en": "And then, drained of blood, Raktabija fell to the earth."
+    },
+    {
+     "hi": "जिसकी मैं याद था… जिसका मैं ख़ून था… वह गिर चुका था।",
+     "en": "The one I was a memory of… the one whose blood I was… had fallen."
+    },
+    {
+     "hi": "और मैं अभी भी खड़ा था।",
+     "en": "And I was still standing."
+    },
+    {
+     "hi": "पहली बार मेरे भीतर कोई और नहीं बोल रहा था। न उसका ग़ुस्सा, न उसका आदेश।",
+     "en": "For the first time, no one else was speaking inside me. Not his rage. Not his command."
+    },
+    {
+     "hi": "बस एक सवाल बचा था — जो मेरा अपना था।",
+     "en": "Only one question was left — and it was my own."
+    },
+    {
+     "hi": "अगर मैं रक्तबीज नहीं हूँ… तो इन आख़िरी पलों में, मैं क्या हूँ?",
+     "en": "If I am not Raktabija… then in these last moments, what am I?"
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "अंतिम क्षण / Final moments",
+   "anchor": "DM 4.18, 4.19, 4.22; ~8.59",
+   "lines": [
+    {
+     "hi": "वह मेरे सामने थी।",
+     "en": "She was before me."
+    },
+    {
+     "hi": "मैंने गदा नीचे रख दी।~यह मेरा पहला फ़ैसला था। शायद इकलौता भी।",
+     "en": "I set down my mace. It was my first choice. Perhaps my only one."
+    },
+    {
+     "hi": "मैंने ऊपर देखा। उसकी आँखों में वह भयंकरता थी, जिससे तीनों लोक काँपते हैं।",
+     "en": "I looked up. In her eyes was the terror the three worlds tremble before."
+    },
+    {
+     "hi": "पर उसके नीचे… कुछ और भी था।",
+     "en": "But beneath it… there was something else as well."
+    },
+    {
+     "hi": "रण में निष्ठुरता। और हृदय में करुणा।~दोनों एक साथ। एक ही आँखों में।",
+     "en": "Relentlessness in battle. And compassion in the heart. Both at once. In the same eyes."
+    },
+    {
+     "hi": "और उसने मुझे देखा।",
+     "en": "And she looked at me."
+    },
+    {
+     "hi": "रक्तबीज को नहीं। हज़ार चेहरों में से किसी एक को नहीं।",
+     "en": "Not at Raktabija. Not at one face among a thousand."
+    },
+    {
+     "hi": "मुझे।",
+     "en": "At me."
+    },
+    {
+     "hi": "जिसे कुछ पल पहले तक अपना नाम भी नहीं पता था — उसे माँ ने पहचान लिया।",
+     "en": "The one who, moments ago, did not even know his own name — the Mother knew him."
+    },
+    {
+     "hi": "मैं कुछ मिनट जिया। एक युद्ध जितना। एक बूँद जितना।",
+     "en": "I lived for a few minutes. As long as a battle. As long as a drop."
+    },
+    {
+     "hi": "कहते हैं, देवी चाहे तो असुरों को एक नज़र से भस्म कर दे। फिर भी वह शस्त्र उठाती है —",
+     "en": "They say the Devi could burn the asuras to ash with a single glance. Yet she raises her weapons —"
+    },
+    {
+     "hi": "— ताकि उनसे पवित्र होकर, उसके शत्रु भी ऊँचे लोकों तक जा सकें।",
+     "en": "— so that, purified by them, even her enemies may reach the higher worlds."
+    },
+    {
+     "hi": "मैं नहीं जानता मैं वहाँ तक पहुँचूँगा या नहीं।~पर उस पल, पहली बार… मुझे गिरने से डर नहीं लगा।",
+     "en": "I do not know if I will reach that far. But in that moment, for the first time… I was not afraid to fall."
+    },
+    {
+     "hi": "मैं रक्तबीज नहीं था।",
+     "en": "I was not Raktabija."
+    },
+    {
+     "hi": "मैं एक बूँद था, जो गिरी…",
+     "en": "I was a drop that fell…"
+    },
+    {
+     "hi": "…और जिसे माँ ने ज़मीन छूने से पहले थाम लिया।",
+     "en": "…and the Mother caught it before it touched the ground."
+    }
+   ]
+  }
+ ],
+ "cards": {
+  "lower_third": {
+   "at": "s2 start, 3 s",
+   "hi": "एक कल्पित दृष्टि · देवी माहात्म्य, अध्याय 8 पर आधारित",
+   "en": "An imagined perspective · rooted in the Devi Mahatmya, ch. 8"
+  },
+  "title_drop": {
+   "at": "after s3 last line",
+   "hi": "मैं रक्तबीज नहीं था"
+  },
+  "verse": {
+   "sa": "चित्ते कृपा समरनिष्ठुरता च दृष्टा / त्वय्येव देवि वरदे भुवनत्रयेऽपि ॥",
+   "iast": "citte kṛpā samaraniṣṭhuratā ca dṛṣṭā / tvayyeva devi varade bhuvanatraye'pi",
+   "hi": "हे वर देने वाली देवी — हृदय में करुणा और युद्ध में निष्ठुरता, तीनों लोकों में केवल आपमें ही दिखती है।",
+   "en": "O boon-giving Devi: compassion in the heart and relentlessness in battle — in all three worlds, these are seen in you alone.",
+   "src": "देवी माहात्म्य 4.22 · Devi Mahatmya 4.22",
+   "note_hi": "यह स्तुति महिषासुर-वध के बाद की गई थी; इसे रक्तबीज की कथा से जोड़ना हमारी व्याख्या है।",
+   "note_en": "This hymn was sung after Mahishasura's fall; linking it to Raktabija's story is our interpretation."
+  },
+  "closing": {
+   "hi": "एक कल्पित दृष्टि, देवी माहात्म्य पर आधारित। कथावाचक हमारी कल्पना है; युद्ध की हर घटना मूल ग्रंथ से है।",
+   "en": "An imagined perspective, rooted in the Devi Mahatmya. The narrator is our invention; every battle event is from the text."
+  }
+ }
+}
