@@ -1,12 +1,14 @@
 import React from 'react';
 import { AbsoluteFill, staticFile } from 'remotion';
 import { P, F, W, H, Defs, Stars, rnd } from './world';
-import { Asura } from './cast';
+import { Asura, Mini } from './cast';
 
 // RaktabijaThumb (1920 x 1080): the brand thumbnail template's composition, drawn in code. Logo top left; the left
 // half a dark stone panel carrying the words, bright and high-contrast; the right half an eclipse over Indian temple
-// towers, framed by a carved pillar. The eclipse is Kali, felt not shown (a dark disc, gold corona, ember eyes, garland
-// glints in the film; here only the eyes, so the disc never reads as a face). One figure: the narrator, the earth-mark on his chest, looking up at her from the ledge.
+// towers. The eclipse is Kali, felt not shown (a dark disc, gold corona, ember eyes; no garland here, so the disc never
+// reads as a face). In front, the narrator: three-quarter on, the earth-mark on his chest, weight on one leg, mace
+// resting at his side, head turned up to her. Behind him, rows of identical warriors, seen from behind, all facing the
+// eclipse and fading into the haze.
 
 const Gopuram: React.FC<{ x: number; y: number; s: number; o?: number }> = ({ x, y, s, o = 1 }) => (
   <g transform={`translate(${x} ${y}) scale(${s})`} opacity={o}>
@@ -66,22 +68,26 @@ export const RaktabijaThumb: React.FC = () => {
         <Gopuram x={1560} y={806} s={0.5} o={0.85} />
         <rect x={900} y={790} width={1020} height={290} fill="#04060F" />
         <rect x={900} y={640} width={1020} height={230} fill="url(#thHaze)" />
-        {/* the ledge and the one figure */}
-        <path d="M980 880 L1920 860 L1920 1080 L940 1080 Z" fill="#05081A" />
-        <path d="M980 880 L1920 860" stroke={P.gold} strokeWidth={3} opacity={0.8} />
-        <Asura id="thumb" x={1300} y={884} s={0.9} pose="empty" mark t={0} rim={1} />
-        <circle cx={1300} cy={884 - 0.9 * 246} r={60} fill="#B07A3C" opacity={0.25} filter="url(#rkBlur8)" />
-        {/* carved pillar at the right edge */}
-        <g>
-          <rect x={1800} y={0} width={120} height={H} fill="#070B1C" />
-          {Array.from({ length: 12 }, (_, i) => (
-            <g key={i}>
-              <path d={`M1800 ${i * 92 + 20} L1920 ${i * 92 + 20}`} stroke={P.gold} strokeWidth={2} opacity={0.55} />
-              <path d={`M1818 ${i * 92 + 46} Q1860 ${i * 92 + 26} 1902 ${i * 92 + 46} Q1860 ${i * 92 + 70} 1818 ${i * 92 + 46} Z`} fill="none" stroke={P.gold} strokeWidth={1.6} opacity={0.45} />
+        {/* the plain below the ledge, and the rows of identical warriors facing her, fading with distance */}
+        <path d="M940 812 L1920 796 L1920 1080 L900 1080 Z" fill="#05081A" />
+        <path d="M940 812 L1920 796" stroke={P.gold} strokeWidth={2} opacity={0.45} />
+        {Array.from({ length: 6 }, (_, r) => {
+          const k = r / 5; // 0 = far row, 1 = nearest row
+          const y = 812 + 150 * k * k, sc = 0.13 + 0.27 * k * k, n = Math.round(15 - 7 * k);
+          return (
+            <g key={r} opacity={0.3 + 0.6 * k}>
+              {Array.from({ length: n }, (_, i) => {
+                const x = 960 + (i + 0.5 + (rnd(7, r * 31 + i) - 0.5) * 0.5) * (960 / n);
+                return Math.abs(x - 1250) < 150 * (0.5 + k) && r > 2 ? null : <Mini key={i} x={x} y={y} s={sc} back rim={0.6 + 0.4 * k} />;
+              })}
             </g>
-          ))}
-          <path d="M1800 0 L1800 1080" stroke={P.goldHi} strokeWidth={4} opacity={0.8} />
-        </g>
+          );
+        })}
+        <rect x={900} y={780} width={1020} height={120} fill="url(#thHaze)" opacity={0.7} />
+        {/* the narrator */}
+        <ellipse cx={1240} cy={997} rx={160} ry={16} fill="#000" opacity={0.5} />
+        <Asura id="thumb" x={1250} y={995} s={1.08} pose="rest" contra look={0.75} mark t={0} rim={1} />
+        <circle cx={1250 - 1.08 * 6} cy={995 - 1.08 * 246} r={70} fill="#B07A3C" opacity={0.28} filter="url(#rkBlur8)" />
         {/* the stone panel for the words */}
         <rect x={0} y={0} width={1060} height={H} fill="url(#thWall)" />
         {Array.from({ length: 9 }, (_, i) => <path key={i} d={`M0 ${120 * i + 40} L${980 + (i % 2) * 40} ${120 * i + 40}`} stroke="#121A3A" strokeWidth={2} />)}

@@ -35,14 +35,15 @@ export const Gada: React.FC<{ x: number; y: number; a: number; len?: number; rim
   );
 };
 
-export type Pose = 'stand' | 'raise' | 'strike' | 'hold' | 'lower' | 'empty';
-const ARMS: Record<Pose, { r: [number, number]; l: [number, number]; mace: number | null }> = {
+export type Pose = 'stand' | 'raise' | 'strike' | 'hold' | 'lower' | 'empty' | 'rest';
+const ARMS: Record<Pose, { r: [number, number]; l: [number, number]; mace: number | null; len?: number }> = {
   stand: { r: [-14, 8], l: [14, -6], mace: 180 }, // arm at the side, mace held upright like a standard
   raise: { r: [-160, -40], l: [30, 20], mace: 190 },
   strike: { r: [-95, -70], l: [30, 20], mace: 150 },
   hold: { r: [-55, 60], l: [55, -60], mace: null }, // both arms forward, cradling
   lower: { r: [-12, 0], l: [18, 6], mace: 10 }, // mace hanging, head to the ground
   empty: { r: [-12, 0], l: [18, 6], mace: null },
+  rest: { r: [-16, 6], l: [16, -4], mace: -10, len: 70 }, // a gada resting on its head beside the foot, hand on the short handle
 };
 
 /**
@@ -52,7 +53,11 @@ const ARMS: Record<Pose, { r: [number, number]; l: [number, number]; mace: numbe
 export const Asura: React.FC<{
   x: number; y: number; s?: number; pose?: Pose; mark?: boolean; wound?: number; rim?: number; rise?: number; dust?: number;
   id: string; flip?: boolean; dim?: number; tilt?: number; t?: number;
-}> = ({ x, y, s = 1, pose = 'stand', mark = false, wound = 0, rim = 1, rise = 1, dust = 0, id, flip = false, dim = 0, tilt = 0, t = 0 }) => {
+  /** Contrapposto: weight on the +x leg, the other knee relaxed, hips and shoulders counter-tilted. Off by default. */
+  contra?: boolean;
+  /** Head turn, -1..1 (+ = towards +x), with a slight lift. 0 by default. */
+  look?: number;
+}> = ({ x, y, s = 1, pose = 'stand', mark = false, wound = 0, rim = 1, rise = 1, dust = 0, id, flip = false, dim = 0, tilt = 0, t = 0, contra = false, look = 0 }) => {
   const A = ARMS[pose];
   const rs: [number, number] = [-78, -280], ls: [number, number] = [78, -280];
   const relb = at(rs[0], rs[1], 88, A.r[0]), rh = at(relb[0], relb[1], 82, A.r[0] + A.r[1]);
@@ -61,6 +66,12 @@ export const Asura: React.FC<{
   const body = 'M-48 0 L-20 0 Q-18 -56 -12 -112 L12 -112 Q18 -56 20 0 L48 0 Q46 -56 40 -112 Q66 -116 64 -128 Q70 -170 52 -212 '
     + 'Q60 -248 74 -270 Q98 -280 90 -298 Q66 -308 24 -304 L14 -306 L14 -320 L-14 -320 L-14 -306 L-24 -304 Q-66 -308 -90 -298 '
     + 'Q-98 -280 -74 -270 Q-60 -248 -52 -212 Q-70 -170 -64 -128 Q-66 -116 -40 -112 Q-46 -56 -48 0 Z';
+  // Contrapposto: the same outline split at the dhoti hem; the weight leg straight under the hip, the free leg bent.
+  const upper = 'M-64 -128 Q-66 -116 -40 -112 L40 -112 Q66 -116 64 -128 Q70 -170 52 -212 Q60 -248 74 -270 Q98 -280 90 -298 '
+    + 'Q66 -308 24 -304 L14 -306 L14 -320 L-14 -320 L-14 -306 L-24 -304 Q-66 -308 -90 -298 Q-98 -280 -74 -270 Q-60 -248 -52 -212 Q-70 -170 -64 -128 Z';
+  const legW = 'M4 -116 L42 -116 Q40 -56 38 0 L10 0 Q12 -56 4 -116 Z';
+  const legF = 'M-42 -116 L-8 -116 Q-16 -62 -34 -14 L-40 0 L-68 0 L-62 -10 Q-48 -62 -42 -116 Z';
+  const upperT = contra ? 'translate(5 0) rotate(-3 0 -116)' : '';
   const sink = (1 - clamp(rise)) * 420;
   const o = 1 - clamp(dust * 1.6);
   const breathe = Math.sin(t * 0.06) * 1.5;
@@ -69,11 +80,13 @@ export const Asura: React.FC<{
       <defs><clipPath id={`rise-${id}`}><rect x={-400} y={-900} width={800} height={900} /></clipPath></defs>
       <g clipPath={`url(#rise-${id})`}>
         <g transform={`translate(0 ${sink})`} opacity={o}>
+          {contra ? <g>{[legF, legW].map((d, i) => <path key={i} d={d} fill={DARK} stroke={G} strokeWidth={3} strokeLinejoin="round" />)}</g> : null}
+          <g transform={upperT}>
           {/* hair behind */}
           <path d="M-24 -348 Q-46 -300 -54 -262 L-34 -286 Q-26 -318 -22 -340 Z M24 -348 Q46 -300 54 -262 L34 -286 Q26 -318 22 -340 Z" fill="#060D22" stroke={G} strokeWidth={1.2} opacity={0.9} />
           {/* far arm (left) */}
           <Limb d={`M${ls[0]} ${ls[1]} L${lelb[0]} ${lelb[1]} L${lh[0]} ${lh[1]}`} w={22} rim={rim} />
-          <path d={body} fill={DARK} stroke={G} strokeWidth={3} strokeLinejoin="round" opacity={1} transform={`translate(0 ${breathe * 0.3})`} />
+          <path d={contra ? upper : body} fill={DARK} stroke={G} strokeWidth={3} strokeLinejoin="round" opacity={1} transform={`translate(0 ${breathe * 0.3})`} />
           {/* ornament */}
           <g fill="none" stroke={G} strokeLinecap="round">
             <path d="M-30 -298 Q0 -266 30 -298" strokeWidth={2.4} opacity={0.9} />
@@ -83,18 +96,20 @@ export const Asura: React.FC<{
             <path d="M-62 -128 Q0 -112 62 -128" strokeWidth={1.6} opacity={0.6} />
             <path d="M-36 -246 Q-18 -236 -4 -244 M36 -246 Q18 -236 4 -244" strokeWidth={1.2} opacity={0.4} />
           </g>
-          {/* head and crown */}
+          {/* head and crown (turned by `look`) */}
+          <g transform={look ? `rotate(${look * 9} 0 -318) translate(${look * 3} ${-Math.abs(look) * 2})` : undefined}>
           <circle cx={0} cy={-340} r={24} fill="#0A1533" stroke={G} strokeWidth={2.4} />
           <path d="M-25 -352 L-21 -384 L-11 -370 L0 -404 L11 -370 L21 -384 L25 -352 Z" fill="#08122D" stroke={G} strokeWidth={2.4} strokeLinejoin="round" />
           <path d="M-24 -356 L24 -356" stroke={G} strokeWidth={2} />
           <circle cx={0} cy={-366} r={3.5} fill={G} />
-          <path d="M-12 -341 L-4 -339 M4 -339 L12 -341" stroke={P.goldHi} strokeWidth={2.2} strokeLinecap="round" />
+          <path d={`M${-12 + look * 7} -341 L${-4 + look * 7} -339 M${4 + look * 7} -339 L${12 + look * 7} -341`} stroke={P.goldHi} strokeWidth={2.2} strokeLinecap="round" />
           {wound > 0 ? (
             <g opacity={wound}>
               <path d="M-9 -352 L-2 -346 L-6 -344 L3 -338" fill="none" stroke={P.lacquerHi} strokeWidth={3.2} strokeLinecap="round" />
               <circle cx={0} cy={-346} r={12} fill={P.gold} opacity={0.25} filter="url(#rkBlur8)" />
             </g>
           ) : null}
+          </g>
           {mark ? (
             <g>
               <path d="M-26 -262 Q-34 -244 -22 -228 Q-8 -220 4 -232 Q10 -250 0 -262 Q-12 -270 -26 -262 Z" fill="#8C5A2A" opacity={0.95} />
@@ -103,11 +118,12 @@ export const Asura: React.FC<{
             </g>
           ) : null}
           {/* near arm (right) with armlet, and the mace */}
-          {A.mace !== null ? <Gada x={rh[0]} y={rh[1]} a={A.r[0] + A.r[1] + A.mace} rim={rim} /> : null}
+          {A.mace !== null ? <Gada x={rh[0]} y={rh[1]} a={A.r[0] + A.r[1] + A.mace} len={A.len} rim={rim} /> : null}
           <Limb d={`M${rs[0]} ${rs[1]} L${relb[0]} ${relb[1]} L${rh[0]} ${rh[1]}`} w={24} rim={rim} />
           <circle cx={(rs[0] + relb[0]) / 2} cy={(rs[1] + relb[1]) / 2} r={9} fill="none" stroke={G} strokeWidth={2.4} />
           <circle cx={rh[0]} cy={rh[1]} r={12} fill="#08122D" stroke={G} strokeWidth={2} />
-          {dim > 0 ? <path d={body} fill={P.abyss} opacity={dim} /> : null}
+          {dim > 0 ? <path d={contra ? upper : body} fill={P.abyss} opacity={dim} /> : null}
+          </g>
         </g>
       </g>
       {dust > 0 ? <DustBurst x={0} y={-20} p={dust} seed={id.length * 7 + 3} spread={110} h={400} /> : null}
@@ -377,7 +393,7 @@ const MINI = 'M-48 0 L-20 0 Q-18 -56 -12 -112 L12 -112 Q18 -56 20 0 L48 0 Q46 -5
   + 'Q60 -248 74 -270 L96 -150 L112 -160 L92 -290 Q66 -308 24 -304 L14 -306 L14 -318 A24 24 0 0 0 25 -352 L21 -384 L11 -370 L0 -404 '
   + 'L-11 -370 L-21 -384 L-25 -352 A24 24 0 0 0 -14 -318 L-14 -306 L-24 -304 Q-66 -308 -92 -290 L-112 -160 L-96 -150 L-74 -270 '
   + 'Q-60 -248 -52 -212 Q-70 -170 -64 -128 Q-66 -116 -40 -112 Q-46 -56 -48 0 Z';
-export const Mini: React.FC<{ x: number; y: number; s: number; o?: number; rim?: number; rise?: number; mace?: boolean; flip?: boolean; dust?: number; seed?: number }> = ({ x, y, s, o = 1, rim = 1, rise = 1, mace = true, flip = false, dust = 0, seed = 1 }) => {
+export const Mini: React.FC<{ x: number; y: number; s: number; o?: number; rim?: number; rise?: number; mace?: boolean; flip?: boolean; dust?: number; seed?: number; back?: boolean }> = ({ x, y, s, o = 1, rim = 1, rise = 1, mace = true, flip = false, dust = 0, seed = 1, back = false }) => {
   if (o <= 0) return null;
   const sink = (1 - clamp(rise)) * 404;
   const vis = 1 - clamp(dust * 1.8);
@@ -389,7 +405,9 @@ export const Mini: React.FC<{ x: number; y: number; s: number; o?: number; rim?:
             <g transform={`translate(0 ${sink})`}>
               {mace ? <g><path d="M104 -150 L104 -330" stroke={P.gold} strokeWidth={14} opacity={0.8 * rim} /><path d="M104 -150 L104 -330" stroke="#08122D" strokeWidth={8} /><ellipse cx={104} cy={-350} rx={24} ry={32} fill="#08122D" stroke={P.gold} strokeWidth={3} opacity={rim} /></g> : null}
               <path d={MINI} fill="url(#rkFigure)" stroke={P.gold} strokeWidth={3 / Math.max(0.4, s)} strokeOpacity={0.85 * rim} strokeLinejoin="round" />
-              <path d="M-12 -341 L-4 -339 M4 -339 L12 -341" stroke={P.goldHi} strokeWidth={3} opacity={0.8 * rim} />
+              {back
+                ? <path d="M-20 -334 Q-26 -300 -18 -270 M0 -330 L0 -268 M20 -334 Q26 -300 18 -270 M-40 -212 L40 -212" fill="none" stroke={P.gold} strokeWidth={2.4} opacity={0.6 * rim} />
+                : <path d="M-12 -341 L-4 -339 M4 -339 L12 -341" stroke={P.goldHi} strokeWidth={3} opacity={0.8 * rim} />}
             </g>
           </svg>
         </g>
