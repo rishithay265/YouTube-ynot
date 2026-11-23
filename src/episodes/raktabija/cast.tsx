@@ -127,8 +127,10 @@ export const Asura: React.FC<{
           )}
           {wound > 0 ? (
             <g opacity={wound}>
-              <path d="M-9 -352 L-2 -346 L-6 -344 L3 -338" fill="none" stroke={P.lacquerHi} strokeWidth={3.2} strokeLinecap="round" />
-              <circle cx={0} cy={-346} r={12} fill={P.gold} opacity={0.25} filter="url(#rkBlur8)" />
+              {/* his mark: a blood-drop tilak on the brow (where Aindri's vajra struck), dripping to the nose */}
+              <circle cx={0} cy={-350} r={12} fill="#FF3B30" opacity={0.3} filter="url(#rkBlur8)" />
+              <path d="M0 -362 Q6 -352 5 -347 A5 5 0 0 1 -5 -347 Q-6 -352 0 -362 Z" fill="#E8222E" stroke={P.goldHi} strokeWidth={0.8} />
+              <path d="M0 -342 L0 -333" stroke="#E8222E" strokeWidth={2} strokeLinecap="round" />
             </g>
           ) : null}
           </g>
@@ -460,7 +462,7 @@ export const Horde: React.FC<{ t: number; count: number; horizon?: number; rows?
 };
 
 // ---------------------------------------------------------------- Kali ma, shown
-const KB = '#3C7BE0', KBHI = '#86B8FF', KBDEEP = '#1D3F8C', KSKIN = '#03050D';
+const KB0 = '#3C7BE0', KBHI0 = '#86B8FF', KBDEEP0 = '#1D3F8C', KSKIN = '#03050D';
 
 /**
  * Kali ma's face in the film's line-art: dark skin drawn in blue strokes, the third eye, wild flowing hair, a gold
@@ -468,9 +470,11 @@ const KB = '#3C7BE0', KBHI = '#86B8FF', KBDEEP = '#1D3F8C', KSKIN = '#03050D';
  * drinks). Origin: between the eyes. eyes: 0 = lowered, half-closed (compassion), 1 = open (the battle).
  * Drawn for this film in the spirit of traditional and devotional images; no skulls, no severed heads.
  */
-export const KaliFace: React.FC<{ x: number; y: number; s?: number; eyes?: number; t?: number; o?: number }> = ({ x, y, s = 1, eyes = 0, t = 0, o = 1 }) => {
+export const KaliFace: React.FC<{ x: number; y: number; s?: number; eyes?: number; t?: number; o?: number; tone?: 'blue' | 'gold'; glow?: number }> = ({ x, y, s = 1, eyes = 0, t = 0, o = 1, tone = 'blue', glow = 0 }) => {
+  const gold = tone === 'gold';
+  const KB = gold ? P.gold : KB0, KBHI = gold ? P.goldHi : KBHI0, KBDEEP = gold ? P.goldDeep : KBDEEP0, HAIRDEEP = gold ? '#3A2A08' : '#0B1A3E';
   // Hair: long wavy locks rooted along the curve of the skull, rising over the crown, then falling past the shoulders.
-  const strands = Array.from({ length: 96 }, (_, i) => {
+  const strands = Array.from({ length: gold ? 64 : 96 }, (_, i) => {
     const side = i % 2 ? 1 : -1, u = rnd(91, i);
     const ang = -Math.PI / 2 + side * (0.08 + u * 1.25);           // root position on the skull arc
     const rx0 = Math.cos(ang) * 168, ry0 = -60 + Math.sin(ang) * 200;
@@ -487,8 +491,8 @@ export const KaliFace: React.FC<{ x: number; y: number; s?: number; eyes?: numbe
       const mx = (pts[k][0] + pts[k + 1][0]) / 2, my = (pts[k][1] + pts[k + 1][1]) / 2;
       d += ` Q${pts[k][0]} ${pts[k][1]} ${mx} ${my}`;
     }
-    const deep = i % 5 === 0;
-    return { d, w: deep ? 16 + rnd(95, i) * 10 : 3 + rnd(95, i) * 7, c: deep ? '#0B1A3E' : [KB, KBHI, KBDEEP, KB][i % 4], op: deep ? 0.9 : 0.5 + rnd(96, i) * 0.45 };
+    const deep = gold ? i % 3 === 0 : i % 5 === 0;
+    return { d, w: deep ? 16 + rnd(95, i) * 10 : 3 + rnd(95, i) * 7, c: deep ? HAIRDEEP : [KB, KBHI, KBDEEP, KB][i % 4], op: deep ? 0.9 : (gold ? 0.35 : 0.5) + rnd(96, i) * (gold ? 0.4 : 0.45) };
   });
   const lid = (sd: number) => {
     // lowered: a lit crescent lid; open: an almond eye with a dark iris
@@ -496,13 +500,14 @@ export const KaliFace: React.FC<{ x: number; y: number; s?: number; eyes?: numbe
     return (
       <g key={sd}>
         <path d={`M${sd * 138} -8 C${sd * 112} ${-32 - 10 * open} ${sd * 60} ${-34 - 10 * open} ${sd * 32} -10 C${sd * 60} ${-2 + 14 * open} ${sd * 110} ${2 + 14 * open} ${sd * 138} -8 Z`} fill={KB} opacity={0.95} />
-        {open > 0.05 ? <g opacity={open}><circle cx={sd * 84} cy={-10} r={15} fill={KSKIN} /><circle cx={sd * 84} cy={-10} r={5} fill={P.goldHi} /></g> : null}
+        {open > 0.05 ? <g opacity={open}><circle cx={sd * 84} cy={-12} r={17} fill={KBHI} /><circle cx={sd * 84} cy={-12} r={8} fill={KSKIN} /><circle cx={sd * 80} cy={-16} r={2.6} fill="#FFFFFF" opacity={0.8} /></g> : null}
         <path d={`M${sd * 140} -9 C${sd * 112} -36 ${sd * 60} -38 ${sd * 30} -11`} fill="none" stroke={KBHI} strokeWidth={4} strokeLinecap="round" />
       </g>
     );
   };
   return (
     <g transform={`translate(${x} ${y}) scale(${s})`} opacity={o}>
+      {glow > 0 ? <circle cx={0} cy={20} r={420} fill="url(#rkHalo)" opacity={glow} /> : null}
       {/* hair */}
       <path d="M-170 -170 Q-120 -300 0 -300 Q120 -300 170 -170 Q260 -40 290 160 Q310 330 250 460 Q200 400 150 440 Q90 380 0 400 Q-90 380 -150 440 Q-200 400 -250 460 Q-310 330 -290 160 Q-260 -40 -170 -170 Z" fill={KSKIN} opacity={0.92} />
       <g fill="none" strokeLinecap="round">{strands.map((h, i) => <path key={i} d={h.d} stroke={h.c} strokeWidth={h.w} opacity={h.op} />)}</g>
@@ -552,6 +557,134 @@ export const KaliFace: React.FC<{ x: number; y: number; s?: number; eyes?: numbe
       <circle cx={62} cy={80} r={50} fill="none" stroke={P.gold} strokeWidth={7} strokeDasharray="260 60" transform="rotate(200 62 80)" />
       {Array.from({ length: 7 }, (_, i) => <circle key={i} cx={108 + i * 8} cy={58 - i * 11} r={5} fill={P.gold} />)}
       {[-1, 1].map((sd) => <g key={sd}><circle cx={sd * 166} cy={40} r={20} fill="none" stroke={P.gold} strokeWidth={7} /><circle cx={sd * 166} cy={68} r={8} fill={P.goldHi} /></g>)}
+    </g>
+  );
+};
+
+// ---------------------------------------------------------------- Raktabija, close up
+/**
+ * Raktabija's face for close-ups: blood-red skin with a gold edge, a dark-gold crown, heavy flame brows, burning eyes,
+ * a great curled moustache, fangs, gold crescent earrings, and his mark, the blood-drop tilak dripping from the brow.
+ * A trail of blood curls around him. Origin: between the eyes. rage 0..1 brightens the eyes; drip 0..1 runs the tilak.
+ */
+export const RaktabijaFace: React.FC<{ x: number; y: number; s?: number; t?: number; rage?: number; drip?: number; o?: number }> = ({ x, y, s = 1, t = 0, rage = 1, drip = 1, o = 1 }) => {
+  const DK = '#1A0406', R = '#B3202E';
+  return (
+    <g transform={`translate(${x} ${y}) scale(${s})`} opacity={o}>
+      {/* the trail of blood */}
+      <g fill="none" strokeLinecap="round">
+        <path d="M-60 -420 C-260 -380 -330 -200 -300 -60" stroke={R} strokeWidth={26} opacity={0.75} />
+        <path d="M-60 -420 C-260 -380 -330 -200 -300 -60" stroke="#FF4A3C" strokeWidth={6} opacity={0.6} />
+        <path d="M250 120 C320 260 220 380 40 420" stroke={R} strokeWidth={24} opacity={0.75} />
+        <path d="M250 120 C320 260 220 380 40 420" stroke="#FF4A3C" strokeWidth={5} opacity={0.6} />
+        {Array.from({ length: 9 }, (_, i) => <circle key={i} cx={-300 + rnd(71, i) * 120} cy={-300 + rnd(72, i) * 260} r={3 + rnd(73, i) * 5} fill={R} stroke="none" />)}
+      </g>
+      {/* hair sweeping back */}
+      <g fill="none" strokeLinecap="round">
+        {Array.from({ length: 26 }, (_, i) => {
+          const side = i % 2 ? 1 : -1, u = rnd(74, i);
+          const x0 = side * (60 + u * 110), y0 = -190 + u * 90;
+          return <path key={i} d={`M${x0} ${y0} C${x0 + side * 90} ${y0 - 40 - u * 60} ${x0 + side * 200} ${y0 + 10} ${x0 + side * (240 + u * 120)} ${y0 + 140 + u * 160}`} stroke={i % 3 ? '#5A0E18' : P.goldDeep} strokeWidth={6 + rnd(75, i) * 10} opacity={0.85} />;
+        })}
+      </g>
+      {/* ears */}
+      {[-1, 1].map((sd) => <path key={sd} d={`M${sd * 160} -20 C${sd * 196} -30 ${sd * 200} 40 ${sd * 166} 70`} fill="#7A1424" stroke={P.gold} strokeWidth={4} />)}
+      {/* head: broad cheekbones, a heavy jaw */}
+      <path d="M0 -212 C130 -212 172 -110 172 -10 C172 70 150 150 112 210 C80 252 40 270 0 272 C-40 270 -80 252 -112 210 C-150 150 -172 70 -172 -10 C-172 -110 -130 -212 0 -212 Z" fill="url(#rkBlood)" stroke={P.gold} strokeWidth={5} />
+      <g fill="none" stroke="#4A0810" strokeLinecap="round">
+        {[-1, 1].map((sd) => <path key={sd} d={`M${sd * 150} 20 C${sd * 140} 80 ${sd * 118} 120 ${sd * 92} 150 M${sd * 128} -40 C${sd * 110} -10 ${sd * 96} 20 ${sd * 64} 40`} strokeWidth={5} opacity={0.8} />)}
+      </g>
+      {/* a short beard along the jaw */}
+      <g fill="none" stroke="#1A0406" strokeLinecap="round">
+        {Array.from({ length: 15 }, (_, i) => { const u = i / 14, a0 = Math.PI * (0.15 + 0.7 * u), r0 = 150; const bx = Math.cos(a0) * r0 * 0.78, by = 120 + Math.sin(a0) * 120; return <path key={i} d={`M${bx} ${by - 30} Q${bx * 1.05} ${by} ${bx * 0.95} ${by + 26}`} strokeWidth={7} opacity={0.85} />; })}
+      </g>
+      {/* crown: a tiered mukut with a tall central peak and jewels */}
+      <path d="M-150 -168 Q0 -214 150 -168 L140 -214 Q0 -252 -140 -214 Z" fill="#3A2408" stroke={P.gold} strokeWidth={5} />
+      <path d="M-128 -222 C-120 -270 -90 -282 -70 -262 C-60 -300 -30 -320 0 -372 C30 -320 60 -300 70 -262 C90 -282 120 -270 128 -222 Q0 -258 -128 -222 Z" fill="#2A1606" stroke={P.gold} strokeWidth={5} strokeLinejoin="round" />
+      <path d="M-100 -238 C-60 -260 60 -260 100 -238 M-60 -262 C-30 -290 30 -290 60 -262" fill="none" stroke={P.goldDeep} strokeWidth={3} />
+      <path d="M0 -360 C10 -340 10 -326 0 -316 C-10 -326 -10 -340 0 -360 Z" fill="#E8222E" stroke={P.goldHi} strokeWidth={2} />
+      {[-96, -48, 0, 48, 96].map((cx) => <circle key={cx} cx={cx} cy={-188 - (96 - Math.abs(cx)) * 0.12} r={7} fill={cx === 0 ? '#E8222E' : P.goldHi} />)}
+      {/* brows */}
+      {[-1, 1].map((sd) => (
+        <g key={sd}>
+          <path d={`M${sd * 18} -40 C${sd * 60} -70 ${sd * 120} -92 ${sd * 165} -70 C${sd * 130} -66 ${sd * 90} -52 ${sd * 30} -28 Z`} fill={DK} stroke={P.goldDeep} strokeWidth={2} />
+          {/* burning eyes */}
+          <path d={`M${sd * 32} -18 C${sd * 60} -36 ${sd * 110} -36 ${sd * 132} -22 C${sd * 110} -2 ${sd * 60} 0 ${sd * 32} -18 Z`} fill="#FF3B30" opacity={0.6 + 0.4 * rage} />
+          <ellipse cx={sd * 80} cy={-18} rx={44} ry={20} fill="#FF3B30" opacity={0.25 * rage} filter="url(#rkBlur8)" />
+          <circle cx={sd * 82} cy={-18} r={5} fill="#FFE2A8" opacity={rage} />
+          {/* gold crescent earrings */}
+          <path d={`M${sd * 172} 40 A26 26 0 1 0 ${sd * 172} 92 A18 18 0 1 1 ${sd * 172} 40 Z`} fill={P.gold} />
+        </g>
+      ))}
+      {/* nose */}
+      <path d="M-6 -10 C-14 40 -20 62 -30 80 M30 80 C10 92 -10 92 -30 80" fill="none" stroke={DK} strokeWidth={6} strokeLinecap="round" />
+      {/* the great moustache and the fangs */}
+      {[-1, 1].map((sd) => (
+        <g key={sd}>
+          <path d={`M0 108 C${sd * 40} 88 ${sd * 110} 96 ${sd * 150} 132 C${sd * 170} 150 ${sd * 160} 176 ${sd * 136} 168 C${sd * 150} 160 ${sd * 146} 144 ${sd * 120} 136 C${sd * 80} 124 ${sd * 30} 130 0 124 Z`} fill={DK} stroke={P.goldDeep} strokeWidth={2} />
+          <path d={`M${sd * 30} 134 Q${sd * 34} 166 ${sd * 22} 186 Q${sd * 22} 160 ${sd * 18} 136 Z`} fill="#FFF1D2" />
+        </g>
+      ))}
+      <path d="M-26 150 Q0 160 26 150" fill="none" stroke={DK} strokeWidth={5} strokeLinecap="round" />
+      {/* his mark: the blood-drop tilak, dripping */}
+      <circle cx={0} cy={-100} r={46} fill="#FF3B30" opacity={0.25} filter="url(#rkBlur8)" />
+      <path d="M0 -170 C22 -130 26 -100 24 -84 A24 24 0 0 1 -24 -84 C-26 -100 -22 -130 0 -170 Z" fill="#E8222E" stroke={P.goldHi} strokeWidth={2.5} />
+      <path d={`M0 -60 L0 ${-60 + 70 * clamp(drip)}`} stroke="#E8222E" strokeWidth={6} strokeLinecap="round" />
+      {[-1, 1].map((sd) => <circle key={sd} cx={sd * 34} cy={-120} r={5} fill="#E8222E" />)}
+    </g>
+  );
+};
+
+// ---------------------------------------------------------------- Kali ma, full form
+/**
+ * Kali ma standing, towering, in gold line-art: KaliFace above a dark form with a gold girdle and a garland of gold
+ * beads (no skulls, no severed heads), long hair falling behind. Four arms: khadga raised, khappar held out to catch
+ * the blood, abhaya and varada mudras. Feet at (x, y); s = 1 is about 1000 px tall. eyes as in KaliFace.
+ */
+export const KaliForm: React.FC<{ x: number; y: number; s?: number; eyes?: number; t?: number; o?: number; bowl?: number }> = ({ x, y, s = 1, eyes = 1, t = 0, o = 1, bowl = 1 }) => {
+  const SK = '#03050D', G2 = P.gold;
+  const arm = (d: string) => (
+    <g fill="none" strokeLinecap="round" strokeLinejoin="round">
+      <path d={d} stroke={G2} strokeWidth={34} />
+      <path d={d} stroke={SK} strokeWidth={26} />
+    </g>
+  );
+  return (
+    <g transform={`translate(${x} ${y}) scale(${s})`} opacity={o}>
+      <circle cx={0} cy={-620} r={520} fill="url(#rkHalo)" opacity={0.7} />
+      {/* hair falling behind her, to the knees */}
+      <g fill="none" strokeLinecap="round">
+        {Array.from({ length: 40 }, (_, i) => {
+          const side = i % 2 ? 1 : -1, u = rnd(81, i);
+          const x0 = side * (40 + u * 90), y0 = -900;
+          return <path key={i} d={`M${x0} ${y0} C${x0 + side * (160 + u * 120)} ${y0 + 120} ${x0 + side * (120 + u * 200)} ${y0 + 420} ${x0 + side * (200 + u * 160)} ${y0 + 700 + u * 120}`} stroke={i % 4 ? P.goldDeep : P.gold} strokeWidth={4 + rnd(82, i) * 8} opacity={0.55 + rnd(83, i) * 0.4} />;
+        })}
+      </g>
+      {/* arms behind the body: khadga raised, khappar held out; abhaya and varada */}
+      {arm('M-110 -640 L-240 -720 L-300 -860')}
+      <g transform="translate(-300 -868) rotate(-14)"><path d="M0 0 L0 -230 Q14 -250 6 -270" fill="none" stroke={P.goldHi} strokeWidth={12} strokeLinecap="round" /><path d="M-30 6 L30 6" stroke={G2} strokeWidth={10} strokeLinecap="round" /><path d="M0 6 L0 40" stroke={G2} strokeWidth={10} /></g>
+      {arm('M-100 -600 L-220 -500 L-330 -470')}
+      <g transform="translate(-350 -462)" opacity={bowl}>
+        <path d="M-70 -10 Q0 80 70 -10 Z" fill={SK} stroke={P.goldHi} strokeWidth={6} />
+        <path d="M-70 -10 L70 -10" stroke={P.goldHi} strokeWidth={6} strokeLinecap="round" />
+        <ellipse cx={0} cy={-8} rx={60} ry={10} fill="#B3202E" opacity={0.85} />
+      </g>
+      {arm('M110 -640 L230 -700 L260 -830')}
+      <g transform="translate(262 -846)" fill="none" stroke={P.goldHi} strokeWidth={8} strokeLinecap="round">
+        <path d="M-24 30 L-24 -20 M-8 30 L-8 -34 M8 30 L8 -32 M24 30 L24 -18" />
+      </g>
+      {arm('M100 -600 L210 -480 L250 -380')}
+      <g transform="translate(254 -360)" fill="none" stroke={P.goldHi} strokeWidth={8} strokeLinecap="round">
+        <path d="M-22 -20 L-22 30 M-7 -20 L-7 40 M8 -20 L8 38 M22 -20 L22 26" />
+      </g>
+      {/* body: shoulders, waist, a flaring skirt, legs */}
+      <path d="M-130 -650 Q0 -690 130 -650 L100 -420 Q140 -380 150 -300 L190 -110 Q100 -90 60 -100 L50 0 L10 0 L4 -100 L-4 -100 L-10 0 L-50 0 L-60 -100 Q-100 -90 -190 -110 L-150 -300 Q-140 -380 -100 -420 Z" fill={SK} stroke={G2} strokeWidth={6} strokeLinejoin="round" />
+      {/* girdle with gold leaf pendants, and the garland of gold beads */}
+      <path d="M-104 -410 Q0 -380 104 -410" fill="none" stroke={G2} strokeWidth={12} />
+      {Array.from({ length: 9 }, (_, i) => { const px = -96 + i * 24; return <path key={i} d={`M${px - 8} -398 Q${px} -360 ${px + 8} -398 Z`} fill={P.goldHi} />; })}
+      {Array.from({ length: 21 }, (_, i) => { const u = i / 20, px = -110 + 220 * u, py = -640 + Math.sin(u * Math.PI) * 220; return <circle key={i} cx={px} cy={py} r={9} fill={P.gold} />; })}
+      {/* her face */}
+      <KaliFace x={0} y={-800} s={0.5} eyes={eyes} t={t} tone="gold" />
     </g>
   );
 };

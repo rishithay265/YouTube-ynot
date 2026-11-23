@@ -25,7 +25,7 @@ export const Root: React.FC = () => {
       <Composition id="FaceStealerThumb" component={FaceStealerThumb} durationInFrames={1} width={1920} height={1080} {...common} />
       <Composition id="FaceStealerThumbUserFixed" component={FaceStealerThumbUserFixed} durationInFrames={1} width={1672} height={941} {...common} />
       <Composition id="RaktabijaThumb" component={RaktabijaThumb} durationInFrames={1} width={1920} height={1080} {...common} />
-      <Composition id="RaktabijaCast" component={RaktabijaCast} durationInFrames={3} width={1920} height={1080} {...common} />
+      <Composition id="RaktabijaCast" component={RaktabijaCast} durationInFrames={4} width={1920} height={1080} {...common} />
       <Composition id="Cast" component={CastSheet} durationInFrames={1} width={STUDIO.width} height={STUDIO.height} {...common} />
     </>
   );
