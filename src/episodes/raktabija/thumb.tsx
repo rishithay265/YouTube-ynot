@@ -1,14 +1,14 @@
 import React from 'react';
 import { AbsoluteFill, staticFile } from 'remotion';
-import { P, F, W, H, Defs, Stars, rnd } from './world';
-import { Asura, Mini } from './cast';
+import { P, F, W, H, Defs, Stars, Drop, rnd } from './world';
+import { Asura, Mini, KaliFace } from './cast';
 
 // RaktabijaThumb (1920 x 1080): the brand thumbnail template's composition, drawn in code. Logo top left; the left
 // half a dark stone panel carrying the words, bright and high-contrast; the right half an eclipse over Indian temple
-// towers. The eclipse is Kali, felt not shown (a dark disc, gold corona, ember eyes; no garland here, so the disc never
-// reads as a face). In front, the narrator: three-quarter on, the earth-mark on his chest, weight on one leg, mace
-// resting at his side, head turned up to her. Behind him, rows of identical warriors, seen from behind, all facing the
-// eclipse and fading into the haze.
+// towers. In the eclipse, Kali ma's face (cast.tsx KaliFace): the gold ring becomes her halo, her gaze lowered to the
+// field. In front, the narrator, blood-red like everyone born of Raktabija, the earth-mark on his chest, weight on one
+// leg, mace resting, looking up at her. Behind him, rows of identical red warriors face her; at the right edge, drops
+// fall and bloom into new warriors.
 
 const Gopuram: React.FC<{ x: number; y: number; s: number; o?: number }> = ({ x, y, s, o = 1 }) => (
   <g transform={`translate(${x} ${y}) scale(${s})`} opacity={o}>
@@ -20,7 +20,7 @@ const Gopuram: React.FC<{ x: number; y: number; s: number; o?: number }> = ({ x,
 );
 
 export const RaktabijaThumb: React.FC = () => {
-  const cx = 1420, cy = 370, r = 270;
+  const cx = 1440, cy = 345, r = 285;
   return (
     <AbsoluteFill style={{ backgroundColor: P.abyss }}>
       <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`}>
@@ -50,16 +50,10 @@ export const RaktabijaThumb: React.FC = () => {
         <rect width={W} height={H} fill="url(#thSky)" />
         <Stars t={30} n={120} o={0.6} box={[900, 0, 1020, 700]} />
         <circle cx={cx} cy={cy} r={r * 1.7} fill="url(#thCorona)" opacity={0.85} />
-        <circle cx={cx} cy={cy} r={r} fill="#04060F" />
+        <circle cx={cx} cy={cy} r={r} fill={P.goldHi} opacity={0.35} />
         <circle cx={cx} cy={cy} r={r} fill="none" stroke={P.goldHi} strokeWidth={6} />
-        {/* Kali, felt: ember eyes inside the dark disc, and the glints of a garland at its lower rim */}
-        {[-1, 1].map((sd) => (
-          <g key={sd} transform={`translate(${cx + sd * 78} ${cy - 40})`}>
-            <ellipse rx={56} ry={26} fill={P.ember} opacity={0.3} filter="url(#rkBlur8)" />
-            <path d="M-40 0 Q0 -22 40 0 Q0 18 -40 0 Z" fill={P.ember} />
-            <circle r={8} fill={P.goldHi} />
-          </g>
-        ))}
+        {/* Kali ma in the halo, her gaze lowered */}
+        <KaliFace x={cx} y={cy + 20} s={0.9} eyes={0} />
         {/* temple towers in the haze */}
         <defs><linearGradient id="thHaze" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor={P.gold} stopOpacity={0} /><stop offset="0.6" stopColor={P.gold} stopOpacity={0.14} /><stop offset="1" stopColor={P.gold} stopOpacity={0} /></linearGradient></defs>
         <Gopuram x={1080} y={800} s={0.62} o={0.9} />
@@ -78,16 +72,23 @@ export const RaktabijaThumb: React.FC = () => {
             <g key={r} opacity={0.3 + 0.6 * k}>
               {Array.from({ length: n }, (_, i) => {
                 const x = 960 + (i + 0.5 + (rnd(7, r * 31 + i) - 0.5) * 0.5) * (960 / n);
-                return Math.abs(x - 1250) < 150 * (0.5 + k) && r > 2 ? null : <Mini key={i} x={x} y={y} s={sc} back rim={0.6 + 0.4 * k} />;
+                return Math.abs(x - 1140) < 130 * (0.5 + k) && r > 2 ? null : <Mini key={i} x={x} y={y} s={sc} back tone="blood" rim={0.6 + 0.4 * k} />;
               })}
             </g>
           );
         })}
         <rect x={900} y={780} width={1020} height={120} fill="url(#thHaze)" opacity={0.7} />
+        {/* drops falling at the edge, each blooming into another warrior */}
+        <Drop x={1835} y={640} s={0.9} />
+        <Drop x={1752} y={760} s={0.8} />
+        <ellipse cx={1752} cy={846} rx={38} ry={8} fill="none" stroke={P.goldHi} strokeWidth={2.4} opacity={0.8} />
+        <Mini x={1680} y={900} s={0.36} rise={0.55} tone="blood" />
+        <Mini x={1850} y={930} s={0.42} rise={0.85} tone="blood" />
+        <ellipse cx={1680} cy={900} rx={46} ry={9} fill={P.gold} opacity={0.35} />
         {/* the narrator */}
-        <ellipse cx={1240} cy={997} rx={160} ry={16} fill="#000" opacity={0.5} />
-        <Asura id="thumb" x={1250} y={995} s={1.08} pose="rest" contra look={0.75} mark t={0} rim={1} />
-        <circle cx={1250 - 1.08 * 6} cy={995 - 1.08 * 246} r={70} fill="#B07A3C" opacity={0.28} filter="url(#rkBlur8)" />
+        <ellipse cx={1125} cy={1042} rx={140} ry={14} fill="#000" opacity={0.5} />
+        <Asura id="thumb" x={1135} y={1040} s={0.86} pose="rest" contra look={0.8} mark tone="blood" fierce t={0} rim={1} />
+        <circle cx={1135 - 0.86 * 6} cy={1040 - 0.86 * 246} r={56} fill="#E0A050" opacity={0.25} filter="url(#rkBlur8)" />
         {/* the stone panel for the words */}
         <rect x={0} y={0} width={1060} height={H} fill="url(#thWall)" />
         {Array.from({ length: 9 }, (_, i) => <path key={i} d={`M0 ${120 * i + 40} L${980 + (i % 2) * 40} ${120 * i + 40}`} stroke="#121A3A" strokeWidth={2} />)}

@@ -76,6 +76,10 @@ export const Defs: React.FC = () => (
       <stop offset="0" stopColor="#0B1736" />
       <stop offset="1" stopColor="#040917" />
     </linearGradient>
+    <linearGradient id="rkBlood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stopColor="#8A1A28" />
+      <stop offset="1" stopColor="#3E0812" />
+    </linearGradient>
     <radialGradient id="rkVoid" cx="50%" cy="45%" r="55%">
       <stop offset="0" stopColor="#0A1438" />
       <stop offset="0.7" stopColor="#030817" />

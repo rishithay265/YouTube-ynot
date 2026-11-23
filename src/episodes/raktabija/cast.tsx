@@ -11,10 +11,10 @@ const G = P.gold;
 const DARK = 'url(#rkFigure)';
 
 /** A limb drawn as a gold outline round a dark core (two strokes), so arms and weapons read as silhouettes. */
-const Limb: React.FC<{ d: string; w: number; rim?: number }> = ({ d, w, rim = 1 }) => (
+const Limb: React.FC<{ d: string; w: number; rim?: number; core?: string }> = ({ d, w, rim = 1, core = '#08122D' }) => (
   <g fill="none" strokeLinecap="round" strokeLinejoin="round">
     <path d={d} stroke={G} strokeWidth={w + 5} opacity={0.85 * rim} />
-    <path d={d} stroke="#08122D" strokeWidth={w} />
+    <path d={d} stroke={core} strokeWidth={w} />
   </g>
 );
 
@@ -57,7 +57,13 @@ export const Asura: React.FC<{
   contra?: boolean;
   /** Head turn, -1..1 (+ = towards +x), with a slight lift. 0 by default. */
   look?: number;
-}> = ({ x, y, s = 1, pose = 'stand', mark = false, wound = 0, rim = 1, rise = 1, dust = 0, id, flip = false, dim = 0, tilt = 0, t = 0, contra = false, look = 0 }) => {
+  /** 'blood': deep lacquer-red skin (Raktabija and everyone born of his blood). Default 'navy'. */
+  tone?: 'navy' | 'blood';
+  /** An asura's face: heavy brows, wide eyes, curled moustache, small fangs, gold earrings. Off by default. */
+  fierce?: boolean;
+}> = ({ x, y, s = 1, pose = 'stand', mark = false, wound = 0, rim = 1, rise = 1, dust = 0, id, flip = false, dim = 0, tilt = 0, t = 0, contra = false, look = 0, tone = 'navy', fierce = false }) => {
+  const red = tone === 'blood';
+  const SKIN = red ? 'url(#rkBlood)' : DARK, CORE = red ? '#5A0E1A' : '#08122D', HEAD = red ? '#6A1222' : '#0A1533';
   const A = ARMS[pose];
   const rs: [number, number] = [-78, -280], ls: [number, number] = [78, -280];
   const relb = at(rs[0], rs[1], 88, A.r[0]), rh = at(relb[0], relb[1], 82, A.r[0] + A.r[1]);
@@ -80,13 +86,13 @@ export const Asura: React.FC<{
       <defs><clipPath id={`rise-${id}`}><rect x={-400} y={-900} width={800} height={900} /></clipPath></defs>
       <g clipPath={`url(#rise-${id})`}>
         <g transform={`translate(0 ${sink})`} opacity={o}>
-          {contra ? <g>{[legF, legW].map((d, i) => <path key={i} d={d} fill={DARK} stroke={G} strokeWidth={3} strokeLinejoin="round" />)}</g> : null}
+          {contra ? <g>{[legF, legW].map((d, i) => <path key={i} d={d} fill={SKIN} stroke={G} strokeWidth={3} strokeLinejoin="round" />)}</g> : null}
           <g transform={upperT}>
           {/* hair behind */}
-          <path d="M-24 -348 Q-46 -300 -54 -262 L-34 -286 Q-26 -318 -22 -340 Z M24 -348 Q46 -300 54 -262 L34 -286 Q26 -318 22 -340 Z" fill="#060D22" stroke={G} strokeWidth={1.2} opacity={0.9} />
+          <path d="M-24 -348 Q-46 -300 -54 -262 L-34 -286 Q-26 -318 -22 -340 Z M24 -348 Q46 -300 54 -262 L34 -286 Q26 -318 22 -340 Z" fill={red ? '#1A0408' : '#060D22'} stroke={G} strokeWidth={1.2} opacity={0.9} />
           {/* far arm (left) */}
-          <Limb d={`M${ls[0]} ${ls[1]} L${lelb[0]} ${lelb[1]} L${lh[0]} ${lh[1]}`} w={22} rim={rim} />
-          <path d={contra ? upper : body} fill={DARK} stroke={G} strokeWidth={3} strokeLinejoin="round" opacity={1} transform={`translate(0 ${breathe * 0.3})`} />
+          <Limb d={`M${ls[0]} ${ls[1]} L${lelb[0]} ${lelb[1]} L${lh[0]} ${lh[1]}`} w={22} rim={rim} core={CORE} />
+          <path d={contra ? upper : body} fill={SKIN} stroke={G} strokeWidth={3} strokeLinejoin="round" opacity={1} transform={`translate(0 ${breathe * 0.3})`} />
           {/* ornament */}
           <g fill="none" stroke={G} strokeLinecap="round">
             <path d="M-30 -298 Q0 -266 30 -298" strokeWidth={2.4} opacity={0.9} />
@@ -98,11 +104,27 @@ export const Asura: React.FC<{
           </g>
           {/* head and crown (turned by `look`) */}
           <g transform={look ? `rotate(${look * 9} 0 -318) translate(${look * 3} ${-Math.abs(look) * 2})` : undefined}>
-          <circle cx={0} cy={-340} r={24} fill="#0A1533" stroke={G} strokeWidth={2.4} />
+          <circle cx={0} cy={-340} r={24} fill={HEAD} stroke={G} strokeWidth={2.4} />
           <path d="M-25 -352 L-21 -384 L-11 -370 L0 -404 L11 -370 L21 -384 L25 -352 Z" fill="#08122D" stroke={G} strokeWidth={2.4} strokeLinejoin="round" />
           <path d="M-24 -356 L24 -356" stroke={G} strokeWidth={2} />
           <circle cx={0} cy={-366} r={3.5} fill={G} />
-          <path d={`M${-12 + look * 7} -341 L${-4 + look * 7} -339 M${4 + look * 7} -339 L${12 + look * 7} -341`} stroke={P.goldHi} strokeWidth={2.2} strokeLinecap="round" />
+          {fierce ? (
+            <g transform={`translate(${look * 6} 0)`} strokeLinecap="round">
+              {[-1, 1].map((sd) => (
+                <g key={sd}>
+                  <path d={`M${sd * 19} -352 L${sd * 4} -346`} stroke="#1A0604" strokeWidth={4.2} />
+                  <path d={`M${sd * 16} -342 Q${sd * 10} -347 ${sd * 4} -342 Q${sd * 10} -338 ${sd * 16} -342 Z`} fill={P.goldHi} />
+                  <circle cx={sd * 10} cy={-342} r={1.6} fill="#1A0604" />
+                  <path d={`M0 -330 C${sd * 7} -335 ${sd * 17} -333 ${sd * 21} -325 C${sd * 23} -320 ${sd * 19} -318 ${sd * 17} -321`} fill="none" stroke="#1A0604" strokeWidth={3.2} />
+                  <path d={`M${sd * 6} -322 L${sd * 5} -315 L${sd * 3} -322 Z`} fill="#FFF4D6" />
+                  <circle cx={sd * 25} cy={-328} r={5} fill="none" stroke={P.gold} strokeWidth={2.4} />
+                </g>
+              ))}
+              <path d="M-6 -321 Q0 -318 6 -321" stroke="#1A0604" strokeWidth={2} fill="none" />
+            </g>
+          ) : (
+            <path d={`M${-12 + look * 7} -341 L${-4 + look * 7} -339 M${4 + look * 7} -339 L${12 + look * 7} -341`} stroke={P.goldHi} strokeWidth={2.2} strokeLinecap="round" />
+          )}
           {wound > 0 ? (
             <g opacity={wound}>
               <path d="M-9 -352 L-2 -346 L-6 -344 L3 -338" fill="none" stroke={P.lacquerHi} strokeWidth={3.2} strokeLinecap="round" />
@@ -112,16 +134,16 @@ export const Asura: React.FC<{
           </g>
           {mark ? (
             <g>
-              <path d="M-26 -262 Q-34 -244 -22 -228 Q-8 -220 4 -232 Q10 -250 0 -262 Q-12 -270 -26 -262 Z" fill="#8C5A2A" opacity={0.95} />
+              <path d="M-26 -262 Q-34 -244 -22 -228 Q-8 -220 4 -232 Q10 -250 0 -262 Q-12 -270 -26 -262 Z" fill={red ? '#C8913F' : '#8C5A2A'} stroke={red ? P.goldHi : 'none'} strokeWidth={1.6} opacity={0.95} />
               <path d="M-22 -258 Q-28 -246 -18 -236 M-12 -262 Q-16 -246 -8 -234 M-2 -258 Q-4 -246 2 -238" fill="none" stroke="#C08A4A" strokeWidth={2} strokeLinecap="round" opacity={0.9} />
               <circle cx={-10} cy={-246} r={26} fill="#B07A3C" opacity={0.18} filter="url(#rkBlur8)" />
             </g>
           ) : null}
           {/* near arm (right) with armlet, and the mace */}
           {A.mace !== null ? <Gada x={rh[0]} y={rh[1]} a={A.r[0] + A.r[1] + A.mace} len={A.len} rim={rim} /> : null}
-          <Limb d={`M${rs[0]} ${rs[1]} L${relb[0]} ${relb[1]} L${rh[0]} ${rh[1]}`} w={24} rim={rim} />
+          <Limb d={`M${rs[0]} ${rs[1]} L${relb[0]} ${relb[1]} L${rh[0]} ${rh[1]}`} w={24} rim={rim} core={CORE} />
           <circle cx={(rs[0] + relb[0]) / 2} cy={(rs[1] + relb[1]) / 2} r={9} fill="none" stroke={G} strokeWidth={2.4} />
-          <circle cx={rh[0]} cy={rh[1]} r={12} fill="#08122D" stroke={G} strokeWidth={2} />
+          <circle cx={rh[0]} cy={rh[1]} r={12} fill={CORE} stroke={G} strokeWidth={2} />
           {dim > 0 ? <path d={contra ? upper : body} fill={P.abyss} opacity={dim} /> : null}
           </g>
         </g>
@@ -393,7 +415,7 @@ const MINI = 'M-48 0 L-20 0 Q-18 -56 -12 -112 L12 -112 Q18 -56 20 0 L48 0 Q46 -5
   + 'Q60 -248 74 -270 L96 -150 L112 -160 L92 -290 Q66 -308 24 -304 L14 -306 L14 -318 A24 24 0 0 0 25 -352 L21 -384 L11 -370 L0 -404 '
   + 'L-11 -370 L-21 -384 L-25 -352 A24 24 0 0 0 -14 -318 L-14 -306 L-24 -304 Q-66 -308 -92 -290 L-112 -160 L-96 -150 L-74 -270 '
   + 'Q-60 -248 -52 -212 Q-70 -170 -64 -128 Q-66 -116 -40 -112 Q-46 -56 -48 0 Z';
-export const Mini: React.FC<{ x: number; y: number; s: number; o?: number; rim?: number; rise?: number; mace?: boolean; flip?: boolean; dust?: number; seed?: number; back?: boolean }> = ({ x, y, s, o = 1, rim = 1, rise = 1, mace = true, flip = false, dust = 0, seed = 1, back = false }) => {
+export const Mini: React.FC<{ x: number; y: number; s: number; o?: number; rim?: number; rise?: number; mace?: boolean; flip?: boolean; dust?: number; seed?: number; back?: boolean; tone?: 'navy' | 'blood' }> = ({ x, y, s, o = 1, rim = 1, rise = 1, mace = true, flip = false, dust = 0, seed = 1, back = false, tone = 'navy' }) => {
   if (o <= 0) return null;
   const sink = (1 - clamp(rise)) * 404;
   const vis = 1 - clamp(dust * 1.8);
@@ -404,7 +426,7 @@ export const Mini: React.FC<{ x: number; y: number; s: number; o?: number; rim?:
           <svg x={-200} y={-460} width={400} height={460} viewBox="-200 -460 400 460" overflow="hidden">
             <g transform={`translate(0 ${sink})`}>
               {mace ? <g><path d="M104 -150 L104 -330" stroke={P.gold} strokeWidth={14} opacity={0.8 * rim} /><path d="M104 -150 L104 -330" stroke="#08122D" strokeWidth={8} /><ellipse cx={104} cy={-350} rx={24} ry={32} fill="#08122D" stroke={P.gold} strokeWidth={3} opacity={rim} /></g> : null}
-              <path d={MINI} fill="url(#rkFigure)" stroke={P.gold} strokeWidth={3 / Math.max(0.4, s)} strokeOpacity={0.85 * rim} strokeLinejoin="round" />
+              <path d={MINI} fill={tone === 'blood' ? 'url(#rkBlood)' : 'url(#rkFigure)'} stroke={P.gold} strokeWidth={3 / Math.max(0.4, s)} strokeOpacity={0.85 * rim} strokeLinejoin="round" />
               {back
                 ? <path d="M-20 -334 Q-26 -300 -18 -270 M0 -330 L0 -268 M20 -334 Q26 -300 18 -270 M-40 -212 L40 -212" fill="none" stroke={P.gold} strokeWidth={2.4} opacity={0.6 * rim} />
                 : <path d="M-12 -341 L-4 -339 M4 -339 L12 -341" stroke={P.goldHi} strokeWidth={3} opacity={0.8 * rim} />}
@@ -435,4 +457,101 @@ export const Horde: React.FC<{ t: number; count: number; horizon?: number; rows?
     }
   }
   return <g opacity={o}>{items}</g>;
+};
+
+// ---------------------------------------------------------------- Kali ma, shown
+const KB = '#3C7BE0', KBHI = '#86B8FF', KBDEEP = '#1D3F8C', KSKIN = '#03050D';
+
+/**
+ * Kali ma's face in the film's line-art: dark skin drawn in blue strokes, the third eye, wild flowing hair, a gold
+ * crown with a lotus-flame, the nath, gold earrings and collar, and the red tongue (the one red besides the blood she
+ * drinks). Origin: between the eyes. eyes: 0 = lowered, half-closed (compassion), 1 = open (the battle).
+ * Drawn for this film in the spirit of traditional and devotional images; no skulls, no severed heads.
+ */
+export const KaliFace: React.FC<{ x: number; y: number; s?: number; eyes?: number; t?: number; o?: number }> = ({ x, y, s = 1, eyes = 0, t = 0, o = 1 }) => {
+  // Hair: long wavy locks rooted along the curve of the skull, rising over the crown, then falling past the shoulders.
+  const strands = Array.from({ length: 96 }, (_, i) => {
+    const side = i % 2 ? 1 : -1, u = rnd(91, i);
+    const ang = -Math.PI / 2 + side * (0.08 + u * 1.25);           // root position on the skull arc
+    const rx0 = Math.cos(ang) * 168, ry0 = -60 + Math.sin(ang) * 200;
+    const L = 420 + rnd(92, i) * 320, ph = rnd(94, i) * 6.28, amp = 22 + rnd(97, i) * 34;
+    const lift = 70 + (1 - u) * 90;                                  // locks from the crown rise higher before falling
+    const pts = Array.from({ length: 9 }, (_, k) => {
+      const q = k / 8;
+      const px = rx0 + side * (60 + 220 * u) * Math.sin(q * 1.7) + amp * Math.sin(q * 6 + ph + t * 0.02) * q;
+      const py = ry0 - lift * Math.sin(Math.min(1, q * 2.4) * Math.PI) * (q < 0.42 ? 1 : 0.25) + L * q * q;
+      return [px, py];
+    });
+    let d = `M${pts[0][0]} ${pts[0][1]}`;
+    for (let k = 1; k < pts.length - 1; k++) {
+      const mx = (pts[k][0] + pts[k + 1][0]) / 2, my = (pts[k][1] + pts[k + 1][1]) / 2;
+      d += ` Q${pts[k][0]} ${pts[k][1]} ${mx} ${my}`;
+    }
+    const deep = i % 5 === 0;
+    return { d, w: deep ? 16 + rnd(95, i) * 10 : 3 + rnd(95, i) * 7, c: deep ? '#0B1A3E' : [KB, KBHI, KBDEEP, KB][i % 4], op: deep ? 0.9 : 0.5 + rnd(96, i) * 0.45 };
+  });
+  const lid = (sd: number) => {
+    // lowered: a lit crescent lid; open: an almond eye with a dark iris
+    const open = clamp(eyes);
+    return (
+      <g key={sd}>
+        <path d={`M${sd * 138} -8 C${sd * 112} ${-32 - 10 * open} ${sd * 60} ${-34 - 10 * open} ${sd * 32} -10 C${sd * 60} ${-2 + 14 * open} ${sd * 110} ${2 + 14 * open} ${sd * 138} -8 Z`} fill={KB} opacity={0.95} />
+        {open > 0.05 ? <g opacity={open}><circle cx={sd * 84} cy={-10} r={15} fill={KSKIN} /><circle cx={sd * 84} cy={-10} r={5} fill={P.goldHi} /></g> : null}
+        <path d={`M${sd * 140} -9 C${sd * 112} -36 ${sd * 60} -38 ${sd * 30} -11`} fill="none" stroke={KBHI} strokeWidth={4} strokeLinecap="round" />
+      </g>
+    );
+  };
+  return (
+    <g transform={`translate(${x} ${y}) scale(${s})`} opacity={o}>
+      {/* hair */}
+      <path d="M-170 -170 Q-120 -300 0 -300 Q120 -300 170 -170 Q260 -40 290 160 Q310 330 250 460 Q200 400 150 440 Q90 380 0 400 Q-90 380 -150 440 Q-200 400 -250 460 Q-310 330 -290 160 Q-260 -40 -170 -170 Z" fill={KSKIN} opacity={0.92} />
+      <g fill="none" strokeLinecap="round">{strands.map((h, i) => <path key={i} d={h.d} stroke={h.c} strokeWidth={h.w} opacity={h.op} />)}</g>
+      {/* neck and collar, snug under the chin */}
+      <path d="M-70 220 L70 220 L96 330 L-96 330 Z" fill={KSKIN} />
+      <path d="M-104 268 Q0 316 104 268" fill="none" stroke={P.gold} strokeWidth={10} strokeLinecap="round" />
+      {Array.from({ length: 9 }, (_, i) => {
+        const u = i / 8, px = -96 + 192 * u, py = 270 + Math.sin(u * Math.PI) * 40;
+        return <path key={i} d={`M${px - 9} ${py} Q${px} ${py + 34} ${px + 9} ${py} Z`} fill={i === 4 ? P.goldHi : P.gold} />;
+      })}
+      <path d="M0 312 C18 330 15 356 0 368 C-15 356 -18 330 0 312 Z" fill={P.gold} />
+      {/* face */}
+      <path d="M0 -196 C150 -196 166 -40 152 60 C138 170 72 252 0 264 C-72 252 -138 170 -152 60 C-166 -40 -150 -196 0 -196 Z" fill={KSKIN} />
+      <g fill="none" strokeLinecap="round">
+        {[-1, 1].map((sd) => (
+          <g key={sd}>
+            <path d={`M${sd * 150} -30 C${sd * 160} 80 ${sd * 122} 192 ${sd * 40} 252`} stroke={KB} strokeWidth={8} opacity={0.85} />
+            <path d={`M${sd * 128} 30 C${sd * 126} 110 ${sd * 98} 170 ${sd * 60} 206`} stroke={KBDEEP} strokeWidth={5} opacity={0.8} />
+            <path d={`M${sd * 24} -48 C${sd * 60} -80 ${sd * 112} -76 ${sd * 146} -44`} stroke={KB} strokeWidth={10} />
+          </g>
+        ))}
+      </g>
+      {/* crown: gold band and lotus-flame */}
+      <path d="M-156 -150 Q0 -222 156 -150" fill="none" stroke={P.gold} strokeWidth={10} strokeLinecap="round" />
+      <path d="M0 -340 C34 -296 38 -254 0 -216 C-38 -254 -34 -296 0 -340 Z" fill={P.gold} />
+      <path d="M0 -312 C14 -290 16 -266 0 -246 C-16 -266 -14 -290 0 -312 Z" fill={KSKIN} opacity={0.75} />
+      {[-1, 1].map((sd) => <path key={sd} d={`M${sd * 18} -222 C${sd * 60} -246 ${sd * 100} -226 ${sd * 92} -194 C${sd * 86} -180 ${sd * 70} -184 ${sd * 72} -196`} fill="none" stroke={P.gold} strokeWidth={8} strokeLinecap="round" />)}
+      <circle cx={0} cy={-206} r={13} fill={P.goldHi} />
+      {/* third eye and bindu */}
+      <path d="M0 -172 C24 -142 24 -102 0 -78 C-24 -102 -24 -142 0 -172 Z" fill="none" stroke={KBHI} strokeWidth={5} />
+      <circle cx={0} cy={-124} r={11} fill={KB} />
+      <circle cx={0} cy={-124} r={4} fill={KSKIN} />
+      <circle cx={0} cy={-60} r={6} fill={P.goldHi} />
+      {/* eyes */}
+      {[-1, 1].map(lid)}
+      {/* nose and lips */}
+      <g fill="none" stroke={KB} strokeLinecap="round">
+        <path d="M-4 -40 C-10 4 -12 32 -14 50" strokeWidth={7} />
+        <path d="M-34 62 C-22 78 22 78 34 62" strokeWidth={7} />
+        <path d="M-36 106 C-16 96 16 96 36 106" strokeWidth={6} />
+      </g>
+      {/* the tongue */}
+      <path d="M-27 104 C-32 168 -22 222 0 240 C22 222 32 168 27 104 Z" fill="#D2333D" />
+      <path d="M0 116 L0 214" stroke="#8C1420" strokeWidth={4} strokeLinecap="round" />
+      <path d="M-16 120 C-18 160 -12 196 -4 214" stroke="#F07A72" strokeWidth={3} fill="none" opacity={0.6} />
+      {/* nath (on her left nostril) with its chain to the ear, and earrings */}
+      <circle cx={62} cy={80} r={50} fill="none" stroke={P.gold} strokeWidth={7} strokeDasharray="260 60" transform="rotate(200 62 80)" />
+      {Array.from({ length: 7 }, (_, i) => <circle key={i} cx={108 + i * 8} cy={58 - i * 11} r={5} fill={P.gold} />)}
+      {[-1, 1].map((sd) => <g key={sd}><circle cx={sd * 166} cy={40} r={20} fill="none" stroke={P.gold} strokeWidth={7} /><circle cx={sd * 166} cy={68} r={8} fill={P.goldHi} /></g>)}
+    </g>
+  );
 };
