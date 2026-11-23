@@ -1,0 +1,164 @@
+{
+ "s1_a": {
+  "audio": {
+   "n": 8,
+   "median": -0.04,
+   "abs_median": 0.04,
+   "p95": 0.243
+  },
+  "whisper": {
+   "matched": 37,
+   "of": 42,
+   "median": 0.12,
+   "p95": 0.628
+  }
+ },
+ "s1_b": {
+  "audio": {
+   "n": 7,
+   "median": -0.05,
+   "abs_median": 0.06,
+   "p95": 0.307
+  },
+  "whisper": {
+   "matched": 36,
+   "of": 42,
+   "median": 0.14,
+   "p95": 0.635
+  }
+ },
+ "s2_a": {
+  "audio": {
+   "n": 4,
+   "median": -0.096,
+   "abs_median": 0.096,
+   "p95": 0.664
+  },
+  "whisper": {
+   "matched": 92,
+   "of": 127,
+   "median": 0.14,
+   "p95": 0.38
+  }
+ },
+ "s2_b": {
+  "audio": {
+   "n": 4,
+   "median": -0.119,
+   "abs_median": 0.119,
+   "p95": 0.758
+  },
+  "whisper": {
+   "matched": 108,
+   "of": 127,
+   "median": 0.14,
+   "p95": 0.418
+  }
+ },
+ "s3_a": {
+  "audio": {
+   "n": 20,
+   "median": -0.042,
+   "abs_median": 0.045,
+   "p95": 0.412
+  },
+  "whisper": {
+   "matched": 89,
+   "of": 129,
+   "median": 0.16,
+   "p95": 0.66
+  }
+ },
+ "s4_a": {
+  "audio": {
+   "n": 6,
+   "median": -0.049,
+   "abs_median": 0.049,
+   "p95": 0.313
+  },
+  "whisper": {
+   "matched": 93,
+   "of": 147,
+   "median": 0.16,
+   "p95": 0.459
+  }
+ },
+ "s4_b": {
+  "audio": {
+   "n": 4,
+   "median": -0.082,
+   "abs_median": 0.082,
+   "p95": 0.356
+  },
+  "whisper": {
+   "matched": 101,
+   "of": 147,
+   "median": 0.14,
+   "p95": 0.4
+  }
+ },
+ "s5_a": {
+  "audio": {
+   "n": 16,
+   "median": -0.05,
+   "abs_median": 0.05,
+   "p95": 0.413
+  }
+ },
+ "s6_a": {
+  "audio": {
+   "n": 10,
+   "median": -0.015,
+   "abs_median": 0.02,
+   "p95": 0.423
+  }
+ },
+ "s6_b": {
+  "audio": {
+   "n": 11,
+   "median": -0.01,
+   "abs_median": 0.013,
+   "p95": 0.19
+  }
+ },
+ "s7_a": {
+  "audio": {
+   "n": 12,
+   "median": -0.038,
+   "abs_median": 0.038,
+   "p95": 0.344
+  }
+ },
+ "s7_b": {
+  "audio": {
+   "n": 10,
+   "median": -0.2,
+   "abs_median": 0.2,
+   "p95": 0.615
+  }
+ },
+ "s8_a": {
+  "audio": {
+   "n": 2,
+   "median": -0.56,
+   "abs_median": 0.56,
+   "p95": 0.704
+  }
+ },
+ "s8_b": {
+  "audio": {
+   "n": 2,
+   "median": -0.19,
+   "abs_median": 0.19,
+   "p95": 0.307
+  }
+ },
+ "s9_a": {
+  "audio": {
+   "n": 15,
+   "median": -0.004,
+   "abs_median": 0.03,
+   "p95": 0.073
+  }
+ }
+}

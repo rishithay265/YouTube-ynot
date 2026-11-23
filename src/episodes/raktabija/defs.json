@@ -1,0 +1,711 @@
+[
+ {
+  "id": "S1",
+  "cue": "f:0",
+  "kind": "open_card",
+  "p": {
+   "m": {}
+  },
+  "note": "logo and wordmark on navy; dark before the first word",
+  "key": 107
+ },
+ {
+  "id": "S2",
+  "cue": "पहले",
+  "kind": "birth",
+  "p": {
+   "m": {
+    "dark": 3,
+    "push": 116
+   }
+  },
+  "note": "darkness; the earth cracks and pushes him up",
+  "key": 140
+ },
+ {
+  "id": "S3",
+  "cue": "हाथ",
+  "kind": "grip",
+  "p": {
+   "m": {
+    "gada": 20,
+    "roar": 60,
+    "fire": 116
+   }
+  },
+  "note": "hand closes on the mace; fire in the chest",
+  "key": 134
+ },
+ {
+  "id": "S4",
+  "cue": "मुझे सब",
+  "kind": "memory",
+  "p": {
+   "m": {
+    "shumbha": 48,
+    "army": 103,
+    "vajra": 144
+   }
+  },
+  "note": "memories: Shumbha's throne, marching armies, Aindri's vajra",
+  "key": 167
+ },
+ {
+  "id": "S5",
+  "cue": "मैं जानता",
+  "kind": "iam",
+  "p": {
+   "m": {
+    "name": 96
+   }
+  },
+  "note": "low angle, alone against the sky: \"I am Raktabija\"",
+  "key": 120
+ },
+ {
+  "id": "S6",
+  "cue": "मुझे याद",
+  "kind": "field",
+  "p": {
+   "m": {
+    "shumbha": 103
+   }
+  },
+  "note": "the battlefield below the peaks; lower-third (3 s)",
+  "key": 127
+ },
+ {
+  "id": "S7",
+  "cue": "देवी ने धनुष",
+  "kind": "bow",
+  "p": {
+   "m": {
+    "pull": 30,
+    "twang": 116
+   }
+  },
+  "note": "Chandika draws the bow; the twang rings across the sky",
+  "key": 140
+ },
+ {
+  "id": "S8",
+  "cue": "सिंह",
+  "kind": "roar",
+  "p": {
+   "m": {
+    "bell": 37,
+    "kali": 70,
+    "swallow": 130
+   }
+  },
+  "note": "lion, bell, then a darkness swallows every sound",
+  "key": 149
+ },
+ {
+  "id": "S9",
+  "cue": "फिर वे",
+  "kind": "matrikas",
+  "p": {
+   "m": {
+    "b": 29,
+    "m": 56,
+    "k": 81,
+    "v": 104,
+    "va": 127,
+    "n": 149,
+    "a": 175,
+    "s": 249
+   }
+  },
+  "note": "montage: the seven Matrikas and Shivaduti, names only",
+  "key": 273
+ },
+ {
+  "id": "S10",
+  "cue": "हमारी",
+  "kind": "scatter",
+  "p": {
+   "m": {
+    "break": 68
+   }
+  },
+  "note": "the Asura ranks charge and scatter into gold dust",
+  "key": 92
+ },
+ {
+  "id": "S11",
+  "cue": "तब मैं",
+  "kind": "advance",
+  "p": {
+   "m": {
+    "rb": 82
+   }
+  },
+  "note": "Raktabija strides forward",
+  "key": 106
+ },
+ {
+  "id": "S12",
+  "cue": "क्योंकि",
+  "kind": "power",
+  "p": {
+   "m": {
+    "fall": 125,
+    "rise": 171
+   }
+  },
+  "note": "a drop falls; a warrior rises from it",
+  "key": 194
+ },
+ {
+  "id": "S13",
+  "cue": "ऐन्द्री का",
+  "kind": "vajra",
+  "p": {
+   "m": {
+    "hit": 36,
+    "blood": 77,
+    "rise": 106
+   }
+  },
+  "note": "Aindri's vajra strikes the brow; the narrator rises from the soil",
+  "key": 130
+ },
+ {
+  "id": "S14",
+  "cue": "मारो",
+  "kind": "laugh",
+  "p": {
+   "m": {
+    "more": 87
+   }
+  },
+  "note": "Raktabija laughs; more rise around him",
+  "key": 111
+ },
+ {
+  "id": "S15",
+  "cue": "तभी",
+  "kind": "twin",
+  "p": {
+   "m": {
+    "face": 107,
+    "q": 409
+   }
+  },
+  "note": "side by side: the same face looks back",
+  "key": 433
+ },
+ {
+  "id": "S16",
+  "cue": "फिर एक",
+  "kind": "count",
+  "p": {
+   "m": {
+    "one": 8,
+    "ten": 44,
+    "stop": 97
+   }
+  },
+  "note": "one more, ten, too many to count",
+  "key": 121
+ },
+ {
+  "id": "S17",
+  "cue": "और तब",
+  "kind": "front",
+  "p": {
+   "m": {
+    "rb": 143,
+    "wound": 213
+   }
+  },
+  "note": "at the front of the crowd: Raktabija, the wound on his brow",
+  "key": 237
+ },
+ {
+  "id": "S18",
+  "cue": "मैंने अपना",
+  "kind": "touch",
+  "p": {
+   "m": {
+    "none": 63
+   }
+  },
+  "note": "he touches his own brow: no wound",
+  "key": 87
+ },
+ {
+  "id": "S19",
+  "cue": "वह घाव",
+  "kind": "blood",
+  "p": {
+   "m": {
+    "body": 224,
+    "blood": 296
+   }
+  },
+  "note": "not his body: his blood",
+  "key": 320
+ },
+ {
+  "id": "S20",
+  "cue": "उसकी यादें",
+  "kind": "drop",
+  "p": {
+   "m": {
+    "notrb": 255,
+    "drop": 338,
+    "title": 348
+   }
+  },
+  "note": "into a single drop; the title drops",
+  "key": 372
+ },
+ {
+  "id": "S21",
+  "cue": "फिर वैष्णवी",
+  "kind": "chakra",
+  "p": {
+   "m": {
+    "chakra": 32,
+    "many": 191
+   }
+  },
+  "note": "Vaishnavi's chakra; thousands rise",
+  "key": 215
+ },
+ {
+  "id": "S22",
+  "cue": "ऐन्द्री की",
+  "kind": "weapons",
+  "p": {
+   "m": {
+    "a": 3,
+    "k": 35,
+    "v": 76,
+    "m": 117
+   }
+  },
+  "note": "four strikes, four more births each",
+  "key": 141
+ },
+ {
+  "id": "S23",
+  "cue": "हर वार",
+  "kind": "fill",
+  "p": {
+   "m": {
+    "world": 139
+   }
+  },
+  "note": "identical warriors to the horizon",
+  "key": 163
+ },
+ {
+  "id": "S24",
+  "cue": "हर जन्म",
+  "kind": "echo",
+  "p": {
+   "m": {
+    "name": 160,
+    "less": 290
+   }
+  },
+  "note": "every birth an echo in the veins",
+  "key": 314
+ },
+ {
+  "id": "S25",
+  "cue": "हज़ार",
+  "kind": "faces",
+  "p": {
+   "m": {
+    "who": 204
+   }
+  },
+  "note": "a thousand identical faces: who, then, am I?",
+  "key": 228
+ },
+ {
+  "id": "S26",
+  "cue": "बस एक",
+  "kind": "mark",
+  "p": {
+   "m": {
+    "mark": 137,
+    "touch": 248
+   }
+  },
+  "note": "the earth-mark on his chest",
+  "key": 272
+ },
+ {
+  "id": "S27",
+  "cue": "ऊपर",
+  "kind": "gods",
+  "p": {
+   "m": {
+    "fear": 95,
+    "won": 171
+   }
+  },
+  "note": "the gods' faces fall; the Asuras think they have won",
+  "key": 195
+ },
+ {
+  "id": "S28",
+  "cue": "हम सब",
+  "kind": "charge",
+  "p": {
+   "m": {
+    "first": 213
+   }
+  },
+  "note": "they run as one; beside him, the first one",
+  "key": 237
+ },
+ {
+  "id": "S29",
+  "cue": "कौमारी की",
+  "kind": "fall",
+  "p": {
+   "m": {
+    "flash": 35,
+    "fall": 102,
+    "hold": 246
+   }
+  },
+  "note": "Kaumari's spear flashes; the first one falls into gold dust in his arms",
+  "key": 270
+ },
+ {
+  "id": "S30",
+  "cue": "उसने कुछ",
+  "kind": "words",
+  "p": {
+   "m": {
+    "words": 128
+   }
+  },
+  "note": "the unfinished sentence",
+  "key": 152
+ },
+ {
+  "id": "S31",
+  "cue": "और तब मुझे",
+  "kind": "wall",
+  "p": {
+   "m": {
+    "wall": 132,
+    "shield": 195,
+    "front": 324
+   }
+  },
+  "note": "a wall of drops before the one at the front",
+  "key": 348
+ },
+ {
+  "id": "S32",
+  "cue": "मैं इसलिए",
+  "kind": "born",
+  "p": {
+   "m": {
+    "rise": 127
+   }
+  },
+  "note": "born to fall, so another can rise",
+  "key": 151
+ },
+ {
+  "id": "S33",
+  "cue": "और सबसे",
+  "kind": "ego",
+  "p": {
+   "m": {
+    "mace": 103,
+    "indra": 235,
+    "new": 443
+   }
+  },
+  "note": "the hand won't let go; the stolen heaven",
+  "key": 467
+ },
+ {
+  "id": "S34",
+  "cue": "फिर सब",
+  "kind": "slow",
+  "p": {
+   "m": {
+    "chandika": 137,
+    "blood": 317
+   }
+  },
+  "note": "everything slows; Chandika speaks to Kali",
+  "key": 341
+ },
+ {
+  "id": "S35",
+  "cue": "चामुंडे",
+  "kind": "command",
+  "p": {
+   "m": {
+    "mouth": 51,
+    "swallow": 347,
+    "none": 519
+   }
+  },
+  "note": "the command, felt through the blood",
+  "key": 543
+ },
+ {
+  "id": "S36",
+  "cue": "नए नहीं@2",
+  "kind": "sentence",
+  "p": {
+   "m": {
+    "end": 145
+   }
+  },
+  "note": "one sentence, the end of thousands",
+  "key": 169
+ },
+ {
+  "id": "S37",
+  "cue": "वह आई",
+  "kind": "shadow",
+  "p": {
+   "m": {
+    "sun": 127,
+    "name": 317
+   }
+  },
+  "note": "her shadow swallows the last ray; Chamunda",
+  "key": 341
+ },
+ {
+  "id": "S38",
+  "cue": "देवी ने अपनी",
+  "kind": "strike",
+  "p": {
+   "m": {
+    "blood": 111,
+    "mouth": 217
+   }
+  },
+  "note": "the blood never reaches the ground",
+  "key": 241
+ },
+ {
+  "id": "S39",
+  "cue": "और मेरी",
+  "kind": "still",
+  "p": {
+   "m": {
+    "stop": 77,
+    "silent": 193,
+    "none": 241
+   }
+  },
+  "note": "the echo stops; the ground is silent",
+  "key": 265
+ },
+ {
+  "id": "S40",
+  "cue": "जो उसके",
+  "kind": "roam",
+  "p": {
+   "m": {
+    "roam": 140,
+    "vanish": 321
+   }
+  },
+  "note": "she moves among them; they vanish into the dark",
+  "key": 345
+ },
+ {
+  "id": "S41",
+  "cue": "मुझे डर",
+  "kind": "relief",
+  "p": {
+   "m": {
+    "relief": 214
+   }
+  },
+  "note": "fear, and beneath it, relief",
+  "key": 238
+ },
+ {
+  "id": "S42",
+  "cue": "रक्तबीज ने",
+  "kind": "laststrike",
+  "p": {
+   "m": {
+    "hit": 99,
+    "nopain": 153
+   }
+  },
+  "note": "his last blow; she feels nothing",
+  "key": 177
+ },
+ {
+  "id": "S43",
+  "cue": "शक्ति",
+  "kind": "rain",
+  "p": {
+   "m": {
+    "drink": 252,
+    "fall": 385
+   }
+  },
+  "note": "the weapons rain; bloodless, he falls",
+  "key": 408
+ },
+ {
+  "id": "S44",
+  "cue": "जिसकी",
+  "kind": "fallen",
+  "p": {
+   "m": {
+    "stand": 173
+   }
+  },
+  "note": "the source has fallen; he is still standing",
+  "key": 196
+ },
+ {
+  "id": "S45",
+  "cue": "पहली बार मेरे",
+  "kind": "alone",
+  "p": {
+   "m": {
+    "q": 184,
+    "what": 370
+   }
+  },
+  "note": "for the first time, a question of his own",
+  "key": 394
+ },
+ {
+  "id": "S46",
+  "cue": "वह मेरे",
+  "kind": "before",
+  "p": {
+   "m": {
+    "down": 78
+   }
+  },
+  "note": "before her, he lays down the mace",
+  "key": 102
+ },
+ {
+  "id": "S47",
+  "cue": "मैंने ऊपर",
+  "kind": "eyes",
+  "p": {
+   "m": {
+    "fierce": 73,
+    "under": 181,
+    "karuna": 313
+   }
+  },
+  "note": "ferocity in battle, compassion in the heart",
+  "key": 337
+ },
+ {
+  "id": "S48",
+  "cue": "after:एक ही आँखों में",
+  "kind": "verse",
+  "p": {
+   "m": {}
+  },
+  "note": "Devi Mahatmya 4.22, held",
+  "key": 300
+ },
+ {
+  "id": "S49",
+  "cue": "और उसने",
+  "kind": "seen",
+  "p": {
+   "m": {
+    "me": 163
+   }
+  },
+  "note": "among a thousand faces, she sees him",
+  "key": 187
+ },
+ {
+  "id": "S50",
+  "cue": "जिसे कुछ",
+  "kind": "recog",
+  "p": {
+   "m": {
+    "maa": 104
+   }
+  },
+  "note": "the mother recognised him",
+  "key": 128
+ },
+ {
+  "id": "S51",
+  "cue": "मैं कुछ",
+  "kind": "lived",
+  "p": {
+   "m": {
+    "war": 55,
+    "drop": 95
+   }
+  },
+  "note": "a few minutes: a war long, a drop long",
+  "key": 119
+ },
+ {
+  "id": "S52",
+  "cue": "कहते हैं",
+  "kind": "purify",
+  "p": {
+   "m": {
+    "purify": 197,
+    "realms": 270
+   }
+  },
+  "note": "purified by her weapons, even foes rise to higher worlds",
+  "key": 294
+ },
+ {
+  "id": "S53",
+  "cue": "मैं नहीं जानता",
+  "kind": "nofear",
+  "p": {
+   "m": {
+    "nofear": 175
+   }
+  },
+  "note": "no fear of falling",
+  "key": 199
+ },
+ {
+  "id": "S54",
+  "cue": "मैं रक्तबीज नहीं था",
+  "kind": "final",
+  "p": {
+   "m": {
+    "drop": 65,
+    "maa": 135,
+    "caught": 190
+   }
+  },
+  "note": "a drop falls and is caught before it touches the ground",
+  "key": 214
+ },
+ {
+  "id": "S55",
+  "cue": "after:थाम लिया",
+  "kind": "closing",
+  "p": {
+   "m": {}
+  },
+  "note": "closing card with the logo",
+  "key": 266
+ }
+]

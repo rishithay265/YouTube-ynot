@@ -7,6 +7,9 @@ WITHOUT seeing the script. Prints the character error rate against the script (C
 spelling variants like ख़ून/खून or nukta and chandrabindu differences are normalised away first) and whether each hard
 name was heard. The take with the lowest CER is kept, as in v2.
 
+VAD segmentation is on: on these 20-60 s takes, unsegmented Whisper silently skipped whole sentences (s3_a lost ten
+seconds that it transcribes perfectly in isolation), which inflated the CER of good takes to 25-32%.
+
 Note: ElevenLabs "transcription" of its own TTS generations returns the prompt text with timings (a forced alignment),
 so it can't serve as this independent check; we use those timings only for captions.
 """
@@ -48,7 +51,8 @@ def transcribe(path):
         _model = WhisperModel('large-v3', device='cpu', compute_type='int8')
     import subprocess, numpy as np  # decode with ffmpeg (sidesteps PyAV version mismatches)
     raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', path, '-ac', '1', '-ar', '16000', '-f', 'f32le', '-'], capture_output=True, check=True).stdout
-    segs, _ = _model.transcribe(np.frombuffer(raw, np.float32), language='hi', beam_size=5, word_timestamps=True, vad_filter=False,
+    segs, _ = _model.transcribe(np.frombuffer(raw, np.float32), language='hi', beam_size=5, word_timestamps=True, vad_filter=True,
+                                vad_parameters=dict(min_silence_duration_ms=300, speech_pad_ms=200),
                                 condition_on_previous_text=False)
     words = [dict(w=w.word.strip(), s=round(w.start, 2), e=round(w.end, 2)) for s in segs for w in (s.words or [])]
     return ' '.join(w['w'] for w in words), words

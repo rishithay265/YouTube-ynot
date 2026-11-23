@@ -13,3 +13,7 @@ pentest/
 # FaceStealer v2 intermediate audio (rebuilt by research/facestealer/v2/plan_v2.py + sound_v2.py)
 research/facestealer/v2/stems/
 __pycache__/
+
+# Raktabija intermediate audio (rebuilt by research/raktabija/plan.py + sound.py)
+research/raktabija/stems/
+public/raktabija/master.wav

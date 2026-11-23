@@ -17,6 +17,12 @@ export type CapStyle = {
   tilt: number; // degrees the spoken word tilts
   gap: number; // px between words
   balance: boolean; // split each phrase into even chunks (no orphan words, "Victim A" kept together) instead of filling greedily
+  /** Uppercase the words (Latin captions). Set false for Devanagari and other scripts without case. */
+  upper?: boolean;
+  /** Font family override (e.g. a Devanagari face); unset uses the studio title font. */
+  font?: string;
+  /** Letter spacing in px. Keep 0 for Devanagari: spacing splits conjuncts and matras apart. */
+  spacing?: number;
 };
 
 // hold 999: by default a chunk stays up until the next one (the original behaviour); episodes can hide captions in pauses.
@@ -25,7 +31,7 @@ const DEFAULT: CapStyle = { maxWords: 3, maxChars: 18, lead: 0.02, hold: 999, mi
 /** Small words that read badly as the last word of a chunk ("GO TO THE" / "SHOP"): they move to the next chunk. */
 const WEAK = new Set(['a', 'an', 'the', 'to', 'of', 'and', 'or', 'in', 'on', 'for', 'with', 'from', 'at', 'by', 'your', 'their', 'his', 'her', 'its', 'is']);
 
-const clean = (w: string) => w.replace(/[.,!?;:]+$/g, '');
+const clean = (w: string) => w.replace(/[.,!?;:।॥]+$/g, ''); // also the Devanagari danda
 const textOf = (ws: CapWord[]) => ws.map((x) => clean(x.w)).join(' ');
 
 /**
@@ -135,12 +141,12 @@ export const Captions: React.FC<{ words: CapWord[]; accent?: string; y?: number;
             flexWrap: 'wrap',
             justifyContent: 'center',
             gap: `0 ${st.gap}px`,
-            fontFamily: FONT.title,
-            fontWeight: 800,
+            fontFamily: st.font ?? FONT.title,
+            fontWeight: st.font ? 400 : 800,
             fontSize: st.size,
             lineHeight: 1.08,
-            letterSpacing: 1,
-            textTransform: 'uppercase',
+            letterSpacing: st.spacing ?? 1,
+            textTransform: st.upper === false ? 'none' : 'uppercase',
             textAlign: 'center',
             ...(st.plate
               ? { background: 'rgba(4,6,14,0.78)', padding: `${st.size * 0.16}px ${st.size * 0.42}px ${st.size * 0.2}px`, borderRadius: st.size * 0.32, boxShadow: '0 10px 30px rgba(0,0,0,0.45)' }
