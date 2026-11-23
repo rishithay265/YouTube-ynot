@@ -67,14 +67,14 @@
   "model": "eleven_v4",
   "voice": "Mohit (XuoDMtv7nNW0kZq3o1W2)",
   "takes": {
-   "s1": "s1_a",
-   "s2": "s2_b",
+   "s1": "s1_b",
+   "s2": "s2_a",
    "s3": "s3_a",
-   "s4": "s4_a",
+   "s4": "s4_b",
    "s5": "s5_a",
-   "s6": "s6_a",
-   "s7": "s7_a",
-   "s8": "s8_a",
+   "s6": "s6_b",
+   "s7": "s7_b",
+   "s8": "s8_b",
    "s9": "s9_a"
   }
  },
@@ -97,28 +97,28 @@
    "id": "S3",
    "size": "screen",
    "set": "grip",
-   "key": 134,
+   "key": 129,
    "note": "hand closes on the mace; fire in the chest"
   },
   {
    "id": "S4",
    "size": "screen",
    "set": "memory",
-   "key": 167,
+   "key": 164,
    "note": "memories: Shumbha's throne, marching armies, Aindri's vajra"
   },
   {
    "id": "S5",
    "size": "screen",
    "set": "iam",
-   "key": 120,
+   "key": 121,
    "note": "low angle, alone against the sky: \"I am Raktabija\""
   },
   {
    "id": "S6",
    "size": "screen",
    "set": "field",
-   "key": 127,
+   "key": 135,
    "note": "the battlefield below the peaks; lower-third (3 s)"
   },
   {
@@ -139,28 +139,28 @@
    "id": "S9",
    "size": "screen",
    "set": "matrikas",
-   "key": 273,
+   "key": 284,
    "note": "montage: the seven Matrikas and Shivaduti, names only"
   },
   {
    "id": "S10",
    "size": "screen",
    "set": "scatter",
-   "key": 92,
+   "key": 89,
    "note": "the Asura ranks charge and scatter into gold dust"
   },
   {
    "id": "S11",
    "size": "screen",
    "set": "advance",
-   "key": 106,
+   "key": 91,
    "note": "Raktabija strides forward"
   },
   {
    "id": "S12",
    "size": "screen",
    "set": "power",
-   "key": 194,
+   "key": 198,
    "note": "a drop falls; a warrior rises from it"
   },
   {
@@ -181,14 +181,14 @@
    "id": "S15",
    "size": "screen",
    "set": "twin",
-   "key": 433,
+   "key": 432,
    "note": "side by side: the same face looks back"
   },
   {
    "id": "S16",
    "size": "screen",
    "set": "count",
-   "key": 121,
+   "key": 120,
    "note": "one more, ten, too many to count"
   },
   {
@@ -209,77 +209,77 @@
    "id": "S19",
    "size": "screen",
    "set": "blood",
-   "key": 320,
+   "key": 319,
    "note": "not his body: his blood"
   },
   {
    "id": "S20",
    "size": "screen",
    "set": "drop",
-   "key": 372,
+   "key": 371,
    "note": "into a single drop; the title drops"
   },
   {
    "id": "S21",
    "size": "screen",
    "set": "chakra",
-   "key": 215,
+   "key": 207,
    "note": "Vaishnavi's chakra; thousands rise"
   },
   {
    "id": "S22",
    "size": "screen",
    "set": "weapons",
-   "key": 141,
+   "key": 140,
    "note": "four strikes, four more births each"
   },
   {
    "id": "S23",
    "size": "screen",
    "set": "fill",
-   "key": 163,
+   "key": 155,
    "note": "identical warriors to the horizon"
   },
   {
    "id": "S24",
    "size": "screen",
    "set": "echo",
-   "key": 314,
+   "key": 299,
    "note": "every birth an echo in the veins"
   },
   {
    "id": "S25",
    "size": "screen",
    "set": "faces",
-   "key": 228,
+   "key": 219,
    "note": "a thousand identical faces: who, then, am I?"
   },
   {
    "id": "S26",
    "size": "screen",
    "set": "mark",
-   "key": 272,
+   "key": 264,
    "note": "the earth-mark on his chest"
   },
   {
    "id": "S27",
    "size": "screen",
    "set": "gods",
-   "key": 195,
+   "key": 185,
    "note": "the gods' faces fall; the Asuras think they have won"
   },
   {
    "id": "S28",
    "size": "screen",
    "set": "charge",
-   "key": 237,
+   "key": 238,
    "note": "they run as one; beside him, the first one"
   },
   {
    "id": "S29",
    "size": "screen",
    "set": "fall",
-   "key": 270,
+   "key": 269,
    "note": "Kaumari's spear flashes; the first one falls into gold dust in his arms"
   },
   {
@@ -293,7 +293,7 @@
    "id": "S31",
    "size": "screen",
    "set": "wall",
-   "key": 348,
+   "key": 349,
    "note": "a wall of drops before the one at the front"
   },
   {
@@ -307,63 +307,63 @@
    "id": "S33",
    "size": "screen",
    "set": "ego",
-   "key": 467,
+   "key": 466,
    "note": "the hand won't let go; the stolen heaven"
   },
   {
    "id": "S34",
    "size": "screen",
    "set": "slow",
-   "key": 341,
+   "key": 335,
    "note": "everything slows; Chandika speaks to Kali"
   },
   {
    "id": "S35",
    "size": "screen",
    "set": "command",
-   "key": 543,
+   "key": 515,
    "note": "the command, felt through the blood"
   },
   {
    "id": "S36",
    "size": "screen",
    "set": "sentence",
-   "key": 169,
+   "key": 165,
    "note": "one sentence, the end of thousands"
   },
   {
    "id": "S37",
    "size": "screen",
    "set": "shadow",
-   "key": 341,
+   "key": 348,
    "note": "her shadow swallows the last ray; Chamunda"
   },
   {
    "id": "S38",
    "size": "screen",
    "set": "strike",
-   "key": 241,
+   "key": 231,
    "note": "the blood never reaches the ground"
   },
   {
    "id": "S39",
    "size": "screen",
    "set": "still",
-   "key": 265,
+   "key": 260,
    "note": "the echo stops; the ground is silent"
   },
   {
    "id": "S40",
    "size": "screen",
    "set": "roam",
-   "key": 345,
+   "key": 350,
    "note": "she moves among them; they vanish into the dark"
   },
   {
    "id": "S41",
    "size": "screen",
    "set": "relief",
-   "key": 238,
+   "key": 247,
    "note": "fear, and beneath it, relief"
   },
   {
@@ -377,35 +377,35 @@
    "id": "S43",
    "size": "screen",
    "set": "rain",
-   "key": 408,
+   "key": 406,
    "note": "the weapons rain; bloodless, he falls"
   },
   {
    "id": "S44",
    "size": "screen",
    "set": "fallen",
-   "key": 196,
+   "key": 193,
    "note": "the source has fallen; he is still standing"
   },
   {
    "id": "S45",
    "size": "screen",
    "set": "alone",
-   "key": 394,
+   "key": 393,
    "note": "for the first time, a question of his own"
   },
   {
    "id": "S46",
    "size": "screen",
    "set": "before",
-   "key": 102,
+   "key": 103,
    "note": "before her, he lays down the mace"
   },
   {
    "id": "S47",
    "size": "screen",
    "set": "eyes",
-   "key": 337,
+   "key": 336,
    "note": "ferocity in battle, compassion in the heart"
   },
   {
@@ -419,7 +419,7 @@
    "id": "S49",
    "size": "screen",
    "set": "seen",
-   "key": 187,
+   "key": 188,
    "note": "among a thousand faces, she sees him"
   },
   {
@@ -440,14 +440,14 @@
    "id": "S52",
    "size": "screen",
    "set": "purify",
-   "key": 294,
+   "key": 293,
    "note": "purified by her weapons, even foes rise to higher worlds"
   },
   {
    "id": "S53",
    "size": "screen",
    "set": "nofear",
-   "key": 199,
+   "key": 200,
    "note": "no fear of falling"
   },
   {

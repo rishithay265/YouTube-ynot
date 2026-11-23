@@ -15,11 +15,11 @@ CHAPTERS
 0:26 झूठा यक़ीन / False certainty
 1:19 पहचान / Recognition
 2:22 बढ़ती सेना / The multiplying army
-3:21 गिरने के लिए जन्मा / Born to fall
-4:24 आदेश / The command
-5:05 काली का आगमन / Kali arrives
-6:04 स्रोत का अंत / The source falls
-6:40 अंतिम क्षण / Final moments
+3:18 गिरने के लिए जन्मा / Born to fall
+4:22 आदेश / The command
+5:01 काली का आगमन / Kali arrives
+6:01 स्रोत का अंत / The source falls
+6:37 अंतिम क्षण / Final moments
 
 SOURCES
 - Devi Mahatmya (Markandeya Purana, chapters 81 to 93; Durga Saptashati), chapter 8 (Raktabija), with chapter 7

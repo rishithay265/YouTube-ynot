@@ -317,9 +317,10 @@ tan = np.zeros((N + 12 * SR, 2))
 cyc, f, i = 4.4, 0.0, 0
 while f < N / SR:
     for j, (s, pan) in enumerate((('Pa', -0.3), ('Sa1', 0.1), ('Sa2', 0.3), ('Sa', -0.1))):
-        o = int((f + j * cyc / 4 + rng.uniform(-0.02, 0.02)) * SR); x = strings[s] * rng.uniform(0.85, 1.0)
+        o = max(0, int((f + j * cyc / 4 + rng.uniform(-0.02, 0.02)) * SR)); x = strings[s] * rng.uniform(0.85, 1.0)
         l, r = np.cos((pan + 1) * np.pi / 4), np.sin((pan + 1) * np.pi / 4)
-        tan[o:o + len(x), 0] += x * l; tan[o:o + len(x), 1] += x * r
+        n = min(len(x), len(tan) - o)
+        if n > 0: tan[o:o + n, 0] += x[:n] * l; tan[o:o + n, 1] += x[:n] * r
     f += cyc
 tan = tan[:N]
 # a low pad (Sa and Pa, slowly breathing) and, for the last chapter, a high warm pad (Sa, Ga, Pa) that resolves the film

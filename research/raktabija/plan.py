@@ -27,6 +27,9 @@ GAP_AFTER = {'s1': 1.6, 's2': 1.4, 's3': 7.0, 's4': 1.6, 's5': 2.2, 's6': 2.4, '
 # Pauses inserted inside a section, after the line ending with this phrase (seconds).
 INSERT = [('s2', 'शिवदूती', 1.2), ('s3', 'तुम कौन हो', 0.8), ('s4', 'तो फिर मैं कौन', 0.8), ('s7', 'थम गई', 1.2),
           ('s7', 'राहत', 1.0), ('s9', 'एक ही आँखों में', 17.0), ('s9', 'मुझे', 0.6)]
+# Whispered phrases that sit 15-18 dB under the rest of their take: lifted on just their word span (dB), so they stay
+# whispers but survive the music. (section, phrase, which occurrence in the section, gain)
+LIFT = [('s6', 'नए नहीं जन्मेंगे', 2, 8.0), ('s3', 'तुम कौन हो', 1, 5.0)]
 TAIL = 18.0       # after the last word: silence, then the closing card
 LEAD = 3          # frames a cut lands before its cue word
 XFADE = 8         # default dissolve between shots (frames)
@@ -73,6 +76,15 @@ for sec in S['sections']:
     miss = sum(1 for x in timed if x.get('guess'))
     if miss: print(f'{sid}: {miss} of {len(toks)} words interpolated')
     x = pcm(os.path.join(HERE, 'tts', f'{take}.mp3'))
+    for (lsid, phrase, nth, gdb) in LIFT:
+        if lsid != sid: continue
+        q = [norm(p) for p in phrase.split()]
+        hits = [k for k in range(len(toks) - len(q) + 1) if [w['n'] for w in toks[k:k + len(q)]] == q]
+        k = hits[nth - 1]; a0, b0 = timed[k]['s'] - 0.05, timed[k + len(q) - 1]['e'] + 0.12
+        env = np.ones(len(x)); g = 10 ** (gdb / 20); r = int(0.04 * SR)
+        i0, i1 = int(a0 * SR), int(b0 * SR); env[i0:i1] = g
+        env[i0 - r:i0] = np.linspace(1, g, r); env[i1:i1 + r] = np.linspace(g, 1, r)
+        x = x * env.astype(np.float32)
     # Cut points: the section's ends plus any inserted pauses (split in the gap after the phrase's last word).
     cuts = []
     for (isid, phrase, secs) in INSERT:

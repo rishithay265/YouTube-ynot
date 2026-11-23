@@ -28,13 +28,13 @@
   "kind": "grip",
   "p": {
    "m": {
-    "gada": 20,
-    "roar": 60,
-    "fire": 116
+    "gada": 18,
+    "roar": 56,
+    "fire": 111
    }
   },
   "note": "hand closes on the mace; fire in the chest",
-  "key": 134
+  "key": 129
  },
  {
   "id": "S4",
@@ -43,12 +43,12 @@
   "p": {
    "m": {
     "shumbha": 48,
-    "army": 103,
-    "vajra": 144
+    "army": 104,
+    "vajra": 142
    }
   },
   "note": "memories: Shumbha's throne, marching armies, Aindri's vajra",
-  "key": 167
+  "key": 164
  },
  {
   "id": "S5",
@@ -56,11 +56,11 @@
   "kind": "iam",
   "p": {
    "m": {
-    "name": 96
+    "name": 97
    }
   },
   "note": "low angle, alone against the sky: \"I am Raktabija\"",
-  "key": 120
+  "key": 121
  },
  {
   "id": "S6",
@@ -68,11 +68,11 @@
   "kind": "field",
   "p": {
    "m": {
-    "shumbha": 103
+    "shumbha": 111
    }
   },
   "note": "the battlefield below the peaks; lower-third (3 s)",
-  "key": 127
+  "key": 135
  },
  {
   "id": "S7",
@@ -94,8 +94,8 @@
   "p": {
    "m": {
     "bell": 37,
-    "kali": 70,
-    "swallow": 130
+    "kali": 71,
+    "swallow": 129
    }
   },
   "note": "lion, bell, then a darkness swallows every sound",
@@ -109,16 +109,16 @@
    "m": {
     "b": 29,
     "m": 56,
-    "k": 81,
-    "v": 104,
-    "va": 127,
-    "n": 149,
-    "a": 175,
-    "s": 249
+    "k": 82,
+    "v": 105,
+    "va": 130,
+    "n": 155,
+    "a": 184,
+    "s": 260
    }
   },
   "note": "montage: the seven Matrikas and Shivaduti, names only",
-  "key": 273
+  "key": 284
  },
  {
   "id": "S10",
@@ -130,7 +130,7 @@
    }
   },
   "note": "the Asura ranks charge and scatter into gold dust",
-  "key": 92
+  "key": 89
  },
  {
   "id": "S11",
@@ -138,11 +138,11 @@
   "kind": "advance",
   "p": {
    "m": {
-    "rb": 82
+    "rb": 67
    }
   },
   "note": "Raktabija strides forward",
-  "key": 106
+  "key": 91
  },
  {
   "id": "S12",
@@ -150,12 +150,12 @@
   "kind": "power",
   "p": {
    "m": {
-    "fall": 125,
-    "rise": 171
+    "fall": 130,
+    "rise": 175
    }
   },
   "note": "a drop falls; a warrior rises from it",
-  "key": 194
+  "key": 198
  },
  {
   "id": "S13",
@@ -163,8 +163,8 @@
   "kind": "vajra",
   "p": {
    "m": {
-    "hit": 36,
-    "blood": 77,
+    "hit": 38,
+    "blood": 80,
     "rise": 106
    }
   },
@@ -189,12 +189,12 @@
   "kind": "twin",
   "p": {
    "m": {
-    "face": 107,
-    "q": 409
+    "face": 106,
+    "q": 408
    }
   },
   "note": "side by side: the same face looks back",
-  "key": 433
+  "key": 432
  },
  {
   "id": "S16",
@@ -202,13 +202,13 @@
   "kind": "count",
   "p": {
    "m": {
-    "one": 8,
-    "ten": 44,
-    "stop": 97
+    "one": 7,
+    "ten": 43,
+    "stop": 96
    }
   },
   "note": "one more, ten, too many to count",
-  "key": 121
+  "key": 120
  },
  {
   "id": "S17",
@@ -241,12 +241,12 @@
   "kind": "blood",
   "p": {
    "m": {
-    "body": 224,
-    "blood": 296
+    "body": 223,
+    "blood": 295
    }
   },
   "note": "not his body: his blood",
-  "key": 320
+  "key": 319
  },
  {
   "id": "S20",
@@ -256,11 +256,11 @@
    "m": {
     "notrb": 255,
     "drop": 338,
-    "title": 348
+    "title": 347
    }
   },
   "note": "into a single drop; the title drops",
-  "key": 372
+  "key": 371
  },
  {
   "id": "S21",
@@ -268,12 +268,12 @@
   "kind": "chakra",
   "p": {
    "m": {
-    "chakra": 32,
-    "many": 191
+    "chakra": 29,
+    "many": 183
    }
   },
   "note": "Vaishnavi's chakra; thousands rise",
-  "key": 215
+  "key": 207
  },
  {
   "id": "S22",
@@ -284,11 +284,11 @@
     "a": 3,
     "k": 35,
     "v": 76,
-    "m": 117
+    "m": 116
    }
   },
   "note": "four strikes, four more births each",
-  "key": 141
+  "key": 140
  },
  {
   "id": "S23",
@@ -296,11 +296,11 @@
   "kind": "fill",
   "p": {
    "m": {
-    "world": 139
+    "world": 131
    }
   },
   "note": "identical warriors to the horizon",
-  "key": 163
+  "key": 155
  },
  {
   "id": "S24",
@@ -308,12 +308,12 @@
   "kind": "echo",
   "p": {
    "m": {
-    "name": 160,
-    "less": 290
+    "name": 155,
+    "less": 275
    }
   },
   "note": "every birth an echo in the veins",
-  "key": 314
+  "key": 299
  },
  {
   "id": "S25",
@@ -321,11 +321,11 @@
   "kind": "faces",
   "p": {
    "m": {
-    "who": 204
+    "who": 195
    }
   },
   "note": "a thousand identical faces: who, then, am I?",
-  "key": 228
+  "key": 219
  },
  {
   "id": "S26",
@@ -333,12 +333,12 @@
   "kind": "mark",
   "p": {
    "m": {
-    "mark": 137,
-    "touch": 248
+    "mark": 132,
+    "touch": 240
    }
   },
   "note": "the earth-mark on his chest",
-  "key": 272
+  "key": 264
  },
  {
   "id": "S27",
@@ -346,12 +346,12 @@
   "kind": "gods",
   "p": {
    "m": {
-    "fear": 95,
-    "won": 171
+    "fear": 90,
+    "won": 161
    }
   },
   "note": "the gods' faces fall; the Asuras think they have won",
-  "key": 195
+  "key": 185
  },
  {
   "id": "S28",
@@ -359,11 +359,11 @@
   "kind": "charge",
   "p": {
    "m": {
-    "first": 213
+    "first": 214
    }
   },
   "note": "they run as one; beside him, the first one",
-  "key": 237
+  "key": 238
  },
  {
   "id": "S29",
@@ -371,13 +371,13 @@
   "kind": "fall",
   "p": {
    "m": {
-    "flash": 35,
-    "fall": 102,
-    "hold": 246
+    "flash": 34,
+    "fall": 101,
+    "hold": 245
    }
   },
   "note": "Kaumari's spear flashes; the first one falls into gold dust in his arms",
-  "key": 270
+  "key": 269
  },
  {
   "id": "S30",
@@ -397,13 +397,13 @@
   "kind": "wall",
   "p": {
    "m": {
-    "wall": 132,
+    "wall": 133,
     "shield": 195,
-    "front": 324
+    "front": 325
    }
   },
   "note": "a wall of drops before the one at the front",
-  "key": 348
+  "key": 349
  },
  {
   "id": "S32",
@@ -423,13 +423,13 @@
   "kind": "ego",
   "p": {
    "m": {
-    "mace": 103,
-    "indra": 235,
-    "new": 443
+    "mace": 102,
+    "indra": 234,
+    "new": 442
    }
   },
   "note": "the hand won't let go; the stolen heaven",
-  "key": 467
+  "key": 466
  },
  {
   "id": "S34",
@@ -437,12 +437,12 @@
   "kind": "slow",
   "p": {
    "m": {
-    "chandika": 137,
-    "blood": 317
+    "chandika": 140,
+    "blood": 311
    }
   },
   "note": "everything slows; Chandika speaks to Kali",
-  "key": 341
+  "key": 335
  },
  {
   "id": "S35",
@@ -450,13 +450,13 @@
   "kind": "command",
   "p": {
    "m": {
-    "mouth": 51,
-    "swallow": 347,
-    "none": 519
+    "mouth": 49,
+    "swallow": 332,
+    "none": 491
    }
   },
   "note": "the command, felt through the blood",
-  "key": 543
+  "key": 515
  },
  {
   "id": "S36",
@@ -464,11 +464,11 @@
   "kind": "sentence",
   "p": {
    "m": {
-    "end": 145
+    "end": 141
    }
   },
   "note": "one sentence, the end of thousands",
-  "key": 169
+  "key": 165
  },
  {
   "id": "S37",
@@ -476,12 +476,12 @@
   "kind": "shadow",
   "p": {
    "m": {
-    "sun": 127,
-    "name": 317
+    "sun": 128,
+    "name": 324
    }
   },
   "note": "her shadow swallows the last ray; Chamunda",
-  "key": 341
+  "key": 348
  },
  {
   "id": "S38",
@@ -489,12 +489,12 @@
   "kind": "strike",
   "p": {
    "m": {
-    "blood": 111,
-    "mouth": 217
+    "blood": 101,
+    "mouth": 207
    }
   },
   "note": "the blood never reaches the ground",
-  "key": 241
+  "key": 231
  },
  {
   "id": "S39",
@@ -503,12 +503,12 @@
   "p": {
    "m": {
     "stop": 77,
-    "silent": 193,
-    "none": 241
+    "silent": 183,
+    "none": 236
    }
   },
   "note": "the echo stops; the ground is silent",
-  "key": 265
+  "key": 260
  },
  {
   "id": "S40",
@@ -516,12 +516,12 @@
   "kind": "roam",
   "p": {
    "m": {
-    "roam": 140,
-    "vanish": 321
+    "roam": 141,
+    "vanish": 326
    }
   },
   "note": "she moves among them; they vanish into the dark",
-  "key": 345
+  "key": 350
  },
  {
   "id": "S41",
@@ -529,11 +529,11 @@
   "kind": "relief",
   "p": {
    "m": {
-    "relief": 214
+    "relief": 223
    }
   },
   "note": "fear, and beneath it, relief",
-  "key": 238
+  "key": 247
  },
  {
   "id": "S42",
@@ -541,7 +541,7 @@
   "kind": "laststrike",
   "p": {
    "m": {
-    "hit": 99,
+    "hit": 97,
     "nopain": 153
    }
   },
@@ -554,12 +554,12 @@
   "kind": "rain",
   "p": {
    "m": {
-    "drink": 252,
+    "drink": 255,
     "fall": 385
    }
   },
   "note": "the weapons rain; bloodless, he falls",
-  "key": 408
+  "key": 406
  },
  {
   "id": "S44",
@@ -567,11 +567,11 @@
   "kind": "fallen",
   "p": {
    "m": {
-    "stand": 173
+    "stand": 171
    }
   },
   "note": "the source has fallen; he is still standing",
-  "key": 196
+  "key": 193
  },
  {
   "id": "S45",
@@ -579,12 +579,12 @@
   "kind": "alone",
   "p": {
    "m": {
-    "q": 184,
-    "what": 370
+    "q": 182,
+    "what": 369
    }
   },
   "note": "for the first time, a question of his own",
-  "key": 394
+  "key": 393
  },
  {
   "id": "S46",
@@ -592,11 +592,11 @@
   "kind": "before",
   "p": {
    "m": {
-    "down": 78
+    "down": 79
    }
   },
   "note": "before her, he lays down the mace",
-  "key": 102
+  "key": 103
  },
  {
   "id": "S47",
@@ -604,13 +604,13 @@
   "kind": "eyes",
   "p": {
    "m": {
-    "fierce": 73,
-    "under": 181,
-    "karuna": 313
+    "fierce": 72,
+    "under": 180,
+    "karuna": 312
    }
   },
   "note": "ferocity in battle, compassion in the heart",
-  "key": 337
+  "key": 336
  },
  {
   "id": "S48",
@@ -628,11 +628,11 @@
   "kind": "seen",
   "p": {
    "m": {
-    "me": 163
+    "me": 164
    }
   },
   "note": "among a thousand faces, she sees him",
-  "key": 187
+  "key": 188
  },
  {
   "id": "S50",
@@ -652,7 +652,7 @@
   "kind": "lived",
   "p": {
    "m": {
-    "war": 55,
+    "war": 54,
     "drop": 95
    }
   },
@@ -665,12 +665,12 @@
   "kind": "purify",
   "p": {
    "m": {
-    "purify": 197,
-    "realms": 270
+    "purify": 196,
+    "realms": 269
    }
   },
   "note": "purified by her weapons, even foes rise to higher worlds",
-  "key": 294
+  "key": 293
  },
  {
   "id": "S53",
@@ -678,11 +678,11 @@
   "kind": "nofear",
   "p": {
    "m": {
-    "nofear": 175
+    "nofear": 176
    }
   },
   "note": "no fear of falling",
-  "key": 199
+  "key": 200
  },
  {
   "id": "S54",
