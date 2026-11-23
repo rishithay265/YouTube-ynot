@@ -11,3 +11,10 @@ command to Chamunda, the 4.22 echo, and the last line. Voice brief: an echo of R
 
 `listen_*` files are loudness-matched to -16 LUFS so the voices compare fairly; the raw takes sit beside them, and
 `asr_report.json` holds every transcript. CER ignores nukta and chandrabindu spelling variants.
+
+## ऐन्द्री / ऐरावत check (Mohit)
+
+`listen_P_mohit_aindri_t1.mp3` ("ऐन्द्री। ऐन्द्री का वज्र।") and `listen_P_mohit_airavat_t1.mp3` ("ऐरावत। ऐरावत पर सवार।").
+Whisper hears both with ए ("एंद्री", "एरावत"): the voice uses the modern Hindi vowel /ɛː/, not the Sanskrit
+diphthong /ai/. If the diphthong is wanted, the fix is an IPA substitution in the TTS text (eleven_v4 reads /…/ as IPA),
+for example ऐन्द्री → /ˈaɪn̪d̪riː/ and ऐरावत → /aɪˈraːʋət̪/.
