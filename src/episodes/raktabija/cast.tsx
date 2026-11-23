@@ -470,7 +470,7 @@ const KB0 = '#3C7BE0', KBHI0 = '#86B8FF', KBDEEP0 = '#1D3F8C', KSKIN = '#03050D'
  * drinks). Origin: between the eyes. eyes: 0 = lowered, half-closed (compassion), 1 = open (the battle).
  * Drawn for this film in the spirit of traditional and devotional images; no skulls, no severed heads.
  */
-export const KaliFace: React.FC<{ x: number; y: number; s?: number; eyes?: number; t?: number; o?: number; tone?: 'blue' | 'gold'; glow?: number }> = ({ x, y, s = 1, eyes = 0, t = 0, o = 1, tone = 'blue', glow = 0 }) => {
+export const KaliFace: React.FC<{ x: number; y: number; s?: number; eyes?: number; t?: number; o?: number; tone?: 'blue' | 'gold'; glow?: number; spread?: number }> = ({ x, y, s = 1, eyes = 0, t = 0, o = 1, tone = 'blue', glow = 0, spread = 1 }) => {
   const gold = tone === 'gold';
   const KB = gold ? P.gold : KB0, KBHI = gold ? P.goldHi : KBHI0, KBDEEP = gold ? P.goldDeep : KBDEEP0, HAIRDEEP = gold ? '#3A2A08' : '#0B1A3E';
   // Hair: long wavy locks rooted along the curve of the skull, rising over the crown, then falling past the shoulders.
@@ -482,7 +482,7 @@ export const KaliFace: React.FC<{ x: number; y: number; s?: number; eyes?: numbe
     const lift = 70 + (1 - u) * 90;                                  // locks from the crown rise higher before falling
     const pts = Array.from({ length: 9 }, (_, k) => {
       const q = k / 8;
-      const px = rx0 + side * (60 + 220 * u) * Math.sin(q * 1.7) + amp * Math.sin(q * 6 + ph + t * 0.02) * q;
+      const px = rx0 + (side * (60 + 220 * u) * Math.sin(q * 1.7) + amp * Math.sin(q * 6 + ph + t * 0.02) * q) * spread;
       const py = ry0 - lift * Math.sin(Math.min(1, q * 2.4) * Math.PI) * (q < 0.42 ? 1 : 0.25) + L * q * q;
       return [px, py];
     });
@@ -567,26 +567,26 @@ export const KaliFace: React.FC<{ x: number; y: number; s?: number; eyes?: numbe
  * a great curled moustache, fangs, gold crescent earrings, and his mark, the blood-drop tilak dripping from the brow.
  * A trail of blood curls around him. Origin: between the eyes. rage 0..1 brightens the eyes; drip 0..1 runs the tilak.
  */
-export const RaktabijaFace: React.FC<{ x: number; y: number; s?: number; t?: number; rage?: number; drip?: number; o?: number }> = ({ x, y, s = 1, t = 0, rage = 1, drip = 1, o = 1 }) => {
+export const RaktabijaFace: React.FC<{ x: number; y: number; s?: number; t?: number; rage?: number; drip?: number; o?: number; trail?: boolean; hair?: number }> = ({ x, y, s = 1, t = 0, rage = 1, drip = 1, o = 1, trail = true, hair = 1 }) => {
   const DK = '#1A0406', R = '#B3202E';
   return (
     <g transform={`translate(${x} ${y}) scale(${s})`} opacity={o}>
       {/* the trail of blood */}
-      <g fill="none" strokeLinecap="round">
+      {trail ? <g fill="none" strokeLinecap="round">
         <path d="M-60 -420 C-260 -380 -330 -200 -300 -60" stroke={R} strokeWidth={26} opacity={0.75} />
         <path d="M-60 -420 C-260 -380 -330 -200 -300 -60" stroke="#FF4A3C" strokeWidth={6} opacity={0.6} />
         <path d="M250 120 C320 260 220 380 40 420" stroke={R} strokeWidth={24} opacity={0.75} />
         <path d="M250 120 C320 260 220 380 40 420" stroke="#FF4A3C" strokeWidth={5} opacity={0.6} />
         {Array.from({ length: 9 }, (_, i) => <circle key={i} cx={-300 + rnd(71, i) * 120} cy={-300 + rnd(72, i) * 260} r={3 + rnd(73, i) * 5} fill={R} stroke="none" />)}
-      </g>
-      {/* hair sweeping back */}
-      <g fill="none" strokeLinecap="round">
+      </g> : null}
+      {/* hair sweeping back (hair={0} hides it) */}
+      {hair > 0 ? <g fill="none" strokeLinecap="round">
         {Array.from({ length: 26 }, (_, i) => {
           const side = i % 2 ? 1 : -1, u = rnd(74, i);
           const x0 = side * (60 + u * 110), y0 = -190 + u * 90;
-          return <path key={i} d={`M${x0} ${y0} C${x0 + side * 90} ${y0 - 40 - u * 60} ${x0 + side * 200} ${y0 + 10} ${x0 + side * (240 + u * 120)} ${y0 + 140 + u * 160}`} stroke={i % 3 ? '#5A0E18' : P.goldDeep} strokeWidth={6 + rnd(75, i) * 10} opacity={0.85} />;
+          return <path key={i} d={`M${x0} ${y0} C${x0 + side * 90 * hair} ${y0 - 40 - u * 60} ${x0 + side * 200 * hair} ${y0 + 10} ${x0 + side * (240 + u * 120) * hair} ${y0 + 140 + u * 160}`} stroke={i % 3 ? '#5A0E18' : P.goldDeep} strokeWidth={6 + rnd(75, i) * 10} opacity={0.85} />;
         })}
-      </g>
+      </g> : null}
       {/* ears */}
       {[-1, 1].map((sd) => <path key={sd} d={`M${sd * 160} -20 C${sd * 196} -30 ${sd * 200} 40 ${sd * 166} 70`} fill="#7A1424" stroke={P.gold} strokeWidth={4} />)}
       {/* head: broad cheekbones, a heavy jaw */}

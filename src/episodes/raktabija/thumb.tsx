@@ -1,7 +1,7 @@
 import React from 'react';
 import { AbsoluteFill, staticFile } from 'remotion';
-import { P, F, W, H, Defs, Stars, Drop, rnd } from './world';
-import { Asura, Mini, KaliFace } from './cast';
+import { P, F, W, H, Defs, Field, Stars, Drop, rnd } from './world';
+import { Asura, Mini, KaliFace, RaktabijaFace, Horde } from './cast';
 
 // RaktabijaThumb (1920 x 1080): the brand thumbnail template's composition, drawn in code. Logo top left; the left
 // half a dark stone panel carrying the words, bright and high-contrast; the right half an eclipse over Indian temple
@@ -19,7 +19,8 @@ const Gopuram: React.FC<{ x: number; y: number; s: number; o?: number }> = ({ x,
   </g>
 );
 
-export const RaktabijaThumb: React.FC = () => {
+/** The first thumbnail: Kali ma in the eclipse, the narrator below (kept for comparison). */
+export const RaktabijaThumbEclipse: React.FC = () => {
   const cx = 1440, cy = 345, r = 285;
   return (
     <AbsoluteFill style={{ backgroundColor: P.abyss }}>
@@ -107,3 +108,45 @@ export const RaktabijaThumb: React.FC = () => {
     </AbsoluteFill>
   );
 };
+
+/**
+ * RaktabijaThumb (1920 x 1080), the film's own cast and look and nothing else: flat navy sky and field exactly as in the
+ * film's shots, Kali ma (KaliFace, gold line-art, eyes open as in the battle) on the left, Raktabija (RaktabijaFace, the
+ * blood-drop tilak) on the right, the title between them with a single blood drop above it, and below, the blood-red
+ * warriors of the film in rows with the narrator, the earth-mark on his chest, standing in front of them.
+ * No gradients beyond the film's own, no painted texture, no glow beyond the film's halo.
+ */
+export const RaktabijaThumb: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: P.abyss }}>
+    <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`}>
+      <Defs />
+      <defs>
+        <filter id="thTitleGlow" x="-10%" y="-30%" width="120%" height="160%">
+          <feGaussianBlur stdDeviation="9" result="b" />
+          <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+        </filter>
+      </defs>
+      <Field t={40} sun={0.25} stars={0.6} horizon={800} dark={0.4} shrines={false} />
+      {/* the two faces, tilted a few degrees towards each other */}
+      <g transform="rotate(5 245 450)"><KaliFace x={245} y={450} s={1.0} eyes={1} tone="gold" glow={0.45} t={0} spread={0.6} /></g>
+      <g transform="rotate(-5 1675 450)"><RaktabijaFace x={1675} y={450} s={1.05} rage={1} drip={1} t={0} trail={false} hair={0} /></g>
+      {/* the title, with one drop above it */}
+      <Drop x={960} y={190} s={1.7} glow={1.4} />
+      <path d="M700 190 L890 190 M1030 190 L1220 190" stroke={P.gold} strokeWidth={2} opacity={0.7} />
+      <g textAnchor="middle" fontFamily={F.deva}>
+        <text x={960} y={450} fontSize={184} fill={P.goldHi} stroke="#02060F" strokeWidth={7} paintOrder="stroke">
+          मैं <tspan fill="#F2412F">रक्तबीज</tspan>
+        </text>
+        <text x={960} y={650} fontSize={196} fill={P.goldHi} stroke="#02060F" strokeWidth={7} paintOrder="stroke">नहीं था</text>
+      </g>
+      <path d="M760 700 L1160 700" stroke={P.gold} strokeWidth={2} opacity={0.7} />
+      <text x={960} y={752} textAnchor="middle" fontFamily={F.brand} fontSize={36} fontWeight={600} letterSpacing={7} fill={P.snow}>I WAS NOT RAKTABIJA</text>
+      {/* the warriors of the film, in rows, and the narrator in front */}
+      <Horde t={0} count={40} horizon={858} rows={2} per={13} seed={5} x0={-30} x1={1950} nearY={1060} nearS={0.27} o={0.75} />
+      <Asura id="thumb-nr" x={960} y={1074} s={0.66} pose="rest" contra look={0.4} mark t={0} />
+      <circle cx={954} cy={1074 - 0.66 * 246} r={46} fill="#E0A050" opacity={0.3} filter="url(#rkBlur8)" />
+      {/* the brand mark, small */}
+      <image href={staticFile('raktabija/logo.webp')} x={36} y={24} width={150} height={150} />
+    </svg>
+  </AbsoluteFill>
+);
