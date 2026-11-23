@@ -57,11 +57,11 @@ export const Asura: React.FC<{
   contra?: boolean;
   /** Head turn, -1..1 (+ = towards +x), with a slight lift. 0 by default. */
   look?: number;
-  /** 'blood': deep lacquer-red skin (Raktabija and everyone born of his blood). Default 'navy'. */
+  /** 'blood' (default): deep lacquer-red skin, Raktabija and everyone born of his blood. 'navy': the original look. */
   tone?: 'navy' | 'blood';
-  /** An asura's face: heavy brows, wide eyes, curled moustache, small fangs, gold earrings. Off by default. */
+  /** An asura's face: heavy brows, wide eyes, curled moustache, small fangs, gold earrings. On by default. */
   fierce?: boolean;
-}> = ({ x, y, s = 1, pose = 'stand', mark = false, wound = 0, rim = 1, rise = 1, dust = 0, id, flip = false, dim = 0, tilt = 0, t = 0, contra = false, look = 0, tone = 'navy', fierce = false }) => {
+}> = ({ x, y, s = 1, pose = 'stand', mark = false, wound = 0, rim = 1, rise = 1, dust = 0, id, flip = false, dim = 0, tilt = 0, t = 0, contra = false, look = 0, tone = 'blood', fierce = true }) => {
   const red = tone === 'blood';
   const SKIN = red ? 'url(#rkBlood)' : DARK, CORE = red ? '#5A0E1A' : '#08122D', HEAD = red ? '#6A1222' : '#0A1533';
   const A = ARMS[pose];
@@ -417,7 +417,7 @@ const MINI = 'M-48 0 L-20 0 Q-18 -56 -12 -112 L12 -112 Q18 -56 20 0 L48 0 Q46 -5
   + 'Q60 -248 74 -270 L96 -150 L112 -160 L92 -290 Q66 -308 24 -304 L14 -306 L14 -318 A24 24 0 0 0 25 -352 L21 -384 L11 -370 L0 -404 '
   + 'L-11 -370 L-21 -384 L-25 -352 A24 24 0 0 0 -14 -318 L-14 -306 L-24 -304 Q-66 -308 -92 -290 L-112 -160 L-96 -150 L-74 -270 '
   + 'Q-60 -248 -52 -212 Q-70 -170 -64 -128 Q-66 -116 -40 -112 Q-46 -56 -48 0 Z';
-export const Mini: React.FC<{ x: number; y: number; s: number; o?: number; rim?: number; rise?: number; mace?: boolean; flip?: boolean; dust?: number; seed?: number; back?: boolean; tone?: 'navy' | 'blood' }> = ({ x, y, s, o = 1, rim = 1, rise = 1, mace = true, flip = false, dust = 0, seed = 1, back = false, tone = 'navy' }) => {
+export const Mini: React.FC<{ x: number; y: number; s: number; o?: number; rim?: number; rise?: number; mace?: boolean; flip?: boolean; dust?: number; seed?: number; back?: boolean; tone?: 'navy' | 'blood' }> = ({ x, y, s, o = 1, rim = 1, rise = 1, mace = true, flip = false, dust = 0, seed = 1, back = false, tone = 'blood' }) => {
   if (o <= 0) return null;
   const sink = (1 - clamp(rise)) * 404;
   const vis = 1 - clamp(dust * 1.8);

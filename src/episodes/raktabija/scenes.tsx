@@ -2,14 +2,15 @@ import React from 'react';
 import { staticFile } from 'remotion';
 import { ShotProps } from '../../engine';
 import { P, F, W, H, Defs, Field, Stars, Motes, Drop, DustBurst, clamp, lerp, ease, easeOut, rnd, fin, cam } from './world';
-import { Asura, Shakti, KaliPresence, Gods, EmblemG, Mini, Horde, Gada, Prabha, ShaktiKind, SHAKTI } from './cast';
+import { Asura, Shakti, KaliPresence, KaliFace, KaliForm, RaktabijaFace, Gods, EmblemG, Mini, Horde, Gada, Prabha, ShaktiKind, SHAKTI } from './cast';
 import script from '../../../research/raktabija/script.json';
 
 // The scenes of "मैं रक्तबीज नहीं था". Each is a pure function of its own clock t (frames since the shot began); marks
 // (d.p.m) are the local frames of words in the narration (research/raktabija/shots.py), so reveals land on the voice.
 // Figures come only from cast.tsx (the cast sheet), so every shot stays consistent with it. No gore: blood is a lacquer
-// drop with a gold core, the fallen come apart into gold dust, and Kali is felt (shadow, ember eyes, garland glints,
-// a mouth of night sky), never shown.
+// drop with a gold core, the fallen come apart into gold dust. Raktabija and everyone born of his blood are
+// blood-red; Kali ma is shown in her traditional form (gold line-art, red tongue, khadga and khappar, no skulls), her
+// shadow arriving first, her eyes open in battle and lowered in compassion at the end.
 
 export type Def = { id: string; cue: string; kind: string; key?: number; note?: string; p?: any };
 type SP = ShotProps & { d: Def };
@@ -261,7 +262,7 @@ const Roar: React.FC<SP> = ({ t, len, d }) => {
       <Rings x={1360} y={520} t={t} a={bell} n={4} every={10} max={900} />
       {/* Kali's roar: a darkness sweeping in and swallowing every ring */}
       <rect width={W} height={H} fill={P.abyss} opacity={0.94 * k} />
-      <KaliPresence t={t} p={k * 0.9} eyes={fin(t, sw, 14)} cx={960} cy={460} s={1.1} />
+      <KaliFace x={960} y={470} s={0.85} eyes={1} tone="gold" glow={0.6} t={t} o={k * fin(t, kali + 10, 30)} />
     </g>
   );
 };
@@ -339,12 +340,12 @@ const Vajra: React.FC<SP> = ({ t, len, d }) => {
     <g>
       <Field t={t} sun={0.6} stars={0.5} horizon={780} dark={0.2} />
       <Shakti k="aindri" x={300} y={760} s={0.55} t={t} />
-      <Asura id="vj" x={1180} y={940} s={1.5} pose="strike" wound={fin(t, hit, 6)} t={t} tilt={-6 * bolt} />
+      <Asura id="vj" x={1180} y={940} s={1.75} pose="strike" wound={fin(t, hit, 6)} t={t} tilt={-6 * bolt} />
       {/* the thunderbolt */}
-      <path d="M420 420 L700 470 L660 500 L1000 520 L960 540 L1180 545" fill="none" stroke={P.goldHi} strokeWidth={8 * bolt} opacity={bolt} filter="url(#rkGlowBig)" />
+      <path d="M420 300 L700 350 L660 372 L1000 330 L960 352 L1180 326" fill="none" stroke={P.goldHi} strokeWidth={8 * bolt} opacity={bolt} filter="url(#rkGlowBig)" />
       {[0, 1, 2].map((i) => {
         const a = bl + i * 9;
-        return t > a ? <Drop key={i} x={1170 + i * 22} y={fallY(t, a, 22, 560, 945)} s={0.8} o={clamp(1 - (t - a - 22) / 6)} /> : null;
+        return t > a ? <Drop key={i} x={1170 + i * 22} y={fallY(t, a, 26, 350, 945)} s={0.8} o={clamp(1 - (t - a - 26) / 6)} /> : null;
       })}
       <Asura id="vjn" x={1460} y={1000} s={1.25} pose="stand" mark rise={easeOut(clamp((t - ri + 8) / 46))} t={t} />
       <Crack x={1460} y={1000} p={clamp((t - ri + 16) / 10) * 0.9} w={150} />
@@ -357,9 +358,9 @@ const Laugh: React.FC<SP> = ({ t, len, d }) => {
   return (
     <g transform={cam(960, 600, push(t, len, 1.0, 1.08))}>
       <Field t={t} sun={0.5} stars={0.6} horizon={760} dark={0.15} />
-      <Horde t={t} count={22} horizon={760} rows={3} per={9} nearS={0.55} nearY={1000} rise={(i) => clamp((n - i) / 3)} />
-      <Asura id="lg" x={960} y={1010} s={1.55} pose="raise" wound={1} t={t} tilt={Math.sin(t * 0.25) * 1.5} />
-      <Rings x={960} y={460} t={t} a={4} n={3} every={14} max={500} />
+      <Rings x={960} y={520} t={t} a={4} n={3} every={14} max={700} />
+      <g transform={`rotate(${Math.sin(t * 0.25) * 1.2} 960 520)`}><RaktabijaFace x={960} y={470} s={1.05} t={t} rage={0.75 + 0.25 * Math.abs(Math.sin(t * 0.3))} /></g>
+      <Horde t={t} count={22} horizon={860} rows={3} per={9} nearS={0.62} nearY={1120} rise={(i) => clamp((n - i) / 3)} />
     </g>
   );
 };
@@ -394,12 +395,16 @@ const Front: React.FC<SP> = ({ t, len, d }) => {
   const rb = mk(d, 'rb', 60), wd = mk(d, 'wound', 120);
   const z = lerp(1.0, 1.9, ease(clamp((t - rb + 20) / 60)));
   return (
-    <g transform={cam(960, lerp(700, 560, ease(clamp((t - rb + 20) / 60))), z)}>
+    <g><g transform={cam(960, lerp(700, 560, ease(clamp((t - rb + 20) / 60))), z)}>
       <Field t={t} sun={0.7} stars={0.4} horizon={720} />
-      <Asura id="fr" x={960} y={770} s={0.8} pose="raise" wound={fin(t, wd, 12)} t={t} rim={1} />
-      <Glow x={960} y={493} r={40} o={0.8 * fin(t, wd, 12)} c={P.lacquerHi} />
+      <Asura id="fr" x={960} y={770} s={1.0} pose="raise" wound={fin(t, wd, 12)} t={t} rim={1} />
       <Horde t={t} count={100} horizon={760} rows={5} per={12} nearS={0.8} nearY={1150} seed={12} />
     </g>
+    {/* on the wound: his face, the tilak running */}
+    <g opacity={fin(t, wd - 6, 14)}>
+      <rect width={W} height={H} fill={P.abyss} />
+      <RaktabijaFace x={960} y={480} s={1.0} t={t} drip={fin(t, wd, 50)} />
+    </g></g>
   );
 };
 const Touch: React.FC<SP> = ({ t, len, d }) => {
@@ -422,7 +427,7 @@ const BloodNotBody: React.FC<SP> = ({ t, len, d }) => {
   return (
     <g>
       <Field t={t} sun={0.3} stars={0.7} horizon={860} dark={0.45} />
-      <Asura id="bb1" x={560} y={980} s={1.5} pose="stand" wound={1} t={t} dim={0.65 * fin(t, bo, 30)} />
+      <Asura id="bb1" x={560} y={1000} s={1.8} pose="stand" wound={1} t={t} dim={0.65 * fin(t, bo, 30)} />
       <Asura id="bb2" x={1360} y={980} s={1.5} pose="empty" mark t={t} />
       {/* from his wound, a thread of drops reaches the narrator */}
       {Array.from({ length: 12 }, (_, i) => {
@@ -469,7 +474,7 @@ const Chakra: React.FC<SP> = ({ t, len, d }) => {
       <g transform={`translate(${lerp(1560, 760, u)} ${lerp(470, 600, u)}) rotate(${t * 24})`} opacity={u > 0 && u < 1 ? 1 : u >= 1 ? clamp(1 - (t - ch - 6) / 10) : 0}>
         <EmblemG k="chakra" x={0} y={0} s={3} />
       </g>
-      <Asura id="ck" x={760} y={900} s={1.1} pose="strike" wound={1} t={t} />
+      <Asura id="ck" x={760} y={920} s={1.4} pose="strike" wound={1} t={t} />
       {Array.from({ length: 8 }, (_, i) => {
         const a = ch + 6 + i * 3;
         if (t < a) return null;
@@ -548,9 +553,12 @@ const Faces: React.FC<SP> = ({ t, len, d }) => {
         const x = 60 + c * 180 + (r % 2) * 90, y = 120 + r * 170;
         return (
           <g key={`${r}-${c}`} transform={`translate(${x} ${y}) scale(${s})`} opacity={0.5 + 0.5 * (r / 5)}>
-            <circle r={44} fill="#0A1533" stroke={P.gold} strokeWidth={2.4} />
-            <path d="M-46 -20 L-40 -72 L-22 -52 L0 -100 L22 -52 L40 -72 L46 -20 Z" fill="#08122D" stroke={P.gold} strokeWidth={2.4} />
-            <path d="M-22 2 L-8 6 M8 6 L22 2" stroke={P.goldHi} strokeWidth={3} />
+            <circle r={44} fill="url(#rkBlood)" stroke={P.gold} strokeWidth={2.4} />
+            <path d="M-46 -20 L-40 -72 L-22 -52 L0 -100 L22 -52 L40 -72 L46 -20 Z" fill="#2A1606" stroke={P.gold} strokeWidth={2.4} />
+            <path d="M-28 -12 L-6 -2 M6 -2 L28 -12" stroke="#1A0604" strokeWidth={5} strokeLinecap="round" />
+            <path d="M-24 0 Q-15 -5 -6 3 Q-15 6 -24 0 Z M24 0 Q15 -5 6 3 Q15 6 24 0 Z" fill="#FF5A3C" />
+            <path d="M0 18 C-10 12 -24 14 -30 24 C-26 30 -20 28 -18 24 M0 18 C10 12 24 14 30 24 C26 30 20 28 18 24" stroke="#1A0604" strokeWidth={4} fill="none" strokeLinecap="round" />
+            <path d="M-8 26 L-6 36 L-4 26 Z M8 26 L6 36 L4 26 Z" fill="#FFF1D2" />
           </g>
         );
       }))}
@@ -631,7 +639,7 @@ const Wall: React.FC<SP> = ({ t, len, d }) => {
   return (
     <g>
       <Field t={t} sun={0.6} stars={0.5} horizon={760} />
-      <Asura id="wl0" x={960} y={820} s={0.9} pose="raise" wound={1} t={t} rim={0.6 + 0.4 * fin(t, fr, 20)} />
+      <Asura id="wl0" x={960} y={830} s={1.15} pose="raise" wound={1} t={t} rim={0.6 + 0.4 * fin(t, fr, 20)} />
       <Glow x={960} y={560} r={220} o={0.35 * fin(t, fr, 20)} />
       {Array.from({ length: 9 }, (_, i) => (
         <g key={i}>
@@ -685,7 +693,7 @@ const Slow: React.FC<SP> = ({ t, len, d }) => {
       <Field t={st} sun={0.5} stars={0.7} horizon={760} dark={0.2} />
       <Gods t={st} o={0.3} y={170} />
       <g transform="translate(1340 800)"><Shakti k="chandika" x={0} y={0} s={0.55} t={st} glow={0.6 + 0.4 * fin(t, ch, 30)} /></g>
-      <KaliPresence t={st} p={0.85} eyes={0.6} cx={1680} cy={520} s={0.42} />
+      <KaliForm x={1700} y={900} s={0.42} eyes={1} t={st} />
       <Horde t={st} count={50} horizon={760} rows={3} per={8} x0={-60} x1={900} nearS={0.4} nearY={900} />
       <path d={`M1340 820 Q900 860 ${lerp(1340, 380, clamp((t - bl) / 60))} 900`} fill="none" stroke={P.lacquerHi} strokeWidth={3} opacity={0.8 * fin(t, bl, 10)} filter="url(#rkGlow)" />
       <Asura id="sl" x={380} y={1000} s={1.1} pose="stand" mark t={st} />
@@ -697,12 +705,12 @@ const Command: React.FC<SP> = ({ t, len, d }) => {
   return (
     <g>
       <rect width={W} height={H} fill={P.abyss} />
-      <KaliPresence t={t} p={1} eyes={0.8} mouth={0.2 + 0.8 * ease(clamp((t - mo) / 50))} cx={960} cy={420} s={1.05} />
+      <KaliFace x={960} y={400} s={0.95} eyes={1} tone="gold" glow={0.4 + 0.3 * ease(clamp((t - mo) / 50))} t={t} />
       {Array.from({ length: 24 }, (_, i) => {
         const a = sw + i * 4;
         const u = clamp((t - a) / 50);
         if (u <= 0 || u >= 1) return null;
-        return <Drop key={i} x={lerp(200 + rnd(61, i) * 1520, 960, u)} y={lerp(1000, 380, u)} s={0.6 * (1 - u * 0.7)} o={1 - u} />;
+        return <Drop key={i} x={lerp(200 + rnd(61, i) * 1520, 960, u)} y={lerp(1000, 560, u)} s={0.6 * (1 - u * 0.7)} o={1 - u} />;
       })}
       <path d="M0 1000 L1920 1000" stroke={P.gold} strokeWidth={2} opacity={0.5 * (1 - fin(t, no, 30))} />
     </g>
@@ -727,7 +735,8 @@ const ShadowArrives: React.FC<SP> = ({ t, len, d }) => {
     <g>
       <Field t={t} sun={1 - k} stars={0.5} horizon={740} />
       <Horde t={t} count={80} horizon={740} rows={4} per={12} seed={81} nearS={0.45} nearY={960} />
-      <g transform={`translate(${lerp(-900, 0, k)} 0)`}><KaliPresence t={t} p={0.96} eyes={fin(t, nm - 6, 14)} cx={1100} cy={420} s={1.5} /></g>
+      <g transform={`translate(${lerp(-900, 0, k)} 0)`}><KaliPresence t={t} p={0.96 * (1 - fin(t, nm - 8, 30))} eyes={fin(t, nm - 30, 14)} cx={1100} cy={420} s={1.5} /></g>
+      <KaliForm x={1100} y={1010} s={0.92} eyes={1} t={t} o={fin(t, nm - 8, 30)} />
     </g>
   );
 };
@@ -736,16 +745,16 @@ const Strike: React.FC<SP> = ({ t, len, d }) => {
   return (
     <g>
       <Field t={t} sun={0.1} stars={0.7} horizon={780} dark={0.3} />
-      <KaliPresence t={t} p={0.9} eyes={0.9} mouth={0.75} cx={1250} cy={330} s={0.8} />
+      <KaliForm x={1330} y={990} s={0.72} eyes={1} t={t} />
       <g transform="translate(1600 860)"><Shakti k="chandika" x={0} y={0} s={0.42} t={t} /></g>
-      <Asura id="st" x={600} y={960} s={1.3} pose="strike" wound={1} t={t} />
+      <Asura id="st" x={600} y={980} s={1.55} pose="strike" wound={1} t={t} />
       <path d={`M1500 700 L${lerp(1500, 620, clamp((t - bl + 10) / 8))} ${lerp(700, 560, clamp((t - bl + 10) / 8))}`} stroke={P.goldHi} strokeWidth={5} opacity={clamp(1 - Math.abs(t - bl + 4) / 10)} filter="url(#rkGlow)" />
       {Array.from({ length: 10 }, (_, i) => {
         const a = bl + i * 5;
         const u = clamp((t - a) / (mo - bl + 20));
         if (u <= 0 || u >= 1) return null;
-        // the arc rises towards the mouth instead of falling to earth
-        const x = lerp(600, 1250, u), y = lerp(560, 300, u) - Math.sin(u * Math.PI) * 160;
+        // the arc never falls to earth: it ends in her khappar
+        const x = lerp(600, 1330 - 252, u), y = lerp(560, 990 - 333, u) - Math.sin(u * Math.PI) * 200; // into the khappar
         return <Drop key={i} x={x} y={y} s={0.6 * (1 - u * 0.6)} o={1 - clamp((u - 0.8) / 0.2)} />;
       })}
     </g>
@@ -775,7 +784,7 @@ const Roam: React.FC<SP> = ({ t, len, d }) => {
       <defs><linearGradient id="roamG" x1="0" x2="1"><stop offset="0" stopColor={P.abyss} stopOpacity={0.98} /><stop offset="0.8" stopColor={P.abyss} stopOpacity={0.9} /><stop offset="1" stopColor={P.abyss} stopOpacity={0} /></linearGradient></defs>
       <rect x={-200} y={0} width={kx + 200} height={H} fill="url(#roamG)" />
       <Stars t={t} n={80} o={0.8} box={[0, 600, Math.max(0, kx), 480]} seed={13} />
-      <KaliPresence t={t} p={0.95} eyes={0.9} cx={kx} cy={480} s={0.9} />
+      <KaliForm x={kx} y={1010} s={0.72} eyes={1} t={t} />
       <Dark o={0.3 * fin(t, va, 60)} />
     </g>
   );
@@ -798,7 +807,7 @@ const LastStrike: React.FC<SP> = ({ t, len, d }) => {
     <g>
       <Field t={t} sun={0.1} stars={0.7} horizon={800} dark={0.3} />
       <Shakti k="chandika" x={1320} y={920} s={0.78} t={t} glow={1 + 0.4 * fin(t, np, 20)} />
-      <Asura id="ls" x={620} y={980} s={1.5} pose={t < hi - 12 ? 'raise' : 'strike'} wound={1} t={t} />
+      <Asura id="ls" x={620} y={1000} s={1.8} pose={t < hi - 12 ? 'raise' : 'strike'} wound={1} t={t} />
       <Rings x={1080} y={560} t={t} a={hi} n={2} every={6} max={160} w={4} />
     </g>
   );
@@ -812,8 +821,8 @@ const Rain: React.FC<SP> = ({ t, len, d }) => {
   return (
     <g>
       <Field t={t} sun={0.05} stars={0.8} horizon={820} dark={0.4} />
-      <KaliPresence t={t} p={0.85} eyes={0.9} mouth={0.6} cx={1500} cy={260} s={0.6} />
-      <Asura id="rn" x={900} y={1000} s={1.5} pose="lower" wound={1} t={t} tilt={80 * tip} dim={0.6 * tip} />
+      <KaliForm x={1560} y={1010} s={0.75} eyes={1} t={t} />
+      <Asura id="rn" x={820} y={1010} s={1.8} pose="lower" wound={1} t={t} tilt={-80 * tip} dim={0.6 * tip} />
       {items.map(([k, a], i) => {
         const u = clamp((t - a) / 22);
         if (u <= 0 || u >= 1) return null;
@@ -822,7 +831,7 @@ const Rain: React.FC<SP> = ({ t, len, d }) => {
       {Array.from({ length: 10 }, (_, i) => {
         const u = clamp((t - dr + 30 - i * 8) / 50);
         if (u <= 0 || u >= 1) return null;
-        return <Drop key={i} x={lerp(900, 1500, u)} y={lerp(640, 300, u) - Math.sin(u * Math.PI) * 120} s={0.5} o={1 - u} />;
+        return <Drop key={i} x={lerp(820, 1560 - 262, u)} y={lerp(640, 1010 - 347, u) - Math.sin(u * Math.PI) * 160} s={0.5} o={1 - u} />;
       })}
     </g>
   );
@@ -832,7 +841,7 @@ const Fallen: React.FC<SP> = ({ t, len, d }) => {
   return (
     <g>
       <Field t={t} sun={0.05} stars={0.9} horizon={820} dark={0.45} />
-      <Asura id="fa1" x={1100} y={910} s={1.1} pose="empty" wound={1} t={0} tilt={88} dim={0.55} />
+      <Asura id="fa1" x={1100} y={920} s={1.4} pose="empty" wound={1} t={0} tilt={88} dim={0.55} />
       <Asura id="fa2" x={640} y={1040} s={1.6} pose="stand" mark t={t} rim={0.6 + 0.4 * fin(t, sd, 20)} />
       <Glow x={640} y={700} r={240} o={0.3 * fin(t, sd, 20)} />
     </g>
@@ -857,7 +866,7 @@ const Before: React.FC<SP> = ({ t, len, d }) => {
     <g>
       <rect width={W} height={H} fill={P.abyss} />
       <Stars t={t} n={120} o={0.5} box={[0, 0, W, H]} />
-      <KaliPresence t={t} p={1} eyes={1} cx={1060} cy={430} s={1.25} />
+      <KaliForm x={1220} y={1070} s={1.0} eyes={1} t={t} />
       <Asura id="bf" x={560} y={1030} s={1.25} pose={t < dn ? 'stand' : 'empty'} mark t={t} />
       {t >= dn ? <Gada x={680} y={1030} a={lerp(180, 90, ease(clamp((t - dn) / 20)))} len={200} /> : null}
     </g>
@@ -868,10 +877,9 @@ const Eyes: React.FC<SP> = ({ t, len, d }) => {
   return (
     <g>
       <rect width={W} height={H} fill={P.abyss} />
-      <g transform={cam(960, 300, lerp(1.6, 2.4, ease(clamp(t / len))))}>
-        <Glow x={960} y={250} r={400} o={0.6 * fin(t, ka, 40)} />
-        <Glow x={960} y={250} r={200} o={0.4 * fin(t, un, 40)} c={P.goldHi} />
-        <KaliPresence t={t} p={1} eyes={0.6 + 0.4 * fin(t, fe, 10)} cx={960} cy={450} s={1} />
+      <g transform={cam(960, 470, lerp(1.0, 1.25, ease(clamp(t / len))))}>
+        <Glow x={960} y={480} r={520} o={0.3 + 0.5 * fin(t, ka, 40)} />
+        <KaliFace x={960} y={480} s={1.05} eyes={1 - ease(clamp((t - un) / (ka - un + 30)))} tone="gold" glow={0.3 + 0.4 * fin(t, fe, 20)} t={t} />
       </g>
     </g>
   );
@@ -968,6 +976,8 @@ const Final: React.FC<SP> = ({ t, len, d }) => {
     <g>
       <rect width={W} height={H} fill={P.abyss} />
       <Stars t={t} n={140} o={0.6} box={[0, 0, W, H]} />
+      {/* above, faintly, the mother's lowered gaze */}
+      <KaliFace x={960} y={330} s={0.62} eyes={0} tone="gold" t={t} o={0.32 * fin(t, ma - 20, 50)} />
       <path d="M0 960 L1920 960" stroke={P.gold} strokeWidth={1.2} opacity={0.4} />
       {/* a cupped palm of light, just above the ground */}
       <g opacity={hand} transform="translate(960 860)">
