@@ -5,5 +5,6 @@ import { pause } from './pause';
 import { blackHole } from './black-hole';
 import { facestealer } from './facestealer';
 import { raktabija } from './raktabija';
+import { tripura } from './tripura';
 
-export const EPISODES = [rewind, copyPaste, pause, blackHole, facestealer, raktabija];
+export const EPISODES = [rewind, copyPaste, pause, blackHole, facestealer, raktabija, tripura];

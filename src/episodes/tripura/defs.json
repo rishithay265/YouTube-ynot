@@ -1,0 +1,1134 @@
+[
+ {
+  "id": "S1",
+  "cue": "f:0",
+  "kind": "open_card",
+  "p": {
+   "m": {}
+  },
+  "note": "",
+  "key": 107
+ },
+ {
+  "id": "S2",
+  "cue": "हम तीन",
+  "kind": "sky3",
+  "p": {
+   "mode": "intro",
+   "m": {
+    "gold": 68,
+    "silver": 104,
+    "iron": 140
+   }
+  },
+  "note": "",
+  "key": 164
+ },
+ {
+  "id": "S3",
+  "cue": "कथा का",
+  "kind": "names",
+  "p": {
+   "m": {
+    "tri": 102,
+    "ari": 179
+   }
+  },
+  "note": "",
+  "key": 203
+ },
+ {
+  "id": "S4",
+  "cue": "राक्षस मारे",
+  "kind": "question",
+  "p": {
+   "m": {
+    "q": 121
+   }
+  },
+  "note": "",
+  "key": 145
+ },
+ {
+  "id": "S5",
+  "cue": "अंत तक",
+  "kind": "listen",
+  "p": {
+   "m": {
+    "where": 87
+   }
+  },
+  "note": "",
+  "key": 111
+ },
+ {
+  "id": "S6",
+  "cue": "after:आज कहाँ हैं",
+  "kind": "title_card",
+  "p": {
+   "m": {}
+  },
+  "note": "",
+  "key": 115
+ },
+ {
+  "id": "S7",
+  "cue": "हमारे राजाओं",
+  "kind": "taraka",
+  "p": {
+   "m": {
+    "boon": 96,
+    "kama": 228
+   }
+  },
+  "note": "",
+  "key": 252
+ },
+ {
+  "id": "S8",
+  "cue": "स्कंद जन्मे",
+  "kind": "skanda",
+  "p": {
+   "m": {
+    "kill": 63
+   }
+  },
+  "note": "",
+  "key": 87
+ },
+ {
+  "id": "S9",
+  "cue": "तीन बेटे",
+  "kind": "sons",
+  "p": {
+   "m": {
+    "tk": 53,
+    "vm": 94,
+    "km": 142
+   }
+  },
+  "note": "",
+  "key": 166
+ },
+ {
+  "id": "S10",
+  "cue": "पिता की",
+  "kind": "nolearn",
+  "p": {
+   "m": {
+    "bigger": 164
+   }
+  },
+  "note": "",
+  "key": 188
+ },
+ {
+  "id": "S11",
+  "cue": "प्रह्लाद ने",
+  "kind": "prahlada",
+  "p": {
+   "m": {
+    "narada": 58,
+    "ours": 134
+   }
+  },
+  "note": "",
+  "key": 158
+ },
+ {
+  "id": "S12",
+  "cue": "मेरु की",
+  "kind": "tapas",
+  "p": {
+   "m": {
+    "foot": 111,
+    "air": 176,
+    "head": 236
+   }
+  },
+  "note": "",
+  "key": 260
+ },
+ {
+  "id": "S13",
+  "cue": "और ब्रह्मा",
+  "kind": "brahma_appears",
+  "p": {
+   "m": {
+    "b": 15
+   }
+  },
+  "note": "",
+  "key": 39
+ },
+ {
+  "id": "S14",
+  "cue": "उन्होंने कहा",
+  "kind": "ask",
+  "p": {
+   "m": {
+    "death": 121
+   }
+  },
+  "note": "",
+  "key": 145
+ },
+ {
+  "id": "S15",
+  "cue": "ब्रह्मा बोले",
+  "kind": "atma",
+  "p": {
+   "m": {
+    "body": 92,
+    "choose": 207
+   }
+  },
+  "note": "",
+  "key": 227
+ },
+ {
+  "id": "S16",
+  "cue": "और वे ब्रह्मा",
+  "kind": "mock",
+  "p": {
+   "m": {
+    "lotus": 92,
+    "go": 175
+   }
+  },
+  "note": "",
+  "key": 197
+ },
+ {
+  "id": "S17",
+  "cue": "फिर भी",
+  "kind": "bigheart",
+  "p": {
+   "m": {
+    "bhishma": 67,
+    "choose": 230
+   }
+  },
+  "note": "",
+  "key": 250
+ },
+ {
+  "id": "S18",
+  "cue": "फिर एक",
+  "kind": "blueprint",
+  "p": {
+   "m": {
+    "three": 61
+   }
+  },
+  "note": "",
+  "key": 85
+ },
+ {
+  "id": "S19",
+  "cue": "तारकाक्ष के",
+  "kind": "assign",
+  "p": {
+   "m": {
+    "gold": 34,
+    "silver": 115,
+    "iron": 207
+   }
+  },
+  "note": "",
+  "key": 231
+ },
+ {
+  "id": "S20",
+  "cue": "और शर्त",
+  "kind": "condition",
+  "p": {
+   "m": {
+    "noon": 128,
+    "pushya": 181,
+    "clouds": 208,
+    "line": 325
+   }
+  },
+  "note": "",
+  "key": 349
+ },
+ {
+  "id": "S21",
+  "cue": "उसी पल",
+  "kind": "impossible",
+  "p": {
+   "m": {
+    "chariot": 106,
+    "arrow": 172,
+    "die": 227
+   }
+  },
+  "note": "",
+  "key": 249
+ },
+ {
+  "id": "S22",
+  "cue": "ब्रह्मा ने",
+  "kind": "evamastu",
+  "p": {
+   "m": {
+    "ev": 85,
+    "care": 223
+   }
+  },
+  "note": "",
+  "key": 247
+ },
+ {
+  "id": "S23",
+  "cue": "मय दानव",
+  "kind": "maya",
+  "p": {
+   "m": {
+    "build": 40
+   }
+  },
+  "note": "",
+  "key": 58
+ },
+ {
+  "id": "S24",
+  "cue": "हमारे भीतर",
+  "kind": "inside",
+  "p": {
+   "m": {
+    "linga": 159,
+    "fire": 202,
+    "sinner": 238
+   }
+  },
+  "note": "",
+  "key": 262
+ },
+ {
+  "id": "S25",
+  "cue": "फिर हम",
+  "kind": "sky3",
+  "p": {
+   "mode": "orbit",
+   "m": {
+    "move": 18,
+    "see": 100
+   }
+  },
+  "note": "",
+  "key": 124
+ },
+ {
+  "id": "S26",
+  "cue": "देवता हारे",
+  "kind": "conquer",
+  "p": {
+   "m": {
+    "amaravati": 40
+   }
+  },
+  "note": "",
+  "key": 64
+ },
+ {
+  "id": "S27",
+  "cue": "इंद्र से",
+  "kind": "command",
+  "p": {
+   "m": {
+    "rain": 80,
+    "sun": 108,
+    "moon": 206
+   }
+  },
+  "note": "",
+  "key": 230
+ },
+ {
+  "id": "S28",
+  "cue": "ऋतुओं का",
+  "kind": "seasons",
+  "p": {
+   "m": {
+    "leaf": 101,
+    "spring": 166
+   }
+  },
+  "note": "",
+  "key": 190
+ },
+ {
+  "id": "S29",
+  "cue": "देह के",
+  "kind": "strength",
+  "p": {
+   "m": {
+    "weak": 110
+   }
+  },
+  "note": "",
+  "key": 134
+ },
+ {
+  "id": "S30",
+  "cue": "देवता ब्रह्मा",
+  "kind": "three_strengths",
+  "p": {
+   "m": {
+    "a": 178,
+    "b": 130,
+    "c": 308,
+    "raised": 400
+   }
+  },
+  "note": "",
+  "key": 424
+ },
+ {
+  "id": "S31",
+  "cue": "देवता कैलास",
+  "kind": "kailasa",
+  "p": {
+   "m": {
+    "bhakt": 145,
+    "no": 260,
+    "go": 293
+   }
+  },
+  "note": "",
+  "key": 317
+ },
+ {
+  "id": "S32",
+  "cue": "विष्णु ने यज्ञ",
+  "kind": "bhutas",
+  "p": {
+   "m": {
+    "rise": 100,
+    "burn": 228
+   }
+  },
+  "note": "",
+  "key": 252
+ },
+ {
+  "id": "S33",
+  "cue": "तब विष्णु",
+  "kind": "understand",
+  "p": {
+   "m": {
+    "linga": 95,
+    "fall": 215
+   }
+  },
+  "note": "",
+  "key": 239
+ },
+ {
+  "id": "S34",
+  "cue": "विष्णु ने अपने",
+  "kind": "mundi_born",
+  "p": {
+   "m": {
+    "broom": 243,
+    "cloth": 362,
+    "dharma": 445
+   }
+  },
+  "note": "",
+  "key": 469
+ },
+ {
+  "id": "S35",
+  "cue": "विष्णु बोले",
+  "kind": "mundi_name",
+  "p": {
+   "m": {
+    "name": 57,
+    "sixteen": 93,
+    "honey": 290,
+    "poison": 314
+   }
+  },
+  "note": "",
+  "key": 335
+ },
+ {
+  "id": "S36",
+  "cue": "वह हमारे",
+  "kind": "mundi_fail",
+  "p": {
+   "m": {
+    "none": 46,
+    "puja": 91
+   }
+  },
+  "note": "",
+  "key": 115
+ },
+ {
+  "id": "S37",
+  "cue": "तब विष्णु ने नारद",
+  "kind": "narada_cert",
+  "p": {
+   "m": {
+    "diksha": 126,
+    "tk": 158,
+    "never": 323,
+    "believe": 395
+   }
+  },
+  "note": "",
+  "key": 416
+ },
+ {
+  "id": "S38",
+  "cue": "तारकाक्ष ने",
+  "kind": "initiation",
+  "p": {
+   "m": {
+    "bro": 66,
+    "all": 128
+   }
+  },
+  "note": "",
+  "key": 152
+ },
+ {
+  "id": "S39",
+  "cue": "उसने सिखाया",
+  "kind": "doctrine",
+  "p": {
+   "m": {
+    "heaven": 123,
+    "names": 274,
+    "fire": 304
+   }
+  },
+  "note": "",
+  "key": 328
+ },
+ {
+  "id": "S40",
+  "cue": "यह देह",
+  "kind": "body_food",
+  "p": {
+   "m": {
+    "dogs": 24,
+    "enjoy": 135,
+    "snatch": 216,
+    "back": 303
+   }
+  },
+  "note": "",
+  "key": 327
+ },
+ {
+  "id": "S41",
+  "cue": "वर्ण झूठ",
+  "kind": "caste",
+  "p": {
+   "m": {
+    "kashyapa": 91
+   }
+  },
+  "note": "",
+  "key": 115
+ },
+ {
+  "id": "S42",
+  "cue": "और हमारे राजा",
+  "kind": "proclaim",
+  "p": {
+   "m": {
+    "rel": 69,
+    "take": 219
+   }
+  },
+  "note": "",
+  "key": 238
+ },
+ {
+  "id": "S43",
+  "cue": "हमने शिवलिंग",
+  "kind": "abandon",
+  "p": {
+   "m": {
+    "linga": 14,
+    "vows": 94
+   }
+  },
+  "note": "",
+  "key": 118
+ },
+ {
+  "id": "S44",
+  "cue": "पत्नियों ने",
+  "kind": "wives",
+  "p": {
+   "m": {
+    "spell": 97,
+    "lust": 229
+   }
+  },
+  "note": "",
+  "key": 247
+ },
+ {
+  "id": "S45",
+  "cue": "अलक्ष्मी भीतर",
+  "kind": "alakshmi",
+  "p": {
+   "m": {
+    "lak": 48,
+    "dry": 139
+   }
+  },
+  "note": "",
+  "key": 163
+ },
+ {
+  "id": "S46",
+  "cue": "दोष कहने",
+  "kind": "fault",
+  "p": {
+   "m": {
+    "listen": 75,
+    "ours": 118
+   }
+  },
+  "note": "",
+  "key": 142
+ },
+ {
+  "id": "S47",
+  "cue": "विष्णु ने जल",
+  "kind": "japa",
+  "p": {
+   "m": {
+    "crore": 73
+   }
+  },
+  "note": "",
+  "key": 97
+ },
+ {
+  "id": "S48",
+  "cue": "शिव आए",
+  "kind": "hesitate",
+  "p": {
+   "m": {
+    "bhakt": 94,
+    "dharma": 260
+   }
+  },
+  "note": "",
+  "key": 284
+ },
+ {
+  "id": "S49",
+  "cue": "शिव बोले",
+  "kind": "nochariot",
+  "p": {
+   "m": {
+    "ratha": 97,
+    "we": 205
+   }
+  },
+  "note": "",
+  "key": 227
+ },
+ {
+  "id": "S50",
+  "cue": "फिर शिव भीतर",
+  "kind": "kumbhodara",
+  "p": {
+   "m": {
+    "skanda": 56,
+    "beat": 200
+   }
+  },
+  "note": "",
+  "key": 218
+ },
+ {
+  "id": "S51",
+  "cue": "देवताओं ने एक",
+  "kind": "mantra",
+  "p": {
+   "m": {
+    "om": 77,
+    "appear": 252,
+    "build": 283
+   }
+  },
+  "note": "",
+  "key": 307
+ },
+ {
+  "id": "S52",
+  "cue": "दाहिना पहिया",
+  "kind": "wheels",
+  "p": {
+   "m": {
+    "sun": 32,
+    "moon": 140,
+    "seasons": 209,
+    "year": 265
+   }
+  },
+  "note": "",
+  "key": 289
+ },
+ {
+  "id": "S53",
+  "cue": "ब्रह्मा सारथी",
+  "kind": "driver",
+  "p": {
+   "m": {
+    "om": 50,
+    "vedas": 108
+   }
+  },
+  "note": "",
+  "key": 132
+ },
+ {
+  "id": "S54",
+  "cue": "सुमेरु धनुष",
+  "kind": "bow",
+  "p": {
+   "m": {
+    "shesha": 44,
+    "sarasvati": 95,
+    "arrow": 159,
+    "vishnu": 195,
+    "agni": 249
+   }
+  },
+  "note": "",
+  "key": 273
+ },
+ {
+  "id": "S55",
+  "cue": "शिव ने रथ",
+  "kind": "laugh_chariot",
+  "p": {
+   "m": {
+    "laugh": 53,
+    "beans": 418
+   }
+  },
+  "note": "",
+  "key": 442
+ },
+ {
+  "id": "S56",
+  "cue": "शिव रथ पर",
+  "kind": "horses_fall",
+  "p": {
+   "m": {
+    "fall": 83,
+    "shake": 123,
+    "vedas": 155
+   }
+  },
+  "note": "",
+  "key": 179
+ },
+ {
+  "id": "S57",
+  "cue": "शेष ने",
+  "kind": "shesha_bull",
+  "p": {
+   "m": {
+    "lift": 88,
+    "knees": 116
+   }
+  },
+  "note": "",
+  "key": 140
+ },
+ {
+  "id": "S58",
+  "cue": "परंपरा कहती",
+  "kind": "vishnu_bull",
+  "p": {
+   "m": {
+    "bull": 74,
+    "verse": 172
+   }
+  },
+  "note": "",
+  "key": 196
+ },
+ {
+  "id": "S59",
+  "cue": "चलने से",
+  "kind": "pashupati",
+  "p": {
+   "m": {
+    "pashu": 99,
+    "vow": 199,
+    "name": 311
+   }
+  },
+  "note": "",
+  "key": 335
+ },
+ {
+  "id": "S60",
+  "cue": "रथ आकाश",
+  "kind": "ascend",
+  "p": {
+   "m": {
+    "we": 63,
+    "laugh": 114,
+    "moment": 154
+   }
+  },
+  "note": "",
+  "key": 178
+ },
+ {
+  "id": "S61",
+  "cue": "शिव ने बाण",
+  "kind": "stand",
+  "p": {
+   "m": {
+    "years": 125,
+    "still": 149
+   }
+  },
+  "note": "",
+  "key": 172
+ },
+ {
+  "id": "S62",
+  "cue": "क्योंकि उनके",
+  "kind": "ganesha",
+  "p": {
+   "m": {
+    "thumb": 21,
+    "voice": 168,
+    "puja": 341
+   }
+  },
+  "note": "",
+  "key": 359
+ },
+ {
+  "id": "S63",
+  "cue": "और उसी",
+  "kind": "merge",
+  "p": {
+   "m": {
+    "one": 65
+   }
+  },
+  "note": "",
+  "key": 89
+ },
+ {
+  "id": "S64",
+  "cue": "देवता बोले",
+  "kind": "eye",
+  "p": {
+   "m": {
+    "glance": 51,
+    "red": 128,
+    "lid": 169,
+    "stop": 206
+   }
+  },
+  "note": "",
+  "key": 227
+ },
+ {
+  "id": "S65",
+  "cue": "बाण में",
+  "kind": "plead",
+  "p": {
+   "m": {
+    "release": 174,
+    "laugh": 213
+   }
+  },
+  "note": "",
+  "key": 237
+ },
+ {
+  "id": "S66",
+  "cue": "अभिजित्",
+  "kind": "draw",
+  "p": {
+   "m": {
+    "draw": 86,
+    "twang": 128,
+    "name": 167,
+    "release": 235
+   }
+  },
+  "note": "",
+  "key": 259
+ },
+ {
+  "id": "S67",
+  "cue": "सोने का नगर",
+  "kind": "melt_gold",
+  "p": {
+   "m": {
+    "melt": 42,
+    "skin": 193
+   }
+  },
+  "note": "",
+  "key": 217
+ },
+ {
+  "id": "S68",
+  "cue": "चाँदी उबलकर",
+  "kind": "melt_silver",
+  "p": {
+   "m": {
+    "set": 126
+   }
+  },
+  "note": "",
+  "key": 147
+ },
+ {
+  "id": "S69",
+  "cue": "लोहे का",
+  "kind": "melt_iron",
+  "p": {
+   "m": {
+    "white": 61,
+    "scream": 104,
+    "hair": 158,
+    "eyes": 200
+   }
+  },
+  "note": "",
+  "key": 219
+ },
+ {
+  "id": "S70",
+  "cue": "जो भागे",
+  "kind": "runners",
+  "p": {
+   "m": {
+    "ash": 59,
+    "smoke": 145,
+    "old": 177,
+    "coal": 255
+   }
+  },
+  "note": "",
+  "key": 279
+ },
+ {
+  "id": "S71",
+  "cue": "माँओं ने",
+  "kind": "mothers",
+  "p": {
+   "m": {
+    "ash": 147,
+    "sleep": 215
+   }
+  },
+  "note": "",
+  "key": 239
+ },
+ {
+  "id": "S72",
+  "cue": "हाथी",
+  "kind": "everything",
+  "p": {
+   "m": {
+    "stop": 90,
+    "nothing": 151
+   }
+  },
+  "note": "",
+  "key": 175
+ },
+ {
+  "id": "S73",
+  "cue": "और जलते",
+  "kind": "tk_prayer",
+  "p": {
+   "m": {
+    "bhava": 104,
+    "bhakti": 212
+   }
+  },
+  "note": "",
+  "key": 236
+ },
+ {
+  "id": "S74",
+  "cue": "हम तीनों",
+  "kind": "ashfall",
+  "p": {
+   "m": {
+    "ash": 84,
+    "drums": 123,
+    "flowers": 203
+   }
+  },
+  "note": "",
+  "key": 227
+ },
+ {
+  "id": "S75",
+  "cue": "बचा केवल",
+  "kind": "maya_vitala",
+  "p": {
+   "m": {
+    "vitala": 150,
+    "ganas": 289
+   }
+  },
+  "note": "",
+  "key": 313
+ },
+ {
+  "id": "S76",
+  "cue": "और वे मुंडी",
+  "kind": "mundis_desert",
+  "p": {
+   "m": {
+    "desert": 66,
+    "kali": 141
+   }
+  },
+  "note": "",
+  "key": 165
+ },
+ {
+  "id": "S77",
+  "cue": "पतंजलि ने",
+  "kind": "patanjali",
+  "p": {
+   "m": {
+    "daya": 56,
+    "why": 166,
+    "never": 250
+   }
+  },
+  "note": "",
+  "key": 274
+ },
+ {
+  "id": "S78",
+  "cue": "हम तुम्हारे",
+  "kind": "within",
+  "p": {
+   "m": {
+    "sthula": 56,
+    "sukshma": 88,
+    "karana": 120,
+    "j": 151,
+    "s": 175,
+    "ss": 194,
+    "circle": 277
+   }
+  },
+  "note": "",
+  "key": 301
+ },
+ {
+  "id": "S79",
+  "cue": "एक चौथा",
+  "kind": "turiya",
+  "p": {
+   "m": {
+    "witness": 85,
+    "ramana": 116,
+    "sakshi": 240
+   }
+  },
+  "note": "",
+  "key": 264
+ },
+ {
+  "id": "S80",
+  "cue": "शंकराचार्य कहते",
+  "kind": "tula",
+  "p": {
+   "m": {
+    "world": 132,
+    "lord": 175,
+    "empty": 200,
+    "sits": 312,
+    "still": 401
+   }
+  },
+  "note": "",
+  "key": 421
+ },
+ {
+  "id": "S81",
+  "cue": "सुख आए",
+  "kind": "arrow_in",
+  "p": {
+   "m": {
+    "arrow": 106,
+    "burn": 187
+   }
+  },
+  "note": "",
+  "key": 211
+ },
+ {
+  "id": "S82",
+  "cue": "हमने मृत्यु",
+  "kind": "fruit",
+  "p": {
+   "m": {
+    "urva": 123,
+    "free": 233
+   }
+  },
+  "note": "",
+  "key": 257
+ },
+ {
+  "id": "S83",
+  "cue": "रोज़ रात",
+  "kind": "night",
+  "p": {
+   "m": {
+    "count": 46,
+    "eleven": 120
+   }
+  },
+  "note": "",
+  "key": 144
+ },
+ {
+  "id": "S84",
+  "cue": "हम त्रिपुर",
+  "kind": "final",
+  "p": {
+   "m": {
+    "ari": 55
+   }
+  },
+  "note": "",
+  "key": 79
+ },
+ {
+  "id": "S85",
+  "cue": "after:त्रिपुरारि है",
+  "kind": "closing",
+  "p": {
+   "m": {}
+  },
+  "note": "",
+  "key": 280
+ }
+]
