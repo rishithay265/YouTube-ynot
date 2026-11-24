@@ -17,3 +17,7 @@ __pycache__/
 # Raktabija intermediate audio (rebuilt by research/raktabija/plan.py + sound.py)
 research/raktabija/stems/
 public/raktabija/master.wav
+
+# Tripura intermediate audio (rebuilt by research/tripura/plan.py + sound.py)
+research/tripura/stems/
+public/tripura/master.wav

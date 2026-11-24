@@ -7,6 +7,7 @@ import { CastSheet } from './CastSheet';
 import { FaceStealerThumb, FaceStealerThumbUserFixed } from './episodes/facestealer/thumb';
 import { RaktabijaCast } from './episodes/raktabija/castsheet';
 import { RaktabijaThumb, RaktabijaThumbEclipse } from './episodes/raktabija/thumb';
+import { TripuraCast } from './episodes/tripura/castsheet';
 
 // Every episode gets two compositions: <Id> (the film) and <Id>Board (one frame per shot, at its key frame, for the
 // storyboard). Cast renders the cast sheet.
@@ -27,6 +28,7 @@ export const Root: React.FC = () => {
       <Composition id="RaktabijaThumb" component={RaktabijaThumb} durationInFrames={1} width={1920} height={1080} {...common} />
       <Composition id="RaktabijaThumbEclipse" component={RaktabijaThumbEclipse} durationInFrames={1} width={1920} height={1080} {...common} />
       <Composition id="RaktabijaCast" component={RaktabijaCast} durationInFrames={4} width={1920} height={1080} {...common} />
+      <Composition id="TripuraCast" component={TripuraCast} durationInFrames={4} width={1920} height={1080} {...common} />
       <Composition id="Cast" component={CastSheet} durationInFrames={1} width={STUDIO.width} height={STUDIO.height} {...common} />
     </>
   );

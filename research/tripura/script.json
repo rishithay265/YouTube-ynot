@@ -180,12 +180,12 @@
      "en": "The gods went to Brahma. Brahma said: they have three strengths."
     },
     {
-     "hi": "और यह भी: इस दैत्य को मैंने ही बढ़ाया है, ~ मैं इसे कैसे मारूँ?",
-     "en": "And also: I myself raised this daitya; how can I kill him?"
-    },
-    {
      "hi": "मेरा दिया वर। ~ उनकी अपनी देह का बल। ~ और तीसरा, ~ शिव की भक्ति।",
      "en": "The boon I gave. The strength of their own bodies. And the third: devotion to Shiva."
+    },
+    {
+     "hi": "और यह भी: इस दैत्य को मैंने ही बढ़ाया है, ~ मैं इसे कैसे मारूँ?",
+     "en": "And also: I myself raised this daitya; how can I kill him?"
     },
     {
      "hi": "देवता कैलास पहुँचे। ~ शिव ने सुना, और कहा:",
@@ -321,14 +321,6 @@
      "en": "Shiva came, and still he hesitated: they were my devotees. Vishnu made them fall; let Vishnu kill them."
     },
     {
-     "hi": "फिर शिव भीतर चले गए, ~ स्कंद का मुख निहारते। ~ द्वार पर कुम्भोदर गण ने देवताओं को डंडे से पीटा।",
-     "en": "Then Shiva went inside, gazing at Skanda's face. At the door, the gana Kumbhodara beat the gods with a staff."
-    },
-    {
-     "hi": "देवताओं ने एक करोड़ बार जपा: ~ ॐ नमः शिवाय शुभं शुभं कुरु कुरु शिवाय नमः ॐ। ~ और शिव फिर प्रकट हुए।",
-     "en": "The gods chanted ten million times: Om namah Shivaya, shubham shubham kuru kuru, Shivaya namah Om. And Shiva appeared again."
-    },
-    {
      "hi": "ब्रह्मा बोले: राजा का धर्म है, धर्म की रक्षा।",
      "en": "Brahma said: a king's dharma is to protect dharma."
     },
@@ -337,8 +329,16 @@
      "en": "Shiva said: I am the emperor, but I have no chariot, no bow, no arrow."
     },
     {
-     "hi": "देवता बोले: हम बनेंगे। ~ और विश्वकर्मा ने रथ गढ़ा।",
-     "en": "The gods said: we will become them. And Vishwakarma built the chariot."
+     "hi": "देवता बोले: हम बनेंगे।",
+     "en": "The gods said: we will become them."
+    },
+    {
+     "hi": "फिर शिव भीतर चले गए, ~ स्कंद का मुख निहारते। ~ द्वार पर कुम्भोदर गण ने देवताओं को डंडे से पीटा।",
+     "en": "Then Shiva went inside, gazing at Skanda's face. At the door, the gana Kumbhodara beat the gods with a staff."
+    },
+    {
+     "hi": "देवताओं ने एक करोड़ बार जपा: ~ ॐ नमः शिवाय शुभं शुभं कुरु कुरु शिवाय नमः ॐ। ~ और शिव फिर प्रकट हुए, ~ और विश्वकर्मा ने रथ गढ़ा।",
+     "en": "The gods chanted ten million times: Om namah Shivaya, shubham shubham kuru kuru, Shivaya namah Om. And Shiva appeared again, and Vishwakarma built the chariot."
     },
     {
      "hi": "दाहिना पहिया सूर्य, बारह आदित्य उसके आरे। ~ बायाँ पहिया चंद्रमा, सोलह कलाएँ। ~ छह ऋतुएँ पहियों की नेमि। ~ वर्ष उसकी गति।",
@@ -364,8 +364,8 @@
    "anchor": "SP Yuddha 9.1–12; Chaganti; Shivananda Lahari 83",
    "lines": [
     {
-     "hi": "शिव ने रथ देखा, और हँसे। ~ धरती का रथ, ~ सूर्य आगे बढ़े तो चंद्रमा पीछे। ~ फिर भी चढ़ गए।",
-     "en": "Shiva looked at the chariot, and laughed. A chariot of earth; when the Sun goes forward, the Moon goes back. Still, he climbed on."
+     "hi": "शिव ने रथ देखा, और हँसे। ~ धरती का रथ, ~ सूर्य आगे बढ़े तो चंद्रमा पीछे। ~ पर कुछ कहा नहीं।",
+     "en": "Shiva looked at the chariot, and laughed. A chariot of earth; when the Sun goes forward, the Moon goes back. But he said nothing."
     },
     {
      "hi": "भक्ति से बनी हर चीज़ ईश्वर स्वीकार करता है, ~ जैसे रथसप्तमी पर बच्चों का बनाया सेम की फलियों का रथ।",
@@ -388,12 +388,12 @@
      "en": "Tradition says Vishnu himself then became the bull, and pulled. Shankaracharya wrote: banatvam, vrishabhatvam. He became the arrow, and the bull."
     },
     {
-     "hi": "रथ आकाश की ओर चला।",
-     "en": "The chariot moved towards the sky."
+     "hi": "चलने से पहले शिव बोले: मानो कि तुम सब मेरे पशु हो। ~ देवता डरे। ~ शिव हँसे: जो पाशुपत व्रत रखेगा, वह छूटेगा। ~ उसी दिन से वह पशुपति कहलाए।",
+     "en": "Before setting out, Shiva said: accept that you are all my pashus. The gods were afraid. Shiva laughed: whoever keeps the Pashupata vow will be freed. From that day he was called Pashupati."
     },
     {
-     "hi": "पर पहले शिव बोले: मानो कि तुम सब मेरे पशु हो। ~ देवता डरे। ~ शिव हँसे: जो पाशुपत व्रत रखेगा, वह छूटेगा। ~ उसी दिन से वह पशुपति कहलाए।",
-     "en": "But first Shiva said: accept that you are all my pashus. The gods were afraid. Shiva laughed: whoever keeps the Pashupata vow will be freed. From that day he was called Pashupati."
+     "hi": "रथ आकाश की ओर चला।",
+     "en": "The chariot moved towards the sky."
     },
     {
      "hi": "और हम? ~ हम आकाश में हँस रहे थे। ~ एक पल में क्या मारेगा?",
