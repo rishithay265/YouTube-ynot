@@ -1,0 +1,281 @@
+# हम त्रिपुर थे · We Were Tripura — script for approval
+
+Sources: Chaganti Koteswara Rao garu, "Lord Shiva v/s Tripurasura War" (Eha Bhakthi), and the Gita Press Shiva Mahapuran, Rudra Samhita Yuddha Khanda ch. 1-12 (Hindi translation followed). Anchors per section.
+
+Narrator: the three cities (हम). Voice: Mohit, eleven_v4. About 8,100 characters, roughly 11–12 minutes of narration; the film runs about 14 minutes with the music beats.
+
+## S1 · हम त्रिपुर थे / We were Tripura  (Chaganti; SP Yuddha 1.3)
+
+- हम तीन नगर थे। … एक सोने का, एक चाँदी का, एक लोहे का।
+  <br>*We were three cities. One of gold, one of silver, one of iron.*
+- कथा का नाम हमारे राजाओं पर नहीं, हम पर है: त्रिपुर।
+  <br>*The story is named not after our kings, but after us: Tripura.*
+- और मारने वाले का नाम भी: त्रिपुरारि।
+  <br>*And so is the name of the one who killed us: Tripurari.*
+- राक्षस मारे जाते हैं, नगर नहीं। … तो शिव नगरों के शत्रु क्यों कहलाए?
+  <br>*Demons are killed, not cities. So why is Shiva called the enemy of cities?*
+- अंत तक सुनो। … तब जानोगे कि हम आज कहाँ हैं।
+  <br>*Listen to the end. Then you will know where we are today.*
+
+## S2 · पिता की भूल / The father's mistake  (SP Yuddha 1.7–25; Chaganti)
+
+- हमारे राजाओं का पिता था तारकासुर।
+  <br>*The father of our kings was Tarakasura.*
+- उसने वर माँगा था: मुझे केवल शिव का पुत्र मारे। … सोचा, कामदेव को भस्म करने वाला शिव कभी पिता नहीं बनेगा।
+  <br>*He had asked: let only a son of Shiva kill me. He thought Shiva, who burned Kama, would never be a father.*
+- स्कंद जन्मे। … तारकासुर मारा गया।
+  <br>*Skanda was born. Tarakasura was killed.*
+- तीन बेटे बचे। … बड़ा तारकाक्ष, मँझला विद्युन्माली, छोटा कमलाक्ष।
+  <br>*Three sons were left. Tarakaksha the eldest, Vidyunmali the middle, Kamalaksha the youngest.*
+- पिता की भूल से उन्होंने कुछ नहीं सीखा। … सीखा बस इतना: वर और बड़ा माँगो।
+  <br>*They learnt nothing from their father's mistake. Only this: ask for a bigger boon.*
+- प्रह्लाद ने माँ के गर्भ में ही नारद से सुना था, और सीख लिया। … हमारे राजा सुनकर भी नहीं सीखे।
+  <br>*Prahlada heard Narada while still in his mother's womb, and learnt. Our kings heard, and did not.*
+- मेरु की एक गुफा में तप शुरू हुआ।
+  <br>*In a cave of Meru, the penance began.*
+- सौ वर्ष एक पैर पर। … हज़ार वर्ष केवल हवा पीकर। … हज़ार वर्ष सिर के बल।
+  <br>*A hundred years on one foot. A thousand years living on air. A thousand years upside down.*
+- और ब्रह्मा प्रकट हुए।
+  <br>*And Brahma appeared.*
+
+## S3 · वर / The boon  (SP Yuddha 1.30–56; Chaganti)
+
+- उन्होंने कहा: हमें कोई न मारे। … न बुढ़ापा आए, न मृत्यु।
+  <br>*They said: let no one kill us. Let neither old age nor death come.*
+- ब्रह्मा बोले: आत्मा नहीं मरती, पर जो देह जन्मी है, उसे जाना ही है। … अपनी मृत्यु का कोई कारण चुन लो।
+  <br>*Brahma said: the soul does not die, but a body that is born must go. Choose some cause of your death.*
+- और वे ब्रह्मा पर हँसे: सरसिज-सुत! … कमल से जन्मे! … तुम भी तो जन्मे हो, तुम भी जाओगे।
+  <br>*And they laughed at Brahma: lotus-born! You too were born; you too will go.*
+- फिर भी ब्रह्मा ने बड़ा मन रखा। … भीष्म को इच्छा-मृत्यु मिली थी, धर्म के लिए। … इन्हें भी छूट मिली: अपनी मृत्यु ख़ुद चुनो।
+  <br>*Still, Brahma kept a big heart. Bhishma was given death at will, for dharma. They too were given the freedom: choose your own death.*
+- फिर एक मुहूर्त सोचकर माँगा: तीन नगर।
+  <br>*Then, after a moment's thought, they asked for three cities.*
+- तारकाक्ष के लिए सोने का, स्वर्ग में। … कमलाक्ष के लिए चाँदी का, आकाश में। … विद्युन्माली के लिए लोहे का, धरती पर।
+  <br>*Gold for Tarakaksha, in heaven. Silver for Kamalaksha, in the sky. Iron for Vidyunmali, on earth.*
+- और शर्त उन्होंने ख़ुद रखी।
+  <br>*And they set the condition themselves.*
+- हज़ार वर्ष बाद, दोपहर के अभिजित् मुहूर्त में, चंद्रमा पुष्य में हो, … पुष्कर और आवर्त मेघ बरस रहे हों, … तब तीनों नगर एक पल को एक जगह आएँगे।
+  <br>*After a thousand years, at midday in Abhijit, with the moon in Pushya, while the Pushkara and Avarta clouds rain, the three cities will come together for one moment.*
+- उसी पल, जिसमें सारे देवता बसते हों, … वह असंभव रथ पर बैठकर … एक ही असंभव बाण से हमें भेदे। … तभी हम मरेंगे।
+  <br>*In that moment, one in whom all the gods dwell, seated on an impossible chariot, must pierce us with one impossible arrow. Only then will we die.*
+- ब्रह्मा ने शिव का स्मरण किया, और कहा: एवमस्तु।
+  <br>*Brahma remembered Shiva, and said: so be it.*
+- और जाते-जाते बोले: ऐसा वर किसी ने नहीं माँगा। … सँभलकर बरतना।
+  <br>*And leaving, he said: no one has ever asked for such a boon. Handle it with care.*
+
+## S4 · वैभव / Our glory  (SP Yuddha 1.57–78; Chaganti)
+
+- मय दानव ने हमें गढ़ा।
+  <br>*Maya the danava built us.*
+- हमारे भीतर कल्पवृक्ष थे, हाथी, घोड़े, विमान। … हर घर में शिवलिंग, हर घर में अग्निहोत्र।
+  <br>*Within us were wish-trees, elephants, horses, flying cars. A Shiva-linga in every house, a sacred fire in every house.*
+- पापी हमें देख भी नहीं सकता था।
+  <br>*A sinner could not even see us.*
+- फिर हम घूमने लगे। … बिना रुके। … ताकि सब देखें।
+  <br>*Then we began to circle. Without stopping. So that everyone would see.*
+- देवता हारे। अमरावती छिनी।
+  <br>*The gods lost. Amaravati was taken.*
+- इंद्र से कहा गया: जब हम कहें, तब बरसो। … सूरज से: हम बाहर निकलें तो धीमे जलो। … चंद्रमा से: दिन में उगो।
+  <br>*Indra was told: rain when we say. The Sun: burn softly when we go out. The Moon: rise by day.*
+- ऋतुओं का अर्थ ख़त्म हो गया।
+  <br>*The seasons lost their meaning.*
+- शिशिर में भी एक पत्ता न गिरे, … हमें हर जगह वसंत चाहिए था।
+  <br>*Not one leaf could fall even in winter; we wanted spring everywhere.*
+- देह के बल का नशा ऐसा ही होता है। … उसे रोज़ कोई कमज़ोर चाहिए, जिसे पीटकर वह ख़ुद को बलवान माने।
+  <br>*That is the drunkenness of bodily strength. Every day it needs someone weak, to beat, to feel strong.*
+
+## S5 · तीन बल / Three strengths  (Chaganti; SP Yuddha 2–3)
+
+- देवता ब्रह्मा के पास गए। … ब्रह्मा बोले: उनके पास तीन बल हैं।
+  <br>*The gods went to Brahma. Brahma said: they have three strengths.*
+- और यह भी: इस दैत्य को मैंने ही बढ़ाया है, … मैं इसे कैसे मारूँ?
+  <br>*And also: I myself raised this daitya; how can I kill him?*
+- मेरा दिया वर। … उनकी अपनी देह का बल। … और तीसरा, … शिव की भक्ति।
+  <br>*The boon I gave. The strength of their own bodies. And the third: devotion to Shiva.*
+- देवता कैलास पहुँचे। … शिव ने सुना, और कहा:
+  <br>*The gods reached Kailasa. Shiva listened, and said:*
+- वे दैत्य मेरे भक्त हैं। … सुबह से रात तक मेरा नाम लेते हैं। … मैं उन्हें नहीं मारूँगा। … विष्णु के पास जाओ।
+  <br>*Those daityas are my devotees. From dawn to night they take my name. I will not kill them. Go to Vishnu.*
+- विष्णु ने यज्ञ किया। … कुंड से हज़ारों भूत-गण निकले, शस्त्र लिए।
+  <br>*Vishnu performed a sacrifice. Thousands of bhuta-ganas rose from the fire, armed.*
+- वे हमारे भीतर घुसे, … और जैसे आग में पतंगे, … वैसे हमारे तेज में जल गए।
+  <br>*They entered us, and like moths in a flame, they burned in our radiance.*
+- तब विष्णु समझे: जब तक ये वेद-धर्म और शिवलिंग पर टिके हैं, … इन्हें कोई नहीं मार सकता।
+  <br>*Then Vishnu understood: as long as they stand on Vedic dharma and the Shiva-linga, no one can kill them.*
+- तो इनका धर्म ही गिराना होगा।
+  <br>*So their dharma itself must fall.*
+
+## S6 · अरिहन् / Arihan  (SP Yuddha 4.1–63; Chaganti)
+
+- विष्णु ने अपने ही शरीर से एक पुरुष रचा।
+  <br>*From his own body, Vishnu created a man.*
+- मुंडा सिर, मैले वस्त्र, … हाथ में लकड़ी का पात्र, … एक झाड़ू, जिससे वह हर क़दम पर ज़मीन बुहारता, … मुँह पर कपड़ा, … और होंठों पर एक ही शब्द: धर्म, धर्म।
+  <br>*A shaven head, dirty clothes, a wooden vessel, a broom to sweep the ground at every step, a cloth over his mouth, and one word on his lips: dharma, dharma.*
+- विष्णु बोले: तुम्हारा नाम अरिहन् होगा।
+  <br>*Vishnu said: your name will be Arihan.*
+- सोलह हज़ार श्लोकों का एक शास्त्र बनाओ, … श्रुति-स्मृति के विरुद्ध, … सुनने में मीठा, … जैसे शहद लगा ज़हर।
+  <br>*Make a scripture of sixteen thousand verses, against shruti and smriti, sweet to hear, like poison smeared with honey.*
+- वह हमारे पास आया। … कोई नहीं रुका। … हमारी शिव-पूजा के आगे उसकी माया नहीं चली।
+  <br>*He came to us. No one stopped to listen. Before our Shiva-worship, his maya failed.*
+- तब विष्णु ने नारद को भेजा।
+  <br>*Then Vishnu sent Narada.*
+- नारद ने पहले स्वयं उस मुंडी से दीक्षा ली। … फिर तारकाक्ष से बोले: तुम्हारे राज्य में एक महापुरुष आया है। … ऐसा धर्म मैंने पहले नहीं देखा।
+  <br>*Narada first took initiation from that shaven one himself. Then he told Tarakaksha: a great soul has come to your kingdom. I have never seen such a dharma.*
+- नारद कह रहे थे, … तो हमने मान लिया।
+  <br>*Narada was saying it, so we believed.*
+- तारकाक्ष ने दीक्षा ली। … फिर उसके भाई। … फिर तीनों नगरों का हर निवासी।
+  <br>*Tarakaksha was initiated. Then his brothers. Then every soul in the three cities.*
+
+## S7 · पतन / The fall  (SP Yuddha 5.3–63; Chaganti)
+
+- उसने सिखाया: न कोई सृष्टिकर्ता है, न कर्म। … स्वर्ग यहीं है, नरक भी यहीं।
+  <br>*He taught: there is no creator, no karma. Heaven is here, and hell is here.*
+- ब्रह्मा, विष्णु, महेश, बस नाम हैं। … तिल और घी आग में जलाकर स्वर्ग चाहते हो?
+  <br>*Brahma, Vishnu, Mahesha are only names. You burn sesame and ghee and hope for heaven?*
+- यह देह कुत्तों और कौओं का भोजन है। … जब तक स्वस्थ है, भोगो।
+  <br>*This body is food for dogs and crows. While it is healthy, enjoy it.*
+- भूखा है और बलवान है? … छीनकर खा। … मरने के बाद पाप? … कोई लौटकर बताने आया?
+  <br>*Hungry and strong? Snatch and eat. Sin after death? Did anyone come back to tell?*
+- वर्ण झूठ है। … और विवाह के नियम? … कश्यप ने तेरह बहनों से विवाह किया था।
+  <br>*Caste is a lie. And the rules of marriage? Kashyapa married thirteen sisters.*
+- और हमारे राजा ने घोषणा की: … न रिश्ता, न मर्यादा, न पत्नी, न संतान। … जिसे जो चाहिए, ले ले।
+  <br>*And our king proclaimed: no kinship, no bounds, no wife, no child. Whoever wants whatever, take it.*
+- हमने शिवलिंग छोड़ दिए। … श्राद्ध, यज्ञ, व्रत छोड़ दिए।
+  <br>*We abandoned the Shiva-lingas. We abandoned shraddha, sacrifice, vows.*
+- पत्नियों ने पति छोड़े। … पुरुषों ने पराई स्त्रियों पर वशीकरण के मंत्र चलाए।
+  <br>*Wives abandoned their husbands. Men worked spells of control on other men's wives.*
+- दिन और रात, बस धन और काम।
+  <br>*Day and night, only wealth and lust.*
+- अलक्ष्मी भीतर आई। … लक्ष्मी चली गई। … और हमारे राजाओं का बल सूख गया।
+  <br>*Alakshmi came in. Lakshmi left. And the strength of our kings dried up.*
+- दोष कहने वाले का नहीं था। … दोष सुनने वालों का था। … हमारा।
+  <br>*The fault was not the speaker's. The fault was the listeners'. Ours.*
+
+## S8 · रथ / The chariot  (SP Yuddha 6–8; Chaganti)
+
+- विष्णु ने जल में खड़े होकर डेढ़ करोड़ बार रुद्र-मंत्र जपा।
+  <br>*Standing in water, Vishnu chanted the Rudra mantra fifteen million times.*
+- शिव आए, और फिर भी हिचके: … वे मेरे भक्त थे। … विष्णु ने उन्हें गिराया, विष्णु ही मारें।
+  <br>*Shiva came, and still he hesitated: they were my devotees. Vishnu made them fall; let Vishnu kill them.*
+- फिर शिव भीतर चले गए, … स्कंद का मुख निहारते। … द्वार पर कुम्भोदर गण ने देवताओं को डंडे से पीटा।
+  <br>*Then Shiva went inside, gazing at Skanda's face. At the door, the gana Kumbhodara beat the gods with a staff.*
+- देवताओं ने एक करोड़ बार जपा: … ॐ नमः शिवाय शुभं शुभं कुरु कुरु शिवाय नमः ॐ। … और शिव फिर प्रकट हुए।
+  <br>*The gods chanted ten million times: Om namah Shivaya, shubham shubham kuru kuru, Shivaya namah Om. And Shiva appeared again.*
+- ब्रह्मा बोले: राजा का धर्म है, धर्म की रक्षा।
+  <br>*Brahma said: a king's dharma is to protect dharma.*
+- शिव बोले: मैं सम्राट हूँ, … पर मेरे पास न रथ है, न धनुष, न बाण।
+  <br>*Shiva said: I am the emperor, but I have no chariot, no bow, no arrow.*
+- देवता बोले: हम बनेंगे। … और विश्वकर्मा ने रथ गढ़ा।
+  <br>*The gods said: we will become them. And Vishwakarma built the chariot.*
+- दाहिना पहिया सूर्य, बारह आदित्य उसके आरे। … बायाँ पहिया चंद्रमा, सोलह कलाएँ। … छह ऋतुएँ पहियों की नेमि। … वर्ष उसकी गति।
+  <br>*The right wheel the Sun, the twelve Adityas its spokes. The left wheel the Moon, its sixteen phases. The six seasons the rims. The year its speed.*
+- ब्रह्मा सारथी। … ॐकार चाबुक। … चारों वेद घोड़े।
+  <br>*Brahma the charioteer. Om the whip. The four Vedas the horses.*
+- सुमेरु धनुष। … शेषनाग प्रत्यंचा। … सरस्वती धनुष की घंटी।
+  <br>*Sumeru the bow. Shesha the bowstring. Saraswati the bell of the bow.*
+- और बाण, … स्वयं विष्णु। … उसकी नोक, अग्नि।
+  <br>*And the arrow, Vishnu himself. Its tip, Agni.*
+
+## S9 · घोड़े गिरे / The horses fell  (SP Yuddha 9.1–12; Chaganti; Shivananda Lahari 83)
+
+- शिव ने रथ देखा, और हँसे। … धरती का रथ, … सूर्य आगे बढ़े तो चंद्रमा पीछे। … फिर भी चढ़ गए।
+  <br>*Shiva looked at the chariot, and laughed. A chariot of earth; when the Sun goes forward, the Moon goes back. Still, he climbed on.*
+- भक्ति से बनी हर चीज़ ईश्वर स्वीकार करता है, … जैसे रथसप्तमी पर बच्चों का बनाया सेम की फलियों का रथ।
+  <br>*God accepts anything made with devotion, like the children's chariot of beans on Ratha Saptami.*
+- शिव रथ पर चढ़े। … और घोड़े सिर के बल गिर पड़े। … धरती काँप उठी।
+  <br>*Shiva mounted the chariot. And the horses fell on their heads. The earth shook.*
+- वेद ब्रह्म की ओर इशारा कर सकते हैं, … ब्रह्म को ढो नहीं सकते।
+  <br>*The Vedas can point towards Brahman. They cannot carry him.*
+- शेष ने बैल का रूप लिया, … रथ को एक क्षण उठाया, … और घुटनों पर गिर पड़े।
+  <br>*Shesha took the form of a bull, lifted the chariot for one moment, and fell to his knees.*
+- परंपरा कहती है, तब विष्णु स्वयं बैल बने, और खींचा। … शंकराचार्य ने लिखा: बाणत्वं, वृषभत्वं। … वह बाण भी बने, बैल भी।
+  <br>*Tradition says Vishnu himself then became the bull, and pulled. Shankaracharya wrote: banatvam, vrishabhatvam. He became the arrow, and the bull.*
+- रथ आकाश की ओर चला।
+  <br>*The chariot moved towards the sky.*
+- पर पहले शिव बोले: मानो कि तुम सब मेरे पशु हो। … देवता डरे। … शिव हँसे: जो पाशुपत व्रत रखेगा, वह छूटेगा। … उसी दिन से वह पशुपति कहलाए।
+  <br>*But first Shiva said: accept that you are all my pashus. The gods were afraid. Shiva laughed: whoever keeps the Pashupata vow will be freed. From that day he was called Pashupati.*
+- और हम? … हम आकाश में हँस रहे थे। … एक पल में क्या मारेगा?
+  <br>*And we? We were laughing in the sky. What can he kill in a single moment?*
+
+## S10 · एक पल / One moment  (SP Yuddha 10.1–23; Chaganti; Linga Purana)
+
+- शिव ने बाण चढ़ाया, … और खड़े रहे। … सौ हज़ार वर्ष। … निश्चल।
+  <br>*Shiva fitted the arrow, and stood. A hundred thousand years. Unmoving.*
+- क्योंकि उनके अँगूठे पर गणेश बैठे थे, … और नगर निशाने में आते ही न थे।
+  <br>*Because Ganesha sat on his thumb, and the cities never came into his aim.*
+- आकाशवाणी हुई: पहले विघ्नेश्वर की पूजा।
+  <br>*A voice from the sky: first, worship the lord of obstacles.*
+- शिव ने भद्रकाली को बुलाया, और गणेश को पूजा।
+  <br>*Shiva called Bhadrakali, and worshipped Ganesha.*
+- और उसी क्षण, … हम तीनों, एक हो गए।
+  <br>*And in that very moment, the three of us became one.*
+- देवता बोले: आप तो एक दृष्टि से जला सकते हैं।
+  <br>*The gods said: you could burn them with a single glance.*
+- शिव का मुख लाल हुआ। … तीसरी पलक हिली। … फिर वे रुके।
+  <br>*Shiva's face turned red. The third eyelid stirred. Then he stopped.*
+- बाण में बैठे विष्णु, सोम, कालाग्नि और वायु बोले: … प्रभु, हमारे लिए, बाण छोड़िए।
+  <br>*Vishnu, Soma, Kalagni and Vayu, inside the arrow, said: Lord, for our sake, release the arrow.*
+- और शिव हँसे।
+  <br>*And Shiva laughed.*
+
+## S11 · दहन / The burning  (SP Yuddha 10.24–38)
+
+- अभिजित् मुहूर्त। … शिव ने धनुष खींचा, … प्रत्यंचा टंकारी, … अपना नाम पुकारा।
+  <br>*Abhijit muhurta. Shiva drew the bow, twanged the string, called out his own name.*
+- बाण छूटा, … करोड़ सूर्यों जैसा।
+  <br>*The arrow flew, like ten million suns.*
+- सोने का नगर पहले पिघला। … जिन दीवारों पर हमें घमंड था, वही खौलकर हमारे ऊपर बहीं, … खाल से चिपकता सोना, मांस तक उतरता।
+  <br>*The golden city melted first. The walls we were so proud of boiled and poured over us: gold clinging to skin, sinking into flesh.*
+- चाँदी उबलकर आँगनों में भरी। … जो खड़े थे, उनके पैर उसी में जम गए।
+  <br>*Silver boiled and flooded the courtyards. Those standing there, their feet set in it.*
+- लोहे का नगर लाल हुआ, फिर सफ़ेद। … भीतर की चीख़ें धातु में ही सिक गईं।
+  <br>*The iron city turned red, then white. The screams inside were seared into the metal.*
+- बाल पहले जले, फिर आँखें।
+  <br>*The hair burned first, then the eyes.*
+- जो भागे, वे दौड़ते-दौड़ते राख हुए, … एक क़दम मांस का, अगला धुएँ का।
+  <br>*Those who ran turned to ash running: one step of flesh, the next of smoke.*
+- बूढ़े, जो उठ भी न सके, बिस्तर पर ही कोयला हुए।
+  <br>*The old, who could not even rise, became charcoal in their beds.*
+- माँओं ने बच्चों को छाती से भींचा, … और आग ने दोनों को एक मुट्ठी राख कर दिया।
+  <br>*Mothers crushed their children to their breasts, and the fire made both a single fistful of ash.*
+- पति की बाँहों में सोई स्त्रियाँ जागीं भी नहीं।
+  <br>*Women asleep in their husbands' arms never even woke.*
+- हाथी, घोड़े, विमान, सब। … आग थमी नहीं। … आज्ञा थी: कुछ न बचे।
+  <br>*Elephants, horses, flying cars, everything. The fire did not stop. The command was: let nothing remain.*
+- और जलते हुए तारकाक्ष ने शिव को याद किया: … हे भव, … जन्म-जन्मांतर हमारी बुद्धि तुम्हारी भक्ति में रहे।
+  <br>*And burning, Tarakaksha remembered Shiva: O Bhava, birth after birth, let our minds dwell in devotion to you.*
+
+## S12 · हम कहाँ हैं / Where we are  (SP Yuddha 10.39–44, 12; Chaganti; Prabodha Sudhakara)
+
+- हम तीनों जुड़े हुए धरती पर गिरे, … राख बनकर।
+  <br>*The three of us fell to earth together, as ash.*
+- देव-दुंदुभियाँ बजीं, … और शिव पर फूल बरसे।
+  <br>*The drums of the gods sounded, and flowers rained on Shiva.*
+- बचा केवल मय, … जो विपत्ति में भी शिव की शरण में था। … शिव ने उसे वितल लोक भेजा।
+  <br>*Only Maya survived, who even in disaster had taken refuge in Shiva. Shiva sent him to Vitala.*
+- जो जलते-जलते भी शिव को पूज रहे थे, … वे उनके गणों के स्वामी बने।
+  <br>*Those who were still worshipping Shiva as they burned became lords of his ganas.*
+- और वे मुंडी? … विष्णु बोले: मरुस्थल में छिपे रहो, कलियुग तक। … कलियुग में जो यह मत अपनाएगा, वह नष्ट होगा।
+  <br>*And the shaven ones? Vishnu said: hide in the desert until Kali. In Kali, whoever takes up this teaching will be ruined.*
+- पतंजलि ने शिव को कहा: अखण्ड-दय। … असीम दया से त्रिपुर जलाने वाला।
+  <br>*Patanjali called Shiva akhanda-daya: the one who burned Tripura out of boundless compassion.*
+- दया से जलाना? … हाँ। … क्योंकि हम कभी आकाश में थे ही नहीं।
+  <br>*Burning out of compassion? Yes. Because we were never in the sky.*
+- हम तुम्हारे भीतर हैं। … स्थूल देह, सूक्ष्म देह, कारण देह। … जाग्रत, स्वप्न, सुषुप्ति।
+  <br>*We are within you. The gross body, the subtle body, the causal body. Waking, dream, deep sleep.*
+- इन्हीं तीन में तुम पूरा जीवन घूमते हो, … बिना रुके, … जैसे हम घूमते थे।
+  <br>*In these three you circle your whole life, without stopping, as we circled.*
+- एक चौथा भी है: तुरीय, … जो तीनों को देखता है। … रमण महर्षि से पूछा गया, आप सोते हैं? … बोले: मैं नींद का साक्षी हूँ।
+  <br>*There is a fourth: turiya, which watches all three. Ramana Maharshi was asked, do you sleep? He said: I am the witness of sleep.*
+- शंकराचार्य कहते हैं: मन को तराज़ू बनाओ। … एक पलड़े में सारा संसार, दूसरे में श्रीपति।
+  <br>*Shankaracharya says: make the mind a balance. The whole world in one pan, the Lord in the other.*
+- ख़ाली तराज़ू हवा से भी हिलता है। … पर एक पलड़े में ईश्वर बैठे हों, … तो दूसरे में कुछ भी रखो, वह नहीं उठता।
+  <br>*An empty balance sways in a breeze. But if the Lord sits in one pan, put anything in the other and it will not lift.*
+- सुख आए, दुख आए, … पलड़ा न हिले, … तो ईश्वर बाण उठाते हैं। … और उस दिन तुम्हारा त्रिपुर जलता है।
+  <br>*Let joy come, let sorrow come; if the pan does not move, the Lord lifts the arrow. And that day, your Tripura burns.*
+- हमने मृत्यु से बचने का वर माँगा था। … सनातन माँगता है: उर्वारुकमिव बन्धनान्, … पके फल की तरह बंधन से छूट जाऊँ।
+  <br>*We asked for a boon to escape death. Sanatana asks: like a ripe cucumber from its stalk, let me be freed.*
+- रोज़ रात सोने से पहले गिनो, आज कितनी बार डगमगाए। … फिर ग्यारह बार उसका नाम लो।
+  <br>*Every night before sleep, count how many times you wavered today. Then take his name eleven times.*
+- हम त्रिपुर थे। … वह त्रिपुरारि है।
+  <br>*We were Tripura. He is Tripurari.*
