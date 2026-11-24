@@ -133,7 +133,7 @@ lines = []
 for sec in S['sections']:
     for li, l in enumerate(sec['lines']):
         ws = [w for w in words if w['sec'] == sec['id'] and w['line'] == li]
-        lines.append(dict(ws=ws, hi=l['hi'].replace('~', ' '), en=l['en']))
+        lines.append(dict(ws=ws, hi=re.sub(r' +', ' ', l['hi'].replace('~', ' ')), en=l['en']))
 def srt(cues):
     return '\n'.join(f'{i + 1}\n{ts(a)} --> {ts(b)}\n{txt}\n' for i, (a, b, txt) in enumerate(cues))
 hi_cues, en_cues = [], []
