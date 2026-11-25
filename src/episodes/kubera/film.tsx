@@ -16,12 +16,12 @@ const W = 1920, H = 1080;
 
 type SP = { t: number; b: Beat; lt: number; on: (k: string, d?: number) => number; at: (k: string) => number };
 
-const Photo: React.FC<{ src: string; x: number; y: number; w: number; h: number; o?: number; credit?: string; zoom?: number; fit?: 'cover' | 'contain' }> = ({ src, x, y, w, h, o = 1, credit, zoom = 1, fit = 'contain' }) => (
+const Photo: React.FC<{ src: string; x: number; y: number; w: number; h: number; o?: number; credit?: string; zoom?: number; fit?: 'cover' | 'contain'; pos?: string }> = ({ src, x, y, w, h, o = 1, credit, zoom = 1, fit = 'contain', pos = '50% 50%' }) => (
   <g opacity={o}>
     <rect x={x - 14} y={y - 14} width={w + 28} height={h + 28} fill="#0A0F1E" stroke={P.gold} strokeWidth={3} rx={6} />
     <foreignObject x={x} y={y} width={w} height={h}>
       <div style={{ width: w, height: h, overflow: 'hidden', background: '#0A0F1E' }}>
-        <Img src={staticFile(src)} style={{ width: w, height: h, objectFit: fit, transform: `scale(${zoom})`, transformOrigin: '50% 40%' }} />
+        <Img src={staticFile(src)} style={{ width: w, height: h, objectFit: fit, objectPosition: pos, transform: `scale(${zoom})`, transformOrigin: '50% 30%' }} />
       </div>
     </foreignObject>
     {credit && <text x={x + w / 2} y={y + h + 46} textAnchor="middle" fontFamily={EN} fontStyle="italic" fontSize={24} fill={P.snow}>{credit}</text>}
@@ -161,12 +161,12 @@ const S: Record<string, React.FC<SP>> = {
     <T x={960} y={968} s={64} ls={4} o={on('name', 0.6)}>Ekākṣi-piṅgala</T>
   </g>),
   bharhut: ({ lt, on }) => (<g><rect width={W} height={H} fill="#080A12" />
-    <Photo src="kubera/bharhut_kupira_tight.jpg" x={700} y={60} w={312} h={970} zoom={1 + lt * 0.006} credit="" />
+    <Photo src="kubera/bharhut_kupira_tight.jpg" x={620} y={40} w={460} h={930} fit="cover" pos="50% 4%" zoom={1 + lt * 0.006} credit="" />
     <T x={1460} y={360} s={46} c={P.snow} i o={clamp(lt / 0.8)}>Bharhut stūpa · north gate</T>
     <T x={1460} y={430} s={40} c={P.snow} i o={clamp(lt / 0.8)}>c. 125–100 BCE</T>
     <T x={1460} y={600} s={86} o={on('name', 0.6)}>Kupiro Yakho</T>
     <T x={1460} y={670} s={44} c={P.snow} i o={on('name', 0.6)}>“Kubera the Yakṣa”</T>
-    <text x={1460} y={1030} textAnchor="middle" fontFamily={EN} fontStyle="italic" fontSize={22} fill={P.snow}>Photo: A. Cunningham, The Stûpa of Bharhut (1879), Pl. XXII · public domain</text>
+    <text x={1460} y={820} textAnchor="middle" fontFamily={EN} fontStyle="italic" fontSize={24} fill={P.snow}>Photo: A. Cunningham, The Stûpa of Bharhut (1879), Pl. XXII</text>
   </g>),
   alaka: ({ t, lt }) => (<g><Sky t={t} /><Mountains y={860} peak />
     <circle cx={1300} cy={420} r={90} fill="url(#kGlowGold)" opacity={clamp(lt)} />
@@ -296,11 +296,11 @@ const S: Record<string, React.FC<SP>> = {
   </g>),
   rules: ({ t, on }) => {
     const cards: [string, string, string][] = [['', '1,00,000 japa', '+ 10,000 sesame offerings into fire'], ['temple', '10,000 japa in a Śiva temple', 'for increase of wealth'], ['bilva', '1,00,000 japa at a bilva root', ''],
-      ['install', 'copper dish · ghee · milk and water', 'maṇḍala · prāṇa-pratiṣṭhā'], ['material', 'birch bark · silk · palm leaf', 'sealed in gold, silver or copper'], ['moon', 'every new and full moon', 'the Vedic rite'], ['grain', 'Kubera’s grain mantra', 'kept in the granary'], ['deepavali', 'Dīpāvalī night', 'Alakṣmī driven out']];
+      ['install', 'copper dish · ghee · milk, water', 'maṇḍala · prāṇa-pratiṣṭhā'], ['material', 'birch bark · silk · palm leaf', 'sealed in gold, silver or copper'], ['moon', 'every new and full moon', 'the Vedic rite'], ['grain', 'Kubera’s grain mantra', 'kept in the granary'], ['deepavali', 'Dīpāvalī night', 'Alakṣmī driven out']];
     const cur = cards.reduce((a, c, i) => (c[0] === '' || on(c[0], 0.01) > 0 ? i : a), 0);
     return (<g><Sky t={t} warm={0.25} />
-      {cards.map(([k, a, b], i) => { const o = k ? on(k, 0.5) : 1; const x = 300 + (i % 4) * 440, y = 260 + Math.floor(i / 4) * 360;
-        return <g key={i} opacity={o * (i === cur ? 1 : 0.55)}><Card x={x - 200} y={y - 110} w={400} h={260} /><T x={x} y={y - 10} s={i === cur ? 40 : 36} w={700}>{a}</T><T x={x} y={y + 50} s={28} c={P.snow} i>{b}</T></g>; })}
+      {cards.map(([k, a, b], i) => { const o = k ? on(k, 0.5) : 1; const x = 285 + (i % 4) * 450, y = 300 + Math.floor(i / 4) * 340;
+        return <g key={i} opacity={o * (i === cur ? 1 : 0.55)}><Card x={x - 215} y={y - 110} w={430} h={240} /><T x={x} y={y - 6} s={i === cur ? 31 : 28} w={700}>{a}</T><T x={x} y={y + 48} s={24} c={P.snow} i>{b}</T></g>; })}
       <T x={960} y={968} s={30} c={P.snow} i>Mantramahodadhi 16.110–111, 20.1–14 · Mantra Mahārṇava · Dharmasindhu</T>
     </g>);
   },
@@ -343,19 +343,19 @@ const VerseCard: React.FC<{ c: Chant; t: number }> = ({ c, t }) => {
   const o = clamp((t - c.s) / 0.6) * clamp((c.e - t) / 0.6);
   if (o <= 0) return null;
   const cur = c.halves.findIndex(([a, b]) => t >= a - 0.1 && t < b + 0.4);
-  const n = c.deva.length, img = !!c.img, cx = img ? 1240 : 960, fs = n > 3 ? 46 : 54, gap = n > 3 ? 120 : 160;
+  const n = c.deva.length, img = !!c.img, cx = img ? 1270 : 960, fs = img ? 40 : n > 3 ? 46 : 54, gap = img ? 140 : n > 3 ? 120 : 160;
   const top = 540 - ((n - 1) * gap) / 2;
   return (
     <g opacity={o}>
-      <rect width={W} height={H} fill="#020611" opacity={0.88} />
-      {img && <Photo src={c.img as string} x={110} y={150} w={620} h={720} fit="contain" />}
-      {img && c.credit && <text x={420} y={930} textAnchor="middle" fontFamily={EN} fontStyle="italic" fontSize={20} fill={P.snow}>{c.credit}</text>}
+      <rect width={W} height={H} fill="#020611" opacity={0.95} />
+      {img && <Photo src={c.img as string} x={80} y={170} w={540} h={680} fit="contain" />}
+      {img && c.credit && <text x={350} y={930} textAnchor="middle" fontFamily={EN} fontStyle="italic" fontSize={20} fill={P.snow}>{c.credit}</text>}
       <T x={cx} y={120} s={36} c={P.snow} i>{c.src}</T>
       {c.deva.map((d, i) => (
         <g key={i}>
           <text x={cx} y={top + i * gap} textAnchor="middle" fontFamily={F.sanskrit} fontSize={fs} fill={i === cur ? P.goldHi : P.gold} opacity={i === cur ? 1 : i < (cur < 0 ? 99 : cur) ? 0.75 : 0.45}
             stroke="#020611" strokeWidth={4} paintOrder="stroke" filter={i === cur ? 'url(#rkGlow)' : undefined}>{d}</text>
-          <text x={cx} y={top + i * gap + 52} textAnchor="middle" fontFamily={EN} fontStyle="italic" fontSize={30} fill={P.snow} opacity={i === cur ? 1 : 0.55}>{c.iast[i]}</text>
+          <text x={cx} y={top + i * gap + 52} textAnchor="middle" fontFamily={EN} fontStyle="italic" fontSize={img ? 25 : 30} fill={P.snow} opacity={i === cur ? 1 : 0.55}>{c.iast[i]}</text>
         </g>
       ))}
       <text x={cx} y={968} textAnchor="middle" fontFamily={EN} fontSize={22} fill={P.snow} opacity={0.7}>chant: Vāgdhenu (Prof. Prathosh A.P., IISc)</text>
@@ -403,8 +403,8 @@ export const KuberaFilm: React.FC = () => {
       <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`}>
         <Defs /><KDefs />
         <g opacity={endO}>
-          {prev && fade < 1 && draw(prev, 1, 'p')}
-          {draw(b, prev ? ease(fade) : 1, 'c')}
+          {!(chant && t > chant.s + 0.65 && t < chant.e - 0.65) && prev && fade < 1 && draw(prev, 1, 'p')}
+          {!(chant && t > chant.s + 0.65 && t < chant.e - 0.65) && draw(b, prev ? ease(fade) : 1, 'c')}
           {chant && <VerseCard c={chant} t={t} />}
           {!chant && <Captions t={t} cs={cs} />}
         </g>

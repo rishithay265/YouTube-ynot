@@ -69,7 +69,7 @@ export const KDefs: React.FC = () => (
     <radialGradient id="kLamp" cx="50%" cy="50%" r="50%"><stop offset="0" stopColor="#FFE3A0" stopOpacity={0.95} /><stop offset="0.3" stopColor="#F0A040" stopOpacity={0.45} /><stop offset="1" stopColor="#F0A040" stopOpacity={0} /></radialGradient>
     <linearGradient id="kFloor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#3B2A22" /><stop offset="1" stopColor="#1A120E" /></linearGradient>
     <linearGradient id="kCopper" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#E59A62" /><stop offset="0.5" stopColor="#B8673A" /><stop offset="1" stopColor="#6E3518" /></linearGradient>
-    <filter id="kLineGlow" filterUnits="userSpaceOnUse" x="0" y="0" width="1920" height="1080"><feGaussianBlur stdDeviation="5" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
+    <filter id="kLineGlow" filterUnits="userSpaceOnUse" x="-3000" y="-3000" width="8000" height="8000"><feGaussianBlur stdDeviation="5" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
     <filter id="kSoft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" /></filter>
   </defs>
 );
