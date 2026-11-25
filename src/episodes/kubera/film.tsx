@@ -161,7 +161,7 @@ const S: Record<string, React.FC<SP>> = {
     <T x={960} y={968} s={64} ls={4} o={on('name', 0.6)}>Ekākṣi-piṅgala</T>
   </g>),
   bharhut: ({ lt, on }) => (<g><rect width={W} height={H} fill="#080A12" />
-    <Photo src="kubera/bharhut_kupira_plateXXII.jpg" x={700} y={60} w={312} h={970} zoom={1 + lt * 0.006} credit="" />
+    <Photo src="kubera/bharhut_kupira_tight.jpg" x={700} y={60} w={312} h={970} zoom={1 + lt * 0.006} credit="" />
     <T x={1460} y={360} s={46} c={P.snow} i o={clamp(lt / 0.8)}>Bharhut stūpa · north gate</T>
     <T x={1460} y={430} s={40} c={P.snow} i o={clamp(lt / 0.8)}>c. 125–100 BCE</T>
     <T x={1460} y={600} s={86} o={on('name', 0.6)}>Kupiro Yakho</T>
