@@ -347,7 +347,7 @@ const VerseCard: React.FC<{ c: Chant; t: number }> = ({ c, t }) => {
   const top = 540 - ((n - 1) * gap) / 2;
   return (
     <g opacity={o}>
-      <rect width={W} height={H} fill="#020611" opacity={0.78} />
+      <rect width={W} height={H} fill="#020611" opacity={0.88} />
       {img && <Photo src={c.img as string} x={110} y={150} w={620} h={720} fit="contain" />}
       {img && c.credit && <text x={420} y={930} textAnchor="middle" fontFamily={EN} fontStyle="italic" fontSize={20} fill={P.snow}>{c.credit}</text>}
       <T x={cx} y={120} s={36} c={P.snow} i>{c.src}</T>
