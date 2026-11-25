@@ -1,0 +1,308 @@
+[
+ {
+  "ch": 1,
+  "ref": "1.1",
+  "chapter": "अर्जुनविषादयोग",
+  "meter": "anushtubh",
+  "padas": [
+   "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः",
+   "मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय"
+  ],
+  "hook": [
+   "The first verse of the Gita",
+   "A blind king's question"
+  ],
+  "meaning": "Dhritarashtra asked: O Sanjaya, gathered on the holy field of Kurukshetra, eager to fight, what did my sons and the sons of Pandu do?",
+  "speaker": "Dhritarashtra said",
+  "chapter_en": "Arjuna Vishada Yoga"
+ },
+ {
+  "ch": 2,
+  "ref": "2.47",
+  "chapter": "सांख्ययोग",
+  "meter": "anushtubh",
+  "padas": [
+   "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन",
+   "मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि"
+  ],
+  "hook": [
+   "The most famous verse of the Gita",
+   "Act, but not for the fruit"
+  ],
+  "meaning": "Your right is to action alone, never to its fruits. Do not let the fruit be your motive, and do not cling to inaction either.",
+  "speaker": "Krishna said",
+  "chapter_en": "Sankhya Yoga"
+ },
+ {
+  "ch": 3,
+  "ref": "3.35",
+  "chapter": "कर्मयोग",
+  "meter": "anushtubh",
+  "padas": [
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्",
+   "स्वधर्मे निधनं श्रेयः परधर्मो भयावहः"
+  ],
+  "hook": [
+   "Why another's path",
+   "brings fear"
+  ],
+  "meaning": "Better is your own duty, even done imperfectly, than another's duty done well. Better to die in your own duty; another's duty is full of fear.",
+  "speaker": "Krishna said",
+  "chapter_en": "Karma Yoga"
+ },
+ {
+  "ch": 4,
+  "ref": "4.7",
+  "chapter": "ज्ञानकर्मसंन्यासयोग",
+  "meter": "anushtubh",
+  "padas": [
+   "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत",
+   "अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्"
+  ],
+  "hook": [
+   "When does God come?",
+   "Krishna's promise"
+  ],
+  "meaning": "O Bharata, whenever righteousness declines and unrighteousness rises, then I manifest Myself.",
+  "speaker": "Krishna said",
+  "chapter_en": "Jnana Karma Sannyasa Yoga"
+ },
+ {
+  "ch": 5,
+  "ref": "5.18",
+  "chapter": "कर्मसंन्यासयोग",
+  "meter": "anushtubh",
+  "padas": [
+   "विद्याविनयसम्पन्ने ब्राह्मणे गवि हस्तिनि",
+   "शुनि चैव श्वपाके च पण्डिताः समदर्शिनः"
+  ],
+  "hook": [
+   "How to recognise the wise",
+   "One vision for all"
+  ],
+  "meaning": "The wise see with an equal eye a learned and humble Brahmin, a cow, an elephant, a dog and an outcaste.",
+  "speaker": "Krishna said",
+  "chapter_en": "Karma Sannyasa Yoga"
+ },
+ {
+  "ch": 6,
+  "ref": "6.5",
+  "chapter": "आत्मसंयमयोग",
+  "meter": "anushtubh",
+  "padas": [
+   "उद्धरेदात्मनात्मानं नात्मानमवसादयेत्",
+   "आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः"
+  ],
+  "hook": [
+   "Who is your",
+   "greatest enemy?"
+  ],
+  "meaning": "Lift yourself up by your own self; never let yourself sink. For the self alone is your friend, and the self alone is your enemy.",
+  "speaker": "Krishna said",
+  "chapter_en": "Atma Samyama Yoga"
+ },
+ {
+  "ch": 7,
+  "ref": "7.19",
+  "chapter": "ज्ञानविज्ञानयोग",
+  "meter": "anushtubh",
+  "padas": [
+   "बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते",
+   "वासुदेवः सर्वमिति स महात्मा सुदुर्लभः"
+  ],
+  "hook": [
+   "One in millions",
+   "Such a soul is rare"
+  ],
+  "meaning": "At the end of many births, the wise one surrenders to Me, knowing \"Vasudeva is all that is\". Such a great soul is very rare.",
+  "speaker": "Krishna said",
+  "chapter_en": "Jnana Vijnana Yoga"
+ },
+ {
+  "ch": 8,
+  "ref": "8.7",
+  "chapter": "अक्षरब्रह्मयोग",
+  "meter": "anushtubh",
+  "padas": [
+   "तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च",
+   "मय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयम्"
+  ],
+  "hook": [
+   "At the very end",
+   "what will you remember?"
+  ],
+  "meaning": "Therefore remember Me at all times, and fight. With mind and intellect offered to Me, you will surely come to Me.",
+  "speaker": "Krishna said",
+  "chapter_en": "Akshara Brahma Yoga"
+ },
+ {
+  "ch": 9,
+  "ref": "9.26",
+  "chapter": "राजविद्याराजगुह्ययोग",
+  "meter": "anushtubh",
+  "padas": [
+   "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति",
+   "तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः"
+  ],
+  "hook": [
+   "What does God want?",
+   "Even a leaf is enough"
+  ],
+  "meaning": "Whoever offers Me with love a leaf, a flower, a fruit or a little water, that loving gift of a pure heart I accept.",
+  "speaker": "Krishna said",
+  "chapter_en": "Raja Vidya Raja Guhya Yoga"
+ },
+ {
+  "ch": 10,
+  "ref": "10.20",
+  "chapter": "विभूतियोग",
+  "meter": "anushtubh",
+  "padas": [
+   "अहमात्मा गुडाकेश सर्वभूताशयस्थितः",
+   "अहमादिश्च मध्यं च भूतानामन्त एव च"
+  ],
+  "hook": [
+   "Where does God live?",
+   "In your heart"
+  ],
+  "meaning": "O Arjuna, I am the Self seated in the hearts of all beings. I am their beginning, their middle and their end.",
+  "speaker": "Krishna said",
+  "chapter_en": "Vibhuti Yoga"
+ },
+ {
+  "ch": 11,
+  "ref": "11.32",
+  "chapter": "विश्वरूपदर्शनयोग",
+  "meter": "upajati",
+  "padas": [
+   "कालोऽस्मि लोकक्षयकृत्प्रवृद्धो लोकान्समाहर्तुमिह प्रवृत्तः",
+   "ऋतेऽपि त्वां न भविष्यन्ति सर्वे येऽवस्थिताः प्रत्यनीकेषु योधाः"
+  ],
+  "hook": [
+   "\"I am Time\"",
+   "The most terrifying verse"
+  ],
+  "meaning": "I am Time, the mighty destroyer of worlds, come here to consume all people. Even without you, none of the warriors arrayed against you will survive.",
+  "speaker": "Krishna said",
+  "chapter_en": "Vishvarupa Darshana Yoga"
+ },
+ {
+  "ch": 12,
+  "ref": "12.13",
+  "chapter": "भक्तियोग",
+  "meter": "anushtubh",
+  "padas": [
+   "अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च",
+   "निर्ममो निरहङ्कारः समदुःखसुखः क्षमी"
+  ],
+  "hook": [
+   "Who is dear to God?",
+   "These qualities"
+  ],
+  "meaning": "One who hates no being, who is friendly and compassionate, free of \"mine\" and of ego, equal in pleasure and pain, and forgiving: (that devotee is dear to Me.)",
+  "speaker": "Krishna said",
+  "chapter_en": "Bhakti Yoga"
+ },
+ {
+  "ch": 13,
+  "ref": "13.2",
+  "chapter": "क्षेत्रक्षेत्रज्ञविभागयोग",
+  "meter": "anushtubh",
+  "padas": [
+   "क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत",
+   "क्षेत्रक्षेत्रज्ञयोर्ज्ञानं यत्तज्ज्ञानं मतं मम"
+  ],
+  "hook": [
+   "Your body is a field",
+   "So who is the knower?"
+  ],
+  "meaning": "O Bharata, know Me as the knower of the field in all fields, all bodies. The knowledge of the field and its knower is, in My view, true knowledge.",
+  "speaker": "Krishna said",
+  "chapter_en": "Kshetra Kshetrajna Vibhaga Yoga"
+ },
+ {
+  "ch": 14,
+  "ref": "14.5",
+  "chapter": "गुणत्रयविभागयोग",
+  "meter": "anushtubh",
+  "padas": [
+   "सत्त्वं रजस्तम इति गुणाः प्रकृतिसम्भवाः",
+   "निबध्नन्ति महाबाहो देहे देहिनमव्ययम्"
+  ],
+  "hook": [
+   "Three ropes",
+   "that bind the soul"
+  ],
+  "meaning": "Sattva, rajas and tamas, the three qualities born of nature, O mighty-armed, bind the imperishable soul to the body.",
+  "speaker": "Krishna said",
+  "chapter_en": "Gunatraya Vibhaga Yoga"
+ },
+ {
+  "ch": 15,
+  "ref": "15.7",
+  "chapter": "पुरुषोत्तमयोग",
+  "meter": "anushtubh",
+  "padas": [
+   "ममैवांशो जीवलोके जीवभूतः सनातनः",
+   "मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति"
+  ],
+  "hook": [
+   "Who are you, really?",
+   "A part of the Divine"
+  ],
+  "meaning": "In this world of living beings, the eternal soul is a part of Me. It draws to itself the mind and the five senses that rest in nature.",
+  "speaker": "Krishna said",
+  "chapter_en": "Purushottama Yoga"
+ },
+ {
+  "ch": 16,
+  "ref": "16.21",
+  "chapter": "दैवासुरसम्पद्विभागयोग",
+  "meter": "anushtubh",
+  "padas": [
+   "त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः",
+   "कामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत्"
+  ],
+  "hook": [
+   "The three gates of hell",
+   "named by Krishna"
+  ],
+  "meaning": "Desire, anger and greed: these three are the gates of hell that destroy the self. Therefore, give up all three.",
+  "speaker": "Krishna said",
+  "chapter_en": "Daivasura Sampad Vibhaga Yoga"
+ },
+ {
+  "ch": 17,
+  "ref": "17.20",
+  "chapter": "श्रद्धात्रयविभागयोग",
+  "meter": "anushtubh",
+  "padas": [
+   "दातव्यमिति यद्दानं दीयतेऽनुपकारिणे",
+   "देशे काले च पात्रे च तद्दानं सात्त्विकं स्मृतम्"
+  ],
+  "hook": [
+   "What is",
+   "true charity?"
+  ],
+  "meaning": "A gift given because giving is right, to one who cannot repay, at the proper place and time and to a worthy person: that gift is called sattvic.",
+  "speaker": "Krishna said",
+  "chapter_en": "Shraddhatraya Vibhaga Yoga"
+ },
+ {
+  "ch": 18,
+  "ref": "18.66",
+  "chapter": "मोक्षसंन्यासयोग",
+  "meter": "anushtubh",
+  "padas": [
+   "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज",
+   "अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः"
+  ],
+  "hook": [
+   "The final word of the Gita",
+   "Surrender to Me"
+  ],
+  "meaning": "Abandon all duties and take refuge in Me alone. I will free you from all sins; do not grieve.",
+  "speaker": "Krishna said",
+  "chapter_en": "Moksha Sannyasa Yoga"
+ }
+]

@@ -11,6 +11,8 @@ import { TripuraCast } from './episodes/tripura/castsheet';
 import { TripuraThumb } from './episodes/tripura/thumb';
 import { TripuraShort, ShortDef } from './episodes/tripura/short';
 import tripuraShorts from './episodes/tripura/shorts.json';
+import { GitaShort, GitaDef } from './episodes/gita/short';
+import gitaShorts from './episodes/gita/shorts.json';
 
 // Every episode gets two compositions: <Id> (the film) and <Id>Board (one frame per shot, at its key frame, for the
 // storyboard). Cast renders the cast sheet.
@@ -33,6 +35,9 @@ export const Root: React.FC = () => {
       <Composition id="RaktabijaCast" component={RaktabijaCast} durationInFrames={4} width={1920} height={1080} {...common} />
       {(tripuraShorts as ShortDef[]).map((d) => (
         <Composition key={d.id} id={d.id} component={TripuraShort} defaultProps={{ d }} durationInFrames={d.len} width={1080} height={1920} {...common} />
+      ))}
+      {(gitaShorts as GitaDef[]).map((d) => (
+        <Composition key={d.id} id={d.id} component={GitaShort} defaultProps={{ d }} durationInFrames={d.len} width={1080} height={1920} {...common} />
       ))}
       <Composition id="TripuraThumb" component={TripuraThumb} durationInFrames={1} width={1920} height={1080} {...common} />
       <Composition id="TripuraCast" component={TripuraCast} durationInFrames={4} width={1920} height={1080} {...common} />

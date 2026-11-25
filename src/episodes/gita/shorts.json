@@ -1,0 +1,39 @@
+[
+ {
+  "id": "GitaShort04",
+  "day": 4,
+  "ch": 4,
+  "ref": "4.7",
+  "chapter": "ज्ञानकर्मसंन्यासयोग",
+  "chapter_en": "Jnana Karma Sannyasa Yoga",
+  "hook": [
+   "When does God come?",
+   "Krishna's promise"
+  ],
+  "padas": [
+   "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत",
+   "अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्"
+  ],
+  "meaning": "O Bharata, whenever righteousness declines and unrighteousness rises, then I manifest Myself.",
+  "speaker": "Krishna said",
+  "len": 755,
+  "audio": "gita/g04.wav",
+  "t": {
+   "chant": [
+    [
+     2.2,
+     6.5
+    ],
+    [
+     7.2,
+     11.97
+    ]
+   ],
+   "meaning": [
+    12.97,
+    21.97
+   ],
+   "end": 21.97
+  }
+ }
+]

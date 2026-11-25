@@ -159,7 +159,7 @@ export const City: React.FC<{ k: Metal; x: number; y: number; s?: number; t: num
 const FIG = { fill: 'url(#rkFigure)', stroke: P.gold, sw: 3 };
 
 /** A limb as a tapered capsule through the points, widths w0 -> w1 (filled, no stroke: drawn twice by Fig for a clean rim). */
-const limb = (pts: [number, number][], w0: number, w1: number) => {
+export const limb = (pts: [number, number][], w0: number, w1: number) => {
   const L: string[] = [], R: string[] = [];
   pts.forEach(([x, y], i) => {
     const [ax, ay] = pts[Math.max(0, i - 1)], [bx, by] = pts[Math.min(pts.length - 1, i + 1)];
@@ -171,15 +171,15 @@ const limb = (pts: [number, number][], w0: number, w1: number) => {
   return `M${L.join(' L')} A${w1 / 2} ${w1 / 2} 0 0 1 ${R[0]} L${R.join(' L')} A${w0 / 2} ${w0 / 2} 0 0 1 ${L[0]} Z` + ` M${ex} ${ey} m0 0` + ` M${sx} ${sy}`;
 };
 /** Draws a set of shapes as one figure: a gold rim pass under a fill pass, so overlaps merge into one silhouette. */
-const Fig: React.FC<{ d: string[]; fill: string; rim?: string; w?: number }> = ({ d, fill, rim = P.gold, w = 6 }) => (
+export const Fig: React.FC<{ d: string[]; fill: string; rim?: string; w?: number }> = ({ d, fill, rim = P.gold, w = 6 }) => (
   <g>
     <g fill={rim} stroke={rim} strokeWidth={w} strokeLinejoin="round">{d.map((x, i) => <path key={i} d={x} />)}</g>
     <g fill={fill}>{d.map((x, i) => <path key={i} d={x} />)}</g>
   </g>
 );
 const SH = { l: [88, -428] as [number, number], r: [-88, -428] as [number, number] };
-const TORSO = 'M-62 -262 Q-70 -330 -94 -398 Q-102 -432 -74 -444 L74 -444 Q102 -432 94 -398 Q70 -330 62 -262 Z';
-const NECK = 'M-17 -472 L17 -472 L19 -436 L-19 -436 Z';
+export const TORSO = 'M-62 -262 Q-70 -330 -94 -398 Q-102 -432 -74 -444 L74 -444 Q102 -432 94 -398 Q70 -330 62 -262 Z';
+export const NECK = 'M-17 -472 L17 -472 L19 -436 L-19 -436 Z';
 
 /**
  * Shiva as Tripurari: jata with the crescent and Ganga, the third eye (eye 0..1 opens it; anger 0..1 reddens the face),
