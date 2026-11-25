@@ -35,3 +35,8 @@
 - Expect "major revisions": answer every reviewer point in a response letter. I can help draft it.
 - Do **not** submit to any other journal while this one is under review.
 - If it is accepted, add the journal DOI to the Zenodo record as a new version, under Related works, "Is published in".
+
+---
+
+## Submitted
+25 November 2026 (Editorial Manager, article type "Article"); manuscript file IJHS-S-26-00511. Approved by the author after checking the system-built PDF (22 pages with line numbers). Track it under "Submissions Being Processed".
