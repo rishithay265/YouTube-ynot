@@ -45,14 +45,20 @@ def _words_of(path, text):
     from faster_whisper import WhisperModel
     if _model is None: _model = WhisperModel('large-v3', device='cpu', compute_type='int8')
     audio = load(path, sr=16000)
-    segs, _ = _model.transcribe(audio, language='en', word_timestamps=True, initial_prompt=text.replace('\n', ' '), beam_size=5)
-    heard = [w for s in segs for w in s.words]
     key = lambda w: re.sub(r"[^a-z0-9']", '', w.lower().replace('’', "'"))
     disp = text.split()
-    sm = SequenceMatcher(a=[key(w) for w in disp], b=[key(w.word) for w in heard], autojunk=False)
-    t = {}
-    for b in sm.get_matching_blocks():
-        for k in range(b.size): t[b.a + k] = (heard[b.b + k].start, heard[b.b + k].end)
+    def heard_times(prompt):
+        segs, _ = _model.transcribe(audio, language='en', word_timestamps=True, initial_prompt=prompt, beam_size=5)
+        heard = [w for s in segs for w in s.words]
+        sm = SequenceMatcher(a=[key(w) for w in disp], b=[key(w.word) for w in heard], autojunk=False)
+        t = {}
+        for b in sm.get_matching_blocks():
+            for k in range(b.size): t[b.a + k] = (heard[b.b + k].start, heard[b.b + k].end)
+        return t
+    t = heard_times(text.replace('\n', ' '))
+    if len(t) < 0.9 * len(disp):  # the script as prompt can make Whisper skip words; hear it again without
+        t2 = heard_times(None)
+        if len(t2) > len(t): t = t2
     out = []
     for i, w in enumerate(disp):  # unmatched words: share the gap between their matched neighbours
         if i in t: s, e = t[i]
