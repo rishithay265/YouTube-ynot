@@ -11,7 +11,9 @@ import { GitaChariot, Emblem } from './cast';
 
 export type GitaDef = {
   id: string; day: number; ch: number; ref: string; chapter: string; chapter_en: string; hook: string[]; padas: string[]; meaning: string; speaker: string;
-  len: number; audio: string; t: { chant: [number, number][]; meaning: [number, number]; end: number };
+  len: number; audio: string; t: { a?: [number, number]; b?: [number, number]; chant: [number, number][]; meaning: [number, number]; end: number };
+  /** voice-over captions (build_vo.py): groups of words with their times, q = the quoted translation */
+  cap?: { s: number; e: number; q: boolean; words: { w: string; s: number; e: number }[] }[];
 };
 const W = 1080, H = 1920, FPS = 30;
 const EN = "'Cormorant Garamond', serif";
@@ -31,6 +33,33 @@ const wrap = (s: string, n: number) => {
   return out;
 };
 
+/** Word-by-word captions for the narrator: the current group, wrapped, the spoken word lit. */
+const VoCaptions: React.FC<{ cap: NonNullable<GitaDef['cap']>; s: number; y: number }> = ({ cap, s, y }) => {
+  const c = cap.find((x) => s >= x.s - 0.05 && s < x.e);
+  if (!c) return null;
+  const lines: { w: string; s: number; e: number }[][] = [[]]; let n = 0;
+  for (const w of c.words) {
+    if (n + w.w.length > 22 && lines[lines.length - 1].length) { lines.push([]); n = 0; }
+    lines[lines.length - 1].push(w); n += w.w.length + 1;
+  }
+  const o = clamp((s - c.s + 0.05) / 0.12);
+  const lh = 84, top = y - ((lines.length - 1) * lh) / 2;
+  return (
+    <g opacity={o}>
+      {lines.map((l, i) => (
+        <text key={i} x={W / 2} y={top + i * lh} textAnchor="middle" fontFamily={EN} fontSize={c.q ? 64 : 62} fontWeight={700} fontStyle={c.q ? 'italic' : 'normal'}
+          stroke="#02060F" strokeWidth={6} paintOrder="stroke">
+          {l.map((w, j) => {
+            const now = s >= w.s && s < w.e + 0.08, said = s >= w.s;
+            const base = c.q ? P.goldHi : P.snow;
+            return <tspan key={j} fill={now ? '#FF9A3A' : base} opacity={said ? 1 : 0.5}>{(j ? ' ' : '') + w.w}</tspan>;
+          })}
+        </text>
+      ))}
+    </g>
+  );
+};
+
 export const GitaShort: React.FC<{ d: GitaDef }> = ({ d }) => {
   const f = useCurrentFrame();
   const s = f / FPS;
@@ -38,6 +67,7 @@ export const GitaShort: React.FC<{ d: GitaDef }> = ({ d }) => {
   const lines = [...halve(d.padas[0]), ...halve(d.padas[1])];
   // which pada is being sung: each half split in two by time
   const active = s < c1[0] ? -1 : s < c1[1] ? (s < (c1[0] + c1[1]) / 2 ? 0 : 1) : s < c2[0] ? 1.5 : s < c2[1] ? (s < (c2[0] + c2[1]) / 2 ? 2 : 3) : 9;
+  const vo = !!d.cap;
   const verseO = interpolate(s, [c1[0] - 0.6, c1[0], d.t.meaning[0] - 0.4, d.t.meaning[0]], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   const meanO = interpolate(s, [d.t.meaning[0], d.t.meaning[0] + 0.6, d.t.end - 0.4, d.t.end], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   const endO = clamp((s - d.t.end) / 0.5);
@@ -82,7 +112,13 @@ export const GitaShort: React.FC<{ d: GitaDef }> = ({ d }) => {
           })}
           <text x={W / 2} y={1720} textAnchor="middle" fontFamily={F.sanskrit} fontSize={34} fill={P.gold}>॥ {d.ref} ॥</text>
         </g>
-        <g opacity={meanO}>
+        {vo ? (
+          <g>
+            <text x={W / 2} y={1268} textAnchor="middle" fontFamily={EN} fontSize={28} fill={P.gold} letterSpacing={4} opacity={meanO}>BHAGAVAD GITA {d.ref}</text>
+            <VoCaptions cap={d.cap!} s={s} y={1500} />
+          </g>
+        ) : null}
+        <g opacity={vo ? 0 : meanO}>
           <text x={W / 2} y={1268} textAnchor="middle" fontFamily={EN} fontSize={30} fill={P.gold} letterSpacing={4}>MEANING · BHAGAVAD GITA {d.ref}</text>
           {mean.map((l, i) => <text key={i} x={W / 2} y={1360 + i * 66 + (6 - mean.length) * 26} textAnchor="middle" fontFamily={EN} fontSize={54} fontWeight={600} fill={P.snow} stroke="#02060F" strokeWidth={3} paintOrder="stroke">{l}</text>)}
         </g>
