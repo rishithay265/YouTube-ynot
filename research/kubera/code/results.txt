@@ -1,0 +1,308 @@
+Kubera Yantra paper -- verification log
+python: Python 3.13.18
+
+################################################################
+# magic3.py
+################################################################
+
+========================================================================
+T1. Normal 3x3 magic squares (entries 1..9): exhaustive search over 9! = 362880
+========================================================================
+number found: 8
+distinct D4-orbits: 1
+orbit size of Lo Shu: 8
+every square found lies in the Lo Shu orbit: True
+centre of every one = 5: True
+corners always even, edges always odd: True
+
+========================================================================
+T2. Centre lemma: in ANY 3x3 magic square (real entries) centre = S/3
+========================================================================
+multiplicity of each cell in the 4 centre lines:
+  1 1 1
+  1 4 1
+  1 1 1
+=> sum(4 lines) = 4S = (sum of all cells) + 3c = 3S + 3c  => c = S/3
+checked 2197 parametrised squares: centre*3 == S always: True
+rank of the 7 independent-looking line equations: 6 -> solution space dimension = 3 (3 parameters a, b, c)
+
+========================================================================
+T3. Consecutive integers k..k+8: S = 3k+12, centre = k+4, exactly 8 squares
+========================================================================
+k=  20: squares=8  sums={72} (3k+12=72)  centres={24} (k+4=24)  all = LoShu+(k-1): True
+k=  -3: squares=8  sums={3} (3k+12=3)  centres={1} (k+4=1)  all = LoShu+(k-1): True
+k=   0: squares=8  sums={12} (3k+12=12)  centres={4} (k+4=4)  all = LoShu+(k-1): True
+k=   1: squares=8  sums={15} (3k+12=15)  centres={5} (k+4=5)  all = LoShu+(k-1): True
+k=   7: squares=8  sums={33} (3k+12=33)  centres={11} (k+4=11)  all = LoShu+(k-1): True
+k=  19: squares=8  sums={69} (3k+12=69)  centres={23} (k+4=23)  all = LoShu+(k-1): True
+k= 100: squares=8  sums={312} (3k+12=312)  centres={104} (k+4=104)  all = LoShu+(k-1): True
+
+========================================================================
+T4. The Kubera square
+========================================================================
+  27 20 25
+  22 24 26
+  23 28 21
+is magic: True  magic sum: 72  centre: 24  entries: [20, 21, 22, 23, 24, 25, 26, 27, 28]
+line sums: [72, 72, 72, 72, 72, 72, 72, 72]
+Kubera - 19 =
+  8 1 6
+  3 5 7
+  4 9 2
+Lo Shu as conventionally printed (south at top):
+  4 9 2
+  3 5 7
+  8 1 6
+D4 element g with g(LoShu_CN) = Kubera-19: flip_horizontal_axis(TB)
+check: flip top<->bottom of Lo Shu + 19 == Kubera: True
+Kubera-19 mirrored left<->right =
+  6 1 8
+  7 5 3
+  2 9 4
+(this 6 1 8 / 7 5 3 / 2 9 4 layout is the Lo Shu drawn with NORTH at top and EAST at right)
+Lucas form with c=24, a=-1, b=-3 reproduces Kubera: True
+
+========================================================================
+T5. Hidden quadratic identities (follow from magic-ness; shown, not mystical)
+========================================================================
+sum of squares, top row   : 1754
+sum of squares, bottom row: 1754
+sum of squares, left col  : 1742
+sum of squares, right col : 1742
+identity holds for every 3x3 magic square in a 11^3 parameter grid: True
+Lo Shu rows as numbers ['492', '357', '816']: sum of squares 1035369; reversed rows: 1035369; equal: True
+Kubera rows read in base 100 (e.g. 27|20|25): forward 177676544142 reversed 177676544142 equal: True
+
+========================================================================
+T6. The Navagraha arithmetic family and the position of 72
+========================================================================
+Surya    offset 0: entries 1..9, sum 15, centre 5
+Candra   offset 1: entries 2..10, sum 18, centre 6
+Mangala  offset 2: entries 3..11, sum 21, centre 7
+Budha    offset 3: entries 4..12, sum 24, centre 8
+Guru     offset 4: entries 5..13, sum 27, centre 9
+Sukra    offset 5: entries 6..14, sum 30, centre 10
+Sani     offset 6: entries 7..15, sum 33, centre 11
+Rahu     offset 7: entries 8..16, sum 36, centre 12
+Ketu     offset 8: entries 9..17, sum 39, centre 13
+Kubera offset 19: entries 20..28, sum 72 centre 24
+72 is in the progression 15+3m for m = 19 (not among m = 0..8)
+any 3x3 square of consecutive integers has S divisible by 3: True
+
+========================================================================
+T7. How special is 'consecutive' for S = 72? count 3x3 magic squares with DISTINCT POSITIVE integers and S = 72
+========================================================================
+essentially different (up to D4) magic squares, distinct positive entries, S=72: 114
+of these, using 9 consecutive integers: 1 -> [(21, 26, 25, 28, 24, 20, 23, 22, 27)]
+
+========================================================================
+T8. Numbers around 72 (each later classified in the paper)
+========================================================================
+total of all nine cells: 216 = 3*72 = 216 = 2*108 = 216 = 6^3 = 216
+72 = 8*9 = 72 ; 72 = 3*24 = 72
+precession: 360 deg / 25772 yr -> years per degree = 71.59
+melakarta count 72 = 2 (madhyama) * 6 (ri-ga) * 6 (dha-ni) = 72
+
+========================================================================
+T9. Kolam drawing order reported by Wikipedia (24,28,23,22,27,20,25,26,21)
+========================================================================
+24(centre) -> 28(bottom) -> 23(bottom-left) -> 22(left) -> 27(top-left) -> 20(top) -> 25(top-right) -> 26(right) -> 21(bottom-right)
+after the centre, the order walks the outer ring clockwise starting at bottom-centre: True
+
+################################################################
+# directions.py
+################################################################
+
+North-up, East-right (modern map)
+  dir Kubera  -19 LoShu  dikpala        graha (MtP 93)   nidhi-hypothesis
+  N       20    1     1  KUBERA         Guru (Jupiter)   Mahapadma
+  NE      25    6     8  Isa            Budha            Mukunda
+  E       26    7     3  Indra          Sukra            Kunda
+  SE      21    2     4  Agni           Candra           Padma
+  S       28    9     9  Yama           Mangala          Kharva
+  SW      23    4     2  Nirrti         Rahu             Makara
+  W       22    3     7  Varuna         Sani             Sankha
+  NW      27    8     6  Vayu (Marut)   Ketu             Nila
+  C       24    5     5  (Brahma, not in list) Surya            Kacchapa
+  cells agreeing with Later-Heaven Lo Shu numbering: 3/9
+  number in KUBERA's own quarter (North): 20  (Lo Shu value 1)
+
+East-up, North-left (Vastu-mandala plans)
+  dir Kubera  -19 LoShu  dikpala        graha (MtP 93)   nidhi-hypothesis
+  N       22    3     1  KUBERA         Guru (Jupiter)   Sankha
+  NE      27    8     8  Isa            Budha            Nila
+  E       20    1     3  Indra          Sukra            Mahapadma
+  SE      25    6     4  Agni           Candra           Mukunda
+  S       26    7     9  Yama           Mangala          Kunda
+  SW      21    2     2  Nirrti         Rahu             Padma
+  W       28    9     7  Varuna         Sani             Kharva
+  NW      23    4     6  Vayu (Marut)   Ketu             Makara
+  C       24    5     5  (Brahma, not in list) Surya            Kacchapa
+  cells agreeing with Later-Heaven Lo Shu numbering: 3/9
+  number in KUBERA's own quarter (North): 22  (Lo Shu value 3)
+
+South-up, East-left (Chinese Lo Shu convention)
+  dir Kubera  -19 LoShu  dikpala        graha (MtP 93)   nidhi-hypothesis
+  N       28    9     1  KUBERA         Guru (Jupiter)   Kharva
+  NE      23    4     8  Isa            Budha            Makara
+  E       22    3     3  Indra          Sukra            Sankha
+  SE      27    8     4  Agni           Candra           Nila
+  S       20    1     9  Yama           Mangala          Mahapadma
+  SW      25    6     2  Nirrti         Rahu             Mukunda
+  W       26    7     7  Varuna         Sani             Kunda
+  NW      21    2     6  Vayu (Marut)   Ketu             Padma
+  C       24    5     5  (Brahma, not in list) Surya            Kacchapa
+  cells agreeing with Later-Heaven Lo Shu numbering: 3/9
+  number in KUBERA's own quarter (North): 28  (Lo Shu value 9)
+
+West-up
+  dir Kubera  -19 LoShu  dikpala        graha (MtP 93)   nidhi-hypothesis
+  N       26    7     1  KUBERA         Guru (Jupiter)   Kunda
+  NE      21    2     8  Isa            Budha            Padma
+  E       28    9     3  Indra          Sukra            Kharva
+  SE      23    4     4  Agni           Candra           Makara
+  S       22    3     9  Yama           Mangala          Sankha
+  SW      27    8     2  Nirrti         Rahu             Nila
+  W       20    1     7  Varuna         Sani             Mahapadma
+  NW      25    6     6  Vayu (Marut)   Ketu             Mukunda
+  C       24    5     5  (Brahma, not in list) Surya            Kacchapa
+  cells agreeing with Later-Heaven Lo Shu numbering: 3/9
+  number in KUBERA's own quarter (North): 26  (Lo Shu value 7)
+
+North-up, East-left (mirror)
+  dir Kubera  -19 LoShu  dikpala        graha (MtP 93)   nidhi-hypothesis
+  N       20    1     1  KUBERA         Guru (Jupiter)   Mahapadma
+  NE      27    8     8  Isa            Budha            Nila
+  E       22    3     3  Indra          Sukra            Sankha
+  SE      23    4     4  Agni           Candra           Makara
+  S       28    9     9  Yama           Mangala          Kharva
+  SW      21    2     2  Nirrti         Rahu             Padma
+  W       26    7     7  Varuna         Sani             Kunda
+  NW      25    6     6  Vayu (Marut)   Ketu             Mukunda
+  C       24    5     5  (Brahma, not in list) Surya            Kacchapa
+  cells agreeing with Later-Heaven Lo Shu numbering: 9/9
+  number in KUBERA's own quarter (North): 20  (Lo Shu value 1)
+
+Matsya 93 layout with grahas numbered 1..9 in canonical weekday-list order (N up):
+  9 5 4
+  7 1 6
+  8 3 2
+line sums: [18, 14, 13, 24, 9, 12, 12, 13]  magic? False
+
+Hypothetical nidhi labelling: centre value 24 -> Kacchapa (5th of 9 in the Amarakosa list)
+
+################################################################
+# magic4.py
+################################################################
+
+========================================================================
+C1. Normal 4x4 pandiagonal magic squares
+========================================================================
+total pandiagonal squares: 384
+up to the 8 symmetries of the square (D4): 48
+all of them are 'most-perfect' (2x2 blocks = 34, diagonal complements = 17): True
+
+========================================================================
+C2. All normal 4x4 magic squares (Frenicle 1693 count check)
+========================================================================
+total: 7040  up to D4: 880
+fraction that are pandiagonal: 384/7040
+
+========================================================================
+C3. Khajuraho, Parsvanatha temple square
+========================================================================
+   7 12  1 14
+   2 13  8 11
+  16  3 10  5
+   9  6 15  4
+magic: True  sum: 34  pandiagonal: True  most-perfect: True  in enumerated pandiagonal set: True
+broken-diagonal sums: [34, 34, 34, 34] [34, 34, 34, 34]
+
+========================================================================
+C4. Varahamihira, Brhatsamhita 76.23-25 (kacchaputa of 16 cells, 'astadasa bhagah')
+========================================================================
+  aguru:2  patra:3  turuska:5  saileya:8
+  priyangu:5  musta:8  rasa:2  kesa:3
+  sprkka:4  tvak:1  tagara:7  mamsi:6
+  malaya:7  nakha:6  srika:4  kunduruka:1
+line sums (rows, cols, diagonals): [18, 18, 18, 18, 18, 18, 18, 18, 18, 18]
+pandiagonal: True  magic sum: 18  (text: 'ye 'tra astadasa bhagah' = 18 parts)
+broken-diagonal sums: [18, 18, 18, 18] [18, 18, 18, 18]
+all 16 wrapped 2x2 blocks sum to 18: True
+multiset of entries: [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8] (two copies of 1..8)
+normal pandiagonal squares P with (P mod 8, using 8 for 0) == Varaha square: 2
+   2 11  5 16
+  13  8 10  3
+  12  1 15  6
+   7 14  4  9
+   is it in the Khajuraho D4 orbit? False ; canonical form equal to Khajuraho's? False
+  10  3 13  8
+   5 16  2 11
+   4  9  7 14
+  15  6 12  1
+   is it in the Khajuraho D4 orbit? False ; canonical form equal to Khajuraho's? False
+Varaha + 8 on rows 2 and 4:
+   2  3  5  8
+  13 16 10 11
+   4  1  7  6
+  15 14 12  9
+   normal?  True  magic? False  pandiagonal? False
++8 on columns 3,4 normal? True pandiagonal? False
+
+========================================================================
+C5. Brhatsamhita 76 combinatorics stated in the text
+========================================================================
+76.20: 16 substances taken 4 at a time: C(16,4) = 1820 (text: 18 hundreds + 20 = 1820)
+76.19: proportions 1,2,3,4 over 4 substances: 4! = 24 ; text total per set 96 = 4*24 = 96
+76.17: 1820 * 96 = 174720 ; text: laksa + 4 sahasra + 70 sahasra + 7 sata + 20 = 174720
+76.29-30: nine-cell kacchaputa, choose 3 of 9: C(9,3) = 84 (text: kesaragandhas caturasitih = 84)
+
+========================================================================
+C6. European comparanda (layouts as commonly reproduced; see paper caveat)
+========================================================================
+Durer, Melencolia I (1514) magic: True sum: 34 pandiagonal: False same D4 orbit as Durer: True same D4 orbit as Khajuraho: False
+Agrippa, table of Jupiter magic: True sum: 34 pandiagonal: False same D4 orbit as Durer: False same D4 orbit as Khajuraho: False
+
+################################################################
+# mantra_syllables.py
+################################################################
+MM 16.105-107 (no om)             35  | yakṣāya kuberāya vaiśravaṇāya dhanadhānyādhipataye dhanadhānyasamṛddhiṃ me dehi dāpaya svāhā
+same with initial om              36  | oṃ yakṣāya kuberāya vaiśravaṇāya dhanadhānyādhipataye dhanadhānyasamṛddhiṃ me dehi dāpaya svāhā
+MM 9.81-84 (8 syllables)           8  | oṃ vaiśravaṇāya svāhā
+MM 16.112-113 (16 syllables)      16  | oṃ śrīṃ oṃ hrīṃ śrīṃ hrīṃ klīṃ śrīṃ klīṃ vitteśvarāya namaḥ
+
+sadanga split of the 35-syllable mantra: [3, 4, 5, 8, 8, 7] sum 35 (MM 16.108 prescribes 3,4,5,8,8,7)
+classical Brhati = 4 x 9 = 36 syllables; 35 = 'nicrt' (one short) form; 36 with om
+
+Taittiriya Aranyaka 1.31.6 (Mantrapuspam verse) syllables per line:
+   12  rājādhirājāya prasahyasāhine
+   12  namo vayaṃ vaiśravaṇāya kurmahe
+   11  sa me kāmān kāmakāmāya mahyam
+   11  kāmeśvaro vaiśravaṇo dadātu
+    9  kuberāya vaiśravaṇāya
+    7  mahārājāya namaḥ
+  first four padas: 12 + 12 + 11 + 11 (Jagati/Tristubh mixture); last two lines are prose formulae
+
+################################################################
+# stego_demo.py
+################################################################
+Kubera visiting order within each 3x3 block (cell indices 0..8, row-major): [1, 8, 3, 6, 4, 2, 5, 0, 7]
+payload bits: 4480  capacity used: 0.486 bpp  MSE: 0.2434  PSNR: 54.27 dB
+bit errors with the correct order: 0
+
+Extraction with each of the 8 D4 variants of the Kubera square as the 'key':
+  identity                   BER = 0.000
+  rot90                      BER = 0.512
+  rot180                     BER = 0.454
+  rot270                     BER = 0.512
+  flip_vertical_axis(LR)     BER = 0.388
+  flip_horizontal_axis(TB)   BER = 0.339
+  transpose(main diag)       BER = 0.377
+  anti-transpose             BER = 0.374
+
+Key-space remarks: there are 9! = 362880 orders of 9 cells but only 8 magic ones; using 'some magic square of 3' as a secret is log2(8) = 3 bits of key.
+
+################################################################
+# figures.py
+################################################################
+figures written to /home/user/youtube-ynot/research/kubera/paper/figs ['fig_family.pdf', 'fig_orient.pdf', 'fig_squares4.pdf', 'fig_stego.pdf']

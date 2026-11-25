@@ -1,0 +1,197 @@
+12,221.001	yudhiṣṭhira uvāca
+12,221.001a	pūrvarūpāṇi me rājan puruṣasya bhaviṣyataḥ
+12,221.001c	parābhaviṣyataś caiva tvaṃ me brūhi pitāmaha
+12,221.002	bhīṣma uvāca
+12,221.002a	mana eva manuṣyasya pūrvarūpāṇi śaṃsati
+12,221.002c	bhaviṣyataś ca bhadraṃ te tathaiva nabhaviṣyataḥ
+12,221.003a	atrāpy udāharantīmam itihāsaṃ purātanam
+12,221.003c	śriyā śakrasya saṃvādaṃ tan nibodha yudhiṣṭhira
+12,221.004a	mahatas tapaso vyuṣṭyā paśyaṃl lokau parāvarau
+12,221.004c	sāmānyam ṛṣibhir gatvā brahmalokanivāsibhiḥ
+12,221.005a	brahmaivāmitadīptaujāḥ śāntapāpmā mahātapāḥ
+12,221.005c	vicacāra yathākāmaṃ triṣu lokeṣu nāradaḥ
+12,221.006a	kadā cit prātar utthāya pispṛkṣuḥ salilaṃ śuci
+12,221.006c	dhruvadvārabhavāṃ gaṅgāṃ jagāmāvatatāra ca
+12,221.007a	sahasranayanaś cāpi vajrī śambarapākahā
+12,221.007c	tasyā devarṣijuṣṭāyās tīram abhyājagāma ha
+12,221.008a	tāv āplutya yatātmānau kṛtajapyau samāsatuḥ
+12,221.008c	nadyāḥ pulinam āsādya sūkṣmakāñcanavālukam
+12,221.009a	puṇyakarmabhir ākhyātā devarṣikathitāḥ kathāḥ
+12,221.009c	cakratus tau kathāśīlau śucisaṃhṛṣṭamānasau
+12,221.009e	pūrvavṛttavyapetāni kathayantau samāhitau
+12,221.010a	atha bhāskaram udyantaṃ raśmijālapuraskṛtam
+12,221.010c	pūrṇamaṇḍalam ālokya tāv utthāyopatasthatuḥ
+12,221.011a	abhitas tūdayantaṃ tam arkam arkam ivāparam
+12,221.011c	ākāśe dadṛśe jyotir udyatārciḥsamaprabham
+12,221.012a	tayoḥ samīpaṃ saṃprāptaṃ pratyadṛśyata bhārata
+12,221.012c	tat suparṇārkacaritam āsthitaṃ vaiṣṇavaṃ padam
+12,221.012e	bhābhir apratimaṃ bhāti trailokyam avabhāsayat
+12,221.013a	divyābhirūpaśobhābhir apsarobhiḥ puraskṛtām
+12,221.013c	bṛhatīm aṃśumatprakhyāṃ bṛhadbhānor ivārciṣam
+12,221.014a	nakṣatrakalpābharaṇāṃ tārābhaktisamasrajam
+12,221.014c	śriyaṃ dadṛśatuḥ padmāṃ sākṣāt padmatalasthitām
+12,221.015a	sāvaruhya vimānāgrād aṅganānām anuttamā
+12,221.015c	abhyagacchat trilokeśaṃ śakraṃ carṣiṃ ca nāradam
+12,221.016a	nāradānugataḥ sākṣān maghavāṃs tām upāgamat
+12,221.016c	kṛtāñjalipuṭo devīṃ nivedyātmānam ātmanā
+12,221.017a	cakre cānupamāṃ pūjāṃ tasyāś cāpi sa sarvavit
+12,221.017c	devarājaḥ śriyaṃ rājan vākyaṃ cedam uvāca ha
+12,221.018a	kā tvaṃ kena ca kāryeṇa saṃprāptā cāruhāsini
+12,221.018c	kutaś cāgamyate subhru gantavyaṃ kva ca te śubhe
+12,221.019	śrīr uvāca
+12,221.019a	puṇyeṣu triṣu lokeṣu sarve sthāvarajaṅgamāḥ
+12,221.019c	mamātmabhāvam icchanto yatante paramātmanā
+12,221.020a	sāhaṃ vai paṅkaje jātā sūryaraśmivibodhite
+12,221.020c	bhūtyarthaṃ sarvabhūtānāṃ padmā śrīḥ padmamālinī
+12,221.021a	ahaṃ lakṣmīr ahaṃ bhūtiḥ śrīś cāhaṃ balasūdana
+12,221.021c	ahaṃ śraddhā ca medhā ca sannatir vijitiḥ sthitiḥ
+12,221.022a	ahaṃ dhṛtir ahaṃ siddhir ahaṃ tviḍ bhūtir eva ca
+12,221.022c	ahaṃ svāhā svadhā caiva saṃstutir niyatiḥ kṛtiḥ
+12,221.023a	rājñāṃ vijayamānānāṃ senāgreṣu dhvajeṣu ca
+12,221.023c	nivāse dharmaśīlānāṃ viṣayeṣu pureṣu ca
+12,221.024a	jitakāśini śūre ca saṃgrāmeṣv anivartini
+12,221.024c	nivasāmi manuṣyendre sadaiva balasūdana
+12,221.025a	dharmanitye mahābuddhau brahmaṇye satyavādini
+12,221.025c	praśrite dānaśīle ca sadaiva nivasāmy aham
+12,221.026a	asureṣv avasaṃ pūrvaṃ satyadharmanibandhanā
+12,221.026c	viparītāṃs tu tān buddhvā tvayi vāsam arocayam
+12,221.027	śakra uvāca
+12,221.027a	kathaṃvṛtteṣu daityeṣu tvam avātsīr varānane
+12,221.027c	dṛṣṭvā ca kim ihāgās tvaṃ hitvā daiteyadānavān
+12,221.028	śrīr uvāca
+12,221.028a	svadharmam anutiṣṭhatsu dhairyād acaliteṣu ca
+12,221.028c	svargamārgābhirāmeṣu sattveṣu niratā hy aham
+12,221.029a	dānādhyayanayajñejyā gurudaivatapūjanam
+12,221.029c	viprāṇām atithīnāṃ ca teṣāṃ nityam avartata
+12,221.030a	susaṃmṛṣṭagṛhāś cāsañ jitastrīkā hutāgnayaḥ
+12,221.030c	guruśuśrūṣavo dāntā brahmaṇyāḥ satyavādinaḥ
+12,221.031a	śraddadhānā jitakrodhā dānaśīlānasūyakāḥ
+12,221.031c	bhṛtaputrā bhṛtāmātyā bhṛtadārā hy anīrṣavaḥ
+12,221.032a	amarṣaṇā na cānyonyaṃ spṛhayanti kadā cana
+12,221.032c	na ca jātūpatapyante dhīrāḥ parasamṛddhibhiḥ
+12,221.033a	dātāraḥ saṃgṛhītāra āryāḥ karuṇavedinaḥ
+12,221.033c	mahāprasādā ṛjavo dṛḍhabhaktā jitendriyāḥ
+12,221.034a	saṃtuṣṭabhṛtyasacivāḥ kṛtajñāḥ priyavādinaḥ
+12,221.034c	yathārthamānārthakarā hrīniṣedhā yatavratāḥ
+12,221.035a	nityaṃ parvasu susnātāḥ svanuliptāḥ svalaṃkṛtāḥ
+12,221.035c	upavāsatapaḥśīlāḥ pratītā brahmavādinaḥ
+12,221.036a	nainān abhyudiyāt sūryo na cāpy āsan prageniśāḥ
+12,221.036c	rātrau dadhi ca saktūṃś ca nityam eva vyavarjayan
+12,221.037a	kālyaṃ ghṛtaṃ cānvavekṣan prayatā brahmacāriṇaḥ
+12,221.037c	maṅgalān api cāpaśyan brāhmaṇāṃś cāpy apūjayan
+12,221.038a	sadā hi dadatāṃ dharmaḥ sadā cāpratigṛhṇatām
+12,221.038c	ardhaṃ ca rātryāḥ svapatāṃ divā cāsvapatāṃ tathā
+12,221.039a	kṛpaṇānāthavṛddhānāṃ durbalāturayoṣitām
+12,221.039c	dāyaṃ ca saṃvibhāgaṃ ca nityam evānumodatām
+12,221.040a	viṣaṇṇaṃ trastam udvignaṃ bhayārtaṃ vyādhipīḍitam
+12,221.040c	hṛtasvaṃ vyasanārtaṃ ca nityam āśvāsayanti te
+12,221.041a	dharmam evānvavartanta na hiṃsanti parasparam
+12,221.041c	anukūlāś ca kāryeṣu guruvṛddhopasevinaḥ
+12,221.042a	pitṛdevātithīṃś caiva yathāvat te 'bhyapūjayan
+12,221.042c	avaśeṣāṇi cāśnanti nityaṃ satyataporatāḥ
+12,221.043a	naike 'śnanti susaṃpannaṃ na gacchanti parastriyam
+12,221.043c	sarvabhūteṣv avartanta yathātmani dayāṃ prati
+12,221.044a	naivākāśe na paśuṣu nāyonau na ca parvasu
+12,221.044c	indriyasya visargaṃ te 'rocayanta kadā cana
+12,221.045a	nityaṃ dānaṃ tathā dākṣyam ārjavaṃ caiva nityadā
+12,221.045c	utsāhaś cānahaṃkāraḥ paramaṃ sauhṛdaṃ kṣamā
+12,221.046a	satyaṃ dānaṃ tapaḥ śaucaṃ kāruṇyaṃ vāg aniṣṭhurā
+12,221.046c	mitreṣu cānabhidrohaḥ sarvaṃ teṣv abhavat prabho
+12,221.047a	nidrā tandrīr asaṃprītir asūyā cānavekṣitā
+12,221.047c	aratiś ca viṣādaś ca na spṛhā cāviśanta tān
+12,221.048a	sāham evaṃguṇeṣv eva dānaveṣv avasaṃ purā
+12,221.048c	prajāsargam upādāya naikaṃ yugaviparyayam
+12,221.049a	tataḥ kālaviparyāse teṣāṃ guṇaviparyayāt
+12,221.049c	apaśyaṃ vigataṃ dharmaṃ kāmakrodhavaśātmanām
+12,221.050a	sabhāsadāṃ te vṛddhānāṃ satyāḥ kathayatāṃ kathāḥ
+12,221.050c	prāhasann abhyasūyaṃś ca sarvavṛddhān guṇāvarāḥ
+12,221.051a	yūnaḥ sahasamāsīnān vṛddhān abhigatān sataḥ
+12,221.051c	nābhyutthānābhivādābhyāṃ yathāpūrvam apūjayan
+12,221.052a	vartayanty eva pitari putrāḥ prabhavatā ''tmanaḥ
+12,221.052c	amitrabhṛtyatāṃ prāpya khyāpayanto 'napatrapāḥ
+12,221.053a	tathā dharmād apetena karmaṇā garhitena ye
+12,221.053c	mahataḥ prāpnuvanty arthāṃs teṣv eṣām abhavat spṛhā
+12,221.054a	ucchaiś cāpy avadan rātrau nīcais tatrāgnir ajvalat
+12,221.054c	putrāḥ pitṝn abhyavadan bhāryāś cābhyavadan patīn
+12,221.055a	mātaraṃ pitaraṃ vṛddham ācāryam atithiṃ gurum
+12,221.055c	guruvan nābhyanandanta kumārān nānvapālayan
+12,221.056a	bhikṣāṃ balim adattvā ca svayam annāni bhuñjate
+12,221.056c	aniṣṭvā saṃvibhajyātha pitṛdevātithīn gurūn
+12,221.057a	na śaucam anurudhyanta teṣāṃ sūdajanās tathā
+12,221.057c	manasā karmaṇā vācā bhaktam āsīd anāvṛtam
+12,221.058a	viprakīrṇāni dhānyāni kākamūṣakabhojanam
+12,221.058c	apāvṛtaṃ payo 'tiṣṭhad ucchiṣṭāś cāspṛśan ghṛtam
+12,221.059a	kuddālapāṭīpiṭakaṃ prakīrṇaṃ kāṃsyabhājanam
+12,221.059c	dravyopakaraṇaṃ sarvaṃ nānvavaikṣat kuṭumbinī
+12,221.060a	prākārāgāravidhvaṃsān na sma te pratikurvate
+12,221.060c	nādriyante paśūn baddhvā yavasenodakena ca
+12,221.061a	bālānāṃ prekṣamāṇānāṃ svayaṃ bhakṣān abhakṣayan
+12,221.061c	tathā bhṛtyajanaṃ sarvaṃ paryaśnanti ca dānavāḥ
+12,221.062a	pāyasaṃ kṛsaraṃ māṃsam apūpān atha śaṣkulīḥ
+12,221.062c	apācayann ātmano 'rthe vṛthāmāṃsāny abhakṣayan
+12,221.063a	utsūryaśāyinaś cāsan sarve cāsan prageniśāḥ
+12,221.063c	avartan kalahāś cātra divārātraṃ gṛhe gṛhe
+12,221.064a	anāryāś cāryam āsīnaṃ paryupāsan na tatra ha
+12,221.064c	āśramasthān vikarmasthāḥ pradviṣanti parasparam
+12,221.064e	saṃkarāś cāpy avartanta na ca śaucam avartata
+12,221.065a	ye ca vedavido viprā vispaṣṭam anṛcaś ca ye
+12,221.065c	nirantaraviśeṣās te bahumānāvamānayoḥ
+12,221.066a	hāvam ābharaṇaṃ veṣaṃ gatiṃ sthitim avekṣitum
+12,221.066c	asevanta bhujiṣyā vai durjanācaritaṃ vidhim
+12,221.067a	striyaḥ puruṣaveṣeṇa puṃsaḥ strīveṣadhāriṇaḥ
+12,221.067c	krīḍārativihāreṣu parāṃ mudam avāpnuvan
+12,221.068a	prabhavadbhiḥ purā dāyān arhebhyaḥ pratipāditān
+12,221.068c	nābhyavartanta nāstikyād vartantaḥ saṃbhaveṣv api
+12,221.069a	mitreṇābhyarthitaṃ mitram arthe saṃśayite kva cit
+12,221.069c	vālakoṭyagramātreṇa svārthenāghnata tad vasu
+12,221.070a	parasvādānarucayo vipaṇyavyavahāriṇaḥ
+12,221.070c	adṛśyantāryavarṇeṣu śūdrāś cāpi tapodhanāḥ
+12,221.071a	adhīyante 'vratāḥ ke cid vṛthāvratam athāpare
+12,221.071c	aśuśrūṣur guroḥ śiṣyaḥ kaś cic chiṣyasakho guruḥ
+12,221.072a	pitā caiva janitrī ca śrāntau vṛttotsavāv iva
+12,221.072c	aprabhutve sthitau vṛddhāv annaṃ prārthayataḥ sutān
+12,221.073a	tatra vedavidaḥ prājñā gāmbhīrye sāgaropamāḥ
+12,221.073c	kṛṣyādiṣv abhavan saktā mūrkhāḥ śrāddhāny abhuñjata
+12,221.074a	prātaḥ prātaś ca supraśnaṃ kalpanaṃ preṣaṇakriyāḥ
+12,221.074c	śiṣyānuprahitās tasminn akurvan guravaś ca ha
+12,221.075a	śvaśrūśvaśurayor agre vadhūḥ preṣyān aśāsata
+12,221.075c	anvaśāsac ca bhartāraṃ samāhūyābhijalpatī
+12,221.076a	prayatnenāpi cārakṣac cittaṃ putrasya vai pitā
+12,221.076c	vyabhajaṃś cāpi saṃrambhād duḥkhavāsaṃ tathāvasan
+12,221.077a	agnidāhena corair vā rājabhir vā hṛtaṃ dhanam
+12,221.077c	dṛṣṭvā dveṣāt prāhasanta suhṛtsaṃbhāvitā hy api
+12,221.078a	kṛtaghnā nāstikāḥ pāpā gurudārābhimarśinaḥ
+12,221.078c	abhakṣyabhakṣaṇaratā nirmaryādā hatatviṣaḥ
+12,221.079a	teṣv evamādīn ācārān ācaratsu viparyaye
+12,221.079c	nāhaṃ devendra vatsyāmi dānaveṣv iti me matiḥ
+12,221.080a	tāṃ māṃ svayam anuprāptām abhinanda śacīpate
+12,221.080c	tvayārcitāṃ māṃ deveśa purodhāsyanti devatāḥ
+12,221.081a	yatrāhaṃ tatra matkāntā madviśiṣṭā madarpaṇāḥ
+12,221.081c	sapta devyo mayāṣṭamyo vāsaṃ ceṣyanti me 'ṣṭadhā
+12,221.082a	āśā śraddhā dhṛtiḥ kāntir vijitiḥ sannatiḥ kṣamā
+12,221.082c	aṣṭamī vṛttir etāsāṃ purogā pākaśāsana
+12,221.083a	tāś cāhaṃ cāsurāṃs tyaktvā yuṣmadviṣayam āgatā
+12,221.083c	tridaśeṣu nivatsyāmo dharmaniṣṭhāntarātmasu
+12,221.084	bhīṣma uvāca
+12,221.084a	ity uktavacanāṃ devīm atyarthaṃ tau nanandatuḥ
+12,221.084c	nāradaś ca trilokarṣir vṛtrahantā ca vāsavaḥ
+12,221.085a	tato 'nalasakho vāyuḥ pravavau devaveśmasu
+12,221.085c	iṣṭagandhaḥ sukhasparśaḥ sarvendriyasukhāvahaḥ
+12,221.086a	śucau cābhyarcite deśe tridaśāḥ prāyaśaḥ sthitāḥ
+12,221.086c	lakṣmyā sahitam āsīnaṃ maghavantaṃ didṛkṣavaḥ
+12,221.087a	tato divaṃ prāpya sahasralocanaḥ; śriyopapannaḥ suhṛdā surarṣiṇā
+12,221.087c	rathena haryaśvayujā surarṣabhaḥ; sadaḥ surāṇām abhisatkṛto yayau
+12,221.088a	atheṅgitaṃ vajradharasya nāradaḥ; śriyāś ca devyā manasā vicārayan
+12,221.088c	śriyai śaśaṃsāmaradṛṣṭapauruṣaḥ; śivena tatrāgamanaṃ maharddhimat
+12,221.089a	tato 'mṛtaṃ dyauḥ pravavarṣa bhāsvatī; pitāmahasyāyatane svayaṃbhuvaḥ
+12,221.089c	anāhatā dundubhayaś ca nedire; tathā prasannāś ca diśaś cakāśire
+12,221.090a	yathartu sasyeṣu vavarṣa vāsavo; na dharmamārgād vicacāla kaś cana
+12,221.090c	anekaratnākarabhūṣaṇā ca bhūḥ; sughoṣaghoṣā bhuvanaukasāṃ jaye
+12,221.091a	kriyābhirāmā manujā yaśasvino; babhuḥ śubhe puṇyakṛtāṃ pathi sthitāḥ
+12,221.091c	narāmarāḥ kiṃnarayakṣarākṣasāḥ; samṛddhimantaḥ sukhino yaśasvinaḥ
+12,221.092a	na jātv akāle kusumaṃ kutaḥ phalaṃ; papāta vṛkṣāt pavaneritād api
+12,221.092c	rasapradāḥ kāmadughāś ca dhenavo; na dāruṇā vāg vicacāra kasya cit
+12,221.093a	imāṃ saparyāṃ saha sarvakāmadaiḥ; śriyāś ca śakrapramukhaiś ca daivataiḥ
+12,221.093c	paṭhanti ye viprasadaḥ samāgame; samṛddhakāmāḥ śriyam āpnuvanti te
+12,221.094a	tvayā kurūṇāṃ vara yat pracoditaṃ; bhavābhavasyeha paraṃ nidarśanam
+12,221.094c	tad adya sarvaṃ parikīrtitaṃ mayā; parīkṣya tattvaṃ parigantum arhasi
