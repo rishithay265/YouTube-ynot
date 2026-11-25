@@ -317,7 +317,7 @@ const S: Record<string, React.FC<SP>> = {
     const it: [string, string][] = [['c1', 'houses left unswept'], ['c2', 'sleeping past sunrise'], ['c3', 'eating fine food alone'], ['c4', 'grain scattered for crows and rats'], ['c5', 'admiring wealth earned wrongly']];
     const v = on('virtues', 0.8);
     return (<g><Sky t={t} />
-      <g opacity={1 - v * 0.75}>{it.map(([k, l], i) => <g key={k} opacity={on(k, 0.4)}><T x={420} y={250 + i * 120} s={56} a="start" c={P.snow}>{l}</T><line x1={410} y1={232 + i * 120} x2={420 + l.length * 25 * on(k, 0.8)} y2={232 + i * 120} stroke={P.ember} strokeWidth={5} /></g>)}</g>
+      <g opacity={1 - v}>{it.map(([k, l], i) => <g key={k} opacity={on(k, 0.4)}><T x={420} y={250 + i * 120} s={56} a="start" c={P.snow}>{l}</T><line x1={410} y1={232 + i * 120} x2={420 + l.length * 25 * on(k, 0.8)} y2={232 + i * 120} stroke={P.ember} strokeWidth={5} /></g>)}</g>
       <g opacity={v}>{['truth', 'gifts', 'good vows', 'penance', 'prowess', 'virtue'].map((w, i) => <T key={w} x={500 + (i % 3) * 460} y={500 + Math.floor(i / 3) * 160} s={80}>{w}</T>)}<T x={960} y={900} s={36} c={P.snow} i>Mahābhārata, Śānti Parva: “I live in …”</T></g>
     </g>);
   },
