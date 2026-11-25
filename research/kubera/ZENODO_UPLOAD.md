@@ -41,3 +41,12 @@ Community: optional; skip.
 1. Visibility: **Public**.
 2. **Save draft**, then **Preview**: check your name, ORCID and the PDF.
 3. **Publish**. Copy the DOI (10.5281/zenodo.xxxxxxx) and send it to me, so I can put it in the video description and the journal cover letter.
+
+---
+
+## Published
+Published 25 November 2026, version v1, open access.
+- DOI: https://doi.org/10.5281/zenodo.24540072
+- Record: https://zenodo.org/records/24540072
+
+Cite as: S. V. Varma, "The Kubera Yantra: Textual Lineage, Combinatorial Structure, and an Emic Reconstruction of a 3×3 Wealth Cosmogram," preprint, Zenodo, 2026, doi:10.5281/zenodo.24540072.
