@@ -3,7 +3,7 @@
 
   python research/gita/build_vo.py   ->  public/gita/vNN.wav  and  src/episodes/gita/shorts.json
 
-Needs research/gita/vo/gNN_A.mp3 + gNN_B.mp3 (ElevenLabs, Shardul K), research/gita/vo/scripts.json (the exact text, used
+Needs research/gita/vo/gNN_A.mp3 + gNN_B.mp3, or one take gNN.mp3 that is split here (ElevenLabs, Shardul K), research/gita/vo/scripts.json (the exact text, used
 for the captions) and research/gita/chant/gNN_{1,2}.wav. Word timings come from Whisper large-v3 heard against the script.
 """
 import json, os, re, subprocess
@@ -83,6 +83,15 @@ out = []
 for g, sc in SCR.items():
     v = V[g]; vo = os.path.join(HERE, 'vo')
     pa, pb = os.path.join(vo, f'{g}_A.mp3'), os.path.join(vo, f'{g}_B.mp3')
+    one = os.path.join(vo, f'{g}.mp3')
+    if not (os.path.exists(pa) and os.path.exists(pb)) and os.path.exists(one):
+        # one take of A + B: cut it in the pause between the last word of A and the first word of B
+        ws = words_of(one, sc['A'] + '\n\n' + sc['B']); na = len(sc['A'].split())
+        cut = (ws[na - 1]['e'] + ws[na]['s']) / 2
+        pa, pb = os.path.join(vo, f'{g}_A.wav'), os.path.join(vo, f'{g}_B.wav')
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', one, '-t', f'{cut:.3f}', '-c:a', 'pcm_s16le', pa], check=True)
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{cut:.3f}', '-i', one, '-c:a', 'pcm_s16le', pb], check=True)
+        print(f'  {g}: split one take at {cut:.2f}s')
     if not (os.path.exists(pa) and os.path.exists(pb)): print('waiting for voice-over', g); continue
     A, a0 = trim(load(pa)); B, b0 = trim(load(pb))
     h1, _ = trim(load(os.path.join(HERE, 'chant', f'{g}_1.wav'))); h2, _ = trim(load(os.path.join(HERE, 'chant', f'{g}_2.wav')))
