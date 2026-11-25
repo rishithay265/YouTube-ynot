@@ -44,14 +44,14 @@ const S: Record<string, React.FC<SP>> = {
     const k = Math.min(8, Math.floor(lt / 0.75) + 1);
     return (<g><Sky t={t} warm={0.4} />
       <Grid x={960} y={500} c={230} nums={KUBERA} lit={LINES.map((_, i) => ({ i, o: i < k ? (i === k - 1 ? 1 : 0.35) : 0 })).filter((l) => l.o > 0)} />
-      <T x={960} y={1000} s={64} o={clamp(lt / 0.8)}>{'= 72'}</T>
+      <T x={960} y={968} s={64} o={clamp(lt / 0.8)}>{'= 72'}</T>
     </g>);
   },
   yantraName: ({ t, lt }) => (<g><Sky t={t} warm={0.2} />
     <circle cx={960} cy={470} r={380} fill="url(#kGlowGold)" opacity={0.35 * clamp(lt)} />
     <Grid x={960} y={470} c={200} nums={KUBERA} />
     <T x={960} y={930} s={92} o={clamp(lt / 0.7)} ls={10}>KUBERA YANTRA</T>
-    <T x={960} y={1000} s={36} o={clamp((lt - 0.8) / 0.7)} c={P.snow} i>the seat of the guardian of treasure</T>
+    <T x={960} y={968} s={36} o={clamp((lt - 0.8) / 0.7)} c={P.snow} i>the seat of the guardian of treasure</T>
   </g>),
   hands: ({ t, lt }) => (<g><Sky t={t} warm={0.6} />
     {[0, 1, 2, 3, 4].map((i) => <g key={i} opacity={clamp((lt - i * 0.6) / 0.6) * (0.25 + 0.15 * i)}><Grid x={300 + i * 330} y={540 + (i % 2 ? 60 : -60)} c={80} nums={KUBERA} rice fs={30} /></g>)}
@@ -64,7 +64,7 @@ const S: Record<string, React.FC<SP>> = {
       <Shell x={960} y={520} s={1.25} o={tu} />
       <Grid x={960} y={520} c={180} nums={nums} text={p > 0.98 ? P.goldHi : P.ember} />
       <T x={960} y={110} s={58} o={1 - tu}>− 19</T>
-      <T x={960} y={1000} s={44} c={P.snow} i o={tu}>洛書 · Lo Shu, the turtle-shell square of China</T>
+      <T x={960} y={968} s={44} c={P.snow} i o={tu}>洛書 · Lo Shu, the turtle-shell square of China</T>
     </g>);
   },
   agenda: ({ t, on }) => (<g><Sky t={t} />
@@ -158,7 +158,7 @@ const S: Record<string, React.FC<SP>> = {
     <path d="M880 420 Q960 360 1040 420 Q960 480 880 420 Z" fill="none" stroke={P.goldHi} strokeWidth={5} />
     <circle cx={960} cy={420} r={26} fill={on('eye') > 0 ? '#F2C230' : P.navy2} />
     <T x={960} y={160} s={48} o={on('friend', 0.6)}>Śiva makes him a friend</T>
-    <T x={960} y={1010} s={64} ls={4} o={on('name', 0.6)}>Ekākṣi-piṅgala</T>
+    <T x={960} y={968} s={64} ls={4} o={on('name', 0.6)}>Ekākṣi-piṅgala</T>
   </g>),
   bharhut: ({ lt, on }) => (<g><rect width={W} height={H} fill="#080A12" />
     <Photo src="kubera/bharhut_kupira_plateXXII.jpg" x={700} y={60} w={312} h={970} zoom={1 + lt * 0.006} credit="" />
@@ -199,23 +199,23 @@ const S: Record<string, React.FC<SP>> = {
   </g>),
   centre: ({ t, lt, on }) => (<g><Sky t={t} />
     <Grid x={960} y={520} c={220} nums={KUBERA} hi={[0, 0, 0, 0, 1, 0, 0, 0, 0]} lit={[{ i: 1, o: clamp(lt) }, { i: 4, o: clamp(lt) }, { i: 6, o: clamp(lt) }, { i: 7, o: clamp(lt) }]} />
-    <T x={960} y={1010} s={60} o={on('third', 0.6)}>centre = 72 ÷ 3 = 24</T></g>),
+    <T x={960} y={968} s={60} o={on('third', 0.6)}>centre = 72 ÷ 3 = 24</T></g>),
   count: ({ t, lt, on }) => {
     const c = Math.min(362880, Math.floor(362880 * clamp(lt / 2.4) ** 2)), e8 = on('eight', 1), one = on('one', 1.2);
     const ls = [[2, 7, 6, 9, 5, 1, 4, 3, 8], [4, 9, 2, 3, 5, 7, 8, 1, 6], [8, 1, 6, 3, 5, 7, 4, 9, 2], [6, 1, 8, 7, 5, 3, 2, 9, 4], [2, 9, 4, 7, 5, 3, 6, 1, 8], [4, 3, 8, 9, 5, 1, 2, 7, 6], [6, 7, 2, 1, 5, 9, 8, 3, 4], [8, 3, 4, 1, 5, 9, 6, 7, 2]];
     return (<g><Sky t={t} />
-      <T x={960} y={200} s={110} o={1 - e8 * 0.6}>{c.toLocaleString('en-IN')}</T>
+      <T x={960} y={200} s={110} o={1 - e8 * 0.6}>{c.toLocaleString('en-US')}</T>
       <T x={960} y={270} s={38} c={P.snow} i o={1 - e8}>ways to arrange 1 … 9</T>
       {ls.map((n, i) => { const x = 260 + (i % 4) * 466, y = 470 + Math.floor(i / 4) * 330; const cx = x + (960 - x) * one, cy = y + (620 - y) * one;
         return <g key={i} opacity={e8 * (i === 2 ? 1 : 1 - one)}><Grid x={cx} y={cy} c={70 + one * (i === 2 ? 80 : 0)} nums={n} fs={36 + one * (i === 2 ? 40 : 0)} /></g>; })}
-      <T x={960} y={1010} s={56} o={one}>one square</T>
+      <T x={960} y={968} s={56} o={one}>one square</T>
     </g>);
   },
   loshu: ({ t, lt, on }) => {
     const s = on('sub', 2);
     return (<g><Sky t={t} /><Shell x={960} y={520} s={1.2} o={s} />
       <Grid x={960} y={520} c={190} nums={KUBERA.map((n, i) => (s * 9 > i ? n - 19 : n))} />
-      <T x={960} y={1010} s={50} o={clamp(lt)} i>Kubera = Lo Shu + 19</T></g>);
+      <T x={960} y={968} s={50} o={clamp(lt)} i>Kubera = Lo Shu + 19</T></g>);
   },
   navagraha: ({ t, lt, on }) => {
     const pts = Array.from({ length: 9 }, (_, i) => [i, 15 + 3 * i]);
@@ -248,8 +248,8 @@ const S: Record<string, React.FC<SP>> = {
   compass: ({ t, lt, on }) => {
     const r = clamp(lt / 1.2), n = on('north', 0.6), o1 = on('one', 0.6), s = on('south', 0.6), m = on('mirror', 0.8);
     const sub: (string | null)[] = [m ? '6' : null, n ? (o1 ? '1 · water' : '1') : null, m ? '8' : null, m ? '7' : null, m ? '5' : null, m ? '3' : null, m ? '2' : null, s ? '9 · fire' : null, m ? '4' : null];
-    return (<g><Sky t={t} /><Compass x={960} y={540} r={430} o={r} />
-      <g transform={`rotate(${(1 - ease(r)) * -90} 960 540)`}><Grid x={960} y={540} c={230} nums={KUBERA} sub={sub} hi={[0, n, 0, 0, 0, 0, 0, s, 0]} /></g>
+    return (<g><Sky t={t} /><Compass x={960} y={520} r={395} o={r} />
+      <g transform={`rotate(${(1 - ease(r)) * -90} 960 520)`}><Grid x={960} y={520} c={215} nums={KUBERA} sub={sub} hi={[0, n, 0, 0, 0, 0, 0, s, 0]} /></g>
       <T x={1650} y={540} s={34} c={P.snow} i o={m}>mirrored: all nine match</T>
     </g>);
   },
@@ -258,8 +258,8 @@ const S: Record<string, React.FC<SP>> = {
     const f = on('fifth', 0.8), tu = on('turtle', 1);
     return (<g><Sky t={t} /><Shell x={960} y={520} s={1.25} o={tu * 0.9} />
       <Grid x={960} y={520} c={230} nums={KUBERA} fs={60} sub={nm.map((n, i) => (clamp((lt - i * 0.3) / 0.3) > 0 ? n : null))} hi={[0, 0, 0, 0, f, 0, 0, 0, 0]} />
-      <T x={960} y={1010} s={52} o={on('name', 0.6)} c={P.ember}>Kacchapa · the tortoise</T>
-      <T x={960} y={90} s={40} c={P.snow} i o={on('plain', 0.6)}>no scripture says this · it is simply there</T>
+      <T x={960} y={968} s={52} o={on('name', 0.6)} c={P.ember}>Kacchapa · the tortoise</T>
+      <T x={960} y={70} s={40} c={P.snow} i o={on('plain', 0.6)}>no scripture says this · it is simply there</T>
     </g>);
   },
   copper: ({ t, lt }) => (<g><Sky t={t} warm={0.3} />
@@ -301,7 +301,7 @@ const S: Record<string, React.FC<SP>> = {
     return (<g><Sky t={t} warm={0.25} />
       {cards.map(([k, a, b], i) => { const o = k ? on(k, 0.5) : 1; const x = 300 + (i % 4) * 440, y = 260 + Math.floor(i / 4) * 360;
         return <g key={i} opacity={o * (i === cur ? 1 : 0.55)}><Card x={x - 200} y={y - 110} w={400} h={260} /><T x={x} y={y - 10} s={i === cur ? 40 : 36} w={700}>{a}</T><T x={x} y={y + 50} s={28} c={P.snow} i>{b}</T></g>; })}
-      <T x={960} y={1010} s={30} c={P.snow} i>Mantramahodadhi 16.110–111, 20.1–14 · Mantra Mahārṇava · Dharmasindhu</T>
+      <T x={960} y={968} s={30} c={P.snow} i>Mantramahodadhi 16.110–111, 20.1–14 · Mantra Mahārṇava · Dharmasindhu</T>
     </g>);
   },
   lakshmi: ({ t, lt, on }) => (<g><Sky t={t} />
@@ -312,7 +312,7 @@ const S: Record<string, React.FC<SP>> = {
   lived: ({ t, lt }) => (<g><Sky t={t} /><Lotus x={960} y={720} s={0.9} glow={0.8} />
     <T x={960} y={260} s={60} i o={clamp(lt / 0.6)}>“I lived among the asuras, bound to truth and dharma.</T>
     <T x={960} y={350} s={60} i o={clamp((lt - 2) / 0.6)}>Finding them reversed, I chose to live with you.”</T>
-    <T x={960} y={1000} s={34} c={P.snow} o={clamp(lt)}>Mahābhārata 12.221.26</T></g>),
+    <T x={960} y={968} s={34} c={P.snow} o={clamp(lt)}>Mahābhārata 12.221.26</T></g>),
   checklist: ({ t, on }) => {
     const it: [string, string][] = [['c1', 'houses left unswept'], ['c2', 'sleeping past sunrise'], ['c3', 'eating fine food alone'], ['c4', 'grain scattered for crows and rats'], ['c5', 'admiring wealth earned wrongly']];
     const v = on('virtues', 0.8);
@@ -328,7 +328,7 @@ const S: Record<string, React.FC<SP>> = {
     return (<g><Sky t={t} />
       <Grid x={600} y={540} c={200} nums={KUBERA.map((n, i) => (cells.indexOf(i) < k && cells.indexOf(i) >= 0 ? cells.indexOf(i) + 1 : '·'))} hi={KUBERA.map((_, i) => (cells.indexOf(i) >= 0 && cells.indexOf(i) < k ? (cells.indexOf(i) === k - 1 ? 1 : 0.4) : 0)).map((v, i) => Math.max(v, end * (i === 4 ? 1 : 0.3)))} />
       {steps.map((s, i) => <T key={i} x={1000} y={220 + i * 100} s={i === k - 1 ? 46 : 38} a="start" o={i < k ? (i === k - 1 ? 1 : 0.55) : 0} c={i === k - 1 ? P.goldHi : P.snow}>{`${i + 1}. ${s}`}</T>)}
-      <T x={960} y={1010} s={52} c={P.ember} o={end}>Lakṣmī comes · Kubera keeps</T>
+      <T x={960} y={968} s={52} c={P.ember} o={end}>Lakṣmī comes · Kubera keeps</T>
     </g>);
   },
   ending: ({ t, on, at }) => (<g><Sky t={t} warm={0.8} />
@@ -358,7 +358,7 @@ const VerseCard: React.FC<{ c: Chant; t: number }> = ({ c, t }) => {
           <text x={cx} y={top + i * gap + 52} textAnchor="middle" fontFamily={EN} fontStyle="italic" fontSize={30} fill={P.snow} opacity={i === cur ? 1 : 0.55}>{c.iast[i]}</text>
         </g>
       ))}
-      <text x={cx} y={1010} textAnchor="middle" fontFamily={EN} fontSize={22} fill={P.snow} opacity={0.7}>chant: Vāgdhenu (Prof. Prathosh A.P., IISc)</text>
+      <text x={cx} y={968} textAnchor="middle" fontFamily={EN} fontSize={22} fill={P.snow} opacity={0.7}>chant: Vāgdhenu (Prof. Prathosh A.P., IISc)</text>
     </g>
   );
 };

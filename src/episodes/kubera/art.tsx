@@ -41,7 +41,7 @@ export const Grid: React.FC<{
         return s > 0 ? (
           <g key={'n' + i} opacity={s} transform={`translate(${cx} ${cy + (1 - ease(s)) * 14})`}>
             <text y={(fs ?? c * 0.42) * 0.36} textAnchor="middle" fontFamily={EN} fontWeight={700} fontSize={fs ?? c * 0.42} fill={rice ? '#FBF5E6' : text}>{n}</text>
-            {sub && sub[i] ? <text y={c * 0.38} textAnchor="middle" fontFamily={EN} fontStyle="italic" fontSize={c * 0.13} fill={P.snow}>{sub[i]}</text> : null}
+            {sub && sub[i] ? <text y={c * 0.38} textAnchor="middle" fontFamily={EN} fontStyle="italic" fontSize={c * 0.155} fill={P.snow}>{sub[i]}</text> : null}
           </g>
         ) : null;
       })}

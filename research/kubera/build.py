@@ -69,7 +69,7 @@ BEATS = {
         ('Now the astonishing part', 'count', {'eight': 'Only eight', 'one': 'In all of mathematics'}),
         ("So Kubera's yantra", 'loshu', {'sub': 'Subtract nineteen'}), ('In the Navagraha', 'navagraha', {'kubera': "Kubera's is that", 'c114': 'And of a hundred'}),
         ('India was building', 'perfume', {}), ('And on the wall', 'khajuraho', {}), ('These were never', 'doodles', {})],
- 'S5': [('Now lay the yantra', 'compass', {'north': 'The north cell', 'one': 'And in China', 'south': 'The south cell', 'mirror': 'Mirror east'}),
+ 'S5': [('Now lay the yantra', 'compass', {'north': 'The north cell', 'one': "And in China's", 'south': 'The south cell', 'mirror': 'Mirror east'}),
         ('One more pattern', 'tortoise', {'fifth': 'The fifth lands', 'name': 'Its name is', 'turtle': 'The square China says', 'plain': 'No scripture says'})],
  'S6': [('But a yantra', 'copper', {}), ('As the body', 'bodySoul', {'breath': 'A body needs breath', 'veda': 'The oldest comes'}),
         ('To the king of kings', 'taMeaning', {'mm': 'The japa mantra'}),
