@@ -10,7 +10,7 @@ import { P, F } from '../raktabija/world';
 // A vertical Short (1080 x 1920) cut from the film: a window [a, b) of the master, the picture re-framed into a square
 // in the middle (zoom, focus x), the hook on top, word-by-word Hindi captions below, an end card pointing to the full
 // film. The audio is the film's own master from frame a, faded in and out. Nothing is re-voiced.
-export type ShortDef = { id: string; a: number; b: number; len: number; hook: string[]; cx: number; zoom: number; words: { w: string; s: number; e: number }[] };
+export type ShortDef = { id: string; a: number; b: number; len: number; hook: string[]; cx: number; zoom: number; words: { w: string; p?: string; s: number; e: number }[] };
 
 const shots = buildShots(defs as Def[]);
 const silent = { ...(timeline as Timeline), audio: {} } as Timeline;

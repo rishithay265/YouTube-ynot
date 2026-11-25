@@ -18,16 +18,16 @@ SHORTS = [
     # id, start phrase, end phrase, hook (two lines), focus x in the film, zoom
     ('TripuraShort1', 'फिर एक मुहूर्त', 'कहा: एवमस्तु', ['मौत की ऐसी शर्त', 'किसी ने नहीं रखी'], 960, 1.0),
     ('TripuraShort2', 'शिव ने बाण चढ़ाया', 'और शिव हँसे', ['शिव का बाण 1 लाख वर्ष', 'क्यों नहीं चला?'], 860, 1.0),
-    ('TripuraShort3', 'शिव ने रथ देखा', 'बाण भी बने, बैल भी', ['जब वेद भी', 'शिव का भार न उठा सके'], 960, 1.0),
-    ('TripuraShort4', 'विष्णु ने अपने ही', 'तीनों नगरों का हर निवासी', ['एक झूठा गुरु', 'और नारद का प्रमाणपत्र'], 960, 1.0),
-    ('TripuraShort5', 'देवता ब्रह्मा के पास', 'धर्म ही गिराना होगा', ['शिव ने राक्षसों को', 'मारने से मना क्यों किया?'], 960, 1.0),
+    ('TripuraShort3', 'शिव ने रथ देखा', 'बाण भी बने, बैल भी', ['जब वेद भी', 'शिव का भार न उठा सके'], 800, 0.9),
+    ('TripuraShort4', 'विष्णु ने अपने ही', 'तीनों नगरों का हर निवासी', ['एक झूठा गुरु', 'और नारद का प्रमाणपत्र'], 900, 0.9),
+    ('TripuraShort5', 'देवता कैलास पहुँचे', 'धर्म ही गिराना होगा', ['शिव ने राक्षसों को', 'मारने से मना क्यों किया?'], 960, 1.0),
     ('TripuraShort6', 'दया से जलाना', 'वह त्रिपुरारि है', ['त्रिपुर आज कहाँ हैं?', 'तुम्हारे भीतर'], 960, 1.0),
 ]
 out = []
 for sid, a_ph, b_ph, hook, cx, zoom in SHORTS:
     i, _ = find(a_ph); _, j = find(b_ph, i)
     a = max(0, round((words[i]['s'] - 0.5) * FPS)); b = round((words[j]['e'] + 1.2) * FPS) + 75  # +2.5 s end card
-    ws = [dict(w=w['w'] + w.get('p', ''), s=round(w['s'] - a / FPS, 3), e=round(w['e'] - a / FPS, 3)) for w in words[i:j + 1]]
+    ws = [dict(w=w['w'], p=w.get('p', ''), s=round(w['s'] - a / FPS, 3), e=round(w['e'] - a / FPS, 3)) for w in words[i:j + 1]]
     out.append(dict(id=sid, a=a, b=b, len=b - a, hook=hook, cx=cx, zoom=zoom, words=ws))
     print(f'{sid}: {a / FPS / 60:.0f}:{a / FPS % 60:04.1f} - {b / FPS / 60:.0f}:{b / FPS % 60:04.1f}  {(b - a) / FPS:.1f}s  {len(ws)} words')
 json.dump(out, open(os.path.join(EP, 'shorts.json'), 'w'), ensure_ascii=False, indent=0)
