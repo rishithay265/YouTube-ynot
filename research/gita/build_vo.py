@@ -57,11 +57,11 @@ def words_of(path, text):
     return out
 
 def chunks(ws, off):
-    """caption groups: break after . ? ! … : and after a comma once 4+ words are up; never more than 8 words."""
+    """caption groups: break after . ? ! … : and after a comma once 4+ words are up; never more than 10 words."""
     out, cur = [], []
     for i, w in enumerate(ws):
         cur.append(dict(w=w['w'], s=round(w['s'] + off, 2), e=round(w['e'] + off, 2)))
-        end = re.search(r'[.?!…:"”]$', w['w']) or (w['w'].endswith(',') and len(cur) >= 4) or len(cur) >= 8
+        end = re.search(r'[.?!…:"”]$', w['w']) or (w['w'].endswith(',') and len(cur) >= 4) or len(cur) >= 10
         if end or i == len(ws) - 1: out.append(cur); cur = []
     res = []
     for i, c in enumerate(out):

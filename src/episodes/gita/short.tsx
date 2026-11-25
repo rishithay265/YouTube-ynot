@@ -39,15 +39,15 @@ const VoCaptions: React.FC<{ cap: NonNullable<GitaDef['cap']>; s: number; y: num
   if (!c) return null;
   const lines: { w: string; s: number; e: number }[][] = [[]]; let n = 0;
   for (const w of c.words) {
-    if (n + w.w.length > 22 && lines[lines.length - 1].length) { lines.push([]); n = 0; }
+    if (n + w.w.length > 20 && lines[lines.length - 1].length) { lines.push([]); n = 0; }
     lines[lines.length - 1].push(w); n += w.w.length + 1;
   }
   const o = clamp((s - c.s + 0.05) / 0.12);
-  const lh = 84, top = y - ((lines.length - 1) * lh) / 2;
+  const lh = 92, top = y - ((lines.length - 1) * lh) / 2;
   return (
     <g opacity={o}>
       {lines.map((l, i) => (
-        <text key={i} x={W / 2} y={top + i * lh} textAnchor="middle" fontFamily={EN} fontSize={c.q ? 64 : 62} fontWeight={700} fontStyle={c.q ? 'italic' : 'normal'}
+        <text key={i} x={W / 2} y={top + i * lh} textAnchor="middle" fontFamily={EN} fontSize={c.q ? 72 : 70} fontWeight={700} fontStyle={c.q ? 'italic' : 'normal'}
           stroke="#02060F" strokeWidth={6} paintOrder="stroke">
           {l.map((w, j) => {
             const now = s >= w.s && s < w.e + 0.08, said = s >= w.s;
