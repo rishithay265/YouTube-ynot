@@ -31,7 +31,16 @@ def put(buf, x, t, g=1.0):
 
 _model = None
 def words_of(path, text):
-    """Whisper word timings, mapped onto the script's own words (display text keeps its punctuation)."""
+    """Whisper word timings, mapped onto the script's own words (display text keeps its punctuation). Cached in vo/al/."""
+    import hashlib
+    key_ = hashlib.sha1((open(path, 'rb').read()[:200000].hex() + text).encode()).hexdigest()[:16]
+    cache = os.path.join(HERE, 'vo', 'al', f"{os.path.basename(path).split('.')[0]}_{key_}.json")
+    if os.path.exists(cache): return json.load(open(cache))
+    out = _words_of(path, text)
+    os.makedirs(os.path.dirname(cache), exist_ok=True); json.dump(out, open(cache, 'w'))
+    return out
+
+def _words_of(path, text):
     global _model
     from faster_whisper import WhisperModel
     if _model is None: _model = WhisperModel('large-v3', device='cpu', compute_type='int8')
@@ -88,10 +97,12 @@ for g, sc in SCR.items():
         # one take of A + B: cut it in the pause between the last word of A and the first word of B
         ws = words_of(one, sc['A'] + '\n\n' + sc['B']); na = len(sc['A'].split())
         cut = (ws[na - 1]['e'] + ws[na]['s']) / 2
+        pre = dict(A=ws[:na], B=[dict(w, s=round(w['s'] - cut, 2), e=round(w['e'] - cut, 2)) for w in ws[na:]])
         pa, pb = os.path.join(vo, f'{g}_A.wav'), os.path.join(vo, f'{g}_B.wav')
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', one, '-t', f'{cut:.3f}', '-c:a', 'pcm_s16le', pa], check=True)
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{cut:.3f}', '-i', one, '-c:a', 'pcm_s16le', pb], check=True)
         print(f'  {g}: split one take at {cut:.2f}s')
+    else: pre = None
     if not (os.path.exists(pa) and os.path.exists(pb)): print('waiting for voice-over', g); continue
     A, a0 = trim(load(pa)); B, b0 = trim(load(pb))
     h1, _ = trim(load(os.path.join(HERE, 'chant', f'{g}_1.wav'))); h2, _ = trim(load(os.path.join(HERE, 'chant', f'{g}_2.wav')))
@@ -116,7 +127,7 @@ for g, sc in SCR.items():
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '2', '-i', '-', '-c:a', 'pcm_s24le', raw], input=buf.astype(np.float32).tobytes(), check=True)
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', raw, '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-ar', str(SR), '-c:a', 'pcm_s16le', fin], check=True)
     os.remove(raw)
-    wa = words_of(pa, sc['A']); wb = words_of(pb, sc['B'])
+    wa, wb = (pre['A'], pre['B']) if pre else (words_of(pa, sc['A']), words_of(pb, sc['B']))
     cap = chunks(wa, tA - a0) + chunks(wb, tB - b0)
     out.append(dict(id=f"GitaShort{v['ch']:02d}", day=v['day'], ch=v['ch'], ref=v['ref'], chapter=v['chapter'], chapter_en=v['chapter_en'], hook=v['hook'],
                     padas=v['padas'], meaning=v['meaning'], speaker=v['speaker'], len=int(round(total * 30)), audio=f"gita/v{g[1:]}.wav",
