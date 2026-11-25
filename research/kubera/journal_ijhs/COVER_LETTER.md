@@ -1,8 +1,8 @@
 Sangaraju Vikram Varma
 Independent Researcher, Bangalore, India
-ORCID: 0009-0000-5368-503X · CORRESPONDING-EMAIL
+ORCID: 0009-0000-5368-503X · vikky090896@gmail.com
 
-[Date]
+25 November 2026
 
 The Editor
 Indian Journal of History of Science

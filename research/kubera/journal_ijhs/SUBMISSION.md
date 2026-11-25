@@ -5,7 +5,7 @@
 |---|---|
 | Abstract 100–200 words (journal-specific) | 175 words ✅ |
 | 6–10 keywords (journal-specific) | 9 ✅ |
-| Title page: name, affiliation (city, country), corresponding e-mail, ORCID | ✅ except e-mail: **replace `CORRESPONDING-EMAIL` in `kubera_ijhs.tex` and the cover letter** |
+| Title page: name, affiliation (city, country), corresponding e-mail, ORCID | ✅ |
 | LaTeX allowed for mathematical content; Springer Nature template recommended | `sn-jnl` class, `sn-basic` author–year style, pdflatex ✅ |
 | Author–year citations, alphabetical reference list, DOIs as links | ✅ |
 | No more than three heading levels | ✅ |
