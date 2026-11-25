@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: kubera_yantra.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: refs.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--missing publisher in dutt1896mkp
+
+Done.
+You've used 40 entries,
+            4087 wiz_defined-function locations,
+            1063 strings with 16902 characters,
+and the built_in function-call counts, 19637 in all, are:
+= -- 1667
+> -- 216
+< -- 92
++ -- 121
+- -- 34
+* -- 867
+:= -- 3446
+add.period$ -- 79
+call.type$ -- 40
+change.case$ -- 58
+chr.to.int$ -- 195
+cite$ -- 41
+duplicate$ -- 1497
+empty$ -- 1826
+format.name$ -- 36
+if$ -- 4481
+int.to.chr$ -- 0
+int.to.str$ -- 40
+missing$ -- 284
+newline$ -- 191
+num.names$ -- 33
+pop$ -- 692
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 1565
+stack$ -- 0
+substring$ -- 504
+swap$ -- 1016
+text.length$ -- 27
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 40
+warning$ -- 1
+while$ -- 64
+width$ -- 42
+write$ -- 434
+(There was 1 warning)
