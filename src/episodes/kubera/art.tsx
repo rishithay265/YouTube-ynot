@@ -27,15 +27,15 @@ export const Grid: React.FC<{
   return (
     <g opacity={o}>
       {hi.map((v, i) => v > 0 ? <rect key={'h' + i} x={x0 + (i % 3) * c + 4} y={y0 + Math.floor(i / 3) * c + 4} width={c - 8} height={c - 8} fill={P.gold} opacity={0.22 * v} rx={6} /> : null)}
-      {lines.map(([a, b, cc, d], k) => {
-        const p = seg(k); return p > 0 ? <line key={k} x1={a} y1={b} x2={a + (cc - a) * p} y2={b + (d - b) * p} stroke={stroke} strokeWidth={rice ? 7 : 4} strokeLinecap="round" opacity={rice ? 0.92 : 0.9} filter={rice ? undefined : 'url(#rkGlow)'} /> : null;
-      })}
+      <g filter={rice ? undefined : 'url(#kLineGlow)'}>{lines.map(([a, b, cc, d], k) => {
+        const p = seg(k); return p > 0 ? <line key={k} x1={a} y1={b} x2={a + (cc - a) * p} y2={b + (d - b) * p} stroke={stroke} strokeWidth={rice ? 7 : 4} strokeLinecap="round" opacity={rice ? 0.92 : 0.9} /> : null;
+      })}</g>
       {rice && [0, 1, 2, 3].flatMap((i) => [0, 1, 2, 3].map((j) => <circle key={`d${i}${j}`} cx={x0 + i * c} cy={y0 + j * c} r={7} fill="#F6EFDD" opacity={clamp(draw * 2)} />))}
-      {lit.map(({ i, o: lo }) => {
+      <g filter="url(#kLineGlow)">{lit.map(({ i, o: lo }) => {
         const [a, b] = ctr(LINES[i][0]), [cx2, cy2] = ctr(LINES[i][2]);
         const ex = (cx2 - a) * 0.18, ey = (cy2 - b) * 0.18;
-        return <line key={'l' + i} x1={a - ex} y1={b - ey} x2={cx2 + ex} y2={cy2 + ey} stroke={P.ember} strokeWidth={10} strokeLinecap="round" opacity={0.75 * lo} filter="url(#rkGlow)" />;
-      })}
+        return <line key={'l' + i} x1={a - ex} y1={b - ey} x2={cx2 + ex} y2={cy2 + ey} stroke={P.ember} strokeWidth={10} strokeLinecap="round" opacity={0.75 * lo} />;
+      })}</g>
       {nums.map((n, i) => {
         const [cx, cy] = ctr(i); const s = shown ? shown[i] ?? 1 : 1;
         return s > 0 ? (
@@ -69,6 +69,7 @@ export const KDefs: React.FC = () => (
     <radialGradient id="kLamp" cx="50%" cy="50%" r="50%"><stop offset="0" stopColor="#FFE3A0" stopOpacity={0.95} /><stop offset="0.3" stopColor="#F0A040" stopOpacity={0.45} /><stop offset="1" stopColor="#F0A040" stopOpacity={0} /></radialGradient>
     <linearGradient id="kFloor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#3B2A22" /><stop offset="1" stopColor="#1A120E" /></linearGradient>
     <linearGradient id="kCopper" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#E59A62" /><stop offset="0.5" stopColor="#B8673A" /><stop offset="1" stopColor="#6E3518" /></linearGradient>
+    <filter id="kLineGlow" filterUnits="userSpaceOnUse" x="0" y="0" width="1920" height="1080"><feGaussianBlur stdDeviation="5" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
     <filter id="kSoft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" /></filter>
   </defs>
 );

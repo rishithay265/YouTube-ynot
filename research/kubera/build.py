@@ -204,7 +204,7 @@ def main():
         bed[pos:pos + n] += seg; pos += L - xf
     lvl = np.full(len(buf), 0.085)
     for kind, a, b in spans: lvl[int(a * SR):int(b * SR)] = 0.04 if kind == 'vo' else 0.058
-    k = int(0.4 * SR); lvl = np.convolve(np.pad(lvl, k, mode='edge'), np.ones(2 * k) / (2 * k), 'same')[k:-k][:len(buf)]
+    k = int(0.4 * SR); cs = np.cumsum(np.pad(lvl, k, mode='edge')); cs = np.concatenate([[0.0], cs]); lvl = (cs[2 * k:] - cs[:-2 * k])[:len(buf)] / (2 * k)
     lvl[:int(1.0 * SR)] *= np.linspace(0, 1, int(1.0 * SR)); fo = int(4.0 * SR); lvl[-fo:] *= np.linspace(1, 0, fo) ** 1.5
     buf += bed * lvl[:, None]
     raw = os.path.join(ROOT, 'public', 'kubera', 'mix_raw.wav'); fin = os.path.join(ROOT, 'public', 'kubera', 'mix.wav')

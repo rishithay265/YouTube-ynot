@@ -30,14 +30,14 @@ const Photo: React.FC<{ src: string; x: number; y: number; w: number; h: number;
 
 // ---------------- scenes ----------------
 const S: Record<string, React.FC<SP>> = {
-  doorstep: ({ t, on }) => {
-    const d = on('draw', 3.2);
+  doorstep: ({ t, lt }) => {
+    const d = clamp(lt / 6);
     return (<g>
       <Sky t={t} warm={0.9} />
       <path d="M0 640 L1920 640 L1920 1080 L0 1080 Z" fill="url(#kFloor)" />
       <path d="M0 640 L1920 640" stroke="#6B4A33" strokeWidth={6} />
       <path d="M560 640 L560 360 Q960 250 1360 360 L1360 640" fill="#120C14" stroke="#6B4A33" strokeWidth={8} />
-      <g transform="translate(960 860) scale(1 0.62)"><Grid x={0} y={0} c={190} nums={KUBERA} rice draw={d} shown={KUBERA.map((_, i) => clamp(d * 10 - 1 - i))} /></g>
+      <g transform="translate(960 800) scale(1 0.62)"><Grid x={0} y={0} c={165} nums={KUBERA} rice draw={d} shown={KUBERA.map((_, i) => clamp(d * 10 - 1 - i))} /></g>
     </g>);
   },
   lines72: ({ t, lt }) => {
@@ -73,14 +73,14 @@ const S: Record<string, React.FC<SP>> = {
   </g>),
   title: ({ t, lt }) => (<g><Sky t={t} />
     <circle cx={960} cy={520} r={520} fill="url(#kGlowGold)" opacity={0.25 + 0.1 * Math.sin(lt * 2)} />
-    <Grid x={960} y={520} c={110} nums={KUBERA} o={0.35} />
+    <Grid x={960} y={520} c={110} nums={KUBERA} o={0.12} />
     <T x={960} y={520} s={150} ls={14} o={clamp(lt / 1.2)}>THE KUBERA CODE</T>
     <T x={960} y={620} s={44} c={P.snow} i o={clamp((lt - 1) / 1)}>Hidden in Plain Sight</T>
   </g>),
   cosmicCow: ({ t, lt }) => (<g><Sky t={t} /><Cow x={960} y={520} s={1.6} o={clamp(lt / 1.2)} calf={clamp((lt - 2) / 1)} />
     <T x={960} y={980} s={40} c={P.snow} i o={clamp(lt / 1)}>Atharvaveda 8.10 · Virāj, the cosmic cow</T></g>),
   calf: ({ t, lt, on }) => (<g><Sky t={t} /><Cow x={960} y={500} s={1.6} calf={1} glow={clamp(lt)} />
-    <T x={1180} y={760} s={50} o={clamp(lt)}>Kubera Vaiśravaṇa</T>
+    <T x={1300} y={880} s={54} o={clamp(lt)}>Kubera Vaiśravaṇa</T>
     <rect x={0} y={0} width={W} height={H} fill="#020611" opacity={0.55 * on('veil', 1.5)} />
     <T x={960} y={980} s={70} ls={6} o={on('veil', 1)}>tirodhā · concealment</T></g>),
   roots: ({ t, lt, on }) => (<g><Sky t={t} />
@@ -99,12 +99,12 @@ const S: Record<string, React.FC<SP>> = {
   thief: ({ t, lt, on }) => {
     const lamp = on('lamp', 1.2), k = on('kubera', 2);
     return (<g><Sky t={t} />
-      <Temple x={960} y={900} s={1.25} door={0.15 + lamp * 0.8} o={on('temple', 1) * (1 - k * 0.6)} />
+      <Temple x={960} y={930} s={1.1} door={0.15 + lamp * 0.8} o={on('temple', 1) * (1 - k * 0.6)} />
       <g opacity={1 - on('caught', 1)}><Seated x={760} y={900} s={0.55} o={on('temple', 1)} /></g>
       <Lamp x={960} y={890} s={1.3} lit={lamp} t={t} />
       {on('ganas', 1) > 0 && Array.from({ length: 12 }, (_, i) => <line key={i} x1={960} y1={840} x2={960 + Math.cos(i / 12 * 6.283) * 600} y2={840 + Math.sin(i / 12 * 6.283) * 600} stroke={P.goldHi} strokeWidth={3} opacity={0.4 * on('ganas', 1) * (1 - k)} />)}
       <g opacity={k}><circle cx={960} cy={520} r={330} fill="url(#kGlowGold)" opacity={0.6} /><Seated x={960} y={820} s={1} crown belly /></g>
-      <T x={960} y={110} s={44} c={P.snow} i o={clamp(lt / 0.6)}>Śiva Purāṇa · Rudra-saṃhitā, Sṛṣṭi-khaṇḍa 17–19 · Guṇanidhi</T>
+      <T x={60} y={70} s={32} a="start" c={P.snow} i o={clamp(lt / 0.6)}>Śiva Purāṇa · Rudra-saṃhitā, Sṛṣṭi-khaṇḍa 17–19 · Guṇanidhi</T>
     </g>);
   },
   waters: ({ t, lt, on }) => {
@@ -333,7 +333,7 @@ const S: Record<string, React.FC<SP>> = {
   },
   ending: ({ t, on, at }) => (<g><Sky t={t} warm={0.8} />
     <path d="M0 640 L1920 640 L1920 1080 L0 1080 Z" fill="url(#kFloor)" /><path d="M560 640 L560 360 Q960 250 1360 360 L1360 640" fill="#120C14" stroke="#6B4A33" strokeWidth={8} />
-    <g transform="translate(960 860) scale(1 0.62)"><Grid x={0} y={0} c={190} nums={KUBERA} rice /></g>
+    <g transform="translate(960 800) scale(1 0.62)"><Grid x={0} y={0} c={165} nums={KUBERA} rice /></g>
     <T x={960} y={200} s={84} o={on('code', 1)}>Lakṣmī brings.</T><T x={960} y={300} s={84} c={P.ember} o={clamp((at('code') - 1.4) / 0.8)}>Kubera keeps.</T>
   </g>),
 };
