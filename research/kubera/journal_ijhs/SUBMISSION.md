@@ -39,4 +39,4 @@
 ---
 
 ## Submitted
-25 November 2026 (Editorial Manager, article type "Article"); manuscript file IJHS-S-26-00511. Approved by the author after checking the system-built PDF (22 pages with line numbers). Track it under "Submissions Being Processed".
+25 November 2026 (Editorial Manager, article type "Article"); submission ID **IJHS-D-26-00369** (confirmation e-mail, 26 Nov 2026, 2:15 am; the build file was named IJHS-S-26-00511). Approved by the author after checking the system-built PDF (22 pages with line numbers). Track it under "Submissions Being Processed".
