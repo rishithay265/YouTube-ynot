@@ -15,6 +15,7 @@ import { GitaShort, GitaDef } from './episodes/gita/short';
 import gitaShorts from './episodes/gita/shorts.json';
 import { KuberaFilm, KUBERA_LEN } from './episodes/kubera/film';
 import { KuberaThumb } from './episodes/kubera/thumb';
+import { KuberaThumbAI } from './episodes/kubera/thumbAI';
 
 // Every episode gets two compositions: <Id> (the film) and <Id>Board (one frame per shot, at its key frame, for the
 // storyboard). Cast renders the cast sheet.
@@ -41,6 +42,7 @@ export const Root: React.FC = () => {
       {(gitaShorts as GitaDef[]).map((d) => (
         <Composition key={d.id} id={d.id} component={GitaShort} defaultProps={{ d }} durationInFrames={d.len} width={1080} height={1920} {...common} />
       ))}
+      <Composition id="KuberaThumbAI" component={KuberaThumbAI} durationInFrames={1} width={1920} height={1080} {...common} />
       <Composition id="KuberaThumb" component={KuberaThumb} durationInFrames={1} width={1920} height={1080} {...common} />
       <Composition id="KuberaFilm" component={KuberaFilm} durationInFrames={KUBERA_LEN} width={1920} height={1080} {...common} />
       <Composition id="TripuraThumb" component={TripuraThumb} durationInFrames={1} width={1920} height={1080} {...common} />
